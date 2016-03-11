@@ -1,0 +1,6 @@
+framework module Pods_pedalaMI {
+  umbrella header "Pods-pedalaMI-umbrella.h"
+
+  export *
+  module * { export * }
+}
