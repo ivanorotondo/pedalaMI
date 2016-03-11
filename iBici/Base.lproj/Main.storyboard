@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller-->
+        <!--Delegate-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="pedalaMI" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,14 +36,49 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="allowsTilting" value="NO"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KuF-Ge-gn3"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZW-yd-Bw9">
+                                <rect key="frame" x="0.0" y="544" width="600" height="56"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="markerIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="cnL-aF-8mF">
+                                        <rect key="frame" x="23" y="10" width="55" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="gft-Yk-I16"/>
+                                            <constraint firstAttribute="width" constant="55" id="pn5-sM-q0y"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="markerIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="k3P-Oj-feM">
+                                        <rect key="frame" x="109" y="10" width="55" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="Dt9-D1-kxT"/>
+                                            <constraint firstAttribute="height" constant="35" id="T1F-4X-DEs"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cnL-aF-8mF" firstAttribute="leading" secondItem="CZW-yd-Bw9" secondAttribute="leading" constant="23" id="A1z-b6-HzJ"/>
+                                    <constraint firstItem="k3P-Oj-feM" firstAttribute="leading" secondItem="cnL-aF-8mF" secondAttribute="trailing" constant="31" id="C4u-Yx-Vgs"/>
+                                    <constraint firstItem="cnL-aF-8mF" firstAttribute="top" secondItem="CZW-yd-Bw9" secondAttribute="top" constant="10" id="MSv-8d-hw3"/>
+                                    <constraint firstAttribute="height" constant="56" id="pVB-vi-5rz"/>
+                                    <constraint firstItem="k3P-Oj-feM" firstAttribute="top" secondItem="CZW-yd-Bw9" secondAttribute="top" constant="10" id="s2Z-Xa-UaQ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CZW-yd-Bw9" secondAttribute="trailing" id="1l1-R8-jms"/>
                             <constraint firstAttribute="trailing" secondItem="WOn-z3-iKX" secondAttribute="trailing" id="I59-dy-w3d"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="bottom" id="RhM-ZV-gyo"/>
                             <constraint firstItem="WOn-z3-iKX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="X8Y-0N-QUt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CZW-yd-Bw9" secondAttribute="bottom" id="YMT-qP-Uwi"/>
                             <constraint firstItem="WOn-z3-iKX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="h0W-4z-sFr"/>
+                            <constraint firstItem="CZW-yd-Bw9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hl3-PM-Pof"/>
                         </constraints>
                     </view>
                     <connections>
@@ -55,4 +90,7 @@
             <point key="canvasLocation" x="305" y="216"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="markerIcon.png" width="204" height="119"/>
+    </resources>
 </document>
