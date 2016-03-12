@@ -16,32 +16,35 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     let stationsURL = "http://www.bikemi.com/it/mappa-stazioni.aspx"
     var stationsHTML : NSString = ""
     var stationsArray : NSMutableArray = []
+    var annotationsArray = [MGLAnnotation]()
     
     @IBOutlet var mapView: MGLMapView!
+    
+    @IBOutlet var bikesButton: UIImageView!
+    @IBOutlet var electricBikesButton: UIImageView!
     
     let locationManager = CLLocationManager()
 
 //MARK: - views init
     override func viewDidLoad() {
         
+        let tapBikes = UITapGestureRecognizer(target:self, action:Selector("addBikesMarkers:"))
+        
+        bikesButton.userInteractionEnabled = true
+        bikesButton.addGestureRecognizer(tapBikes)
+        
+        let tapElectricBikes = UITapGestureRecognizer(target:self, action:Selector("addElectricBikesMarkers:"))
 
+        electricBikesButton.userInteractionEnabled = true
+        electricBikesButton.addGestureRecognizer(tapElectricBikes)
         
         getTheHTML(stationsURL){
             ParsingSDK.parseGoogleMapToObjects(self.stationsHTML, stationsArray: self.stationsArray)
-            for station in self.stationsArray{
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-               
-                var marker = MGLPointAnnotation()
-                marker.title = "\((station as? Station)!.stationName)"
-                marker.subtitle = "Biciclette disponibili: \((station as? Station)!.availableBikesNumber)"
-//                marker.icon = UIImage(named: "markerIconMini")
-                marker.coordinate = CLLocationCoordinate2DMake(((station as? Station)?.stationCoord.latitude)!, ((station as? Station)?.stationCoord.longitude)!)
-//                marker.map = self.mapView
-                self.mapView.addAnnotation(marker)
-                })
-            }
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+
+                self.addMarkersToTheMap("bikes")
+            })
         }
-        
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
     }
@@ -110,6 +113,48 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //            locationManager.stopUpdatingLocation()
 //        }
 //    }
+    
+    func addElectricBikesMarkers(sender: UITapGestureRecognizer) {
+        mapView.removeAnnotations(annotationsArray)
+        addMarkersToTheMap("electricBikes")
+    }
+    
+    func addBikesMarkers(sender: UITapGestureRecognizer) {
+        mapView.removeAnnotations(annotationsArray)
+        addMarkersToTheMap("bikes")
+
+    }
+    func addMarkersToTheMap(bikesType: String){
+        
+        var availabilityNumber = ""
+        
+        for station in self.stationsArray{
+            
+            
+            
+            switch bikesType {
+                case "bikes":
+                    availabilityNumber = "\((station as? Station)!.availableBikesNumber)"
+                case "electricBikes":
+                    availabilityNumber = "\((station as? Station)!.availableElectricBikesNumber)"
+                default:
+                    print("")
+            }
+            
+                var marker = MGLPointAnnotation()
+                marker.title = "\((station as? Station)!.stationName)"
+            
+                marker.subtitle = "Biciclette disponibili: \(availabilityNumber)"
+            
+                marker.coordinate = CLLocationCoordinate2DMake(((station as? Station)?.stationCoord.latitude)!, ((station as? Station)?.stationCoord.longitude)!)
+                self.mapView.addAnnotation(marker)
+                annotationsArray.append(marker)
+            
+        }
+    }
+    
+    
+    
 }
 
 

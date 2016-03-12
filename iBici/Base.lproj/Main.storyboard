@@ -82,6 +82,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bikesButton" destination="cnL-aF-8mF" id="aNa-Tf-Zbq"/>
+                        <outlet property="electricBikesButton" destination="k3P-Oj-feM" id="bLo-VG-VBo"/>
                         <outlet property="mapView" destination="WOn-z3-iKX" id="cQc-3I-WwN"/>
                     </connections>
                 </viewController>
