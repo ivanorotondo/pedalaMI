@@ -25,6 +25,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var electricBikesButton: UIImageView!
     @IBOutlet var slotsButton: UIImageView!
     @IBOutlet var refreshButton: UIImageView!
+    @IBOutlet var settingsButton: UIImageView!
     
     let locationManager = CLLocationManager()
 
@@ -54,6 +55,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         refreshButton.userInteractionEnabled = true
         refreshButton.addGestureRecognizer(tapRefresh)
+        
+        let tapSettings = UITapGestureRecognizer(target: self, action: Selector("showMenu:"))
+        
+        settingsButton.userInteractionEnabled = true
+        settingsButton.addGestureRecognizer(tapSettings)
         
         getTheHTML(stationsURL){
             ParsingSDK.parseGoogleMapToObjects(self.stationsHTML, stationsArray: self.stationsArray)
@@ -128,11 +134,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .AuthorizedWhenInUse {
             locationManager.startUpdatingLocation()
-            
+
 //            mapView.myLocationEnabled = true
 //            mapView.settings.myLocationButton = true
         }
     }
+
+//stop updating location
     
 //    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 //        if let location = locations.first {
@@ -142,6 +150,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //            locationManager.stopUpdatingLocation()
 //        }
 //    }
+    
     
     func addElectricBikesMarkers(sender: UITapGestureRecognizer) {
         if currentView != "electricBikes" {
@@ -171,6 +180,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     func refreshMarkers(sender: UITapGestureRecognizer) {
         mapView.removeAnnotations(annotationsArray)
         addMarkersToTheMap(currentView)
+    }
+    
+    func showMenu(sender: UITapGestureRecognizer) {
+        self.slideMenuController()?.openRight()
     }
     
     func addMarkersToTheMap(bikesType: String){
