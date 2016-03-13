@@ -17,16 +17,23 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var stationsHTML : NSString = ""
     var stationsArray : NSMutableArray = []
     var annotationsArray = [MGLAnnotation]()
+    var currentView = ""
     
+//MARK: outlet init
     @IBOutlet var mapView: MGLMapView!
-    
     @IBOutlet var bikesButton: UIImageView!
     @IBOutlet var electricBikesButton: UIImageView!
+    @IBOutlet var slotsButton: UIImageView!
+    @IBOutlet var refreshButton: UIImageView!
     
     let locationManager = CLLocationManager()
 
 //MARK: - views init
     override func viewDidLoad() {
+        
+        mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/cilp4lb9y002fbim8rmsnt9rq")
+        
+        currentView = "bikes"
         
         let tapBikes = UITapGestureRecognizer(target:self, action:Selector("addBikesMarkers:"))
         
@@ -38,10 +45,20 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         electricBikesButton.userInteractionEnabled = true
         electricBikesButton.addGestureRecognizer(tapElectricBikes)
         
+        let tapSlots = UITapGestureRecognizer(target: self, action: Selector("addSlotsMarkers:"))
+        
+        slotsButton.userInteractionEnabled = true
+        slotsButton.addGestureRecognizer(tapSlots)
+        
+        let tapRefresh = UITapGestureRecognizer(target: self, action: Selector("refreshMarkers:"))
+        
+        refreshButton.userInteractionEnabled = true
+        refreshButton.addGestureRecognizer(tapRefresh)
+        
         getTheHTML(stationsURL){
             ParsingSDK.parseGoogleMapToObjects(self.stationsHTML, stationsArray: self.stationsArray)
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
-
+                
                 self.addMarkersToTheMap("bikes")
             })
         }
@@ -60,6 +77,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         return annotationImage
     }
+
+//TODO:
+//    func mapView(mapView: MGLMapView, regionDidChangeAnimated animated: Bool){
+//        
+//        print ("\(self.mapView.zoomLevel)")
+//        if self.mapView.zoomLevel < 12.5 {
+//            mapView.removeAnnotations(annotationsArray)
+//        } else {
+//            //add previous annotations
+//        }
+//        
+//    }
     
     func mapView(mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         // Always try to show a callout when an annotation is tapped.
@@ -115,36 +144,60 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //    }
     
     func addElectricBikesMarkers(sender: UITapGestureRecognizer) {
-        mapView.removeAnnotations(annotationsArray)
-        addMarkersToTheMap("electricBikes")
+        if currentView != "electricBikes" {
+            mapView.removeAnnotations(annotationsArray)
+            addMarkersToTheMap("electricBikes")
+            currentView = "electricBikes"
+        }
     }
     
     func addBikesMarkers(sender: UITapGestureRecognizer) {
-        mapView.removeAnnotations(annotationsArray)
-        addMarkersToTheMap("bikes")
+        if currentView != "bikes" {
+            mapView.removeAnnotations(annotationsArray)
+            addMarkersToTheMap("bikes")
+            currentView = "bikes"
+        }
 
     }
+    
+    func addSlotsMarkers(sender: UITapGestureRecognizer) {
+        if currentView != "slots" {
+            mapView.removeAnnotations(annotationsArray)
+            addMarkersToTheMap("slots")
+            currentView = "slots"
+        }
+    }
+    
+    func refreshMarkers(sender: UITapGestureRecognizer) {
+        mapView.removeAnnotations(annotationsArray)
+        addMarkersToTheMap(currentView)
+    }
+    
     func addMarkersToTheMap(bikesType: String){
         
         var availabilityNumber = ""
+        var subtitle = ""
         
         for station in self.stationsArray{
             
-            
-            
             switch bikesType {
                 case "bikes":
+                    subtitle = "Biciclette disponibili:"
                     availabilityNumber = "\((station as? Station)!.availableBikesNumber)"
                 case "electricBikes":
+                    subtitle = "Biciclette elettriche disponibili:"
                     availabilityNumber = "\((station as? Station)!.availableElectricBikesNumber)"
+                case "slots":
+                    subtitle = "Parcheggi disponibili:"
+                    availabilityNumber = "\((station as? Station)!.availableSlotsNumber)"
                 default:
-                    print("")
+                    print("\n\nerror\n\n")
             }
             
                 var marker = MGLPointAnnotation()
                 marker.title = "\((station as? Station)!.stationName)"
             
-                marker.subtitle = "Biciclette disponibili: \(availabilityNumber)"
+                marker.subtitle = "\(subtitle) \(availabilityNumber)"
             
                 marker.coordinate = CLLocationCoordinate2DMake(((station as? Station)?.stationCoord.latitude)!, ((station as? Station)?.stationCoord.longitude)!)
                 self.mapView.addAnnotation(marker)
@@ -152,6 +205,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             
         }
     }
+    
+    
     
     
     

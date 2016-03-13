@@ -4,6 +4,7 @@
  use_frameworks!
 
 pod 'Mapbox-iOS-SDK', '~> 3.1.2'
+pod 'SlideMenuControllerSwift'
 target ‘pedalaMI’ do
 
 end

@@ -1,10 +1,13 @@
 PODS:
   - Mapbox-iOS-SDK (3.1.2)
+  - SlideMenuControllerSwift (2.0.5)
 
 DEPENDENCIES:
   - Mapbox-iOS-SDK (~> 3.1.2)
+  - SlideMenuControllerSwift
 
 SPEC CHECKSUMS:
   Mapbox-iOS-SDK: 0a910c2cce1aa8cff5b9ec2a990e7a32332a776a
+  SlideMenuControllerSwift: 9dcae36265e14c4f42e729f212463beb60d2cf96
 
 COCOAPODS: 0.39.0

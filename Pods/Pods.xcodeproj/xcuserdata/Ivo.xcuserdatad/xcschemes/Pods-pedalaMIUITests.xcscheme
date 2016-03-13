@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5A775A5C66F69BE22465260B'
+               BlueprintIdentifier = 'C4AC127A8146577B9C6951FD'
                BlueprintName = 'Pods-pedalaMIUITests'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_pedalaMIUITests.framework'>

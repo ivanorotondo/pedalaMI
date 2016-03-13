@@ -59,12 +59,30 @@
                                             <constraint firstAttribute="height" constant="35" id="T1F-4X-DEs"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parkingBikeIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="eHl-Ke-JrF">
+                                        <rect key="frame" x="197" y="2" width="48" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="9nX-Lw-ncM"/>
+                                            <constraint firstAttribute="height" constant="52" id="XOZ-OQ-YN8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refreshIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="92T-ST-zBb">
+                                        <rect key="frame" x="270" y="8" width="34" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="4Bc-V0-WPn"/>
+                                            <constraint firstAttribute="height" constant="37" id="i7O-gB-Gp6"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="cnL-aF-8mF" firstAttribute="leading" secondItem="CZW-yd-Bw9" secondAttribute="leading" constant="23" id="A1z-b6-HzJ"/>
+                                    <constraint firstItem="eHl-Ke-JrF" firstAttribute="leading" secondItem="k3P-Oj-feM" secondAttribute="trailing" constant="33" id="A7e-eg-PK2"/>
                                     <constraint firstItem="k3P-Oj-feM" firstAttribute="leading" secondItem="cnL-aF-8mF" secondAttribute="trailing" constant="31" id="C4u-Yx-Vgs"/>
+                                    <constraint firstItem="92T-ST-zBb" firstAttribute="top" secondItem="CZW-yd-Bw9" secondAttribute="top" constant="8" id="E3k-ZI-yXy"/>
                                     <constraint firstItem="cnL-aF-8mF" firstAttribute="top" secondItem="CZW-yd-Bw9" secondAttribute="top" constant="10" id="MSv-8d-hw3"/>
+                                    <constraint firstItem="eHl-Ke-JrF" firstAttribute="top" secondItem="CZW-yd-Bw9" secondAttribute="top" constant="2" id="PHQ-k4-0af"/>
+                                    <constraint firstItem="92T-ST-zBb" firstAttribute="leading" secondItem="eHl-Ke-JrF" secondAttribute="trailing" constant="25" id="mSO-zk-jeh"/>
                                     <constraint firstAttribute="height" constant="56" id="pVB-vi-5rz"/>
                                     <constraint firstItem="k3P-Oj-feM" firstAttribute="top" secondItem="CZW-yd-Bw9" secondAttribute="top" constant="10" id="s2Z-Xa-UaQ"/>
                                 </constraints>
@@ -85,6 +103,8 @@
                         <outlet property="bikesButton" destination="cnL-aF-8mF" id="aNa-Tf-Zbq"/>
                         <outlet property="electricBikesButton" destination="k3P-Oj-feM" id="bLo-VG-VBo"/>
                         <outlet property="mapView" destination="WOn-z3-iKX" id="cQc-3I-WwN"/>
+                        <outlet property="refreshButton" destination="92T-ST-zBb" id="htR-6E-XG5"/>
+                        <outlet property="slotsButton" destination="eHl-Ke-JrF" id="zeM-7o-HlP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,5 +114,7 @@
     </scenes>
     <resources>
         <image name="markerIcon.png" width="204" height="119"/>
+        <image name="parkingBikeIcon.png" width="200" height="200"/>
+        <image name="refreshIcon.png" width="512" height="512"/>
     </resources>
 </document>

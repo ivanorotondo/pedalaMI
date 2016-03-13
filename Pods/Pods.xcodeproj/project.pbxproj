@@ -7,37 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		024C103848113AEF76AC5A742AF80B75 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 114F8D4A0D3D9A41A5E1577108DCE0C1 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E615E9CA3F7C983E82758A5B9F64D21 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCC9E29D7286F44C211ECAC5AEB86A1 /* Pods-dummy.m */; };
-		21DCAFB948742C50E58A16424FABBC7E /* Pods-pedalaMITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72324E28E1D1BFF0DC485089A825E742 /* Pods-pedalaMITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DDAF0A8F407A5A6D0965028AC817C65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		2F4B6B6892CF23D15406BDB643D232B2 /* Pods-pedalaMIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4AD0526EE996D5E01A80ACF7B2F886 /* Pods-pedalaMIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F53192D75EB99D6C9B6BE7F2A55ECD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		7004FC058AE4D6155A669F102C77402A /* Pods-pedalaMI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6B698347C9D6EE40FE3D09632788F9 /* Pods-pedalaMI-dummy.m */; };
-		755E4DC789F9E2501807D4F9948469FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		BFE3A669B070747D822EC07508F12C9E /* Pods-pedalaMIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE15FA9B4F303E8FE58A30B7BD154C1 /* Pods-pedalaMIUITests-dummy.m */; };
-		C8689111E1522A5F1BE42C88DAFF5C5A /* Pods-pedalaMI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1762F77A8DA41F6D2F4AC051F648C71 /* Pods-pedalaMI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA1061E922F59270CCA41AE5ADF2E9CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		F17AE5F997B513B6CDF4FA98DF869682 /* Pods-pedalaMITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E3430D7162B8F0E72F7DFF093F13D /* Pods-pedalaMITests-dummy.m */; };
+		0680B31DFBFBB362D3F8AB191965B6B1 /* Pods-pedalaMI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1762F77A8DA41F6D2F4AC051F648C71 /* Pods-pedalaMI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		094E8730B7336BE22AB27CD9931E0540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		09605676B272AFB0F67C54AFD83CBB5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		18544339361EB5C4CDA1E6145049C099 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFF42D8CB1348BA1A9FFA524E9FF2B /* Info.plist */; };
+		397BE0F9A18C540049EC5050D2E4D7F5 /* SlideMenuControllerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B629C324741628789F035D06CD651D7B /* SlideMenuControllerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		472AE524041DE05076670C90D3357C85 /* SlideMenuControllerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3406593EC4B1EF00F4920BEDA29039A8 /* SlideMenuControllerSwift-dummy.m */; };
+		4C81B76CD617F5C62ADFADF5113C3985 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6B56ABF99A793E13C47478B8EBD8D /* SlideMenuController.swift */; };
+		51CBC2A200976F4C96A3F147BDA52967 /* Pods-pedalaMI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6B698347C9D6EE40FE3D09632788F9 /* Pods-pedalaMI-dummy.m */; };
+		5256D22C9A89DCFD4FA694F0434A705A /* Pods-pedalaMITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72324E28E1D1BFF0DC485089A825E742 /* Pods-pedalaMITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63290EA1B8D2C78AAF3836005F47A240 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		6E01EF76894A2BFDE34CAC9470C7D0C4 /* SlideMenuControllerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = C0560606F5E1CF1E835767F91407BF47 /* SlideMenuControllerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DC239AFCD7197105D0AA9B5D4D62998 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		A46D26DE9119AB7FA4CE8A387E2B688C /* Pods-pedalaMIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4AD0526EE996D5E01A80ACF7B2F886 /* Pods-pedalaMIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5D2B0694A3D775EE0C44D6C59927F84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		AF597FB81C0D5EB7D7CE2675157362FF /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 114F8D4A0D3D9A41A5E1577108DCE0C1 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D96F8C00B8F83101E5D804679F1747B7 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCC9E29D7286F44C211ECAC5AEB86A1 /* Pods-dummy.m */; };
+		DFD55A7A0D4BE85D9EDAABB925DA3E09 /* Pods-pedalaMIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE15FA9B4F303E8FE58A30B7BD154C1 /* Pods-pedalaMIUITests-dummy.m */; };
+		E2217EC371A26AC23A0D787A594E4EBD /* Pods-pedalaMITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E3430D7162B8F0E72F7DFF093F13D /* Pods-pedalaMITests-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0E106DD7500A08A2425EDC0EEB50445B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF12103F00989F48992B7A4D65948BA;
+			remoteInfo = SlideMenuControllerSwift;
+		};
+		4C7E07E04016C432E5D92211CD9D5095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF12103F00989F48992B7A4D65948BA;
+			remoteInfo = SlideMenuControllerSwift;
+		};
+		A7978C30339DE02E944E63F980E883EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF12103F00989F48992B7A4D65948BA;
+			remoteInfo = SlideMenuControllerSwift;
+		};
+		EDCFA2B848AFDBE20E93823C2625E947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF12103F00989F48992B7A4D65948BA;
+			remoteInfo = SlideMenuControllerSwift;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		04CA679B407DDB1F74FFBBADCB24579B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACB04762003FB5BE2C880A3D92A0775 /* Pods-pedalaMITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMITests.release.xcconfig"; sourceTree = "<group>"; };
-		0B32CCF6C4582B4F54E0A01CBBEF1D05 /* Pods_pedalaMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		114F8D4A0D3D9A41A5E1577108DCE0C1 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
 		1380C0FBE52955078B13BF28891DAFE6 /* Pods-pedalaMIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1EDFF42D8CB1348BA1A9FFA524E9FF2B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
 		25091F21336A4845D0E62012597D9F7F /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
 		262560C19E9AA453DB6B572B86A5EEA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F0AC0B659B9D92279F9466B3811218 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
 		2EA74CA41EC3A61C3E7FB64EB076EAEA /* Pods-pedalaMI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMI.debug.xcconfig"; sourceTree = "<group>"; };
+		3115C9D4111BD83EEDAB48E67DE98B92 /* SlideMenuControllerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlideMenuControllerSwift.xcconfig; sourceTree = "<group>"; };
+		3406593EC4B1EF00F4920BEDA29039A8 /* SlideMenuControllerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlideMenuControllerSwift-dummy.m"; sourceTree = "<group>"; };
 		36C7DCB8C0E3A14F60355861D278E3ED /* Pods-pedalaMIUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMIUITests-frameworks.sh"; sourceTree = "<group>"; };
 		37ED4FC103A669AD83F0252EDC10AE5F /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		39180C7F8746407A67C1034B3F4502E2 /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlideMenuControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3F6B698347C9D6EE40FE3D09632788F9 /* Pods-pedalaMI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pedalaMI-dummy.m"; sourceTree = "<group>"; };
 		42770AE3F057D44D966BCD528FFD81F3 /* Pods-pedalaMIUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMIUITests-resources.sh"; sourceTree = "<group>"; };
 		43866CF8DEC52BD1C9770DA265E27D32 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		492A0DFB7F3476A0E1CA964B3EA513E9 /* Pods-pedalaMI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pedalaMI-acknowledgements.plist"; sourceTree = "<group>"; };
+		4E609DB9845E9065325714770AA64FF6 /* SlideMenuControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SlideMenuControllerSwift.modulemap; sourceTree = "<group>"; };
 		4F9E16106C2BCE037BB3C4C50847CE46 /* Pods-pedalaMI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMI-resources.sh"; sourceTree = "<group>"; };
 		4FC19C8375046574C0FF64370A8CD2FD /* Pods-pedalaMI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pedalaMI-acknowledgements.markdown"; sourceTree = "<group>"; };
 		52A449F607288CC14D596794036EE483 /* Pods-pedalaMIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pedalaMIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -45,62 +85,77 @@
 		568203859772EC8A9B95AA0C7CA8893E /* Pods-pedalaMITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMITests-frameworks.sh"; sourceTree = "<group>"; };
 		5E5E3430D7162B8F0E72F7DFF093F13D /* Pods-pedalaMITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pedalaMITests-dummy.m"; sourceTree = "<group>"; };
 		5E9CBF3A14C56FA05E4C46431149D158 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		5EE66C235AF2C4A02B5F1D0BCA4EECA9 /* Pods_pedalaMIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		635F504F83CC6797C37F0CC41127B9EA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AACB1AF5FD37D0A6C0EC6ABC0B30D4E /* Pods-pedalaMI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-pedalaMI.modulemap"; sourceTree = "<group>"; };
 		6F98807A3708C978A7B3F6FA7EF06918 /* Pods-pedalaMITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-pedalaMITests.modulemap"; sourceTree = "<group>"; };
 		72324E28E1D1BFF0DC485089A825E742 /* Pods-pedalaMITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pedalaMITests-umbrella.h"; sourceTree = "<group>"; };
+		76FAAFB2C67E4CE05ADDBE695EA1F10E /* Pods_pedalaMIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF727F5E51AF1EABD41A70E053341F5 /* Pods_pedalaMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87EC0F6F440F76F8AD1FF054B311030B /* SlideMenuControllerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-prefix.pch"; sourceTree = "<group>"; };
 		8A4AD0526EE996D5E01A80ACF7B2F886 /* Pods-pedalaMIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pedalaMIUITests-umbrella.h"; sourceTree = "<group>"; };
 		8ED917F2DB7D0E6425E848DF41F0C1E2 /* Pods-pedalaMITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pedalaMITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		901F1E76EF524A5DECD0E972E70AAAC3 /* Pods-pedalaMI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMI-frameworks.sh"; sourceTree = "<group>"; };
 		9A2F48F60A47DDACF8D6EF5CAECA5F4D /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		9F90E672D521648CF8A1239C924431A8 /* Pods_pedalaMITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14F5B7F1A3CACFA2734EA1620E6B4A6 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		A418A30C64AAA3DB30A4982CBB60352D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA30FD32068B9534EB3F277FDB82D892 /* Pods-pedalaMIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AC97686FB05C404D49178B00D7B51056 /* Pods_pedalaMITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF6B56ABF99A793E13C47478B8EBD8D /* SlideMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = Source/SlideMenuController.swift; sourceTree = "<group>"; };
+		B629C324741628789F035D06CD651D7B /* SlideMenuControllerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-umbrella.h"; sourceTree = "<group>"; };
 		B7ACB282D8CE45F2730CF344D78136A4 /* Pods-pedalaMIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pedalaMIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BCCC9E29D7286F44C211ECAC5AEB86A1 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		C0560606F5E1CF1E835767F91407BF47 /* SlideMenuControllerSwift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlideMenuControllerSwift.h; path = Source/SlideMenuControllerSwift.h; sourceTree = "<group>"; };
 		C4966ED9FF445EBE66AAAA7F46CE1271 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
 		CDE15FA9B4F303E8FE58A30B7BD154C1 /* Pods-pedalaMIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pedalaMIUITests-dummy.m"; sourceTree = "<group>"; };
 		D2C4D7C07A0152B11A2D6F9800F9A9FF /* Pods-pedalaMITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDFDBE33866ECCD459BBB57BEFD816CE /* Pods-pedalaMITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMITests-resources.sh"; sourceTree = "<group>"; };
 		E25A27A80D26426B8962BF7F66438DCC /* Pods-pedalaMI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMI.release.xcconfig"; sourceTree = "<group>"; };
-		E3F3DEAC62E89F9ABAA5BE6404D5548E /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
+		E6319A34B9C03AF85CED055B87DEC946 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
 		EA1562FB4ACFD370C1710D181356AEA6 /* Pods-pedalaMITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pedalaMITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F13D8B3C251AA96FE1C109FD371746CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1762F77A8DA41F6D2F4AC051F648C71 /* Pods-pedalaMI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pedalaMI-umbrella.h"; sourceTree = "<group>"; };
 		FD8A5BACEB928E9CD85F2C76E6F17AAC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		971EA15B3A88F11A891724B833E1C66E /* Frameworks */ = {
+		31D410D18D5A52105A7D963B9C5A1056 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DDAF0A8F407A5A6D0965028AC817C65 /* Foundation.framework in Frameworks */,
+				094E8730B7336BE22AB27CD9931E0540 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7D28F6C1235C227A6075CECD4D0BB24 /* Frameworks */ = {
+		3D39EB944A9389F42AF6C8BAEF8E32C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				755E4DC789F9E2501807D4F9948469FA /* Foundation.framework in Frameworks */,
+				63290EA1B8D2C78AAF3836005F47A240 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3168C673007601935FDD8CF0A0C1C66 /* Frameworks */ = {
+		4053E18E03575269BF2FD1A841D78396 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F53192D75EB99D6C9B6BE7F2A55ECD7 /* Foundation.framework in Frameworks */,
+				A5D2B0694A3D775EE0C44D6C59927F84 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F45A916B3C455BA5E08EABB92B48F8A3 /* Frameworks */ = {
+		5AACC8964EBB759891250CB789FCF2F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA1061E922F59270CCA41AE5ADF2E9CD /* Foundation.framework in Frameworks */,
+				09605676B272AFB0F67C54AFD83CBB5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99AF0B2D441B7376D3D81D7DBA8E7692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC239AFCD7197105D0AA9B5D4D62998 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,31 +191,55 @@
 			path = "Target Support Files/Pods-pedalaMI";
 			sourceTree = "<group>";
 		};
-		3433746FBB20361F7C06EA7E60ED2F4A /* Frameworks */ = {
+		3C745C44282D7BE5F7E20EEE366D222A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E3F3DEAC62E89F9ABAA5BE6404D5548E /* Mapbox.framework */,
+				E6319A34B9C03AF85CED055B87DEC946 /* Mapbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3B6AD4FFE66908FCA51F294DF844D59F /* Pods */ = {
+		44E86BF93BB99803892E1D5BD3A77986 /* Mapbox-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				C622644E73922BB231E29AB8457EFB83 /* Mapbox-iOS-SDK */,
+				3C745C44282D7BE5F7E20EEE366D222A /* Frameworks */,
 			);
-			name = Pods;
+			path = "Mapbox-iOS-SDK";
 			sourceTree = "<group>";
 		};
-		45820E897024EC454C21F30EED495B06 /* Products */ = {
+		4B9C84F2E84D16A483794C444D8802AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04CA679B407DDB1F74FFBBADCB24579B /* Pods.framework */,
-				0B32CCF6C4582B4F54E0A01CBBEF1D05 /* Pods_pedalaMI.framework */,
-				9F90E672D521648CF8A1239C924431A8 /* Pods_pedalaMITests.framework */,
-				5EE66C235AF2C4A02B5F1D0BCA4EECA9 /* Pods_pedalaMIUITests.framework */,
+				635F504F83CC6797C37F0CC41127B9EA /* Pods.framework */,
+				7CF727F5E51AF1EABD41A70E053341F5 /* Pods_pedalaMI.framework */,
+				AC97686FB05C404D49178B00D7B51056 /* Pods_pedalaMITests.framework */,
+				76FAAFB2C67E4CE05ADDBE695EA1F10E /* Pods_pedalaMIUITests.framework */,
+				39180C7F8746407A67C1034B3F4502E2 /* SlideMenuControllerSwift.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		677704EBDA940C9DA5252279CE8152C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F13D8B3C251AA96FE1C109FD371746CA /* Info.plist */,
+				4E609DB9845E9065325714770AA64FF6 /* SlideMenuControllerSwift.modulemap */,
+				3115C9D4111BD83EEDAB48E67DE98B92 /* SlideMenuControllerSwift.xcconfig */,
+				3406593EC4B1EF00F4920BEDA29039A8 /* SlideMenuControllerSwift-dummy.m */,
+				87EC0F6F440F76F8AD1FF054B311030B /* SlideMenuControllerSwift-prefix.pch */,
+				B629C324741628789F035D06CD651D7B /* SlideMenuControllerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SlideMenuControllerSwift";
+			sourceTree = "<group>";
+		};
+		6FABF629EE541B22B58759CC8E568E5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44E86BF93BB99803892E1D5BD3A77986 /* Mapbox-iOS-SDK */,
+				D2AA87971E1548C472F9BD0969386B91 /* SlideMenuControllerSwift */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -168,8 +247,8 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3B6AD4FFE66908FCA51F294DF844D59F /* Pods */,
-				45820E897024EC454C21F30EED495B06 /* Products */,
+				6FABF629EE541B22B58759CC8E568E5D /* Pods */,
+				4B9C84F2E84D16A483794C444D8802AB /* Products */,
 				09C468C9C6C6FC912243243243904A7B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -208,14 +287,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C622644E73922BB231E29AB8457EFB83 /* Mapbox-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				3433746FBB20361F7C06EA7E60ED2F4A /* Frameworks */,
-			);
-			path = "Mapbox-iOS-SDK";
-			sourceTree = "<group>";
-		};
 		D0EEAAC5DED3BF43921F0288E0893049 /* Pods-pedalaMITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +303,17 @@
 			);
 			name = "Pods-pedalaMITests";
 			path = "Target Support Files/Pods-pedalaMITests";
+			sourceTree = "<group>";
+		};
+		D2AA87971E1548C472F9BD0969386B91 /* SlideMenuControllerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				1EDFF42D8CB1348BA1A9FFA524E9FF2B /* Info.plist */,
+				ACF6B56ABF99A793E13C47478B8EBD8D /* SlideMenuController.swift */,
+				C0560606F5E1CF1E835767F91407BF47 /* SlideMenuControllerSwift.h */,
+				677704EBDA940C9DA5252279CE8152C6 /* Support Files */,
+			);
+			path = SlideMenuControllerSwift;
 			sourceTree = "<group>";
 		};
 		D84A9693D259E7E29CA102B54ACD65D3 /* Pods */ = {
@@ -255,107 +337,137 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1FA7AB2A8BA22EA6687255EE0E42ED81 /* Headers */ = {
+		03EF379DBCB7517BFE17AB7E2FD78FB7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F4B6B6892CF23D15406BDB643D232B2 /* Pods-pedalaMIUITests-umbrella.h in Headers */,
+				397BE0F9A18C540049EC5050D2E4D7F5 /* SlideMenuControllerSwift-umbrella.h in Headers */,
+				6E01EF76894A2BFDE34CAC9470C7D0C4 /* SlideMenuControllerSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59A00F9704B6AFE0A9DC699A4B8B033F /* Headers */ = {
+		3730E663630220005653AE2519905435 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				024C103848113AEF76AC5A742AF80B75 /* Pods-umbrella.h in Headers */,
+				5256D22C9A89DCFD4FA694F0434A705A /* Pods-pedalaMITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93D184335B6E91FDFCB1C086572CC350 /* Headers */ = {
+		6EF212FBC8B9B84DC2B577C28E2AEB28 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21DCAFB948742C50E58A16424FABBC7E /* Pods-pedalaMITests-umbrella.h in Headers */,
+				0680B31DFBFBB362D3F8AB191965B6B1 /* Pods-pedalaMI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAA8EB740C64128852C6FDB9575E48DA /* Headers */ = {
+		8790A11CEEEDA53473F2DCC3D82D138F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8689111E1522A5F1BE42C88DAFF5C5A /* Pods-pedalaMI-umbrella.h in Headers */,
+				A46D26DE9119AB7FA4CE8A387E2B688C /* Pods-pedalaMIUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21981595B7E10A0136C16195AB85C87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF597FB81C0D5EB7D7CE2675157362FF /* Pods-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		020163737596CD0AD2071B227E6BF4CA /* Pods-pedalaMI */ = {
+		0C6E15085A6BFDDFD594599E22151C60 /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 020CFE01A53008F4FD4B03947F0E087B /* Build configuration list for PBXNativeTarget "Pods-pedalaMI" */;
+			buildConfigurationList = 0B51996B0461EFB6984940E532206CDA /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				ECFA5AB8F6B0E211D97CB22EBA6AB4D1 /* Sources */,
-				F45A916B3C455BA5E08EABB92B48F8A3 /* Frameworks */,
-				EAA8EB740C64128852C6FDB9575E48DA /* Headers */,
+				07223BCB5CD914E43297489E56EB4F31 /* Sources */,
+				31D410D18D5A52105A7D963B9C5A1056 /* Frameworks */,
+				B21981595B7E10A0136C16195AB85C87 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "Pods-pedalaMI";
-			productName = "Pods-pedalaMI";
-			productReference = 0B32CCF6C4582B4F54E0A01CBBEF1D05 /* Pods_pedalaMI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		07825A077D903FAD9391C0DE79D14EF5 /* Pods-pedalaMIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4BEEA1C9ECEC104C11BB864FEF6DDD5F /* Build configuration list for PBXNativeTarget "Pods-pedalaMIUITests" */;
-			buildPhases = (
-				44BEDA04BC0FD0C0C1CB44F036FF77E4 /* Sources */,
-				D7D28F6C1235C227A6075CECD4D0BB24 /* Frameworks */,
-				1FA7AB2A8BA22EA6687255EE0E42ED81 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-pedalaMIUITests";
-			productName = "Pods-pedalaMIUITests";
-			productReference = 5EE66C235AF2C4A02B5F1D0BCA4EECA9 /* Pods_pedalaMIUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		1BA84416B19DF31967CCD7D02D962E49 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E151796BBCB376D96AD1C38DD0B21AC6 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				94E92B28A5AF3478251705B46FC8586F /* Sources */,
-				F3168C673007601935FDD8CF0A0C1C66 /* Frameworks */,
-				59A00F9704B6AFE0A9DC699A4B8B033F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
+				DF0A6C498FCD6E053545428CAA211DCE /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 04CA679B407DDB1F74FFBBADCB24579B /* Pods.framework */;
+			productReference = 635F504F83CC6797C37F0CC41127B9EA /* Pods.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E9838ED8AC0A06B9A89C2DBA0BE6BB18 /* Pods-pedalaMITests */ = {
+		9CF1DD5BE55B18854C5F124AB5B1347F /* Pods-pedalaMI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74D08FD5D8D5F356A688839F6C2CD19F /* Build configuration list for PBXNativeTarget "Pods-pedalaMITests" */;
+			buildConfigurationList = 6C6F7A02DC7FCAFEE637FC4B0E06008F /* Build configuration list for PBXNativeTarget "Pods-pedalaMI" */;
 			buildPhases = (
-				AFD0FBA673801A97F1E6033C5568F35E /* Sources */,
-				971EA15B3A88F11A891724B833E1C66E /* Frameworks */,
-				93D184335B6E91FDFCB1C086572CC350 /* Headers */,
+				4142852C889DEFD237E01E17A85B1252 /* Sources */,
+				4053E18E03575269BF2FD1A841D78396 /* Frameworks */,
+				6EF212FBC8B9B84DC2B577C28E2AEB28 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC4789BC27F08524A724DD2BC365DF5F /* PBXTargetDependency */,
+			);
+			name = "Pods-pedalaMI";
+			productName = "Pods-pedalaMI";
+			productReference = 7CF727F5E51AF1EABD41A70E053341F5 /* Pods_pedalaMI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E3D2F65269BE7E5A5F3881D39EE9B9D /* Pods-pedalaMIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 224C1995D87E6E6DBF0B1807C1FCBF79 /* Build configuration list for PBXNativeTarget "Pods-pedalaMIUITests" */;
+			buildPhases = (
+				C323228CB9020C22C5BABF4C5B592226 /* Sources */,
+				3D39EB944A9389F42AF6C8BAEF8E32C1 /* Frameworks */,
+				8790A11CEEEDA53473F2DCC3D82D138F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				985E1A13E452DEB90273029A9FD7A820 /* PBXTargetDependency */,
+			);
+			name = "Pods-pedalaMIUITests";
+			productName = "Pods-pedalaMIUITests";
+			productReference = 76FAAFB2C67E4CE05ADDBE695EA1F10E /* Pods_pedalaMIUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0EFF8A482C7B546B65BED36F07CC387 /* Pods-pedalaMITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E97EE3124BACF7A10DD6F061F8610B /* Build configuration list for PBXNativeTarget "Pods-pedalaMITests" */;
+			buildPhases = (
+				967790E4B96411AE839649D51068F5C6 /* Sources */,
+				99AF0B2D441B7376D3D81D7DBA8E7692 /* Frameworks */,
+				3730E663630220005653AE2519905435 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD5234074B00F52490506F05EA2258CB /* PBXTargetDependency */,
+			);
+			name = "Pods-pedalaMITests";
+			productName = "Pods-pedalaMITests";
+			productReference = AC97686FB05C404D49178B00D7B51056 /* Pods_pedalaMITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCF12103F00989F48992B7A4D65948BA /* SlideMenuControllerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77AAC544622A51B4F244EE84395C713E /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */;
+			buildPhases = (
+				B5B3FB256CCB3C4861B863DCC6847F33 /* Sources */,
+				5AACC8964EBB759891250CB789FCF2F7 /* Frameworks */,
+				03EF379DBCB7517BFE17AB7E2FD78FB7 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-pedalaMITests";
-			productName = "Pods-pedalaMITests";
-			productReference = 9F90E672D521648CF8A1239C924431A8 /* Pods_pedalaMITests.framework */;
+			name = SlideMenuControllerSwift;
+			productName = SlideMenuControllerSwift;
+			productReference = 39180C7F8746407A67C1034B3F4502E2 /* SlideMenuControllerSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -375,57 +487,95 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 45820E897024EC454C21F30EED495B06 /* Products */;
+			productRefGroup = 4B9C84F2E84D16A483794C444D8802AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1BA84416B19DF31967CCD7D02D962E49 /* Pods */,
-				020163737596CD0AD2071B227E6BF4CA /* Pods-pedalaMI */,
-				E9838ED8AC0A06B9A89C2DBA0BE6BB18 /* Pods-pedalaMITests */,
-				07825A077D903FAD9391C0DE79D14EF5 /* Pods-pedalaMIUITests */,
+				0C6E15085A6BFDDFD594599E22151C60 /* Pods */,
+				9CF1DD5BE55B18854C5F124AB5B1347F /* Pods-pedalaMI */,
+				A0EFF8A482C7B546B65BED36F07CC387 /* Pods-pedalaMITests */,
+				9E3D2F65269BE7E5A5F3881D39EE9B9D /* Pods-pedalaMIUITests */,
+				CCF12103F00989F48992B7A4D65948BA /* SlideMenuControllerSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		44BEDA04BC0FD0C0C1CB44F036FF77E4 /* Sources */ = {
+		07223BCB5CD914E43297489E56EB4F31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE3A669B070747D822EC07508F12C9E /* Pods-pedalaMIUITests-dummy.m in Sources */,
+				D96F8C00B8F83101E5D804679F1747B7 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94E92B28A5AF3478251705B46FC8586F /* Sources */ = {
+		4142852C889DEFD237E01E17A85B1252 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E615E9CA3F7C983E82758A5B9F64D21 /* Pods-dummy.m in Sources */,
+				51CBC2A200976F4C96A3F147BDA52967 /* Pods-pedalaMI-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFD0FBA673801A97F1E6033C5568F35E /* Sources */ = {
+		967790E4B96411AE839649D51068F5C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17AE5F997B513B6CDF4FA98DF869682 /* Pods-pedalaMITests-dummy.m in Sources */,
+				E2217EC371A26AC23A0D787A594E4EBD /* Pods-pedalaMITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ECFA5AB8F6B0E211D97CB22EBA6AB4D1 /* Sources */ = {
+		B5B3FB256CCB3C4861B863DCC6847F33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7004FC058AE4D6155A669F102C77402A /* Pods-pedalaMI-dummy.m in Sources */,
+				18544339361EB5C4CDA1E6145049C099 /* Info.plist in Sources */,
+				4C81B76CD617F5C62ADFADF5113C3985 /* SlideMenuController.swift in Sources */,
+				472AE524041DE05076670C90D3357C85 /* SlideMenuControllerSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C323228CB9020C22C5BABF4C5B592226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD55A7A0D4BE85D9EDAABB925DA3E09 /* Pods-pedalaMIUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		985E1A13E452DEB90273029A9FD7A820 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlideMenuControllerSwift;
+			target = CCF12103F00989F48992B7A4D65948BA /* SlideMenuControllerSwift */;
+			targetProxy = A7978C30339DE02E944E63F980E883EB /* PBXContainerItemProxy */;
+		};
+		BC4789BC27F08524A724DD2BC365DF5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlideMenuControllerSwift;
+			target = CCF12103F00989F48992B7A4D65948BA /* SlideMenuControllerSwift */;
+			targetProxy = EDCFA2B848AFDBE20E93823C2625E947 /* PBXContainerItemProxy */;
+		};
+		DF0A6C498FCD6E053545428CAA211DCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlideMenuControllerSwift;
+			target = CCF12103F00989F48992B7A4D65948BA /* SlideMenuControllerSwift */;
+			targetProxy = 4C7E07E04016C432E5D92211CD9D5095 /* PBXContainerItemProxy */;
+		};
+		FD5234074B00F52490506F05EA2258CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlideMenuControllerSwift;
+			target = CCF12103F00989F48992B7A4D65948BA /* SlideMenuControllerSwift */;
+			targetProxy = 0E106DD7500A08A2425EDC0EEB50445B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		201164D6C5E6EE565EAA388B93FE4662 /* Debug */ = {
+		057122A5BA24EE962ECA5AB0221DCF58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2C4D7C07A0152B11A2D6F9800F9A9FF /* Pods-pedalaMITests.debug.xcconfig */;
+			baseConfigurationReference = 3115C9D4111BD83EEDAB48E67DE98B92 /* SlideMenuControllerSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -434,58 +584,25 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMITests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_pedalaMITests;
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SlideMenuControllerSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		4AC5CDC64ADAED92F8EFA36C96084FFF /* Debug */ = {
+		0B10AF809450EB3E84E8FF3E21545393 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1380C0FBE52955078B13BF28891DAFE6 /* Pods-pedalaMIUITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMIUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMIUITests/Pods-pedalaMIUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_pedalaMIUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		553A5DD4680F8241747BEA80A9DAE462 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EA74CA41EC3A61C3E7FB64EB076EAEA /* Pods-pedalaMI.debug.xcconfig */;
+			baseConfigurationReference = E25A27A80D26426B8962BF7F66438DCC /* Pods-pedalaMI.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -500,7 +617,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMI/Pods-pedalaMI.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -511,11 +628,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		6F8F676C5965A4A92DED579040467A26 /* Release */ = {
+		4EFE67B9911B318C1E0530327FC5FBD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0ACB04762003FB5BE2C880A3D92A0775 /* Pods-pedalaMITests.release.xcconfig */;
+			baseConfigurationReference = 3115C9D4111BD83EEDAB48E67DE98B92 /* SlideMenuControllerSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -524,26 +641,24 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMITests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_pedalaMITests;
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SlideMenuControllerSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		7F12DAB1D018CE6999CBA6CA89735973 /* Release */ = {
+		72BC3A8A55C673B9FAC7E8B6F6D1297F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E9CBF3A14C56FA05E4C46431149D158 /* Pods.release.xcconfig */;
 			buildSettings = {
@@ -573,9 +688,9 @@
 			};
 			name = Release;
 		};
-		82EA34273E4F638CDDA0F030451B1ADC /* Release */ = {
+		A5E4E4601A10B479E9B2B6509C5765D3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E25A27A80D26426B8962BF7F66438DCC /* Pods-pedalaMI.release.xcconfig */;
+			baseConfigurationReference = 0ACB04762003FB5BE2C880A3D92A0775 /* Pods-pedalaMITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -584,17 +699,17 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMI/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMI/Pods-pedalaMI.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_pedalaMI;
+				PRODUCT_NAME = Pods_pedalaMITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -642,7 +757,38 @@
 			};
 			name = Debug;
 		};
-		BECEFE4077201B58D3232B03320E91B2 /* Debug */ = {
+		B387179D9124590C74F6ACF687C42C35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1380C0FBE52955078B13BF28891DAFE6 /* Pods-pedalaMIUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMIUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMIUITests/Pods-pedalaMIUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_pedalaMIUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7F1E77167C1222B987682D937CCDCFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27F0AC0B659B9D92279F9466B3811218 /* Pods.debug.xcconfig */;
 			buildSettings = {
@@ -666,13 +812,45 @@
 				PRODUCT_NAME = Pods;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E587EC462AB302B0955D8B1D2CA3219A /* Release */ = {
+		D02A27BD764C65117E0D2891E260D5F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA74CA41EC3A61C3E7FB64EB076EAEA /* Pods-pedalaMI.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMI/Pods-pedalaMI.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_pedalaMI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E89FEEEA9C65B60BC9655D8111B1FA13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA30FD32068B9534EB3F277FDB82D892 /* Pods-pedalaMIUITests.release.xcconfig */;
 			buildSettings = {
@@ -701,6 +879,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		E8A700985EDED42FFD14733A26BD40DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C4D7C07A0152B11A2D6F9800F9A9FF /* Pods-pedalaMITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_pedalaMITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -739,11 +948,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		020CFE01A53008F4FD4B03947F0E087B /* Build configuration list for PBXNativeTarget "Pods-pedalaMI" */ = {
+		0B51996B0461EFB6984940E532206CDA /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				553A5DD4680F8241747BEA80A9DAE462 /* Debug */,
-				82EA34273E4F638CDDA0F030451B1ADC /* Release */,
+				C7F1E77167C1222B987682D937CCDCFD /* Debug */,
+				72BC3A8A55C673B9FAC7E8B6F6D1297F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		224C1995D87E6E6DBF0B1807C1FCBF79 /* Build configuration list for PBXNativeTarget "Pods-pedalaMIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B387179D9124590C74F6ACF687C42C35 /* Debug */,
+				E89FEEEA9C65B60BC9655D8111B1FA13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -757,29 +975,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BEEA1C9ECEC104C11BB864FEF6DDD5F /* Build configuration list for PBXNativeTarget "Pods-pedalaMIUITests" */ = {
+		6C6F7A02DC7FCAFEE637FC4B0E06008F /* Build configuration list for PBXNativeTarget "Pods-pedalaMI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4AC5CDC64ADAED92F8EFA36C96084FFF /* Debug */,
-				E587EC462AB302B0955D8B1D2CA3219A /* Release */,
+				D02A27BD764C65117E0D2891E260D5F0 /* Debug */,
+				0B10AF809450EB3E84E8FF3E21545393 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74D08FD5D8D5F356A688839F6C2CD19F /* Build configuration list for PBXNativeTarget "Pods-pedalaMITests" */ = {
+		77AAC544622A51B4F244EE84395C713E /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				201164D6C5E6EE565EAA388B93FE4662 /* Debug */,
-				6F8F676C5965A4A92DED579040467A26 /* Release */,
+				4EFE67B9911B318C1E0530327FC5FBD3 /* Debug */,
+				057122A5BA24EE962ECA5AB0221DCF58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E151796BBCB376D96AD1C38DD0B21AC6 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		C7E97EE3124BACF7A10DD6F061F8610B /* Build configuration list for PBXNativeTarget "Pods-pedalaMITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BECEFE4077201B58D3232B03320E91B2 /* Debug */,
-				7F12DAB1D018CE6999CBA6CA89735973 /* Release */,
+				E8A700985EDED42FFD14733A26BD40DA /* Debug */,
+				A5E4E4601A10B479E9B2B6509C5765D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
