@@ -6,6 +6,8 @@
 //  Copyright © 2016 IvanoRotondo. All rights reserved.
 //
 
+//TODO: settings -> favorite default screen
+
 import UIKit
 import MapKit
 import Mapbox
@@ -32,7 +34,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //MARK: - views init
     override func viewDidLoad() {
         
-        mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/cilp4lb9y002fbim8rmsnt9rq")
+        mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/ciluylzjp00rrc7lu80unjtnr")
         
         currentView = "bikes"
         

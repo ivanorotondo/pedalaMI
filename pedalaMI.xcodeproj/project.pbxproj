@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		923B96FE1C9B64170076D13F /* bikeSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96EF1C9B64170076D13F /* bikeSelected.png */; };
+		923B96FF1C9B64170076D13F /* bikeUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F01C9B64170076D13F /* bikeUnselected.png */; };
+		923B97001C9B64170076D13F /* eBikeSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F11C9B64170076D13F /* eBikeSelected.png */; };
+		923B97011C9B64170076D13F /* eBikeUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F21C9B64170076D13F /* eBikeUnselected.png */; };
+		923B97021C9B64170076D13F /* menuBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F31C9B64170076D13F /* menuBike.png */; };
+		923B97031C9B64170076D13F /* menuEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F41C9B64170076D13F /* menuEBike.png */; };
+		923B97041C9B64170076D13F /* menuSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F51C9B64170076D13F /* menuSlot.png */; };
+		923B97051C9B64170076D13F /* pinBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F61C9B64170076D13F /* pinBike.png */; };
+		923B97061C9B64170076D13F /* pinEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F71C9B64170076D13F /* pinEBike.png */; };
+		923B97071C9B64170076D13F /* pinSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F81C9B64170076D13F /* pinSlot.png */; };
+		923B97081C9B64170076D13F /* refreshBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F91C9B64170076D13F /* refreshBike.png */; };
+		923B97091C9B64170076D13F /* refreshEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96FA1C9B64170076D13F /* refreshEBike.png */; };
+		923B970A1C9B64170076D13F /* refreshSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96FB1C9B64170076D13F /* refreshSlot.png */; };
+		923B970B1C9B64170076D13F /* slotSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96FC1C9B64170076D13F /* slotSelected.png */; };
+		923B970C1C9B64170076D13F /* slotUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96FD1C9B64170076D13F /* slotUnselected.png */; };
+		923B97101C9B66E10076D13F /* rectangleBike.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 923B970D1C9B66E00076D13F /* rectangleBike.jpg */; };
+		923B97111C9B66E10076D13F /* rectangleEBike.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 923B970E1C9B66E10076D13F /* rectangleEBike.jpg */; };
+		923B97121C9B66E10076D13F /* rectangleSlot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 923B970F1C9B66E10076D13F /* rectangleSlot.jpg */; };
 		92876C091C92FD5800BB6BDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C081C92FD5800BB6BDA /* AppDelegate.swift */; };
 		92876C0B1C92FD5800BB6BDA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C0A1C92FD5800BB6BDA /* MapViewController.swift */; };
 		92876C0E1C92FD5800BB6BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92876C0C1C92FD5800BB6BDA /* Main.storyboard */; };
@@ -17,12 +35,7 @@
 		92876C3B1C9300E300BB6BDA /* ServerCallsSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3A1C9300E300BB6BDA /* ServerCallsSDK.swift */; };
 		92876C3D1C93431B00BB6BDA /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3C1C93431B00BB6BDA /* Station.swift */; };
 		92876C401C93564200BB6BDA /* ParsingSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3F1C93564200BB6BDA /* ParsingSDK.swift */; };
-		92876C461C935F3300BB6BDA /* markerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92876C451C935F3300BB6BDA /* markerIcon.png */; };
-		92876C491C93644000BB6BDA /* markerIconMini.png in Resources */ = {isa = PBXBuildFile; fileRef = 92876C481C93644000BB6BDA /* markerIconMini.png */; };
-		92DBB4681C941FD0003BCD1A /* parkingBikeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92DBB4671C941FD0003BCD1A /* parkingBikeIcon.png */; };
-		92DBB46A1C943F7F003BCD1A /* refreshIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92DBB4691C943F7F003BCD1A /* refreshIcon.png */; };
 		92DBB46C1C9589CD003BCD1A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */; };
-		92DBB46E1C95D5E2003BCD1A /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92DBB46D1C95D5E2003BCD1A /* settingsIcon.png */; };
 		E3B3FDFFD0C466C215028BEF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E83B4EEE28A4BDFB4640EE0 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +60,24 @@
 		75DB3FC4BA415C8115EAD7CE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7729B498BEF82CE521E5CE90 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8E83B4EEE28A4BDFB4640EE0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		923B96EF1C9B64170076D13F /* bikeSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bikeSelected.png; path = "../iBici - Graphics/bikeSelected.png"; sourceTree = "<group>"; };
+		923B96F01C9B64170076D13F /* bikeUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bikeUnselected.png; path = "../iBici - Graphics/bikeUnselected.png"; sourceTree = "<group>"; };
+		923B96F11C9B64170076D13F /* eBikeSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eBikeSelected.png; path = "../iBici - Graphics/eBikeSelected.png"; sourceTree = "<group>"; };
+		923B96F21C9B64170076D13F /* eBikeUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eBikeUnselected.png; path = "../iBici - Graphics/eBikeUnselected.png"; sourceTree = "<group>"; };
+		923B96F31C9B64170076D13F /* menuBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuBike.png; path = "../iBici - Graphics/menuBike.png"; sourceTree = "<group>"; };
+		923B96F41C9B64170076D13F /* menuEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuEBike.png; path = "../iBici - Graphics/menuEBike.png"; sourceTree = "<group>"; };
+		923B96F51C9B64170076D13F /* menuSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuSlot.png; path = "../iBici - Graphics/menuSlot.png"; sourceTree = "<group>"; };
+		923B96F61C9B64170076D13F /* pinBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinBike.png; path = "../iBici - Graphics/pinBike.png"; sourceTree = "<group>"; };
+		923B96F71C9B64170076D13F /* pinEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinEBike.png; path = "../iBici - Graphics/pinEBike.png"; sourceTree = "<group>"; };
+		923B96F81C9B64170076D13F /* pinSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinSlot.png; path = "../iBici - Graphics/pinSlot.png"; sourceTree = "<group>"; };
+		923B96F91C9B64170076D13F /* refreshBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refreshBike.png; path = "../iBici - Graphics/refreshBike.png"; sourceTree = "<group>"; };
+		923B96FA1C9B64170076D13F /* refreshEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refreshEBike.png; path = "../iBici - Graphics/refreshEBike.png"; sourceTree = "<group>"; };
+		923B96FB1C9B64170076D13F /* refreshSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refreshSlot.png; path = "../iBici - Graphics/refreshSlot.png"; sourceTree = "<group>"; };
+		923B96FC1C9B64170076D13F /* slotSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slotSelected.png; path = "../iBici - Graphics/slotSelected.png"; sourceTree = "<group>"; };
+		923B96FD1C9B64170076D13F /* slotUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slotUnselected.png; path = "../iBici - Graphics/slotUnselected.png"; sourceTree = "<group>"; };
+		923B970D1C9B66E00076D13F /* rectangleBike.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rectangleBike.jpg; path = graphics/rectangleBike.jpg; sourceTree = "<group>"; };
+		923B970E1C9B66E10076D13F /* rectangleEBike.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rectangleEBike.jpg; path = graphics/rectangleEBike.jpg; sourceTree = "<group>"; };
+		923B970F1C9B66E10076D13F /* rectangleSlot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rectangleSlot.jpg; path = graphics/rectangleSlot.jpg; sourceTree = "<group>"; };
 		92876C051C92FD5800BB6BDA /* pedalaMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pedalaMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92876C081C92FD5800BB6BDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92876C0A1C92FD5800BB6BDA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -63,12 +94,7 @@
 		92876C3A1C9300E300BB6BDA /* ServerCallsSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCallsSDK.swift; sourceTree = "<group>"; };
 		92876C3C1C93431B00BB6BDA /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		92876C3F1C93564200BB6BDA /* ParsingSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsingSDK.swift; sourceTree = "<group>"; };
-		92876C451C935F3300BB6BDA /* markerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = markerIcon.png; path = graphics/markerIcon.png; sourceTree = "<group>"; };
-		92876C481C93644000BB6BDA /* markerIconMini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = markerIconMini.png; path = graphics/markerIconMini.png; sourceTree = "<group>"; };
-		92DBB4671C941FD0003BCD1A /* parkingBikeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = parkingBikeIcon.png; path = graphics/parkingBikeIcon.png; sourceTree = "<group>"; };
-		92DBB4691C943F7F003BCD1A /* refreshIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refreshIcon.png; path = graphics/refreshIcon.png; sourceTree = "<group>"; };
 		92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		92DBB46D1C95D5E2003BCD1A /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsIcon.png; path = graphics/settingsIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,11 +212,24 @@
 		92876C471C935F3500BB6BDA /* graphics */ = {
 			isa = PBXGroup;
 			children = (
-				92DBB46D1C95D5E2003BCD1A /* settingsIcon.png */,
-				92876C481C93644000BB6BDA /* markerIconMini.png */,
-				92876C451C935F3300BB6BDA /* markerIcon.png */,
-				92DBB4671C941FD0003BCD1A /* parkingBikeIcon.png */,
-				92DBB4691C943F7F003BCD1A /* refreshIcon.png */,
+				923B970D1C9B66E00076D13F /* rectangleBike.jpg */,
+				923B970E1C9B66E10076D13F /* rectangleEBike.jpg */,
+				923B970F1C9B66E10076D13F /* rectangleSlot.jpg */,
+				923B96EF1C9B64170076D13F /* bikeSelected.png */,
+				923B96F01C9B64170076D13F /* bikeUnselected.png */,
+				923B96F11C9B64170076D13F /* eBikeSelected.png */,
+				923B96F21C9B64170076D13F /* eBikeUnselected.png */,
+				923B96F31C9B64170076D13F /* menuBike.png */,
+				923B96F41C9B64170076D13F /* menuEBike.png */,
+				923B96F51C9B64170076D13F /* menuSlot.png */,
+				923B96F61C9B64170076D13F /* pinBike.png */,
+				923B96F71C9B64170076D13F /* pinEBike.png */,
+				923B96F81C9B64170076D13F /* pinSlot.png */,
+				923B96F91C9B64170076D13F /* refreshBike.png */,
+				923B96FA1C9B64170076D13F /* refreshEBike.png */,
+				923B96FB1C9B64170076D13F /* refreshSlot.png */,
+				923B96FC1C9B64170076D13F /* slotSelected.png */,
+				923B96FD1C9B64170076D13F /* slotUnselected.png */,
 			);
 			name = graphics;
 			sourceTree = "<group>";
@@ -302,14 +341,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92876C491C93644000BB6BDA /* markerIconMini.png in Resources */,
+				923B97051C9B64170076D13F /* pinBike.png in Resources */,
+				923B97001C9B64170076D13F /* eBikeSelected.png in Resources */,
+				923B97121C9B66E10076D13F /* rectangleSlot.jpg in Resources */,
 				92876C131C92FD5800BB6BDA /* LaunchScreen.storyboard in Resources */,
+				923B970C1C9B64170076D13F /* slotUnselected.png in Resources */,
 				92876C101C92FD5800BB6BDA /* Assets.xcassets in Resources */,
+				923B97041C9B64170076D13F /* menuSlot.png in Resources */,
+				923B970B1C9B64170076D13F /* slotSelected.png in Resources */,
+				923B97101C9B66E10076D13F /* rectangleBike.jpg in Resources */,
+				923B97091C9B64170076D13F /* refreshEBike.png in Resources */,
 				92876C0E1C92FD5800BB6BDA /* Main.storyboard in Resources */,
-				92DBB4681C941FD0003BCD1A /* parkingBikeIcon.png in Resources */,
-				92DBB46E1C95D5E2003BCD1A /* settingsIcon.png in Resources */,
-				92876C461C935F3300BB6BDA /* markerIcon.png in Resources */,
-				92DBB46A1C943F7F003BCD1A /* refreshIcon.png in Resources */,
+				923B970A1C9B64170076D13F /* refreshSlot.png in Resources */,
+				923B97111C9B66E10076D13F /* rectangleEBike.jpg in Resources */,
+				923B97071C9B64170076D13F /* pinSlot.png in Resources */,
+				923B97061C9B64170076D13F /* pinEBike.png in Resources */,
+				923B97031C9B64170076D13F /* menuEBike.png in Resources */,
+				923B97011C9B64170076D13F /* eBikeUnselected.png in Resources */,
+				923B97021C9B64170076D13F /* menuBike.png in Resources */,
+				923B96FF1C9B64170076D13F /* bikeUnselected.png in Resources */,
+				923B96FE1C9B64170076D13F /* bikeSelected.png in Resources */,
+				923B97081C9B64170076D13F /* refreshBike.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

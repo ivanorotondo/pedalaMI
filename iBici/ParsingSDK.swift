@@ -65,7 +65,7 @@ class ParsingSDK {
             thisStation.availableElectricBikesNumber = Int((discardedString.substringWithRange(NSRange(location: 0, length: discardedString.rangeOfString("\\").location)) as NSString).intValue)
             
         //available slots
-            if inputSubString.rangeOfString(startingPointString).location < 999999999999 {
+            if inputSubString.rangeOfString(startingPointString).location < 99999999 {
                 
                 (inputSubString, discardedString) = setTheNewStartingPoint(startingPointString, inputString: inputSubString)
             } else {
