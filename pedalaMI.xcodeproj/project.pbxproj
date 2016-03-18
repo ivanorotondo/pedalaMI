@@ -14,9 +14,6 @@
 		923B97021C9B64170076D13F /* menuBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F31C9B64170076D13F /* menuBike.png */; };
 		923B97031C9B64170076D13F /* menuEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F41C9B64170076D13F /* menuEBike.png */; };
 		923B97041C9B64170076D13F /* menuSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F51C9B64170076D13F /* menuSlot.png */; };
-		923B97051C9B64170076D13F /* pinBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F61C9B64170076D13F /* pinBike.png */; };
-		923B97061C9B64170076D13F /* pinEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F71C9B64170076D13F /* pinEBike.png */; };
-		923B97071C9B64170076D13F /* pinSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F81C9B64170076D13F /* pinSlot.png */; };
 		923B97081C9B64170076D13F /* refreshBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96F91C9B64170076D13F /* refreshBike.png */; };
 		923B97091C9B64170076D13F /* refreshEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96FA1C9B64170076D13F /* refreshEBike.png */; };
 		923B970A1C9B64170076D13F /* refreshSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B96FB1C9B64170076D13F /* refreshSlot.png */; };
@@ -25,6 +22,9 @@
 		923B97101C9B66E10076D13F /* rectangleBike.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 923B970D1C9B66E00076D13F /* rectangleBike.jpg */; };
 		923B97111C9B66E10076D13F /* rectangleEBike.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 923B970E1C9B66E10076D13F /* rectangleEBike.jpg */; };
 		923B97121C9B66E10076D13F /* rectangleSlot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 923B970F1C9B66E10076D13F /* rectangleSlot.jpg */; };
+		923B97161C9C24D90076D13F /* pinBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B97131C9C24D90076D13F /* pinBike.png */; };
+		923B97171C9C24D90076D13F /* pinEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B97141C9C24D90076D13F /* pinEBike.png */; };
+		923B97181C9C24D90076D13F /* pinSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B97151C9C24D90076D13F /* pinSlot.png */; };
 		92876C091C92FD5800BB6BDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C081C92FD5800BB6BDA /* AppDelegate.swift */; };
 		92876C0B1C92FD5800BB6BDA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C0A1C92FD5800BB6BDA /* MapViewController.swift */; };
 		92876C0E1C92FD5800BB6BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92876C0C1C92FD5800BB6BDA /* Main.storyboard */; };
@@ -67,9 +67,6 @@
 		923B96F31C9B64170076D13F /* menuBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuBike.png; path = "../iBici - Graphics/menuBike.png"; sourceTree = "<group>"; };
 		923B96F41C9B64170076D13F /* menuEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuEBike.png; path = "../iBici - Graphics/menuEBike.png"; sourceTree = "<group>"; };
 		923B96F51C9B64170076D13F /* menuSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuSlot.png; path = "../iBici - Graphics/menuSlot.png"; sourceTree = "<group>"; };
-		923B96F61C9B64170076D13F /* pinBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinBike.png; path = "../iBici - Graphics/pinBike.png"; sourceTree = "<group>"; };
-		923B96F71C9B64170076D13F /* pinEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinEBike.png; path = "../iBici - Graphics/pinEBike.png"; sourceTree = "<group>"; };
-		923B96F81C9B64170076D13F /* pinSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinSlot.png; path = "../iBici - Graphics/pinSlot.png"; sourceTree = "<group>"; };
 		923B96F91C9B64170076D13F /* refreshBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refreshBike.png; path = "../iBici - Graphics/refreshBike.png"; sourceTree = "<group>"; };
 		923B96FA1C9B64170076D13F /* refreshEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refreshEBike.png; path = "../iBici - Graphics/refreshEBike.png"; sourceTree = "<group>"; };
 		923B96FB1C9B64170076D13F /* refreshSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refreshSlot.png; path = "../iBici - Graphics/refreshSlot.png"; sourceTree = "<group>"; };
@@ -78,6 +75,9 @@
 		923B970D1C9B66E00076D13F /* rectangleBike.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rectangleBike.jpg; path = graphics/rectangleBike.jpg; sourceTree = "<group>"; };
 		923B970E1C9B66E10076D13F /* rectangleEBike.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rectangleEBike.jpg; path = graphics/rectangleEBike.jpg; sourceTree = "<group>"; };
 		923B970F1C9B66E10076D13F /* rectangleSlot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rectangleSlot.jpg; path = graphics/rectangleSlot.jpg; sourceTree = "<group>"; };
+		923B97131C9C24D90076D13F /* pinBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinBike.png; path = graphics/pinBike.png; sourceTree = "<group>"; };
+		923B97141C9C24D90076D13F /* pinEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinEBike.png; path = graphics/pinEBike.png; sourceTree = "<group>"; };
+		923B97151C9C24D90076D13F /* pinSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinSlot.png; path = graphics/pinSlot.png; sourceTree = "<group>"; };
 		92876C051C92FD5800BB6BDA /* pedalaMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pedalaMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92876C081C92FD5800BB6BDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92876C0A1C92FD5800BB6BDA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -222,9 +222,9 @@
 				923B96F31C9B64170076D13F /* menuBike.png */,
 				923B96F41C9B64170076D13F /* menuEBike.png */,
 				923B96F51C9B64170076D13F /* menuSlot.png */,
-				923B96F61C9B64170076D13F /* pinBike.png */,
-				923B96F71C9B64170076D13F /* pinEBike.png */,
-				923B96F81C9B64170076D13F /* pinSlot.png */,
+				923B97131C9C24D90076D13F /* pinBike.png */,
+				923B97141C9C24D90076D13F /* pinEBike.png */,
+				923B97151C9C24D90076D13F /* pinSlot.png */,
 				923B96F91C9B64170076D13F /* refreshBike.png */,
 				923B96FA1C9B64170076D13F /* refreshEBike.png */,
 				923B96FB1C9B64170076D13F /* refreshSlot.png */,
@@ -341,21 +341,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				923B97051C9B64170076D13F /* pinBike.png in Resources */,
 				923B97001C9B64170076D13F /* eBikeSelected.png in Resources */,
 				923B97121C9B66E10076D13F /* rectangleSlot.jpg in Resources */,
 				92876C131C92FD5800BB6BDA /* LaunchScreen.storyboard in Resources */,
 				923B970C1C9B64170076D13F /* slotUnselected.png in Resources */,
 				92876C101C92FD5800BB6BDA /* Assets.xcassets in Resources */,
 				923B97041C9B64170076D13F /* menuSlot.png in Resources */,
+				923B97181C9C24D90076D13F /* pinSlot.png in Resources */,
 				923B970B1C9B64170076D13F /* slotSelected.png in Resources */,
 				923B97101C9B66E10076D13F /* rectangleBike.jpg in Resources */,
 				923B97091C9B64170076D13F /* refreshEBike.png in Resources */,
+				923B97161C9C24D90076D13F /* pinBike.png in Resources */,
 				92876C0E1C92FD5800BB6BDA /* Main.storyboard in Resources */,
+				923B97171C9C24D90076D13F /* pinEBike.png in Resources */,
 				923B970A1C9B64170076D13F /* refreshSlot.png in Resources */,
 				923B97111C9B66E10076D13F /* rectangleEBike.jpg in Resources */,
-				923B97071C9B64170076D13F /* pinSlot.png in Resources */,
-				923B97061C9B64170076D13F /* pinEBike.png in Resources */,
 				923B97031C9B64170076D13F /* menuEBike.png in Resources */,
 				923B97011C9B64170076D13F /* eBikeUnselected.png in Resources */,
 				923B97021C9B64170076D13F /* menuBike.png in Resources */,
