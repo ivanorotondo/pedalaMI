@@ -36,6 +36,7 @@
 		92876C3D1C93431B00BB6BDA /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3C1C93431B00BB6BDA /* Station.swift */; };
 		92876C401C93564200BB6BDA /* ParsingSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3F1C93564200BB6BDA /* ParsingSDK.swift */; };
 		92AC2FE81C9D67BC0031223D /* bike.gif in Resources */ = {isa = PBXBuildFile; fileRef = 92AC2FE71C9D67BC0031223D /* bike.gif */; };
+		92AC2FEA1C9D912A0031223D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC2FE91C9D912A0031223D /* Utilities.swift */; };
 		92DBB46C1C9589CD003BCD1A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */; };
 		E3B3FDFFD0C466C215028BEF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E83B4EEE28A4BDFB4640EE0 /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +97,7 @@
 		92876C3C1C93431B00BB6BDA /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		92876C3F1C93564200BB6BDA /* ParsingSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsingSDK.swift; sourceTree = "<group>"; };
 		92AC2FE71C9D67BC0031223D /* bike.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = bike.gif; path = ../../Downloads/bike.gif; sourceTree = "<group>"; };
+		92AC2FE91C9D912A0031223D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +172,7 @@
 			children = (
 				92876C081C92FD5800BB6BDA /* AppDelegate.swift */,
 				92876C0A1C92FD5800BB6BDA /* MapViewController.swift */,
+				92AC2FE91C9D912A0031223D /* Utilities.swift */,
 				92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */,
 				92876C3A1C9300E300BB6BDA /* ServerCallsSDK.swift */,
 				92876C3F1C93564200BB6BDA /* ParsingSDK.swift */,
@@ -441,6 +444,7 @@
 			files = (
 				92876C0B1C92FD5800BB6BDA /* MapViewController.swift in Sources */,
 				92DBB46C1C9589CD003BCD1A /* MenuViewController.swift in Sources */,
+				92AC2FEA1C9D912A0031223D /* Utilities.swift in Sources */,
 				92876C091C92FD5800BB6BDA /* AppDelegate.swift in Sources */,
 				92876C401C93564200BB6BDA /* ParsingSDK.swift in Sources */,
 				92876C3D1C93431B00BB6BDA /* Station.swift in Sources */,

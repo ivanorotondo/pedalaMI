@@ -15,7 +15,6 @@ import Gifu
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
 
-    @IBOutlet var loadingAnimationImageView: AnimatableImageView!
 //MARK: - vars init
     let locationManager = CLLocationManager()
 
@@ -66,7 +65,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
-        loadingAnimationImageView.animateWithImage(named: "bike.gif")
+   //     Utilities.loadingBarDisplayer("",indicator:true, view: coverView)
+
     }
     
     func addTapRecognizerToButtons(){
@@ -292,33 +292,57 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func addBikesMarkers(sender: UITapGestureRecognizer) {
         if currentView != "bikes" {
-            updateTabBarItems()
-            mapView.removeAnnotations(annotationsArray)
-            currentView = "bikes"
-            addMarkersToTheMap("bikes")
+            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+    
+                Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    
+                    self.currentView = "bikes"
+                    self.updateTabBarItems()
+                    self.mapView.removeAnnotations(self.annotationsArray)
+                    self.addMarkersToTheMap("bikes")
+                })
+            })
+
         }
 
     }
     
     func addElectricBikesMarkers(sender: UITapGestureRecognizer) {
         if currentView != "electricBikes" {
-            mapView.removeAnnotations(annotationsArray)
-            currentView = "electricBikes"
-            updateTabBarItems()
-            addMarkersToTheMap("electricBikes")
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                
+                Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    
+                    self.currentView = "electricBikes"
+                    self.updateTabBarItems()
+                    self.mapView.removeAnnotations(self.annotationsArray)
+                    self.addMarkersToTheMap("electricBikes")
+                })
+            })
         }
     }
     
     func addSlotsMarkers(sender: UITapGestureRecognizer) {
         if currentView != "slots" {
-            mapView.removeAnnotations(annotationsArray)
-            currentView = "slots"
-            updateTabBarItems()
-            addMarkersToTheMap("slots")
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                
+                Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    
+                    self.currentView = "slots"
+                    self.updateTabBarItems()
+                    self.mapView.removeAnnotations(self.annotationsArray)
+                    self.addMarkersToTheMap("slots")
+                })
+            })
         }
     }
     
     func refreshMarkers(sender: UITapGestureRecognizer) {
+        Utilities.loadingBarDisplayer("",indicator:true, view: view)
         mapView.removeAnnotations(annotationsArray)
         addMarkersToTheMap(currentView)
     }
@@ -332,7 +356,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         annotationsArray = []
         var availabilityNumber = ""
         var subtitle = ""
-        
+
         for station in self.stationsArray{
             
             switch bikesType {
@@ -359,7 +383,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 self.mapView.addAnnotation(marker)
                 annotationsArray.append(marker)
             
-        }
+        } //end for
+//        
+        Utilities.transparentFrame.removeFromSuperview()
+        Utilities.loadingAnimationImageView.removeFromSuperview()
+        Utilities.messageFrame.removeFromSuperview()
+        
     }
     
     
