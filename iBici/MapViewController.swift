@@ -58,15 +58,20 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         currentView = startingView
         
-        addTapRecognizerToButtons()
-        updateTabBarItems()
-        downloadAndShowStations()
-        
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            
+            Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                
+                self.addTapRecognizerToButtons()
+                self.updateTabBarItems()
+                self.downloadAndShowStations()
+            })
+        })
+
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
-   //     Utilities.loadingBarDisplayer("",indicator:true, view: coverView)
-
     }
     
     func addTapRecognizerToButtons(){
@@ -177,8 +182,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         var annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier("\(currentView) \(text)")
         
-        print("\(text)")
-        print("\(annotationImage)")
+//        print("\(text)")
+//        print("\(annotationImage)")
         
         if annotationImage == nil {
         
@@ -275,6 +280,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //            mapView.settings.myLocationButton = true
         }
     }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if manager.location?.horizontalAccuracy < 200 {
+            
+            mapView.setCenterCoordinate((manager.location?.coordinate)!, zoomLevel: 15, animated: false)
+        }
+    }
 
 //stop updating location
     
@@ -286,8 +298,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //            locationManager.stopUpdatingLocation()
 //        }
 //    }
-    
-    
     
     
     func addBikesMarkers(sender: UITapGestureRecognizer) {
@@ -336,6 +346,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                     self.updateTabBarItems()
                     self.mapView.removeAnnotations(self.annotationsArray)
                     self.addMarkersToTheMap("slots")
+                    
                 })
             })
         }
