@@ -24,6 +24,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var annotationsArray = [MGLAnnotation]()
     var currentView = ""
     var startingView = "bikes"
+    var markersRemovedBecauseOfZooming = false
+    var locationUserReached = false
     
 //MARK: outlet init
     @IBOutlet var mapView: MGLMapView!
@@ -237,6 +239,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //        
 //    }
     
+    func mapViewRegionIsChanging(mapView: MGLMapView) {
+        if self.mapView.zoomLevel < 12 && markersRemovedBecauseOfZooming == false {
+            markersRemovedBecauseOfZooming = true
+            mapView.removeAnnotations(annotationsArray)
+        } else if self.mapView.zoomLevel > 12 && markersRemovedBecauseOfZooming == true{
+            markersRemovedBecauseOfZooming = false
+            mapView.addAnnotations(annotationsArray)
+        }
+    }
+    
     func mapView(mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         // Always try to show a callout when an annotation is tapped.
         return true
@@ -282,9 +294,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if manager.location?.horizontalAccuracy < 200 {
+        if manager.location?.horizontalAccuracy < 200 && locationUserReached == false{
             
             mapView.setCenterCoordinate((manager.location?.coordinate)!, zoomLevel: 15, animated: false)
+            locationUserReached = true
         }
     }
 
@@ -303,17 +316,22 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     func addBikesMarkers(sender: UITapGestureRecognizer) {
         if currentView != "bikes" {
             
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-    
-                Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+            self.currentView = "bikes"
+            self.updateTabBarItems()
+            
+            if markersRemovedBecauseOfZooming == false {
+
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
+    
+                    Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     
-                    self.currentView = "bikes"
-                    self.updateTabBarItems()
-                    self.mapView.removeAnnotations(self.annotationsArray)
-                    self.addMarkersToTheMap("bikes")
+
+                        self.mapView.removeAnnotations(self.annotationsArray)
+                        self.addMarkersToTheMap("bikes")
+                    })
                 })
-            })
+            }
 
         }
 
@@ -321,34 +339,43 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func addElectricBikesMarkers(sender: UITapGestureRecognizer) {
         if currentView != "electricBikes" {
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                
-                Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+            
+            self.currentView = "electricBikes"
+            self.updateTabBarItems()
+
+            if markersRemovedBecauseOfZooming == false {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                
+                    Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     
-                    self.currentView = "electricBikes"
-                    self.updateTabBarItems()
-                    self.mapView.removeAnnotations(self.annotationsArray)
-                    self.addMarkersToTheMap("electricBikes")
+                        self.mapView.removeAnnotations(self.annotationsArray)
+                        self.addMarkersToTheMap("electricBikes")
+                    })
                 })
-            })
+            }
         }
     }
     
     func addSlotsMarkers(sender: UITapGestureRecognizer) {
         if currentView != "slots" {
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                
-                Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+            
+            self.currentView = "slots"
+            self.updateTabBarItems()
+            
+            if markersRemovedBecauseOfZooming == false {
+
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     
-                    self.currentView = "slots"
-                    self.updateTabBarItems()
-                    self.mapView.removeAnnotations(self.annotationsArray)
-                    self.addMarkersToTheMap("slots")
-                    
+                    Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        
+                        self.mapView.removeAnnotations(self.annotationsArray)
+                        self.addMarkersToTheMap("slots")
+                        
+                    })
                 })
-            })
+            }
         }
     }
     
@@ -359,8 +386,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func showMenu(sender: UITapGestureRecognizer) {
-        self.slideMenuController()?.openRight()
+        self.slideMenuController()?.openLeft()
     }
+    
     
     func addMarkersToTheMap(bikesType: String){
         
