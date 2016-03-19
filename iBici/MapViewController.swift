@@ -11,9 +11,11 @@
 import UIKit
 import MapKit
 import Mapbox
+import Gifu
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
 
+    @IBOutlet var loadingAnimationImageView: AnimatableImageView!
 //MARK: - vars init
     let locationManager = CLLocationManager()
 
@@ -40,9 +42,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var eBikesItemView: UIView!
     @IBOutlet var bikesItemView: UIView!
     @IBOutlet var slotsItemView: UIView!
+
+//MARK: pin text variables
+    let textColor : UIColor = UIColor.whiteColor()
+    let textFont : UIFont = UIFont(name: "Helvetica Bold", size: 15)!
+    var pinTextFontAttributes = NSDictionary()
     
 //MARK: - views init
     override func viewDidLoad() {
+        
+        pinTextFontAttributes = [NSFontAttributeName: textFont,
+            NSForegroundColorAttributeName: textColor,
+        ]
         
         mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/ciluylzjp00rrc7lu80unjtnr")
         
@@ -54,6 +65,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        
+        loadingAnimationImageView.animateWithImage(named: "bike.gif")
     }
     
     func addTapRecognizerToButtons(){
@@ -150,82 +163,71 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func mapView(mapView: MGLMapView, imageForAnnotation annotation: MGLAnnotation) -> MGLAnnotationImage? {
-
         
-      //      var annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier(currentView)
+        
+        var text = NSString(string: " ")
+        
+//extract pin numbers
+        if annotation.subtitle != nil{
+            var subtitle = (annotation.subtitle! as! String?)
+            let numberIndex = (subtitle?.startIndex.distanceTo((subtitle?.characters.indexOf(":"))!))! + 2
+            let subtitleNSString = NSString(string: "\(subtitle!)")
+            text = subtitleNSString.substringWithRange(NSRange(location: numberIndex, length: (subtitle?.characters.count)! - numberIndex))
+        }
+        
+        var annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier("\(currentView) \(text)")
+        
+        print("\(text)")
+        print("\(annotationImage)")
+        
+        if annotationImage == nil {
+        
             var image = UIImage(named: "pinBike")!
-
+            
             switch currentView {
-                case "bikes":
-       //             annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier(currentView)
-        //            if annotationImage == nil {
-                        image = UIImage(named: "pinBike")!
-        //            }
-                
-                case "electricBikes":
-         //           annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier(currentView)
-       //             if annotationImage == nil {
-                    image = UIImage(named: "pinEBike")!
-         //       }
-                case "slots":
-         //           annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier(currentView)
-         //           if annotationImage == nil {
-                    image = UIImage(named: "pinSlot")!
-         //       }
-                default:
-        //            annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier(currentView)
-         //           if annotationImage == nil {
-                    image = UIImage(named: "pinBike")!
-        //            }
+            case "bikes":
+                image = UIImage(named: "pinBike")!
+            case "electricBikes":
+                image = UIImage(named: "pinEBike")!
+            case "slots":
+                image = UIImage(named: "pinSlot")!
+            default:
+                image = UIImage(named: "pinBike")!
             }
-        
-            var text = NSString(string: " ")
-
-            if annotation.subtitle != nil{
-                var subtitle = (annotation.subtitle! as! String?)
-                let numberIndex = (subtitle?.startIndex.distanceTo((subtitle?.characters.indexOf(":"))!))! + 2
-                let subtitleNSString = NSString(string: "\(subtitle!)")
-                text = subtitleNSString.substringWithRange(NSRange(location: numberIndex, length: (subtitle?.characters.count)! - numberIndex))
-            }
-        
-            let textColor: UIColor = UIColor.whiteColor()
-            let textFont: UIFont = UIFont(name: "Helvetica Bold", size: 15)!
-            let textFontAttributes = [
-                NSFontAttributeName: textFont,
-                NSForegroundColorAttributeName: textColor,
-            ]
-        
+            
+            
+            //set up the pin image
             let size = CGSize(width: 25, height: 25)
             UIGraphicsBeginImageContext(size)
             image.drawInRect(CGRectMake(0, 0, size.width, size.height))
-        
+            
             var rect: CGRect = CGRectMake(8.5, 4, size.width, size.width)
-
-        print("\(text)")
+            
             if text.length == 1 {
                 rect = CGRectMake(8.5, 4, size.width, size.width)
             }
             if text.length == 2 {
                 rect = CGRectMake(4.5, 4, size.width, size.width)
             }
-        
-            text.drawInRect(rect, withAttributes: textFontAttributes)
+            
+            text.drawInRect(rect, withAttributes: pinTextFontAttributes as? [String : AnyObject])
             let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             
-            var annotationImage = MGLAnnotationImage(image: resizedImage, reuseIdentifier: "\(currentView) \(text)")
+            annotationImage = MGLAnnotationImage(image: resizedImage, reuseIdentifier: "\(currentView) \(text)")
+        }
         
         return annotationImage
     }
+    
 
-//TODO:
 //    func mapView(mapView: MGLMapView, regionDidChangeAnimated animated: Bool){
 //        
 //        print ("\(self.mapView.zoomLevel)")
-//        if self.mapView.zoomLevel < 12.5 {
+//        if self.mapView.zoomLevel < 13 {
 //            mapView.removeAnnotations(annotationsArray)
 //        } else {
-//            //add previous annotations
+//            mapView.addAnnotations(annotationsArray)
 //        }
 //        
 //    }
@@ -290,9 +292,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func addBikesMarkers(sender: UITapGestureRecognizer) {
         if currentView != "bikes" {
+            updateTabBarItems()
             mapView.removeAnnotations(annotationsArray)
             currentView = "bikes"
-            updateTabBarItems()
             addMarkersToTheMap("bikes")
         }
 
@@ -327,6 +329,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func addMarkersToTheMap(bikesType: String){
         
+        annotationsArray = []
         var availabilityNumber = ""
         var subtitle = ""
         
@@ -343,7 +346,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                     subtitle = "Parcheggi disponibili:"
                     availabilityNumber = "\((station as? Station)!.availableSlotsNumber)"
                 default:
-                    print("\n\nerror\n\n")
+                    subtitle = "Biciclette disponibili:"
+                    availabilityNumber = "\((station as? Station)!.availableBikesNumber)"
             }
             
                 var marker = MGLPointAnnotation()

@@ -35,6 +35,7 @@
 		92876C3B1C9300E300BB6BDA /* ServerCallsSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3A1C9300E300BB6BDA /* ServerCallsSDK.swift */; };
 		92876C3D1C93431B00BB6BDA /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3C1C93431B00BB6BDA /* Station.swift */; };
 		92876C401C93564200BB6BDA /* ParsingSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3F1C93564200BB6BDA /* ParsingSDK.swift */; };
+		92AC2FE81C9D67BC0031223D /* bike.gif in Resources */ = {isa = PBXBuildFile; fileRef = 92AC2FE71C9D67BC0031223D /* bike.gif */; };
 		92DBB46C1C9589CD003BCD1A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */; };
 		E3B3FDFFD0C466C215028BEF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E83B4EEE28A4BDFB4640EE0 /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -94,6 +95,7 @@
 		92876C3A1C9300E300BB6BDA /* ServerCallsSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCallsSDK.swift; sourceTree = "<group>"; };
 		92876C3C1C93431B00BB6BDA /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		92876C3F1C93564200BB6BDA /* ParsingSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsingSDK.swift; sourceTree = "<group>"; };
+		92AC2FE71C9D67BC0031223D /* bike.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = bike.gif; path = ../../Downloads/bike.gif; sourceTree = "<group>"; };
 		92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -212,6 +214,7 @@
 		92876C471C935F3500BB6BDA /* graphics */ = {
 			isa = PBXGroup;
 			children = (
+				92AC2FE71C9D67BC0031223D /* bike.gif */,
 				923B970D1C9B66E00076D13F /* rectangleBike.jpg */,
 				923B970E1C9B66E10076D13F /* rectangleEBike.jpg */,
 				923B970F1C9B66E10076D13F /* rectangleSlot.jpg */,
@@ -305,6 +308,7 @@
 				TargetAttributes = {
 					92876C041C92FD5800BB6BDA = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = VSP3728FY3;
 					};
 					92876C181C92FD5800BB6BDA = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -348,6 +352,7 @@
 				92876C101C92FD5800BB6BDA /* Assets.xcassets in Resources */,
 				923B97041C9B64170076D13F /* menuSlot.png in Resources */,
 				923B97181C9C24D90076D13F /* pinSlot.png in Resources */,
+				92AC2FE81C9D67BC0031223D /* bike.gif in Resources */,
 				923B970B1C9B64170076D13F /* slotSelected.png in Resources */,
 				923B97101C9B66E10076D13F /* rectangleBike.jpg in Resources */,
 				923B97091C9B64170076D13F /* refreshEBike.png in Resources */,
@@ -580,6 +585,7 @@
 			baseConfigurationReference = 75DB3FC4BA415C8115EAD7CE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iBici/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IvanoRotondo.pedalaMI;
@@ -592,6 +598,7 @@
 			baseConfigurationReference = 7729B498BEF82CE521E5CE90 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iBici/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IvanoRotondo.pedalaMI;

@@ -35,15 +35,24 @@
                                             <constraint firstAttribute="height" constant="38" id="gKZ-ze-9ku"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="99F-53-fUH" customClass="AnimatableImageView" customModule="Gifu">
+                                        <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="K2X-h4-4Bk"/>
+                                            <constraint firstAttribute="height" constant="128" id="egz-bw-2nw"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="b6k-db-ebp" secondAttribute="trailing" constant="14" id="3eP-5e-aXT"/>
+                                    <constraint firstItem="99F-53-fUH" firstAttribute="centerY" secondItem="WOn-z3-iKX" secondAttribute="centerY" id="Fvl-IZ-zan"/>
                                     <constraint firstAttribute="trailing" secondItem="b6k-db-ebp" secondAttribute="trailing" constant="20" id="Mhl-m2-PGq"/>
                                     <constraint firstItem="WhU-mr-zNO" firstAttribute="leading" secondItem="WOn-z3-iKX" secondAttribute="leading" constant="14" id="ct3-zt-wSe"/>
                                     <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="24" id="da3-6K-xy6"/>
                                     <constraint firstItem="WhU-mr-zNO" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="24" id="xOK-CN-hoN"/>
                                     <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="24" id="yV3-4Z-uCs"/>
+                                    <constraint firstItem="99F-53-fUH" firstAttribute="centerX" secondItem="WOn-z3-iKX" secondAttribute="centerX" id="yag-pj-HHm"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showsUserLocation" value="YES"/>
@@ -231,6 +240,7 @@
                         <outlet property="eBikesButton" destination="k3P-Oj-feM" id="2qy-9G-eRh"/>
                         <outlet property="eBikesItemBackground" destination="5Nn-3b-dGD" id="ofA-ih-njl"/>
                         <outlet property="eBikesItemView" destination="5GG-HJ-l3Y" id="S42-Zd-Wcx"/>
+                        <outlet property="loadingAnimationImageView" destination="99F-53-fUH" id="Cd4-B2-LM8"/>
                         <outlet property="mapView" destination="WOn-z3-iKX" id="cQc-3I-WwN"/>
                         <outlet property="refreshButton" destination="b6k-db-ebp" id="wGM-zE-WPc"/>
                         <outlet property="settingsButton" destination="WhU-mr-zNO" id="Exp-vv-gCg"/>

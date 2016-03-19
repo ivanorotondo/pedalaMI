@@ -5,6 +5,8 @@
 
 pod 'Mapbox-iOS-SDK', '~> 3.1.2'
 pod 'SlideMenuControllerSwift'
+pod 'Gifu'
+
 target ‘pedalaMI’ do
 
 end
