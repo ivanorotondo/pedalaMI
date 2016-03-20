@@ -29,7 +29,7 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refreshBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="b6k-db-ebp">
-                                        <rect key="frame" x="542" y="24" width="38" height="38"/>
+                                        <rect key="frame" x="16" y="78" width="38" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="38" id="8WA-Ms-OQu"/>
                                             <constraint firstAttribute="height" constant="38" id="gKZ-ze-9ku"/>
@@ -39,11 +39,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="b6k-db-ebp" secondAttribute="trailing" constant="14" id="3eP-5e-aXT"/>
-                                    <constraint firstAttribute="trailing" secondItem="b6k-db-ebp" secondAttribute="trailing" constant="20" id="Mhl-m2-PGq"/>
+                                    <constraint firstItem="b6k-db-ebp" firstAttribute="leading" secondItem="WhU-mr-zNO" secondAttribute="trailing" constant="-38" id="VE0-AU-61k"/>
                                     <constraint firstItem="WhU-mr-zNO" firstAttribute="leading" secondItem="WOn-z3-iKX" secondAttribute="leading" constant="14" id="ct3-zt-wSe"/>
                                     <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="24" id="da3-6K-xy6"/>
+                                    <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WhU-mr-zNO" secondAttribute="bottom" constant="14" id="sLi-dg-2dG"/>
                                     <constraint firstItem="WhU-mr-zNO" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="24" id="xOK-CN-hoN"/>
-                                    <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="24" id="yV3-4Z-uCs"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showsUserLocation" value="YES"/>

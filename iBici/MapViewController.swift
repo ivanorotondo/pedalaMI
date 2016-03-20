@@ -294,7 +294,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if manager.location?.horizontalAccuracy < 200 && locationUserReached == false{
+        if manager.location?.horizontalAccuracy < 200 && locationUserReached == false {
             
             mapView.setCenterCoordinate((manager.location?.coordinate)!, zoomLevel: 15, animated: false)
             locationUserReached = true

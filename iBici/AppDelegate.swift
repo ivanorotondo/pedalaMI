@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         SlideMenuOptions.leftViewWidth = UIScreen.mainScreen().bounds.width * 0.85
         SlideMenuOptions.leftBezelWidth = 0.0 //no dragging allowed
+        SlideMenuOptions.rightBezelWidth = 0.0 //no dragging allowed
+
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mapViewController = storyboard.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController
         let menuViewController = storyboard.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
