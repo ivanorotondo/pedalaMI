@@ -33,10 +33,12 @@ class ParsingSDK {
         let startingAvailableElectricBikesNumber = "Biciclette elettriche disponibili: "
         let startingAvailableSlotsNumber = "Stalli disponibili: "
         
+        var cycleNumber = 0
+        
         var (inputSubString, discardedString) = setTheNewStartingPoint(startingPointString, inputString: input)
         
-        func parsing() {
-            var thisStation = Station()
+        func parsing(cycleNumber : Int) {
+            var thisStation = Station(id: cycleNumber)
             
         //y coord value
             (inputSubString, discardedString) = setTheNewStartingPoint(startingPointComma, inputString: inputSubString)
@@ -78,12 +80,14 @@ class ParsingSDK {
             
         }
         
+        
         while inputSubString.rangeOfString(startingPointString).length != 0{
             
-            parsing()
+            parsing(cycleNumber)
+            cycleNumber += 1
         }
         
-        parsing()
+        parsing(cycleNumber)
         
     }
     

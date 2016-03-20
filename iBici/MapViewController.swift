@@ -21,7 +21,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     let stationsURL = "http://www.bikemi.com/it/mappa-stazioni.aspx"
     var stationsHTML : NSString = ""
     var stationsArray : NSMutableArray = []
-    var annotationsArray = [MGLAnnotation]()
+    var annotationsArray = [MGLAnnotation]()                //displayed annotations' array
+    var subsetStationsAroundArray : NSMutableArray = []     //displayed stations' array
+    var subsetStationsAroundArrayOLD : NSMutableArray = []  //displayed stations' array before update
     var currentView = ""
     var startingView = "bikes"
     var markersRemovedBecauseOfZooming = false
@@ -242,10 +244,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     func mapViewRegionIsChanging(mapView: MGLMapView) {
         if self.mapView.zoomLevel < 12 && markersRemovedBecauseOfZooming == false {
             markersRemovedBecauseOfZooming = true
-            mapView.removeAnnotations(annotationsArray)
+           // mapView.removeAnnotations(annotationsArray)
         } else if self.mapView.zoomLevel > 12 && markersRemovedBecauseOfZooming == true{
             markersRemovedBecauseOfZooming = false
-            mapView.addAnnotations(annotationsArray)
+            //mapView.addAnnotations(annotationsArray)
         }
     }
     
@@ -389,50 +391,129 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         self.slideMenuController()?.openLeft()
     }
     
+    func mapView(mapView: MGLMapView, regionDidChangeAnimated animated: Bool) {
+        addMarkersToTheMap(currentView)
+    }
+    
     
     func addMarkersToTheMap(bikesType: String){
         
-        annotationsArray = []
-        var availabilityNumber = ""
-        var subtitle = ""
+        getStationsAround(800) //contained into subsetStationsAroundArray
+        
+        var (stationsToAddArray, stationsToRemoveArray) = getStationsToAddAndRemoveArrays()
+        
+        var markersToRemoveArray : NSMutableArray = []
+        markersToRemoveArray = getMarkersArrayFromStationsArray(stationsToRemoveArray, markersArray: markersToRemoveArray)
+        
+        self.mapView.removeAnnotations(markersToRemoveArray as! [MGLAnnotation])
 
-        for station in self.stationsArray{
+        annotationsArray = []
+        
+//show the markers on the map
+        for station in stationsToAddArray{
             
-            switch bikesType {
-                case "bikes":
-                    subtitle = "Biciclette disponibili:"
-                    availabilityNumber = "\((station as? Station)!.availableBikesNumber)"
-                case "electricBikes":
-                    subtitle = "Biciclette elettriche disponibili:"
-                    availabilityNumber = "\((station as? Station)!.availableElectricBikesNumber)"
-                case "slots":
-                    subtitle = "Parcheggi disponibili:"
-                    availabilityNumber = "\((station as? Station)!.availableSlotsNumber)"
-                default:
-                    subtitle = "Biciclette disponibili:"
-                    availabilityNumber = "\((station as? Station)!.availableBikesNumber)"
-            }
+            var marker = getMarkerFromStation(bikesType, station: station as! Station)
             
-                var marker = MGLPointAnnotation()
-                marker.title = "\((station as? Station)!.stationName)"
-            
-                marker.subtitle = "\(subtitle) \(availabilityNumber)"
-            
-                marker.coordinate = CLLocationCoordinate2DMake(((station as? Station)?.stationCoord.latitude)!, ((station as? Station)?.stationCoord.longitude)!)
                 self.mapView.addAnnotation(marker)
                 annotationsArray.append(marker)
             
         } //end for
-//        
+        
+        
+        subsetStationsAroundArrayOLD = []
+        
+        for station in subsetStationsAroundArray {
+            subsetStationsAroundArrayOLD.addObject(station)
+        }
+        
+//
         Utilities.transparentFrame.removeFromSuperview()
         Utilities.loadingAnimationImageView.removeFromSuperview()
         Utilities.messageFrame.removeFromSuperview()
         
     }
     
+    func getStationsAround(distance: Double) {
+        
+    subsetStationsAroundArray = []
+
+    //get the locations of every station wrt the center of the map
+        for station in self.stationsArray{
+            let a = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
+            let b = CLLocation(latitude: ((station as? Station)?.stationCoord.latitude)!, longitude: ((station as? Station)?.stationCoord.longitude)!)
+            if a.distanceFromLocation(b) < distance {
+                subsetStationsAroundArray.addObject(station)
+            }
+        }
+    }
     
+    func getStationsToAddAndRemoveArrays() -> (NSMutableArray, NSMutableArray) {
+        
+        //create the set of new and old stations
+        var newStationsAroundSet = Set<Station>()
+        for station in subsetStationsAroundArray {
+            newStationsAroundSet.insert(station as! Station)
+        }
+        
+        var oldStationsAroundSet = Set<Station>()
+        for station in subsetStationsAroundArrayOLD {
+            oldStationsAroundSet.insert(station as! Station)
+        }
+        
+        //create the set of the differences
+        let stationsToAddSet = newStationsAroundSet.subtract(oldStationsAroundSet)
+        let stationsToRemoveSet = oldStationsAroundSet.subtract(newStationsAroundSet)
+        
+        //turn to arrays
+        var stationsToAddArray : NSMutableArray = []
+        for station in stationsToAddSet {
+            stationsToAddArray.addObject(station)
+        }
+        
+        var stationsToRemoveArray : NSMutableArray = []
+        for station in stationsToRemoveSet {
+            stationsToRemoveArray.addObject(station)
+        }
+
+        return(stationsToAddArray, stationsToRemoveArray)
+    }
     
+    func getMarkerFromStation(bikesType: String, station: Station) -> MGLPointAnnotation {
+        
+        var availabilityNumber = ""
+        var subtitle = ""
+        
+        switch bikesType {
+            case "bikes":
+                subtitle = "Biciclette disponibili:"
+                availabilityNumber = "\(station.availableBikesNumber)"
+            case "electricBikes":
+                subtitle = "Biciclette elettriche disponibili:"
+                availabilityNumber = "\(station.availableElectricBikesNumber)"
+            case "slots":
+                subtitle = "Parcheggi disponibili:"
+                availabilityNumber = "\(station.availableSlotsNumber)"
+            default:
+                subtitle = "Biciclette disponibili:"
+                availabilityNumber = "\(station.availableBikesNumber)"
+        }
+        
+        var marker = MGLPointAnnotation()
+        marker.title = "\(station.stationName)"
+        
+        marker.subtitle = "\(subtitle) \(availabilityNumber)"
+        
+        marker.coordinate = CLLocationCoordinate2DMake(((station as? Station)?.stationCoord.latitude)!, ((station as? Station)?.stationCoord.longitude)!)
+        return marker
+    }
     
+    func getMarkersArrayFromStationsArray(stationsArray: NSMutableArray, markersArray: NSMutableArray) -> NSMutableArray{
+        
+        for station in stationsArray {
+            markersArray.addObject(getMarkerFromStation(currentView, station: station as! Station))
+        }
+        return markersArray
+    }
     
 }
 
