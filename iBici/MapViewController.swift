@@ -324,17 +324,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             self.updateTabBarItems()
             
             if markersRemovedBecauseOfZooming == false {
-
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-    
-                    Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
-                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    
-
-                        self.mapView.removeAnnotations(self.annotationsArray)
-                        self.addMarkersToTheMap("bikes")
-                    })
-                })
+                
+                subsetStationsAroundArrayOLD = []
+                mapView.removeAnnotations(annotationsArray)
+                addMarkersToTheMap("bikes")
             }
 
         }
@@ -348,15 +341,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             self.updateTabBarItems()
 
             if markersRemovedBecauseOfZooming == false {
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 
-                    Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
-                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    
-                        self.mapView.removeAnnotations(self.annotationsArray)
-                        self.addMarkersToTheMap("electricBikes")
-                    })
-                })
+                subsetStationsAroundArrayOLD = []
+                mapView.removeAnnotations(annotationsArray)
+                addMarkersToTheMap("electricBikes")
             }
         }
     }
@@ -368,25 +356,26 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             self.updateTabBarItems()
             
             if markersRemovedBecauseOfZooming == false {
-
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    
-                    Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
-                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                        
-                        self.mapView.removeAnnotations(self.annotationsArray)
-                        self.addMarkersToTheMap("slots")
-                        
-                    })
-                })
+                
+                subsetStationsAroundArrayOLD = []
+                mapView.removeAnnotations(annotationsArray)
+                addMarkersToTheMap("slots")
+                
             }
         }
     }
     
     func refreshMarkers(sender: UITapGestureRecognizer) {
-        Utilities.loadingBarDisplayer("",indicator:true, view: view)
-        mapView.removeAnnotations(annotationsArray)
-        addMarkersToTheMap(currentView)
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            
+            Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.subsetStationsAroundArrayOLD = []
+                self.mapView.removeAnnotations(self.annotationsArray)
+                self.addMarkersToTheMap(self.currentView)
+            })
+        })
+        
     }
     
     func showMenu(sender: UITapGestureRecognizer) {
@@ -405,7 +394,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         var (stationsToAddArray, stationsToRemoveArray) = getStationsToAddAndRemoveArrays()
         
         var markersToRemoveArray : NSMutableArray = []
-        markersToRemoveArray = getMarkersArrayFromAnnotationsArray(stationsToRemoveArray, markersArray: markersToRemoveArray)
+        markersToRemoveArray = getMarkersArrayToRemoveFromAnnotationsArray(stationsToRemoveArray, markersArray: markersToRemoveArray)
         
         self.mapView.removeAnnotations(markersToRemoveArray as! [MGLAnnotation])
 
@@ -510,7 +499,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         return marker
     }
     
-    func getMarkersArrayFromAnnotationsArray(stationsArray: NSMutableArray, markersArray: NSMutableArray) -> NSMutableArray{
+    func getMarkersArrayToRemoveFromAnnotationsArray(stationsArray: NSMutableArray, markersArray: NSMutableArray) -> NSMutableArray{
         
         for station in stationsArray {
             
