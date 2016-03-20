@@ -240,16 +240,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //        }
 //        
 //    }
+
     
-    func mapViewRegionIsChanging(mapView: MGLMapView) {
-        if self.mapView.zoomLevel < 12 && markersRemovedBecauseOfZooming == false {
-            markersRemovedBecauseOfZooming = true
-           // mapView.removeAnnotations(annotationsArray)
-        } else if self.mapView.zoomLevel > 12 && markersRemovedBecauseOfZooming == true{
-            markersRemovedBecauseOfZooming = false
-            //mapView.addAnnotations(annotationsArray)
-        }
-    }
+//TODO:
+//    func mapViewRegionIsChanging(mapView: MGLMapView) {
+//        if self.mapView.zoomLevel < 12 && markersRemovedBecauseOfZooming == false {
+//            markersRemovedBecauseOfZooming = true
+//           // mapView.removeAnnotations(annotationsArray)
+//        } else if self.mapView.zoomLevel > 12 && markersRemovedBecauseOfZooming == true{
+//            markersRemovedBecauseOfZooming = false
+//            //mapView.addAnnotations(annotationsArray)
+//        }
+//    }
     
     func mapView(mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         // Always try to show a callout when an annotation is tapped.
@@ -403,11 +405,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         var (stationsToAddArray, stationsToRemoveArray) = getStationsToAddAndRemoveArrays()
         
         var markersToRemoveArray : NSMutableArray = []
-        markersToRemoveArray = getMarkersArrayFromStationsArray(stationsToRemoveArray, markersArray: markersToRemoveArray)
+        markersToRemoveArray = getMarkersArrayFromAnnotationsArray(stationsToRemoveArray, markersArray: markersToRemoveArray)
         
         self.mapView.removeAnnotations(markersToRemoveArray as! [MGLAnnotation])
 
-        annotationsArray = []
         
 //show the markers on the map
         for station in stationsToAddArray{
@@ -433,9 +434,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
+    
     func getStationsAround(distance: Double) {
         
-    subsetStationsAroundArray = []
+        subsetStationsAroundArray = []
 
     //get the locations of every station wrt the center of the map
         for station in self.stationsArray{
@@ -446,6 +448,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             }
         }
     }
+    
     
     func getStationsToAddAndRemoveArrays() -> (NSMutableArray, NSMutableArray) {
         
@@ -478,7 +481,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         return(stationsToAddArray, stationsToRemoveArray)
     }
     
-    func getMarkerFromStation(bikesType: String, station: Station) -> MGLPointAnnotation {
+    func getMarkerFromStation(bikesType: String, station: Station) -> MGLAnnotation {
         
         var availabilityNumber = ""
         var subtitle = ""
@@ -507,11 +510,25 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         return marker
     }
     
-    func getMarkersArrayFromStationsArray(stationsArray: NSMutableArray, markersArray: NSMutableArray) -> NSMutableArray{
+    func getMarkersArrayFromAnnotationsArray(stationsArray: NSMutableArray, markersArray: NSMutableArray) -> NSMutableArray{
         
         for station in stationsArray {
-            markersArray.addObject(getMarkerFromStation(currentView, station: station as! Station))
+            
+            var indexToRemove = Int()
+            
+            for (index, annotation) in annotationsArray.enumerate() {
+                if annotation.title! == (station as? Station)?.stationName {
+                    markersArray.addObject(annotation)
+                    indexToRemove = index
+                }
+            }
+            
+            annotationsArray.removeAtIndex(indexToRemove as! Int)
+            
+            
+           // markersArray.addObject(getMarkerFromStation(currentView, station: station as! Station))
         }
+        
         return markersArray
     }
     
