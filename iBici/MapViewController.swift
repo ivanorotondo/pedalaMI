@@ -326,8 +326,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             if markersRemovedBecauseOfZooming == false {
                 
                 subsetStationsAroundArrayOLD = []
-                mapView.removeAnnotations(annotationsArray)
-                addMarkersToTheMap("bikes")
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+
+                    self.mapView.removeAnnotations(self.annotationsArray)
+                    
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+
+                        self.addMarkersToTheMap("bikes")
+                    })
+                })
             }
 
         }
@@ -343,8 +350,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             if markersRemovedBecauseOfZooming == false {
                 
                 subsetStationsAroundArrayOLD = []
-                mapView.removeAnnotations(annotationsArray)
-                addMarkersToTheMap("electricBikes")
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+
+                    self.mapView.removeAnnotations(self.annotationsArray)
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+
+                        self.addMarkersToTheMap("electricBikes")
+                    })
+                })
             }
         }
     }
@@ -358,8 +371,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             if markersRemovedBecauseOfZooming == false {
                 
                 subsetStationsAroundArrayOLD = []
-                mapView.removeAnnotations(annotationsArray)
-                addMarkersToTheMap("slots")
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+
+                    self.mapView.removeAnnotations(self.annotationsArray)
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+
+                        self.addMarkersToTheMap("slots")
+                    })
+                })
                 
             }
         }
