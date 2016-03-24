@@ -173,23 +173,36 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func mapView(mapView: MGLMapView, imageForAnnotation annotation: MGLAnnotation) -> MGLAnnotationImage? {
         
-        
         var text = NSString(string: " ")
         
-//extract pin numbers
         if annotation.subtitle != nil{
-            var subtitle = (annotation.subtitle! as! String?)
-            let numberIndex = (subtitle?.startIndex.distanceTo((subtitle?.characters.indexOf(":"))!))! + 2
-            let subtitleNSString = NSString(string: "\(subtitle!)")
-            text = subtitleNSString.substringWithRange(NSRange(location: numberIndex, length: (subtitle?.characters.count)! - numberIndex))
+            
+            text = extractPinNumbersFromAnnotationSubtitle(annotation, text: text)
         }
         
         var annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier("\(currentView) \(text)")
         
-//        print("\(text)")
-//        print("\(annotationImage)")
-        
         if annotationImage == nil {
+        
+            let image = getTheImageCorrespondingToTheCurrentView()
+            
+            let resizedImage = setUpThePinImage(image, text: text)
+            
+            annotationImage = MGLAnnotationImage(image: resizedImage, reuseIdentifier: "\(currentView) \(text)")
+        }
+        
+        return annotationImage
+    }
+
+    func extractPinNumbersFromAnnotationSubtitle(annotation: MGLAnnotation, var text: NSString) -> NSString {
+        var subtitle = (annotation.subtitle! as! String?)
+        let numberIndex = (subtitle?.startIndex.distanceTo((subtitle?.characters.indexOf(":"))!))! + 2
+        let subtitleNSString = NSString(string: "\(subtitle!)")
+        text = subtitleNSString.substringWithRange(NSRange(location: numberIndex, length: (subtitle?.characters.count)! - numberIndex))
+        return text
+    }
+    
+    func getTheImageCorrespondingToTheCurrentView() -> UIImage{
         
             var image = UIImage(named: "pinBike")!
             
@@ -203,30 +216,30 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             default:
                 image = UIImage(named: "pinBike")!
             }
-            
-            
-            //set up the pin image
-            let size = CGSize(width: 25, height: 25)
-            UIGraphicsBeginImageContext(size)
-            image.drawInRect(CGRectMake(0, 0, size.width, size.height))
-            
-            var rect: CGRect = CGRectMake(8.5, 4, size.width, size.width)
-            
-            if text.length == 1 {
-                rect = CGRectMake(8.5, 4, size.width, size.width)
-            }
-            if text.length == 2 {
-                rect = CGRectMake(4.5, 4, size.width, size.width)
-            }
-            
-            text.drawInRect(rect, withAttributes: pinTextFontAttributes as? [String : AnyObject])
-            let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext()
-            
-            annotationImage = MGLAnnotationImage(image: resizedImage, reuseIdentifier: "\(currentView) \(text)")
+        
+        return image
+    }
+    
+    func setUpThePinImage(image: UIImage, text: NSString)-> UIImage{
+        
+        //set up the pin image
+        let size = CGSize(width: 25, height: 25)
+        UIGraphicsBeginImageContext(size)
+        image.drawInRect(CGRectMake(0, 0, size.width, size.height))
+        
+        var rect: CGRect = CGRectMake(8.5, 4, size.width, size.width)
+        
+        if text.length == 1 {
+            rect = CGRectMake(8.5, 4, size.width, size.width)
+        }
+        if text.length == 2 {
+            rect = CGRectMake(4.5, 4, size.width, size.width)
         }
         
-        return annotationImage
+        text.drawInRect(rect, withAttributes: pinTextFontAttributes as? [String : AnyObject])
+        let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return resizedImage
     }
     
 
@@ -420,15 +433,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
 //show the markers on the map
         for station in stationsToAddArray{
-            
-            var marker = getMarkerFromStation(bikesType, station: station as! Station)
-            
-                self.mapView.addAnnotation(marker)
-                annotationsArray.append(marker)
-            
+                
+            var marker = self.getMarkerFromStation(bikesType, station: station as! Station)
+                
+            self.mapView.addAnnotation(marker)
+            self.annotationsArray.append(marker)
+
         } //end for
         
-        
+
         subsetStationsAroundArrayOLD = []
         
         for station in subsetStationsAroundArray {
@@ -540,6 +553,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         return markersArray
     }
     
+    
+    
+        
 }
 
 

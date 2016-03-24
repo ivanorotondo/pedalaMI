@@ -52,4 +52,43 @@ class Utilities {
         //          var newConstraint : NSLayoutConstraint = NSLayoutConstraint(item:self.messageFrame,attribute:.CenterX, relatedBy:.Equal, toItem:self.strLabel, attribute: .CenterX, multiplier: 1, constant: 0)
         //   messageFrame.addConstraint(newConstraint)
     }
+    
+//_____________________________________________//
+//             BACKGROUND FUNCTION             //
+//_________________INSTRUCTIONS________________//
+    
+//    A. To run a process in the background with a delay of 3 seconds:
+//    
+//    backgroundThread(3.0, background: {
+//    // Your background function here
+//    })
+//    
+//    
+//    B. To run a process in the background then run a completion in the foreground:
+//    
+//    backgroundThread(background: {
+//    // Your function here to run in the background
+//    },
+//    completion: {
+//    // A function to run in the foreground when the background thread is complete
+//    })
+//    
+//    
+//    C. To delay by 3 seconds - note use of completion parameter without background parameter:
+//    
+//    backgroundThread(3.0, completion: {
+//    // Your delayed function here to be run in the foreground
+//    })
+    
+    static func backgroundThread(delay: Double = 0.0, background: (() -> Void)? = nil, completion: (() -> Void)? = nil) {
+        dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_USER_INITIATED.rawValue), 0)) {
+            if(background != nil){ background!(); }
+            
+            let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC)))
+            dispatch_after(popTime, dispatch_get_main_queue()) {
+                if(completion != nil){ completion!(); }
+            }
+        }
+    }
+
 }
