@@ -287,7 +287,22 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             errorHandler: {
                 (response) in
                 
-                print("falliu")
+                if response == -1009 {
+                    var alertNoInternetConnection = Utilities.AlertTextualDetails()
+                    alertNoInternetConnection.title = "The device results offline"
+                    alertNoInternetConnection.message = "No internet connection available"
+                    Utilities.displayAlert(self, alertTextualDetails: alertNoInternetConnection)
+                } else if response == -1001{
+                    var alertRequestTimeout = Utilities.AlertTextualDetails()
+                    alertRequestTimeout.title = "Slow Connection"
+                    alertRequestTimeout.message = "It took too long to download data"
+                    Utilities.displayAlert(self, alertTextualDetails: alertRequestTimeout)
+                } else {
+                    var alertUnknownError = Utilities.AlertTextualDetails()
+                    alertUnknownError.title = "Error"
+                    alertUnknownError.message = "Unknown error"
+                    Utilities.displayAlert(self, alertTextualDetails: alertUnknownError)
+                }
             
             }
         )
@@ -398,14 +413,28 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func refreshMarkers(sender: UITapGestureRecognizer) {
+        
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             
-            Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                self.subsetStationsAroundArrayOLD = []
-                self.mapView.removeAnnotations(self.annotationsArray)
-                self.addMarkersToTheMap(self.currentView)
-            })
+            if self.stationsArray == [] {
+                
+                Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    
+                    self.addTapRecognizerToButtons()
+                    self.updateTabBarItems()
+                    self.downloadAndShowStations()
+                })
+            
+            } else {
+            
+                Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.subsetStationsAroundArrayOLD = []
+                    self.mapView.removeAnnotations(self.annotationsArray)
+                    self.addMarkersToTheMap(self.currentView)
+                })
+            }
         })
         
     }
@@ -421,27 +450,27 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func addMarkersToTheMap(bikesType: String){
         
-        getStationsAround(800) //contained into subsetStationsAroundArray
+        getStationsAroundThisDistanceInMeters(800) //contained into subsetStationsAroundArray
         
-        var (stationsToAddArray, stationsToRemoveArray) = getStationsToAddAndRemoveArrays()
+        var (stationsToAddArray, stationsToRemoveArray) = getStationsToAddAndToRemoveArrays()
         
         var markersToRemoveArray : NSMutableArray = []
         markersToRemoveArray = getMarkersArrayToRemoveFromAnnotationsArray(stationsToRemoveArray, markersArray: markersToRemoveArray)
         
         self.mapView.removeAnnotations(markersToRemoveArray as! [MGLAnnotation])
 
-        
 //show the markers on the map
         for station in stationsToAddArray{
                 
             var marker = self.getMarkerFromStation(bikesType, station: station as! Station)
-                
-            self.mapView.addAnnotation(marker)
             self.annotationsArray.append(marker)
+
+//            Utilities.backgroundThread(0, background: {
+                self.mapView.addAnnotation(marker) //calls mapView(_: imageForAnnotation:)
+//            })
 
         } //end for
         
-
         subsetStationsAroundArrayOLD = []
         
         for station in subsetStationsAroundArray {
@@ -456,7 +485,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
-    func getStationsAround(distance: Double) {
+    func getStationsAroundThisDistanceInMeters(distance: Double) {
         
         subsetStationsAroundArray = []
 
@@ -471,7 +500,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
-    func getStationsToAddAndRemoveArrays() -> (NSMutableArray, NSMutableArray) {
+    func getStationsToAddAndToRemoveArrays() -> (NSMutableArray, NSMutableArray) {
         
         //create the set of new and old stations
         var newStationsAroundSet = Set<Station>()

@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iBici/MapViewController.swift"
+            timestampString = "480600458.386813"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "416"
+            endingLineNumber = "416"
+            landmarkName = "refreshMarkers(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pedalaMI.MapViewController.refreshMarkers (pedalaMI.MapViewController)(__ObjC.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "pedalaMI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ivo/Apps/iBici/iBici/MapViewController.swift"
+                  timestampString = "480601191.240253"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "417"
+                  endingLineNumber = "417"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pedalaMI.MapViewController.(refreshMarkers (pedalaMI.MapViewController) -&gt; (__ObjC.UITapGestureRecognizer) -&gt; ()).(closure #1)"
+                  moduleName = "pedalaMI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Ivo/Apps/iBici/iBici/MapViewController.swift"
+                  timestampString = "480601191.24048"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "419"
+                  endingLineNumber = "419"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

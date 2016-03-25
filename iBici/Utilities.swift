@@ -90,5 +90,25 @@ class Utilities {
             }
         }
     }
+    
+    static func displayAlert(viewController: UIViewController, alertTextualDetails: AlertTextualDetails){
+        
+        let alertController = UIAlertController(title: alertTextualDetails.title, message:
+            alertTextualDetails.message, preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default,handler: { action in
+            Utilities.transparentFrame.removeFromSuperview()
+            Utilities.activityIndicator.removeFromSuperview()
+            Utilities.messageFrame.removeFromSuperview()
+        }))
+        dispatch_async(dispatch_get_main_queue(), {
+            viewController.presentViewController(alertController, animated: true, completion: nil)
+        })
+
+    }
+    
+    struct AlertTextualDetails {
+        var title = ""
+        var message = ""
+    }
 
 }
