@@ -96,6 +96,8 @@ class ParsingSDK {
         var outputString : NSString?
         var discardedString : NSString?
         
+        
+
     //get the starting point
         let startingPoint = inputString.rangeOfString(startingString)
         
@@ -113,5 +115,6 @@ class ParsingSDK {
         
         return (outputString!, discardedString!)
     }
+
 
 }

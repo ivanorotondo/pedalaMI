@@ -34,4 +34,35 @@ class ServerCallsSDK {
         task.resume()
     }
     
+
+    
+    static func askTheTRKServerWithData(var dataPost : String, var destination : String, method: String, var headersDict: NSDictionary, successHandler: (response: NSData) -> Void, errorHandler:(error: Int) -> Void){
+        
+        let request = NSMutableURLRequest(URL: NSURL(string: destination as String)!)
+        request.HTTPMethod = method
+        request.timeoutInterval = 15.0
+        
+        let postString = dataPost
+        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+        
+        for item in headersDict {
+            request.setValue("\(item)", forHTTPHeaderField: "\(headersDict.objectForKey("\(item)"))")
+        }
+
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
+            data, response, error in
+            
+            if error != nil {
+                print("error=\(error)")
+                errorHandler(error: (error?.code)!)
+                return
+            }
+            successHandler(response: data!);
+            
+        }
+        
+        task.resume()
+    }
+
+    
 }

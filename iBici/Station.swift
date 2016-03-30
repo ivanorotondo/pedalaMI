@@ -17,6 +17,9 @@ class Station : Hashable {
     var availableSlotsNumber : Int = 0
     var stationName : String = ""
     var stationCoord : CLLocationCoordinate2D = CLLocationCoordinate2DMake(Double(0.0), Double(0.0))
+    var stationActive : Bool = false
+    var stationDistrict : String = ""
+    var stationTotalSlotsNumber : Int = 0
     
     var hashValue: Int {
         return self.id

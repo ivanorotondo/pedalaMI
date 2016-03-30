@@ -13,6 +13,7 @@
 		923B97161C9C24D90076D13F /* pinBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B97131C9C24D90076D13F /* pinBike.png */; };
 		923B97171C9C24D90076D13F /* pinEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B97141C9C24D90076D13F /* pinEBike.png */; };
 		923B97181C9C24D90076D13F /* pinSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 923B97151C9C24D90076D13F /* pinSlot.png */; };
+		927D6E531CABBC7A0035831B /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927D6E521CABBC7A0035831B /* Threading.swift */; };
 		92876C091C92FD5800BB6BDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C081C92FD5800BB6BDA /* AppDelegate.swift */; };
 		92876C0B1C92FD5800BB6BDA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C0A1C92FD5800BB6BDA /* MapViewController.swift */; };
 		92876C0E1C92FD5800BB6BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92876C0C1C92FD5800BB6BDA /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 		923B97131C9C24D90076D13F /* pinBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinBike.png; path = graphics/pinBike.png; sourceTree = "<group>"; };
 		923B97141C9C24D90076D13F /* pinEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinEBike.png; path = graphics/pinEBike.png; sourceTree = "<group>"; };
 		923B97151C9C24D90076D13F /* pinSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinSlot.png; path = graphics/pinSlot.png; sourceTree = "<group>"; };
+		927D6E521CABBC7A0035831B /* Threading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
 		92876C051C92FD5800BB6BDA /* pedalaMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pedalaMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92876C081C92FD5800BB6BDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92876C0A1C92FD5800BB6BDA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */,
 				92876C3F1C93564200BB6BDA /* ParsingSDK.swift */,
 				92876C3A1C9300E300BB6BDA /* ServerCallsSDK.swift */,
+				927D6E521CABBC7A0035831B /* Threading.swift */,
 				92AC2FE91C9D912A0031223D /* Utilities.swift */,
 				92876C3E1C93432400BB6BDA /* Classes */,
 				92876C0C1C92FD5800BB6BDA /* Main.storyboard */,
@@ -442,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				927D6E531CABBC7A0035831B /* Threading.swift in Sources */,
 				92876C0B1C92FD5800BB6BDA /* MapViewController.swift in Sources */,
 				92DBB46C1C9589CD003BCD1A /* MenuViewController.swift in Sources */,
 				92AC2FEA1C9D912A0031223D /* Utilities.swift in Sources */,
