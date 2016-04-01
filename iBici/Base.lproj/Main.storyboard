@@ -28,8 +28,22 @@
                                             <constraint firstAttribute="height" constant="40" id="cz7-8V-OoS"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="z5F-zJ-sgB">
+                                        <rect key="frame" x="14" y="68" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7Qy-hw-gUW"/>
+                                            <constraint firstAttribute="width" constant="40" id="Ht4-10-lT2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-jc-zfL">
+                                        <rect key="frame" x="14" y="112" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="qQH-eH-2lw"/>
+                                            <constraint firstAttribute="width" constant="40" id="wAV-nY-OH9"/>
+                                        </constraints>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refreshBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="b6k-db-ebp">
-                                        <rect key="frame" x="16" y="78" width="38" height="38"/>
+                                        <rect key="frame" x="16" y="72" width="38" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="38" id="8WA-Ms-OQu"/>
                                             <constraint firstAttribute="height" constant="38" id="gKZ-ze-9ku"/>
@@ -39,10 +53,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="b6k-db-ebp" secondAttribute="trailing" constant="14" id="3eP-5e-aXT"/>
+                                    <constraint firstItem="b8e-jc-zfL" firstAttribute="top" secondItem="z5F-zJ-sgB" secondAttribute="bottom" constant="4" id="K0l-6N-92a"/>
                                     <constraint firstItem="b6k-db-ebp" firstAttribute="leading" secondItem="WhU-mr-zNO" secondAttribute="trailing" constant="-38" id="VE0-AU-61k"/>
                                     <constraint firstItem="WhU-mr-zNO" firstAttribute="leading" secondItem="WOn-z3-iKX" secondAttribute="leading" constant="14" id="ct3-zt-wSe"/>
                                     <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="24" id="da3-6K-xy6"/>
-                                    <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WhU-mr-zNO" secondAttribute="bottom" constant="14" id="sLi-dg-2dG"/>
+                                    <constraint firstItem="b8e-jc-zfL" firstAttribute="leading" secondItem="z5F-zJ-sgB" secondAttribute="trailing" constant="-40" id="kuL-2Z-Zwp"/>
+                                    <constraint firstItem="z5F-zJ-sgB" firstAttribute="top" secondItem="WhU-mr-zNO" secondAttribute="bottom" constant="4" id="o7e-ds-9xM"/>
+                                    <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WhU-mr-zNO" secondAttribute="bottom" constant="8" id="sLi-dg-2dG"/>
+                                    <constraint firstItem="z5F-zJ-sgB" firstAttribute="leading" secondItem="WhU-mr-zNO" secondAttribute="trailing" constant="-40" id="x6v-2z-NeX"/>
                                     <constraint firstItem="WhU-mr-zNO" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="24" id="xOK-CN-hoN"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -225,6 +243,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bikePathsButton" destination="z5F-zJ-sgB" id="M1h-sO-xGF"/>
                         <outlet property="bikesButton" destination="cnL-aF-8mF" id="aNa-Tf-Zbq"/>
                         <outlet property="bikesItemBackground" destination="fSP-8o-Cvh" id="d24-pK-s9H"/>
                         <outlet property="bikesItemView" destination="8Nf-Rc-QtS" id="UXu-JL-215"/>
@@ -232,6 +251,7 @@
                         <outlet property="eBikesItemBackground" destination="5Nn-3b-dGD" id="ofA-ih-njl"/>
                         <outlet property="eBikesItemView" destination="5GG-HJ-l3Y" id="S42-Zd-Wcx"/>
                         <outlet property="mapView" destination="WOn-z3-iKX" id="cQc-3I-WwN"/>
+                        <outlet property="paveButton" destination="b8e-jc-zfL" id="3VD-1w-XiD"/>
                         <outlet property="refreshButton" destination="b6k-db-ebp" id="wGM-zE-WPc"/>
                         <outlet property="settingsButton" destination="WhU-mr-zNO" id="Exp-vv-gCg"/>
                         <outlet property="slotsButton" destination="eHl-Ke-JrF" id="zeM-7o-HlP"/>

@@ -29,6 +29,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var startingView = "bikes"
     var markersRemovedBecauseOfZooming = false
     var locationUserReached = false
+    var menuIsShowed = false
     
 //MARK: outlet init
     @IBOutlet var mapView: MGLMapView!
@@ -36,7 +37,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var eBikesButton: UIImageView!
     @IBOutlet var slotsButton: UIImageView!
     @IBOutlet var refreshButton: UIImageView!
+    
     @IBOutlet var settingsButton: UIImageView!
+    @IBOutlet var paveButton: UIImageView!
+    @IBOutlet var bikePathsButton: UIImageView!
     
 //MARK: outlet init TabBar
     @IBOutlet var bikesItemBackground: UIImageView!
@@ -52,17 +56,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     let textFont : UIFont = UIFont(name: "Helvetica Bold", size: 15)!
     var pinTextFontAttributes = NSDictionary()
     
+//MARK: define map styles
+    let cleanMapStyleUrl = NSURL(string: "mapbox://styles/ivanorotondo/ciluylzjp00rrc7lu80unjtnr")
+    let bikesPathMapStyleUrl = NSURL(string: "mapbox://styles/ivanorotondo/cimhl3rn40042ddm3zswcwt9l")
+    let bikesPathAndPaveMapStyleUrl = NSURL(string: "mapbox://styles/ivanorotondo/cimhlfes20047ddm35i36h3hu")
+    let paveMapStyleUrl = NSURL(string: "mapbox://styles/ivanorotondo/cimhl440e0044d0mctwomptyj")
+    
 //MARK: - views init
     override func viewDidLoad() {
         
         pinTextFontAttributes = [NSFontAttributeName: textFont,
             NSForegroundColorAttributeName: textColor,
         ]
-        
-        //mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/ciluylzjp00rrc7lu80unjtnr")
-        //mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/cimhlfes20047ddm35i36h3hu")
-        //mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/cimhl440e0044d0mctwomptyj")
-        mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/cimhl3rn40042ddm3zswcwt9l")
         
         currentView = startingView
         
@@ -79,6 +84,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        
+        bikePathsButton.alpha = 0
+        paveButton.alpha = 0
         
     }
     
@@ -98,11 +106,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         refreshButton.userInteractionEnabled = true
         refreshButton.addGestureRecognizer(tapRefresh)
         
-        let tapSettings = UITapGestureRecognizer(target: self, action: Selector("showMenu:"))
+        let tapSettings = UITapGestureRecognizer(target: self, action: Selector("showMenuController:"))
         
         settingsButton.userInteractionEnabled = true
         settingsButton.addGestureRecognizer(tapSettings)
         
+        let tapBikePaths = UITapGestureRecognizer(target: self, action: Selector("showBikePathsController:"))
+        bikePathsButton.userInteractionEnabled = false
+        bikePathsButton.addGestureRecognizer(tapBikePaths)
+        
+        let tapPave = UITapGestureRecognizer(target: self, action: Selector("showPaveController:"))
+        paveButton.userInteractionEnabled = false
+        paveButton.addGestureRecognizer(tapPave)
     }
     
     func updateTabBarItems(){
@@ -491,8 +506,57 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
-    func showMenu(sender: UITapGestureRecognizer) {
-        self.slideMenuController()?.openLeft()
+    func showMenuController(sender: UITapGestureRecognizer) {
+        //self.slideMenuController()?.openLeft()
+        
+        var refreshButtonFinalOriginY = CGFloat(88.0)
+        if menuIsShowed == false {
+            showMenu(refreshButtonFinalOriginY)
+            menuIsShowed = true
+        } else {
+            hideMenu(refreshButtonFinalOriginY)
+            menuIsShowed = false
+        }
+        
+
+    }
+    
+    func showMenu(refreshButtonFinalOriginY: CGFloat) {
+        UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+                self.bikePathsButton.alpha = 1
+                self.bikePathsButton.userInteractionEnabled = true
+                self.view.layoutIfNeeded()
+        }, completion: nil)
+        UIView.animateWithDuration(0.3, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+                self.paveButton.alpha = 1
+                self.paveButton.userInteractionEnabled = true
+                self.refreshButton.frame.origin.y += refreshButtonFinalOriginY
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+    }
+    
+    func showBikePathsController(sender: UITapGestureRecognizer) {
+        
+        mapView.styleURL = bikesPathMapStyleUrl
+    }
+    
+    func showPaveController(sender: UITapGestureRecognizer) {
+        
+        mapView.styleURL = paveMapStyleUrl
+    }
+    
+    func hideMenu(refreshButtonFinalOriginY: CGFloat) {
+        UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+                self.paveButton.alpha = 0
+                self.paveButton.userInteractionEnabled = false
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        UIView.animateWithDuration(0.3, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+                self.bikePathsButton.alpha = 0
+                self.bikePathsButton.userInteractionEnabled = false
+                self.refreshButton.frame.origin.y -= refreshButtonFinalOriginY
+                self.view.layoutIfNeeded()
+            }, completion: nil)
     }
     
     func mapView(mapView: MGLMapView, regionDidChangeAnimated animated: Bool) {
