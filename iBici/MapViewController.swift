@@ -8,6 +8,7 @@
 
 //TODO: settings -> favorite default screen
 
+import Foundation
 import UIKit
 import MapKit
 import Mapbox
@@ -58,7 +59,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             NSForegroundColorAttributeName: textColor,
         ]
         
-        mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/ciluylzjp00rrc7lu80unjtnr")
+        //mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/ciluylzjp00rrc7lu80unjtnr")
+        //mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/cimhlfes20047ddm35i36h3hu")
+        //mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/cimhl440e0044d0mctwomptyj")
+        mapView.styleURL = NSURL(string: "mapbox://styles/ivanorotondo/cimhl3rn40042ddm3zswcwt9l")
         
         currentView = startingView
         
@@ -498,41 +502,45 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func addMarkersToTheMap(bikesType: String){
         
-    //  {
-        self.getStationsAroundThisDistanceInMeters(800) //contained into subsetStationsAroundArray
-        
-        
-        var (stationsToAddArray, stationsToRemoveArray) = self.getStationsToAddAndToRemoveArrays()
-        
+        var stationsToAddArray : NSMutableArray = []
+        var stationsToRemoveArray : NSMutableArray = []
         var markersToRemoveArray : NSMutableArray = []
-        markersToRemoveArray = self.getMarkersArrayToRemoveFromAnnotationsArray(stationsToRemoveArray, markersArray: markersToRemoveArray)
         
-        self.subsetStationsAroundArrayOLD = []
-        for station in self.subsetStationsAroundArray {
-            self.subsetStationsAroundArrayOLD.addObject(station)
-        }
         
-        self.mapView.removeAnnotations(markersToRemoveArray as! [MGLAnnotation])
-   // } ~> {
-//show the markers on the map
-        for station in stationsToAddArray{
+        dispatch_async(dispatch_queue_create("serial-worker", DISPATCH_QUEUE_SERIAL)) {
+            self.getStationsAroundThisDistanceInMeters(800) //contained into subsetStationsAroundArray
+            
+            
+            (stationsToAddArray, stationsToRemoveArray) = self.getStationsToAddAndToRemoveArrays()
+            
+            markersToRemoveArray = self.getMarkersArrayToRemoveFromAnnotationsArray(stationsToRemoveArray, markersArray: markersToRemoveArray)
+            
+            self.subsetStationsAroundArrayOLD = []
+            for station in self.subsetStationsAroundArray {
+                self.subsetStationsAroundArrayOLD.addObject(station)
+            }
+            
+            self.mapView.removeAnnotations(markersToRemoveArray as! [MGLAnnotation])
+            
+            dispatch_async(dispatch_get_main_queue(), {
+                //show the markers on the map
+                for station in stationsToAddArray{
+                    
+                    var marker = self.getMarkerFromStation(bikesType, station: station as! Station)
+                    self.annotationsArray.append(marker)
+                    
+                    self.mapView.addAnnotation(marker) //calls mapView(_: imageForAnnotation:)
+                    
+                } //end for
                 
-            var marker = self.getMarkerFromStation(bikesType, station: station as! Station)
-            self.annotationsArray.append(marker)
-
-//            Utilities.backgroundThread(0, background: {
-                self.mapView.addAnnotation(marker) //calls mapView(_: imageForAnnotation:)
-//            })
-
-        } //end for
-        
-        
-    //
-        Utilities.transparentFrame.removeFromSuperview()
-        Utilities.loadingAnimationImageView.removeFromSuperview()
-        Utilities.messageFrame.removeFromSuperview()
-      }
-    //}
+                
+                //
+                Utilities.transparentFrame.removeFromSuperview()
+                Utilities.loadingAnimationImageView.removeFromSuperview()
+                Utilities.messageFrame.removeFromSuperview()            })
+        }
+     
+    }
     
     
     
@@ -656,11 +664,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         return markersArray
     }
-    
-    
-    
+
         
 }
-
 
 
