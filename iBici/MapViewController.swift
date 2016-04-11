@@ -33,6 +33,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
 //MARK: outlet init
     @IBOutlet var mapView: MGLMapView!
+    
+//MARK: outlet init Menu
     @IBOutlet var bikesButton: UIImageView!
     @IBOutlet var eBikesButton: UIImageView!
     @IBOutlet var slotsButton: UIImageView!
@@ -43,6 +45,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var bikePathsButton: UIImageView!
     @IBOutlet var bikeStationsButton: UIImageView!
     @IBOutlet var fountainsButton: UIImageView!
+    
+    var menuStatus : [String:Bool] = ["bikePaths" : false,
+                                      "pave" : false]
     
 //MARK: outlet init TabBar
     @IBOutlet var bikesItemBackground: UIImageView!
@@ -115,28 +120,29 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         settingsButton.userInteractionEnabled = true
         settingsButton.addGestureRecognizer(tapSettings)
         
-        let tapBikePaths = UITapGestureRecognizer(target: self, action: Selector("backgroundMapController:"))
+        let tapBikePaths = UITapGestureRecognizer(target: self, action: Selector("menuSwitchController:"))
         bikePathsButton.tag = 1
         bikePathsButton.userInteractionEnabled = false
         bikePathsButton.addGestureRecognizer(tapBikePaths)
         
-        let tapPavePaths = UITapGestureRecognizer(target: self, action: Selector("backgroundMapController:"))
+        let tapPavePaths = UITapGestureRecognizer(target: self, action: Selector("menuSwitchController:"))
         paveButton.tag = 2
         paveButton.userInteractionEnabled = false
         paveButton.addGestureRecognizer(tapPavePaths)
 
     }
     
-    func backgroundMapController(sender: UITapGestureRecognizer){
+    func menuSwitchController(sender: UITapGestureRecognizer){
         
         switch sender.view!.tag{
             
         case 1:
-            showBikePathsController()
+            menuStatusController("bikePaths")
             break
             
         case 2:
-            showPaveController()
+            menuStatusController("pave")
+            break
             
         default:
             break
@@ -144,14 +150,66 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
-    func showBikePathsController() {
+    func menuStatusController(buttonTapped: String){
+        
+        if buttonTapped == "bikePaths" {
+            
+            if menuStatus["bikePaths"] == false {
+                if menuStatus["pave"] == false {
+                    showBikePaths()
+                } else {
+                    showBikePathsAndPave()
+                }
+                menuStatus["bikePaths"] = true
+            } else {
+                if menuStatus["pave"] == false {
+                    showCleanMap()
+                } else {
+                    showPave()
+                }
+                menuStatus["bikePaths"] = false
+            }
+            
+        }
+        
+        if buttonTapped == "pave" {
+            if menuStatus["pave"] == false {
+                if menuStatus["bikePaths"] == false {
+                    showPave()
+                } else {
+                    showBikePathsAndPave()
+                }
+                menuStatus["pave"] = true
+            } else {
+                if menuStatus["bikePaths"] == false {
+                    showCleanMap()
+                } else {
+                    showBikePaths()
+                }
+                menuStatus["pave"] = false
+            }
+        }
+        
+    }
+    
+    func showBikePaths() {
         
         mapView.styleURL = bikesPathMapStyleUrl
     }
     
-    func showPaveController() {
+    func showPave() {
         
         mapView.styleURL = paveMapStyleUrl
+    }
+    
+    func showBikePathsAndPave(){
+        
+        mapView.styleURL = bikesPathAndPaveMapStyleUrl
+    }
+    
+    func showCleanMap(){
+        
+        mapView.styleURL = cleanMapStyleUrl
     }
     
     
