@@ -65,9 +65,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
 //MARK: define map styles
     let cleanMapStyleUrl = NSURL(string: "mapbox://styles/ivanorotondo/ciluylzjp00rrc7lu80unjtnr")
-    let bikesPathMapStyleUrl = NSURL(string: "mapbox://styles/ivanorotondo/cimhl3rn40042ddm3zswcwt9l")
+    let paveMapStyleUrl = NSURL(string: "mapbox://styles/ivanorotondo/cimhl3rn40042ddm3zswcwt9l")
     let bikesPathAndPaveMapStyleUrl = NSURL(string: "mapbox://styles/ivanorotondo/cimhlfes20047ddm35i36h3hu")
-    let paveMapStyleUrl = NSURL(string: "mapbox://styles/ivanorotondo/cimhl440e0044d0mctwomptyj")
+    let bikesPathMapStyleUrl = NSURL(string: "mapbox://styles/ivanorotondo/cimhl440e0044d0mctwomptyj")
     
 //MARK: - views init
     override func viewDidLoad() {
@@ -192,27 +192,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
-    func showBikePaths() {
-        
-        mapView.styleURL = bikesPathMapStyleUrl
-    }
-    
-    func showPave() {
-        
-        mapView.styleURL = paveMapStyleUrl
-    }
-    
-    func showBikePathsAndPave(){
-        
-        mapView.styleURL = bikesPathAndPaveMapStyleUrl
-    }
-    
-    func showCleanMap(){
-        
-        mapView.styleURL = cleanMapStyleUrl
-    }
-    
-    
+
     func updateTabBarItems(){
         
         switch currentView {
@@ -782,6 +762,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         return(stationsToAddArray, stationsToRemoveArray)
     }
     
+    
     func getMarkerFromStation(bikesType: String, station: Station) -> MGLAnnotation {
         
         var availabilityNumber = ""
@@ -811,6 +792,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         return marker
     }
     
+    
     func getMarkersArrayToRemoveFromAnnotationsArray(stationsToRemoveArray: NSMutableArray, markersArray: NSMutableArray) -> NSMutableArray{
         
         for station in stationsToRemoveArray {
@@ -833,7 +815,28 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         return markersArray
     }
 
+    
+    func showBikePaths() {
         
+        mapView.styleURL = bikesPathMapStyleUrl
+    }
+    
+    func showPave() {
+        
+        mapView.styleURL = paveMapStyleUrl
+    }
+    
+    func showBikePathsAndPave(){
+        
+        mapView.styleURL = bikesPathAndPaveMapStyleUrl
+    }
+    
+    func showCleanMap(){
+        
+        mapView.styleURL = cleanMapStyleUrl
+    }
+    
+    
 }
 
 

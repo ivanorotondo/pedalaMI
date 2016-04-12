@@ -22,62 +22,62 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="WhU-mr-zNO">
-                                        <rect key="frame" x="14" y="24" width="40" height="40"/>
+                                        <rect key="frame" x="14" y="24" width="40" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="Paq-7Y-gd6"/>
-                                            <constraint firstAttribute="height" constant="40" id="cz7-8V-OoS"/>
+                                            <constraint firstAttribute="height" constant="33" id="cz7-8V-OoS"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="z5F-zJ-sgB">
-                                        <rect key="frame" x="14" y="68" width="40" height="40"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bikePathsBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="z5F-zJ-sgB">
+                                        <rect key="frame" x="14" y="68" width="45" height="33"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="7Qy-hw-gUW"/>
-                                            <constraint firstAttribute="width" constant="40" id="Ht4-10-lT2"/>
+                                            <constraint firstAttribute="height" constant="33" id="7Qy-hw-gUW"/>
+                                            <constraint firstAttribute="width" constant="45" id="Ht4-10-lT2"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-jc-zfL">
-                                        <rect key="frame" x="14" y="112" width="40" height="40"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paveBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-jc-zfL">
+                                        <rect key="frame" x="14" y="112" width="45" height="33"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="qQH-eH-2lw"/>
-                                            <constraint firstAttribute="width" constant="40" id="wAV-nY-OH9"/>
+                                            <constraint firstAttribute="height" constant="33" id="qQH-eH-2lw"/>
+                                            <constraint firstAttribute="width" constant="45" id="wAV-nY-OH9"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="m4o-bT-q4X">
-                                        <rect key="frame" x="14" y="156" width="40" height="40"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stationsBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="m4o-bT-q4X">
+                                        <rect key="frame" x="14" y="156" width="80" height="33"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="JDt-oG-BR2"/>
-                                            <constraint firstAttribute="width" constant="40" id="jSe-ni-J3U"/>
+                                            <constraint firstAttribute="height" constant="33" id="JDt-oG-BR2"/>
+                                            <constraint firstAttribute="width" constant="80" id="jSe-ni-J3U"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refreshBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="b6k-db-ebp">
-                                        <rect key="frame" x="15" y="72" width="38" height="38"/>
+                                        <rect key="frame" x="15" y="72" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="38" id="8WA-Ms-OQu"/>
-                                            <constraint firstAttribute="height" constant="38" id="gKZ-ze-9ku"/>
+                                            <constraint firstAttribute="height" constant="36" id="gKZ-ze-9ku"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="PV5-kU-Wow">
-                                        <rect key="frame" x="14" y="200" width="40" height="40"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tapWaterBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="PV5-kU-Wow">
+                                        <rect key="frame" x="14" y="200" width="65" height="33"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="BL2-ji-dYS"/>
-                                            <constraint firstAttribute="height" constant="40" id="lhu-wh-ZAy"/>
+                                            <constraint firstAttribute="width" constant="65" id="BL2-ji-dYS"/>
+                                            <constraint firstAttribute="height" constant="33" id="lhu-wh-ZAy"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="b6k-db-ebp" secondAttribute="trailing" constant="14" id="3eP-5e-aXT"/>
-                                    <constraint firstItem="b8e-jc-zfL" firstAttribute="top" secondItem="z5F-zJ-sgB" secondAttribute="bottom" constant="4" id="K0l-6N-92a"/>
-                                    <constraint firstItem="m4o-bT-q4X" firstAttribute="top" secondItem="b8e-jc-zfL" secondAttribute="bottom" constant="4" id="PyR-j7-VO9"/>
+                                    <constraint firstItem="b8e-jc-zfL" firstAttribute="top" secondItem="z5F-zJ-sgB" secondAttribute="bottom" constant="11" id="K0l-6N-92a"/>
+                                    <constraint firstItem="m4o-bT-q4X" firstAttribute="top" secondItem="b8e-jc-zfL" secondAttribute="bottom" constant="11" id="PyR-j7-VO9"/>
                                     <constraint firstItem="b6k-db-ebp" firstAttribute="leading" secondItem="WhU-mr-zNO" secondAttribute="trailing" constant="-39" id="VE0-AU-61k"/>
-                                    <constraint firstItem="PV5-kU-Wow" firstAttribute="leading" secondItem="m4o-bT-q4X" secondAttribute="trailing" constant="-40" id="aXT-qd-YKR"/>
+                                    <constraint firstItem="PV5-kU-Wow" firstAttribute="leading" secondItem="m4o-bT-q4X" secondAttribute="trailing" constant="-80" id="aXT-qd-YKR"/>
                                     <constraint firstItem="WhU-mr-zNO" firstAttribute="leading" secondItem="WOn-z3-iKX" secondAttribute="leading" constant="14" id="ct3-zt-wSe"/>
                                     <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="24" id="da3-6K-xy6"/>
-                                    <constraint firstItem="m4o-bT-q4X" firstAttribute="leading" secondItem="b8e-jc-zfL" secondAttribute="trailing" constant="-40" id="gJK-Lm-dWd"/>
-                                    <constraint firstItem="b8e-jc-zfL" firstAttribute="leading" secondItem="z5F-zJ-sgB" secondAttribute="trailing" constant="-40" id="kuL-2Z-Zwp"/>
-                                    <constraint firstItem="z5F-zJ-sgB" firstAttribute="top" secondItem="WhU-mr-zNO" secondAttribute="bottom" constant="4" id="o7e-ds-9xM"/>
-                                    <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WhU-mr-zNO" secondAttribute="bottom" constant="8" id="sLi-dg-2dG"/>
-                                    <constraint firstItem="PV5-kU-Wow" firstAttribute="top" secondItem="m4o-bT-q4X" secondAttribute="bottom" constant="4" id="wRX-Xf-4YP"/>
+                                    <constraint firstItem="m4o-bT-q4X" firstAttribute="leading" secondItem="b8e-jc-zfL" secondAttribute="trailing" constant="-45" id="gJK-Lm-dWd"/>
+                                    <constraint firstItem="b8e-jc-zfL" firstAttribute="leading" secondItem="z5F-zJ-sgB" secondAttribute="trailing" constant="-45" id="kuL-2Z-Zwp"/>
+                                    <constraint firstItem="z5F-zJ-sgB" firstAttribute="top" secondItem="WhU-mr-zNO" secondAttribute="bottom" constant="11" id="o7e-ds-9xM"/>
+                                    <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WhU-mr-zNO" secondAttribute="bottom" constant="15" id="sLi-dg-2dG"/>
+                                    <constraint firstItem="PV5-kU-Wow" firstAttribute="top" secondItem="m4o-bT-q4X" secondAttribute="bottom" constant="11" id="wRX-Xf-4YP"/>
                                     <constraint firstItem="z5F-zJ-sgB" firstAttribute="leading" secondItem="WhU-mr-zNO" secondAttribute="trailing" constant="-40" id="x6v-2z-NeX"/>
                                     <constraint firstItem="WhU-mr-zNO" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="24" id="xOK-CN-hoN"/>
                                 </constraints>
@@ -113,7 +113,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5GG-HJ-l3Y">
                                         <rect key="frame" x="200" y="0.0" width="200" height="40"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="rectangleEBike.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5Nn-3b-dGD">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="rectangleEBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Nn-3b-dGD">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="O0G-DG-og4"/>
@@ -127,10 +127,10 @@
                                                 </variation>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eBikeSelected.png" translatesAutoresizingMaskIntoConstraints="NO" id="k3P-Oj-feM">
-                                                <rect key="frame" x="72" y="3" width="55" height="35"/>
+                                                <rect key="frame" x="75" y="4" width="50" height="32"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="55" id="Dt9-D1-kxT"/>
-                                                    <constraint firstAttribute="height" constant="35" id="T1F-4X-DEs"/>
+                                                    <constraint firstAttribute="width" constant="50" id="Dt9-D1-kxT"/>
+                                                    <constraint firstAttribute="height" constant="32" id="T1F-4X-DEs"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -147,10 +147,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Nf-Rc-QtS">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="rectangleBike.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fSP-8o-Cvh">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="rectangleBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="fSP-8o-Cvh">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
-                                                <color key="backgroundColor" red="1" green="0.59707140241797263" blue="0.05921949186919151" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="tintColor" red="1" green="0.59707140241797263" blue="0.05921949186919151" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.94901960784313721" green="0.62745098039215685" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="1" green="0.59607843137254901" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="2lv-Se-3mv"/>
                                                     <constraint firstAttribute="width" constant="200" id="VwR-Cm-RHx"/>
@@ -167,10 +167,10 @@
                                                 </variation>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bikeSelected.png" translatesAutoresizingMaskIntoConstraints="NO" id="cnL-aF-8mF">
-                                                <rect key="frame" x="72" y="1" width="55" height="35"/>
+                                                <rect key="frame" x="75" y="4" width="50" height="32"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="35" id="gft-Yk-I16"/>
-                                                    <constraint firstAttribute="width" constant="55" id="pn5-sM-q0y"/>
+                                                    <constraint firstAttribute="height" constant="32" id="gft-Yk-I16"/>
+                                                    <constraint firstAttribute="width" constant="50" id="pn5-sM-q0y"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -185,7 +185,7 @@
                                             <constraint firstAttribute="bottom" secondItem="fSP-8o-Cvh" secondAttribute="bottom" id="h4y-JD-o7r"/>
                                             <constraint firstAttribute="bottom" secondItem="fSP-8o-Cvh" secondAttribute="bottom" id="hir-Le-9jA"/>
                                             <constraint firstItem="fSP-8o-Cvh" firstAttribute="leading" secondItem="8Nf-Rc-QtS" secondAttribute="leading" id="sgx-XS-6gf"/>
-                                            <constraint firstItem="cnL-aF-8mF" firstAttribute="centerY" secondItem="8Nf-Rc-QtS" secondAttribute="centerY" constant="-1.5" id="tLf-27-WCF"/>
+                                            <constraint firstItem="cnL-aF-8mF" firstAttribute="centerY" secondItem="8Nf-Rc-QtS" secondAttribute="centerY" id="tLf-27-WCF"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -199,7 +199,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRe-jo-TVR">
                                         <rect key="frame" x="400" y="0.0" width="200" height="40"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="rectangleSlot.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xYl-Tf-hRn">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" image="rectangleSlot.png" translatesAutoresizingMaskIntoConstraints="NO" id="xYl-Tf-hRn">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="12B-vA-vxh"/>
@@ -213,16 +213,16 @@
                                                 </variation>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slotSelected.png" translatesAutoresizingMaskIntoConstraints="NO" id="eHl-Ke-JrF">
-                                                <rect key="frame" x="72" y="1" width="55" height="35"/>
+                                                <rect key="frame" x="75" y="5" width="51" height="33"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="55" id="9nX-Lw-ncM"/>
-                                                    <constraint firstAttribute="height" constant="35" id="XOZ-OQ-YN8"/>
+                                                    <constraint firstAttribute="width" constant="51" id="9nX-Lw-ncM"/>
+                                                    <constraint firstAttribute="height" constant="33" id="XOZ-OQ-YN8"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="eHl-Ke-JrF" firstAttribute="centerY" secondItem="GRe-jo-TVR" secondAttribute="centerY" constant="-1.5" id="7zl-0z-hKl"/>
+                                            <constraint firstItem="eHl-Ke-JrF" firstAttribute="centerY" secondItem="GRe-jo-TVR" secondAttribute="centerY" constant="1.5" id="7zl-0z-hKl"/>
                                             <constraint firstItem="eHl-Ke-JrF" firstAttribute="centerX" secondItem="GRe-jo-TVR" secondAttribute="centerX" id="OXD-qG-40V"/>
                                             <constraint firstItem="xYl-Tf-hRn" firstAttribute="leading" secondItem="GRe-jo-TVR" secondAttribute="leading" id="XAl-XK-EBK"/>
                                             <constraint firstItem="xYl-Tf-hRn" firstAttribute="top" secondItem="GRe-jo-TVR" secondAttribute="top" id="eIN-Km-EnK"/>
@@ -362,13 +362,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bikeSelected.png" width="400" height="400"/>
-        <image name="eBikeSelected.png" width="400" height="400"/>
-        <image name="menuBike.png" width="400" height="400"/>
-        <image name="rectangleBike.jpg" width="474" height="128"/>
-        <image name="rectangleEBike.jpg" width="474" height="128"/>
-        <image name="rectangleSlot.jpg" width="474" height="128"/>
-        <image name="refreshBike.png" width="400" height="400"/>
-        <image name="slotSelected.png" width="400" height="400"/>
+        <image name="bikePathsBike.png" width="194" height="136"/>
+        <image name="bikeSelected.png" width="262" height="173"/>
+        <image name="eBikeSelected.png" width="262" height="184"/>
+        <image name="menuBike.png" width="741" height="580"/>
+        <image name="paveBike.png" width="199" height="93"/>
+        <image name="rectangleBike.png" width="2040" height="708"/>
+        <image name="rectangleEBike.png" width="2040" height="708"/>
+        <image name="rectangleSlot.png" width="2040" height="708"/>
+        <image name="refreshBike.png" width="793" height="713"/>
+        <image name="slotSelected.png" width="262" height="192"/>
+        <image name="stationsBike.png" width="362" height="147"/>
+        <image name="tapWaterBike.png" width="288" height="147"/>
     </resources>
 </document>
