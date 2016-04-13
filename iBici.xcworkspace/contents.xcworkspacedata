@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:tapWaterXML.swift">
+   </FileRef>
+   <FileRef
       location = "group:/Users/Ivo/Apps/iBici/pedalaMI.xcodeproj">
    </FileRef>
    <FileRef

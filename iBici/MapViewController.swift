@@ -30,9 +30,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var markersRemovedBecauseOfZooming = false
     var locationUserReached = false
     var menuIsShowed = false
+    var tapWaterPointsArray : NSMutableArray = []
     
 //MARK: outlet init
     @IBOutlet var mapView: MGLMapView!
+    @IBOutlet var tabBarView: UIView!
     
 //MARK: outlet init Menu
     @IBOutlet var bikesButton: UIImageView!
@@ -46,8 +48,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var bikeStationsButton: UIImageView!
     @IBOutlet var fountainsButton: UIImageView!
     
-    var menuStatus : [String:Bool] = ["bikePaths" : false,
-                                      "pave" : false]
+    var pathsAreShowedDictionary : [String:Bool] = ["bikePaths" : false,
+                                                    "pave" : false]
+    var stationsAreShowed : Bool = false
     
 //MARK: outlet init TabBar
     @IBOutlet var bikesItemBackground: UIImageView!
@@ -72,23 +75,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //MARK: - views init
     override func viewDidLoad() {
         
+        tapWaterPointsArray = ParsingSDK.parseTapWaterXML(tapWaterXML)
+        
         pinTextFontAttributes = [NSFontAttributeName: textFont,
             NSForegroundColorAttributeName: textColor,
         ]
         
         currentView = startingView
+        showStations()
         
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            
-            Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                
-                self.addTapRecognizerToButtons()
-                self.updateTabBarItems()
-                self.downloadAndShowStations()
-            })
-        })
-
+        addTapRecognizersToTabBar()
+        addTapRecognizersToMenu()
+        
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
@@ -99,7 +97,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
-    func addTapRecognizerToButtons(){
+    func addTapRecognizersToTabBar(){
         
         let tapBikes = UITapGestureRecognizer(target:self, action:Selector("addBikesMarkers:"))
         bikesItemView.addGestureRecognizer(tapBikes)
@@ -114,25 +112,71 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         refreshButton.userInteractionEnabled = true
         refreshButton.addGestureRecognizer(tapRefresh)
-        
+
+    }
+    
+    func addTapRecognizersToMenu() {
         let tapSettings = UITapGestureRecognizer(target: self, action: Selector("showMenuController:"))
         
         settingsButton.userInteractionEnabled = true
         settingsButton.addGestureRecognizer(tapSettings)
         
-        let tapBikePaths = UITapGestureRecognizer(target: self, action: Selector("menuSwitchController:"))
+        let tapBikePaths = UITapGestureRecognizer(target: self, action: Selector("menuPathsSwitchController:"))
         bikePathsButton.tag = 1
         bikePathsButton.userInteractionEnabled = false
         bikePathsButton.addGestureRecognizer(tapBikePaths)
         
-        let tapPavePaths = UITapGestureRecognizer(target: self, action: Selector("menuSwitchController:"))
+        let tapPavePaths = UITapGestureRecognizer(target: self, action: Selector("menuPathsSwitchController:"))
         paveButton.tag = 2
         paveButton.userInteractionEnabled = false
         paveButton.addGestureRecognizer(tapPavePaths)
+        
+        let tapBikeStations = UITapGestureRecognizer(target: self, action: Selector("menuStationsController:"))
+        bikeStationsButton.userInteractionEnabled = false
+        bikeStationsButton.addGestureRecognizer(tapBikeStations)
 
     }
     
-    func menuSwitchController(sender: UITapGestureRecognizer){
+    func menuStationsController(sender: UITapGestureRecognizer){
+        
+        if stationsAreShowed == false {
+            
+            showStations()
+            
+        } else {
+            
+            hideStations()
+        }
+        
+    }
+    
+    func showStations(){
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            
+            Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                
+                self.currentView = self.startingView
+                self.updateTabBarItems()
+                self.downloadAndShowStations()
+                self.stationsAreShowed = true
+                self.tabBarView.hidden = false
+                self.tabBarView.userInteractionEnabled = true
+            })
+        })
+    }
+    
+    func hideStations(){
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            self.subsetStationsAroundArrayOLD = []
+            self.mapView.removeAnnotations(self.annotationsArray)
+            self.stationsAreShowed = false
+            self.tabBarView.hidden = true
+            self.tabBarView.userInteractionEnabled = false
+        })
+    }
+    
+    func menuPathsSwitchController(sender: UITapGestureRecognizer){
         
         switch sender.view!.tag{
             
@@ -154,39 +198,39 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         if buttonTapped == "bikePaths" {
             
-            if menuStatus["bikePaths"] == false {
-                if menuStatus["pave"] == false {
+            if pathsAreShowedDictionary["bikePaths"] == false {
+                if pathsAreShowedDictionary["pave"] == false {
                     showBikePaths()
                 } else {
                     showBikePathsAndPave()
                 }
-                menuStatus["bikePaths"] = true
+                pathsAreShowedDictionary["bikePaths"] = true
             } else {
-                if menuStatus["pave"] == false {
+                if pathsAreShowedDictionary["pave"] == false {
                     showCleanMap()
                 } else {
                     showPave()
                 }
-                menuStatus["bikePaths"] = false
+                pathsAreShowedDictionary["bikePaths"] = false
             }
             
         }
         
         if buttonTapped == "pave" {
-            if menuStatus["pave"] == false {
-                if menuStatus["bikePaths"] == false {
+            if pathsAreShowedDictionary["pave"] == false {
+                if pathsAreShowedDictionary["bikePaths"] == false {
                     showPave()
                 } else {
                     showBikePathsAndPave()
                 }
-                menuStatus["pave"] = true
+                pathsAreShowedDictionary["pave"] = true
             } else {
-                if menuStatus["bikePaths"] == false {
+                if pathsAreShowedDictionary["bikePaths"] == false {
                     showCleanMap()
                 } else {
                     showBikePaths()
                 }
-                menuStatus["pave"] = false
+                pathsAreShowedDictionary["pave"] = false
             }
         }
         
@@ -561,7 +605,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     
-                    self.addTapRecognizerToButtons()
+                    self.addTapRecognizersToTabBar()
                     self.updateTabBarItems()
                     self.downloadAndShowStations()
                 })
@@ -656,7 +700,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         
         dispatch_async(dispatch_queue_create("serial-worker", DISPATCH_QUEUE_SERIAL)) {
-            self.getStationsAroundThisDistanceInMeters(800) //contained into subsetStationsAroundArray
+            self.getStationsAroundThisDistanceInMeters(800, pointsArray: self.stationsArray) //contained into subsetStationsAroundArray
             
             
             (stationsToAddArray, stationsToRemoveArray) = self.getStationsToAddAndToRemoveArrays()
@@ -716,12 +760,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
-    func getStationsAroundThisDistanceInMeters(distance: Double) {
+    func getStationsAroundThisDistanceInMeters(distance: Double, pointsArray: NSMutableArray) {
         
         subsetStationsAroundArray = []
 
     //get the locations of every station wrt the center of the map
-        for station in self.stationsArray{
+        for station in pointsArray{
             let a = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
             let b = CLLocation(latitude: ((station as? Station)?.stationCoord.latitude)!, longitude: ((station as? Station)?.stationCoord.longitude)!)
             if a.distanceFromLocation(b) < distance {
@@ -835,6 +879,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         mapView.styleURL = cleanMapStyleUrl
     }
+    
     
     
 }

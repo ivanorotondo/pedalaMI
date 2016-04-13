@@ -42,6 +42,9 @@
 		92E72A201CBD2D5000410E3C /* paveBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A1F1CBD2D5000410E3C /* paveBike.png */; };
 		92E72A221CBD317900410E3C /* stationsBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A211CBD317900410E3C /* stationsBike.png */; };
 		92E72A241CBD332000410E3C /* tapWaterBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A231CBD332000410E3C /* tapWaterBike.png */; };
+		92E72A261CBD3D6800410E3C /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A251CBD3D6800410E3C /* launchScreen.png */; };
+		92E72A2A1CBE3CDD00410E3C /* tapWaterXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E72A291CBE3CDD00410E3C /* tapWaterXML.swift */; };
+		92E72A2C1CBE47DF00410E3C /* TapWaterPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E72A2B1CBE47DF00410E3C /* TapWaterPoint.swift */; };
 		E3B3FDFFD0C466C215028BEF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E83B4EEE28A4BDFB4640EE0 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +110,9 @@
 		92E72A1F1CBD2D5000410E3C /* paveBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paveBike.png; path = graphics/paveBike.png; sourceTree = "<group>"; };
 		92E72A211CBD317900410E3C /* stationsBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stationsBike.png; path = graphics/stationsBike.png; sourceTree = "<group>"; };
 		92E72A231CBD332000410E3C /* tapWaterBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tapWaterBike.png; path = graphics/tapWaterBike.png; sourceTree = "<group>"; };
+		92E72A251CBD3D6800410E3C /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchScreen.png; path = graphics/launchScreen.png; sourceTree = "<group>"; };
+		92E72A291CBE3CDD00410E3C /* tapWaterXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tapWaterXML.swift; path = ../tapWaterXML.swift; sourceTree = "<group>"; };
+		92E72A2B1CBE47DF00410E3C /* TapWaterPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapWaterPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +191,7 @@
 				92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */,
 				92876C3F1C93564200BB6BDA /* ParsingSDK.swift */,
 				92876C3A1C9300E300BB6BDA /* ServerCallsSDK.swift */,
+				92E72A291CBE3CDD00410E3C /* tapWaterXML.swift */,
 				92AC2FE91C9D912A0031223D /* Utilities.swift */,
 				92876C0C1C92FD5800BB6BDA /* Main.storyboard */,
 				92876C0F1C92FD5800BB6BDA /* Assets.xcassets */,
@@ -219,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				92876C3C1C93431B00BB6BDA /* Station.swift */,
+				92E72A2B1CBE47DF00410E3C /* TapWaterPoint.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 				92E729FA1CBD0B8B00410E3C /* bikeUnselected.png */,
 				92E729FB1CBD0B8B00410E3C /* eBikeSelected.png */,
 				92E729FC1CBD0B8B00410E3C /* eBikeUnselected.png */,
+				92E72A251CBD3D6800410E3C /* launchScreen.png */,
 				92E729FD1CBD0B8B00410E3C /* menuBike.png */,
 				92E729FE1CBD0B8B00410E3C /* menuEbike.png */,
 				92E729FF1CBD0B8B00410E3C /* menuSlot.png */,
@@ -368,6 +377,7 @@
 				92E72A161CBD0B8B00410E3C /* rectangleEBike.png in Resources */,
 				92E72A101CBD0B8B00410E3C /* menuEbike.png in Resources */,
 				92E72A0D1CBD0B8B00410E3C /* eBikeSelected.png in Resources */,
+				92E72A261CBD3D6800410E3C /* launchScreen.png in Resources */,
 				92876C101C92FD5800BB6BDA /* Assets.xcassets in Resources */,
 				92E72A1E1CBD169D00410E3C /* bikePathsBike.png in Resources */,
 				92E72A111CBD0B8B00410E3C /* menuSlot.png in Resources */,
@@ -459,9 +469,11 @@
 			files = (
 				92E41E691CBBF30C0029AA5F /* MenuController.swift in Sources */,
 				92876C0B1C92FD5800BB6BDA /* MapViewController.swift in Sources */,
+				92E72A2A1CBE3CDD00410E3C /* tapWaterXML.swift in Sources */,
 				92DBB46C1C9589CD003BCD1A /* MenuViewController.swift in Sources */,
 				92AC2FEA1C9D912A0031223D /* Utilities.swift in Sources */,
 				92876C091C92FD5800BB6BDA /* AppDelegate.swift in Sources */,
+				92E72A2C1CBE47DF00410E3C /* TapWaterPoint.swift in Sources */,
 				92876C401C93564200BB6BDA /* ParsingSDK.swift in Sources */,
 				92876C3D1C93431B00BB6BDA /* Station.swift in Sources */,
 				92876C3B1C9300E300BB6BDA /* ServerCallsSDK.swift in Sources */,

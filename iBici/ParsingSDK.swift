@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ParsingSDK {
+class ParsingSDK{
     
     static func parseGoogleMapToObjects(inputString: NSString, stationsArray: NSMutableArray){
         
@@ -91,6 +91,55 @@ class ParsingSDK {
         
     }
     
+    
+    
+    static func parseTapWaterXML(tapWaterXML: String) -> NSMutableArray {
+        //marker U=Via Vincenzo Monti, 55, 20123 Milano, Italia ID=phee8CBfnn4xYz lat=45.472267 lng=9.167421999999988 T=SI />
+        
+        let tapWaterPointsArray : NSMutableArray = []
+        
+        var (outputString, markerString) = ParsingSDK.setTheNewStartingPoint("<", inputString: tapWaterXML)
+        
+        print("\(markerString)")
+        
+        while outputString != "" {
+            
+            (outputString, markerString) = ParsingSDK.setTheNewStartingPoint("<", inputString: outputString)
+            
+            //    print("\(discardedString)")
+            
+            let tapWaterPoint = TapWaterPoint()
+            
+            tapWaterPoint.coordinate.latitude = Double(getValueFromXML(markerString, value: "lat=") as String)!
+            tapWaterPoint.coordinate.longitude = Double(getValueFromXML(markerString, value: "lng=") as String)!
+            tapWaterPoint.id = getValueFromXML(markerString, value: "ID=") as String
+            
+            let idPredicate = NSPredicate(format: "id = %@", "\(tapWaterPoint.id)")
+            
+            if (tapWaterPointsArray as NSMutableArray).filteredArrayUsingPredicate(idPredicate).count == 0 {
+                tapWaterPointsArray.addObject(tapWaterPoint)
+            }
+            
+        }
+        
+        return tapWaterPointsArray
+    }
+    
+    static func getValueFromXML(markerString: NSString, value: String) -> NSString{
+        
+        let (stringFromValue, _) = ParsingSDK.setTheNewStartingPoint(value, inputString: markerString)
+        
+        let (_, valueString) = ParsingSDK.setTheNewStartingPoint(" ", inputString: stringFromValue)
+        //    print("\(valueString)")
+        
+        return valueString
+    }
+
+    
+    
+    
+    
+    
     static func setTheNewStartingPoint(startingString: String, inputString: NSString) -> (NSString,NSString){
         
         var outputString : NSString?
@@ -99,18 +148,23 @@ class ParsingSDK {
         
 
     //get the starting point
-        let startingPoint = inputString.rangeOfString(startingString)
+        let startingPoint : NSRange = inputString.rangeOfString(startingString)
         
-    //cut the original string from the END of the starting point, to the end of the string
-        outputString = inputString.substringWithRange(NSRange(location: startingPoint.location + startingPoint.length, length: inputString.length - startingPoint.location - startingPoint.length))
-        
-        discardedString = inputString.substringWithRange(NSRange(location: 0, length: startingPoint.location))
-        
-        if outputString == nil {
+        if startingPoint.length != 0 {
+            //cut the original string from the END of the starting point, to the end of the string
+            outputString = inputString.substringWithRange(NSRange(location: startingPoint.location + startingPoint.length, length: inputString.length - startingPoint.location - startingPoint.length))
+            
+            discardedString = inputString.substringWithRange(NSRange(location: 0, length: startingPoint.location))
+            
+            if outputString == nil {
+                outputString = ""
+            }
+            if discardedString == nil {
+                discardedString = ""
+            }
+        } else {
             outputString = ""
-        }
-        if discardedString == nil {
-            discardedString = ""
+            discardedString = inputString
         }
         
         return (outputString!, discardedString!)

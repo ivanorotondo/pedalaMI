@@ -36,7 +36,7 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paveBike.png" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-jc-zfL">
-                                        <rect key="frame" x="14" y="112" width="45" height="33"/>
+                                        <rect key="frame" x="14" y="109" width="45" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="33" id="qQH-eH-2lw"/>
                                             <constraint firstAttribute="width" constant="45" id="wAV-nY-OH9"/>
@@ -67,8 +67,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="b6k-db-ebp" secondAttribute="trailing" constant="14" id="3eP-5e-aXT"/>
-                                    <constraint firstItem="b8e-jc-zfL" firstAttribute="top" secondItem="z5F-zJ-sgB" secondAttribute="bottom" constant="11" id="K0l-6N-92a"/>
-                                    <constraint firstItem="m4o-bT-q4X" firstAttribute="top" secondItem="b8e-jc-zfL" secondAttribute="bottom" constant="11" id="PyR-j7-VO9"/>
+                                    <constraint firstItem="b8e-jc-zfL" firstAttribute="top" secondItem="z5F-zJ-sgB" secondAttribute="bottom" constant="8" id="K0l-6N-92a"/>
+                                    <constraint firstItem="m4o-bT-q4X" firstAttribute="top" secondItem="b8e-jc-zfL" secondAttribute="bottom" constant="14" id="PyR-j7-VO9"/>
                                     <constraint firstItem="b6k-db-ebp" firstAttribute="leading" secondItem="WhU-mr-zNO" secondAttribute="trailing" constant="-39" id="VE0-AU-61k"/>
                                     <constraint firstItem="PV5-kU-Wow" firstAttribute="leading" secondItem="m4o-bT-q4X" secondAttribute="trailing" constant="-80" id="aXT-qd-YKR"/>
                                     <constraint firstItem="WhU-mr-zNO" firstAttribute="leading" secondItem="WOn-z3-iKX" secondAttribute="leading" constant="14" id="ct3-zt-wSe"/>
@@ -277,6 +277,7 @@
                         <outlet property="slotsButton" destination="eHl-Ke-JrF" id="zeM-7o-HlP"/>
                         <outlet property="slotsItemBackground" destination="xYl-Tf-hRn" id="2Uk-92-auO"/>
                         <outlet property="slotsItemView" destination="GRe-jo-TVR" id="3T6-bO-5Mu"/>
+                        <outlet property="tabBarView" destination="CZW-yd-Bw9" id="EOB-kZ-WMF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -362,7 +363,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bikePathsBike.png" width="194" height="136"/>
+        <image name="bikePathsBike.png" width="200" height="147"/>
         <image name="bikeSelected.png" width="262" height="173"/>
         <image name="eBikeSelected.png" width="262" height="184"/>
         <image name="menuBike.png" width="741" height="580"/>
