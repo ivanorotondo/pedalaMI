@@ -31,6 +31,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var locationUserReached = false
     var menuIsShowed = false
     var tapWaterPointsArray : NSMutableArray = []
+    var currentPoints = ""
+    var startingPoints = "bikeStations"
+    var regionDidChangeEnabled = false
     
 //MARK: outlet init
     @IBOutlet var mapView: MGLMapView!
@@ -46,11 +49,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var paveButton: UIImageView!
     @IBOutlet var bikePathsButton: UIImageView!
     @IBOutlet var bikeStationsButton: UIImageView!
-    @IBOutlet var fountainsButton: UIImageView!
+    @IBOutlet var tapWaterButton: UIImageView!
     
     var pathsAreShowedDictionary : [String:Bool] = ["bikePaths" : false,
                                                     "pave" : false]
-    var stationsAreShowed : Bool = false
+    var pointsAreShowedDictionary : [String:Bool] = ["bikeStations" : false,
+                                                     "tapWaterPoints" : false]
     
 //MARK: outlet init TabBar
     @IBOutlet var bikesItemBackground: UIImageView!
@@ -82,7 +86,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         ]
         
         currentView = startingView
-        showStations()
+        currentPoints = startingPoints
+       showBikeStations()
         
         addTapRecognizersToTabBar()
         addTapRecognizersToMenu()
@@ -93,8 +98,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         bikePathsButton.alpha = 0
         paveButton.alpha = 0
         bikeStationsButton.alpha = 0
-        fountainsButton.alpha = 0
+        tapWaterButton.alpha = 0
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        regionDidChangeEnabled = true
     }
     
     func addTapRecognizersToTabBar(){
@@ -131,26 +140,93 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         paveButton.userInteractionEnabled = false
         paveButton.addGestureRecognizer(tapPavePaths)
         
-        let tapBikeStations = UITapGestureRecognizer(target: self, action: Selector("menuStationsController:"))
+        let tapBikeStations = UITapGestureRecognizer(target: self, action: Selector("menuPointsController:"))
+        bikeStationsButton.tag = 10
         bikeStationsButton.userInteractionEnabled = false
         bikeStationsButton.addGestureRecognizer(tapBikeStations)
+        
+        let tapTapWaterPoints = UITapGestureRecognizer(target: self, action: Selector("menuPointsController:"))
+        tapWaterButton.tag = 20
+        tapWaterButton.userInteractionEnabled = false
+        tapWaterButton.addGestureRecognizer(tapTapWaterPoints)
 
     }
     
-    func menuStationsController(sender: UITapGestureRecognizer){
+    func menuPointsController(sender: UITapGestureRecognizer){
         
-        if stationsAreShowed == false {
+        switch sender.view!.tag{
             
-            showStations()
+        case 10:
+            if currentPoints == "bikeStations" {
+                
+                currentPoints = "bikeStations"
+                
+                if pointsAreShowedDictionary["bikeStations"] == false{
+                    
+                    showBikeStations()
+                    
+                } else {
+                    
+                    hideBikeStations()
+                }
+            }
+            if currentPoints == "tapWaterPoints" {
+                hideTapWaterPoints()
+                currentPoints = "bikeStations"
+                showBikeStations()
+            }
+            break
             
-        } else {
+        case 20:
+            if currentPoints == "tapWaterPoints" {
+                if pointsAreShowedDictionary["tapWaterPoints"] == false{
+                    currentPoints = "tapWaterPoints"
+
+                    showTapWaterPoints()
+                    
+                } else {
+                    
+                    hideTapWaterPoints()
+                }
+            }
+            if currentPoints == "bikeStations" {
+                self.hideBikeStations()
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.currentPoints = "tapWaterPoints"
+                    self.showTapWaterPoints()
+                })
+            }
+            break
             
-            hideStations()
+        default:
+            break
+            
         }
+
+        
+
         
     }
     
-    func showStations(){
+    func showTapWaterPoints(){
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            
+            self.addMarkersToTheMap("tapWaterPoints")
+            self.pointsAreShowedDictionary["tapWaterPoints"] = true
+
+        })
+    }
+    
+    func hideTapWaterPoints(){
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            self.subsetPointsAroundArrayOLD = []
+            self.mapView.removeAnnotations(self.annotationsArray)
+            self.pointsAreShowedDictionary["tapWaterPoints"] = false
+
+        })
+    }
+    
+    func showBikeStations(){
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             
             Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
@@ -159,18 +235,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 self.currentView = self.startingView
                 self.updateTabBarItems()
                 self.downloadAndShowStations()
-                self.stationsAreShowed = true
+                self.pointsAreShowedDictionary["bikeStations"] = true
                 self.tabBarView.hidden = false
                 self.tabBarView.userInteractionEnabled = true
             })
         })
     }
     
-    func hideStations(){
+    func hideBikeStations(){
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
             self.subsetPointsAroundArrayOLD = []
             self.mapView.removeAnnotations(self.annotationsArray)
-            self.stationsAreShowed = false
+            self.pointsAreShowedDictionary["bikeStations"] = false
             self.tabBarView.hidden = true
             self.tabBarView.userInteractionEnabled = false
         })
@@ -307,6 +383,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         })
     }
+    
+    
 //        getTheHTML(stationsURL){
 //            ParsingSDK.parseGoogleMapToObjects(self.stationsHTML, stationsArray: self.stationsArray)
 //            dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -630,7 +708,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         //self.slideMenuController()?.openLeft()
         let refreshButtonInitialOriginY = CGFloat(settingsButton.frame.origin.y + 48.0)
-        let refreshButtonFinalOriginY = CGFloat(fountainsButton.frame.origin.y + 44.0)
+        let refreshButtonFinalOriginY = CGFloat(tapWaterButton.frame.origin.y + 44.0)
         
         if menuIsShowed == false {
             showMenu(refreshButtonInitialOriginY, refreshButtonFinalOriginY: refreshButtonFinalOriginY)
@@ -656,11 +734,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         UIView.animateWithDuration(0.3, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
                 self.paveButton.alpha = 1
                 self.bikeStationsButton.alpha = 1
-                self.fountainsButton.alpha = 1
+                self.tapWaterButton.alpha = 1
             
                 self.paveButton.userInteractionEnabled = true
                 self.bikeStationsButton.userInteractionEnabled = true
-                self.fountainsButton.userInteractionEnabled = true
+                self.tapWaterButton.userInteractionEnabled = true
             
                 self.refreshButton.frame.origin.y += refreshButtonFinalOriginY - refreshButtonInitialOriginY
                 self.view.layoutIfNeeded()
@@ -672,11 +750,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
                 self.paveButton.alpha = 0
                 self.bikeStationsButton.alpha = 0
-                self.fountainsButton.alpha = 0
+                self.tapWaterButton.alpha = 0
             
                 self.paveButton.userInteractionEnabled = false
                 self.bikeStationsButton.userInteractionEnabled = false
-                self.fountainsButton.userInteractionEnabled = false
+                self.tapWaterButton.userInteractionEnabled = false
             
                 self.view.layoutIfNeeded()
             }, completion: nil)
@@ -691,52 +769,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func mapView(mapView: MGLMapView, regionDidChangeAnimated animated: Bool) {
-        addMarkersToTheMap("bikeStations")
+        
+        if regionDidChangeEnabled == true {
+            addMarkersToTheMap(currentPoints)
+        }
     }
-    
-    
-//    func addMarkersToTheMapOLD(bikesType: String){
-//        
-//        var stationsToAddArray : NSMutableArray = []
-//        var stationsToRemoveArray : NSMutableArray = []
-//        var markersToRemoveArray : NSMutableArray = []
-//        
-//        
-//        dispatch_async(dispatch_queue_create("serial-worker", DISPATCH_QUEUE_SERIAL)) {
-//            self.getStationsAroundThisDistanceInMeters(800, pointsArray: self.stationsArray) //contained into subsetStationsAroundArray
-//            
-//            
-//            (stationsToAddArray, stationsToRemoveArray) = self.getStationsToAddAndToRemoveArrays()
-//            
-//            markersToRemoveArray = self.getMarkersArrayToRemoveFromAnnotationsArray(stationsToRemoveArray, markersArray: markersToRemoveArray)
-//            
-//            self.subsetStationsAroundArrayOLD = []
-//            for station in self.subsetStationsAroundArray {
-//                self.subsetStationsAroundArrayOLD.addObject(station)
-//            }
-//            
-//            self.mapView.removeAnnotations(markersToRemoveArray as! [MGLAnnotation])
-//            
-//            dispatch_async(dispatch_get_main_queue(), {
-//                //show the markers on the map
-//                for station in stationsToAddArray{
-//                    
-//                    var marker = self.getMarkerFromStation(bikesType, station: station as! Station)
-//                    self.annotationsArray.append(marker)
-//                    
-//                    self.mapView.addAnnotation(marker) //calls mapView(_: imageForAnnotation:)
-//                    
-//                } //end for
-//                
-//                
-//                //
-//                Utilities.transparentFrame.removeFromSuperview()
-//                Utilities.loadingAnimationImageView.removeFromSuperview()
-//                Utilities.messageFrame.removeFromSuperview()            })
-//        }
-//     
-//    }
-//    
     
     func addMarkersToTheMap(markerType: String){
         
@@ -746,7 +783,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             case "bikeStations":
                 markersArray = self.stationsArray
             break
-            case "tapWater":
+            case "tapWaterPoints":
                 markersArray = self.tapWaterPointsArray
             break
             default:
@@ -806,21 +843,40 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         var text = NSString(string: " ")
         
-        if annotation.subtitle != nil{
+        var annotationImage : MGLAnnotationImage?
+
+        if annotation.subtitle != nil && annotation.title! != "Tap Water" {
             
             text = extractPinNumbersFromAnnotationSubtitle(annotation, text: text)
+            annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier("\(currentView) \(text)")
+            
+            if annotationImage == nil {
+                
+                let image = getTheImageCorrespondingToTheCurrentView()
+                
+                let resizedImage = setUpThePinImage(image, text: text)
+                
+                annotationImage = MGLAnnotationImage(image: resizedImage, reuseIdentifier: "\(currentView) \(text)")
+            }
         }
         
-        var annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier("\(currentView) \(text)")
-        
-        if annotationImage == nil {
+        if annotation.title! == "Tap Water" {
+            annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier("tapWater")
             
-            let image = getTheImageCorrespondingToTheCurrentView()
-            
-            let resizedImage = setUpThePinImage(image, text: text)
-            
-            annotationImage = MGLAnnotationImage(image: resizedImage, reuseIdentifier: "\(currentView) \(text)")
+            if annotationImage == nil {
+                
+                var image = UIImage(named: "pinTapWater")
+                
+                let size = CGSize(width: 17, height: 25)
+                UIGraphicsBeginImageContext(size)
+                image!.drawInRect(CGRectMake(0, 0, size.width, size.height))
+                image = UIGraphicsGetImageFromCurrentImageContext()
+                UIGraphicsEndImageContext()
+                
+                annotationImage = MGLAnnotationImage(image: image!, reuseIdentifier: "tapWater")
+            }
         }
+        
         
         return annotationImage
     }
@@ -917,6 +973,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let marker = MGLPointAnnotation()
         marker.title = "Tap Water"
         marker.subtitle = "\(tapWaterPoint.name)"
+        
         marker.coordinate = CLLocationCoordinate2DMake(tapWaterPoint.coordinate.latitude, tapWaterPoint.coordinate.longitude)
 
         return marker
@@ -963,16 +1020,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                     if annotation.title! == (point as? Station)?.stationName {
                         markersArray.addObject(annotation)
                         indexToRemove = index
+                        annotationsArray.removeAtIndex(indexToRemove as! Int)
                     }
                 } else {
-                    if annotation.title! == (point as? TapWaterPoint)?.name {
+                    if annotation.coordinate.longitude == (point as? TapWaterPoint)?.coordinate.longitude && annotation.coordinate.latitude == (point as? TapWaterPoint)?.coordinate.latitude {
                         markersArray.addObject(annotation)
                         indexToRemove = index
+                        annotationsArray.removeAtIndex(indexToRemove as! Int)
                     }
                 }
             }
             
-            annotationsArray.removeAtIndex(indexToRemove as! Int)
             
             
            // markersArray.addObject(getMarkerFromStation(currentView, station: station as! Station))

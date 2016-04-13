@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -269,7 +269,6 @@
                         <outlet property="eBikesButton" destination="k3P-Oj-feM" id="2qy-9G-eRh"/>
                         <outlet property="eBikesItemBackground" destination="5Nn-3b-dGD" id="ofA-ih-njl"/>
                         <outlet property="eBikesItemView" destination="5GG-HJ-l3Y" id="S42-Zd-Wcx"/>
-                        <outlet property="fountainsButton" destination="PV5-kU-Wow" id="MFT-NV-mgk"/>
                         <outlet property="mapView" destination="WOn-z3-iKX" id="cQc-3I-WwN"/>
                         <outlet property="paveButton" destination="b8e-jc-zfL" id="3VD-1w-XiD"/>
                         <outlet property="refreshButton" destination="b6k-db-ebp" id="wGM-zE-WPc"/>
@@ -278,6 +277,7 @@
                         <outlet property="slotsItemBackground" destination="xYl-Tf-hRn" id="2Uk-92-auO"/>
                         <outlet property="slotsItemView" destination="GRe-jo-TVR" id="3T6-bO-5Mu"/>
                         <outlet property="tabBarView" destination="CZW-yd-Bw9" id="EOB-kZ-WMF"/>
+                        <outlet property="tapWaterButton" destination="PV5-kU-Wow" id="fNN-wu-mSZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

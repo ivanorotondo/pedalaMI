@@ -110,10 +110,10 @@ class ParsingSDK{
             
             let tapWaterPoint = TapWaterPoint()
             
-            tapWaterPoint.id = getValueFromXML(markerString, value: "ID=") as String
-            tapWaterPoint.name = getValueFromXML(markerString, value: ", Italia") as String
-            tapWaterPoint.coordinate.latitude = Double(getValueFromXML(markerString, value: "lat=") as String)!
-            tapWaterPoint.coordinate.longitude = Double(getValueFromXML(markerString, value: "lng=") as String)!
+            tapWaterPoint.id = getValueFromXML(markerString, value: "ID=", endingPoint: " ") as String
+            tapWaterPoint.name = getValueFromXML(markerString, value: "U=", endingPoint: ", Italia") as String
+            tapWaterPoint.coordinate.latitude = Double(getValueFromXML(markerString, value: "lat=", endingPoint: " ") as String)!
+            tapWaterPoint.coordinate.longitude = Double(getValueFromXML(markerString, value: "lng=", endingPoint: " ") as String)!
             
             let idPredicate = NSPredicate(format: "id = %@", "\(tapWaterPoint.id)")
             
@@ -121,16 +121,18 @@ class ParsingSDK{
                 tapWaterPointsArray.addObject(tapWaterPoint)
             }
             
+            
+            
         }
         
         return tapWaterPointsArray
     }
     
-    static func getValueFromXML(markerString: NSString, value: String) -> NSString{
+    static func getValueFromXML(markerString: NSString, value: String, endingPoint: String) -> NSString{
         
         let (stringFromValue, _) = ParsingSDK.setTheNewStartingPoint(value, inputString: markerString)
         
-        let (_, valueString) = ParsingSDK.setTheNewStartingPoint(" ", inputString: stringFromValue)
+        let (_, valueString) = ParsingSDK.setTheNewStartingPoint(endingPoint, inputString: stringFromValue)
         //    print("\(valueString)")
         
         return valueString
