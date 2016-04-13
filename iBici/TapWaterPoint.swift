@@ -13,6 +13,7 @@ import MapKit
 class TapWaterPoint : NSObject{
     
     var id : String = ""
+    var name : String = ""
     var coordinate : CLLocationCoordinate2D = CLLocationCoordinate2DMake(Double(0.0), Double(0.0))
     
 }

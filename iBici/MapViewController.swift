@@ -23,8 +23,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var stationsHTML : NSString = ""
     var stationsArray : NSMutableArray = []
     var annotationsArray = [MGLAnnotation]()                //displayed annotations' array
-    var subsetStationsAroundArray : NSMutableArray = []     //displayed stations' array
-    var subsetStationsAroundArrayOLD : NSMutableArray = []  //displayed stations' array before update
+    var subsetPointsAroundArray : NSMutableArray = []     //displayed stations' array
+    var subsetPointsAroundArrayOLD : NSMutableArray = []  //displayed stations' array before update
     var currentView = ""
     var startingView = "bikes"
     var markersRemovedBecauseOfZooming = false
@@ -168,7 +168,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func hideStations(){
         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            self.subsetStationsAroundArrayOLD = []
+            self.subsetPointsAroundArrayOLD = []
             self.mapView.removeAnnotations(self.annotationsArray)
             self.stationsAreShowed = false
             self.tabBarView.hidden = true
@@ -301,7 +301,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 
-                self.addMarkersToTheMap(self.currentView)
+                self.addMarkersToTheMap("bikeStations")
             })
         }, unsuccess:{
         
@@ -537,14 +537,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             
             if markersRemovedBecauseOfZooming == false {
                 
-                subsetStationsAroundArrayOLD = []
+                subsetPointsAroundArrayOLD = []
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
 
                     self.mapView.removeAnnotations(self.annotationsArray)
                     
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
-
-                        self.addMarkersToTheMap("bikes")
+                        
+                        self.currentView = "bikes"
+                        self.addMarkersToTheMap("bikeStations")
                     })
                 })
             }
@@ -561,13 +562,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
             if markersRemovedBecauseOfZooming == false {
                 
-                subsetStationsAroundArrayOLD = []
+                subsetPointsAroundArrayOLD = []
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
 
                     self.mapView.removeAnnotations(self.annotationsArray)
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
 
-                        self.addMarkersToTheMap("electricBikes")
+                        self.currentView = "electricBikes"
+                        self.addMarkersToTheMap("bikeStations")
                     })
                 })
             }
@@ -582,13 +584,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             
             if markersRemovedBecauseOfZooming == false {
                 
-                subsetStationsAroundArrayOLD = []
+                subsetPointsAroundArrayOLD = []
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
 
                     self.mapView.removeAnnotations(self.annotationsArray)
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
 
-                        self.addMarkersToTheMap("slots")
+                        self.currentView = "slots"
+                        self.addMarkersToTheMap("bikeStations")
                     })
                 })
                 
@@ -614,9 +617,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             
                 Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    self.subsetStationsAroundArrayOLD = []
+                    self.subsetPointsAroundArrayOLD = []
                     self.mapView.removeAnnotations(self.annotationsArray)
-                    self.addMarkersToTheMap(self.currentView)
+                    self.addMarkersToTheMap("bikeStations")
                 })
             }
         })
@@ -688,40 +691,102 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func mapView(mapView: MGLMapView, regionDidChangeAnimated animated: Bool) {
-        addMarkersToTheMap(currentView)
+        addMarkersToTheMap("bikeStations")
     }
     
     
-    func addMarkersToTheMap(bikesType: String){
+//    func addMarkersToTheMapOLD(bikesType: String){
+//        
+//        var stationsToAddArray : NSMutableArray = []
+//        var stationsToRemoveArray : NSMutableArray = []
+//        var markersToRemoveArray : NSMutableArray = []
+//        
+//        
+//        dispatch_async(dispatch_queue_create("serial-worker", DISPATCH_QUEUE_SERIAL)) {
+//            self.getStationsAroundThisDistanceInMeters(800, pointsArray: self.stationsArray) //contained into subsetStationsAroundArray
+//            
+//            
+//            (stationsToAddArray, stationsToRemoveArray) = self.getStationsToAddAndToRemoveArrays()
+//            
+//            markersToRemoveArray = self.getMarkersArrayToRemoveFromAnnotationsArray(stationsToRemoveArray, markersArray: markersToRemoveArray)
+//            
+//            self.subsetStationsAroundArrayOLD = []
+//            for station in self.subsetStationsAroundArray {
+//                self.subsetStationsAroundArrayOLD.addObject(station)
+//            }
+//            
+//            self.mapView.removeAnnotations(markersToRemoveArray as! [MGLAnnotation])
+//            
+//            dispatch_async(dispatch_get_main_queue(), {
+//                //show the markers on the map
+//                for station in stationsToAddArray{
+//                    
+//                    var marker = self.getMarkerFromStation(bikesType, station: station as! Station)
+//                    self.annotationsArray.append(marker)
+//                    
+//                    self.mapView.addAnnotation(marker) //calls mapView(_: imageForAnnotation:)
+//                    
+//                } //end for
+//                
+//                
+//                //
+//                Utilities.transparentFrame.removeFromSuperview()
+//                Utilities.loadingAnimationImageView.removeFromSuperview()
+//                Utilities.messageFrame.removeFromSuperview()            })
+//        }
+//     
+//    }
+//    
+    
+    func addMarkersToTheMap(markerType: String){
         
-        var stationsToAddArray : NSMutableArray = []
-        var stationsToRemoveArray : NSMutableArray = []
+        var markersArray : NSMutableArray = []
+        
+        switch markerType {
+            case "bikeStations":
+                markersArray = self.stationsArray
+            break
+            case "tapWater":
+                markersArray = self.tapWaterPointsArray
+            break
+            default:
+                markersArray = []
+            break
+        }
+        
+        var pointsToAddArray : NSMutableArray = []
+        var pointsToRemoveArray : NSMutableArray = []
         var markersToRemoveArray : NSMutableArray = []
         
-        
         dispatch_async(dispatch_queue_create("serial-worker", DISPATCH_QUEUE_SERIAL)) {
-            self.getStationsAroundThisDistanceInMeters(800, pointsArray: self.stationsArray) //contained into subsetStationsAroundArray
             
+            self.subsetPointsAroundArray = []
+            self.subsetPointsAroundArray = self.getStationsAroundThisDistanceInMeters(800, pointsArray: markersArray,pointsAroundArray: self.subsetPointsAroundArray, markerType: markerType) //contained into subsetStationsAroundArray
             
-            (stationsToAddArray, stationsToRemoveArray) = self.getStationsToAddAndToRemoveArrays()
+            (pointsToAddArray, pointsToRemoveArray) = self.getPointsToAddAndToRemoveArrays(self.subsetPointsAroundArray, pointsAroundArrayOLD: self.subsetPointsAroundArrayOLD, markerType: markerType)
             
-            markersToRemoveArray = self.getMarkersArrayToRemoveFromAnnotationsArray(stationsToRemoveArray, markersArray: markersToRemoveArray)
+            markersToRemoveArray = self.getMarkersArrayToRemoveFromAnnotationsArray(pointsToRemoveArray, markersArray: markersToRemoveArray, markerType: markerType)
             
-            self.subsetStationsAroundArrayOLD = []
-            for station in self.subsetStationsAroundArray {
-                self.subsetStationsAroundArrayOLD.addObject(station)
+            self.subsetPointsAroundArrayOLD = []
+            for point in self.subsetPointsAroundArray {
+                self.subsetPointsAroundArrayOLD.addObject(point)
             }
             
             self.mapView.removeAnnotations(markersToRemoveArray as! [MGLAnnotation])
             
             dispatch_async(dispatch_get_main_queue(), {
                 //show the markers on the map
-                for station in stationsToAddArray{
+                for point in pointsToAddArray{
                     
-                    var marker = self.getMarkerFromStation(bikesType, station: station as! Station)
-                    self.annotationsArray.append(marker)
+                    var marker : MGLAnnotation?
+                    if markerType == "bikeStations"{
+                        marker = self.getMarkerFromStation(self.currentView, station: point as! Station)
+                    } else {
+                        marker = self.getMarkerFromTapWaterPoint(point as! TapWaterPoint)
+                    }
+                    self.annotationsArray.append(marker!)
                     
-                    self.mapView.addAnnotation(marker) //calls mapView(_: imageForAnnotation:)
+                    self.mapView.addAnnotation(marker!) //calls mapView(_: imageForAnnotation:)
                     
                 } //end for
                 
@@ -729,11 +794,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 //
                 Utilities.transparentFrame.removeFromSuperview()
                 Utilities.loadingAnimationImageView.removeFromSuperview()
-                Utilities.messageFrame.removeFromSuperview()            })
+                Utilities.messageFrame.removeFromSuperview()
+            })
         }
-     
+        
     }
-    
+
     
     
     func mapView(mapView: MGLMapView, imageForAnnotation annotation: MGLAnnotation) -> MGLAnnotationImage? {
@@ -760,52 +826,101 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
-    func getStationsAroundThisDistanceInMeters(distance: Double, pointsArray: NSMutableArray) {
+    func getStationsAroundThisDistanceInMeters(distance: Double, pointsArray: NSMutableArray,pointsAroundArray: NSMutableArray, markerType: String) -> NSMutableArray {
         
-        subsetStationsAroundArray = []
-
     //get the locations of every station wrt the center of the map
-        for station in pointsArray{
+        for point in pointsArray{
             let a = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
-            let b = CLLocation(latitude: ((station as? Station)?.stationCoord.latitude)!, longitude: ((station as? Station)?.stationCoord.longitude)!)
+            var b = CLLocation()
+            if markerType == "bikeStations" {
+                b = CLLocation(latitude: ((point as? Station)?.stationCoord.latitude)!, longitude: ((point as? Station)?.stationCoord.longitude)!)
+            } else {
+                b = CLLocation(latitude: ((point as? TapWaterPoint)?.coordinate.latitude)!, longitude: ((point as? TapWaterPoint)?.coordinate.longitude)!)
+            }
             if a.distanceFromLocation(b) < distance {
-                subsetStationsAroundArray.addObject(station)
+                pointsAroundArray.addObject(point)
             }
         }
+        return pointsAroundArray
     }
     
     
-    func getStationsToAddAndToRemoveArrays() -> (NSMutableArray, NSMutableArray) {
+    func getPointsToAddAndToRemoveArrays(pointsAroundArray: NSMutableArray, pointsAroundArrayOLD: NSMutableArray, markerType: String) -> (NSMutableArray, NSMutableArray) {
         
-        //create the set of new and old stations
-        var newStationsAroundSet = Set<Station>()
-        for station in subsetStationsAroundArray {
-            newStationsAroundSet.insert(station as! Station)
-        }
-        
-        var oldStationsAroundSet = Set<Station>()
-        for station in subsetStationsAroundArrayOLD {
-            oldStationsAroundSet.insert(station as! Station)
-        }
-        
-        //create the set of the differences
-        let stationsToAddSet = newStationsAroundSet.subtract(oldStationsAroundSet)
-        let stationsToRemoveSet = oldStationsAroundSet.subtract(newStationsAroundSet)
-        
-        //turn to arrays
-        var stationsToAddArray : NSMutableArray = []
-        for station in stationsToAddSet {
-            stationsToAddArray.addObject(station)
-        }
-        
-        var stationsToRemoveArray : NSMutableArray = []
-        for station in stationsToRemoveSet {
-            stationsToRemoveArray.addObject(station)
-        }
+        var pointsToAddArray : NSMutableArray = []
+        var pointsToRemoveArray : NSMutableArray = []
 
-        return(stationsToAddArray, stationsToRemoveArray)
+        
+        switch markerType{
+            case "bikeStations":
+                
+                //create the set of new and old stations
+                var newStationsAroundSet = Set<Station>()
+                for station in pointsAroundArray {
+                    newStationsAroundSet.insert(station as! Station)
+                }
+                
+                var oldStationsAroundSet = Set<Station>()
+                for station in pointsAroundArrayOLD {
+                    oldStationsAroundSet.insert(station as! Station)
+                }
+                
+                //create the set of the differences
+                let stationsToAddSet = newStationsAroundSet.subtract(oldStationsAroundSet)
+                let stationsToRemoveSet = oldStationsAroundSet.subtract(newStationsAroundSet)
+                
+                //turn to arrays
+                for station in stationsToAddSet {
+                    pointsToAddArray.addObject(station)
+                }
+                
+                for station in stationsToRemoveSet {
+                    pointsToRemoveArray.addObject(station)
+                }
+
+            break
+            case "tapWaterPoints":
+                
+                //create the set of new and old tap waters
+                var newTapWaterPointAroundSet = Set<TapWaterPoint>()
+                for tapWaterPoint in pointsAroundArray {
+                    newTapWaterPointAroundSet.insert(tapWaterPoint as! TapWaterPoint)
+                }
+                
+                var oldTapWaterPointAroundSet = Set<TapWaterPoint>()
+                for tapWaterPoint in pointsAroundArrayOLD {
+                    oldTapWaterPointAroundSet.insert(tapWaterPoint as! TapWaterPoint)
+                }
+                
+                //create the set of the differences
+                let tapWaterPointsToAddSet = newTapWaterPointAroundSet.subtract(oldTapWaterPointAroundSet)
+                let tapWaterPointsToRemoveSet = oldTapWaterPointAroundSet.subtract(newTapWaterPointAroundSet)
+                
+                //turn to arrays
+                for tapWaterPoint in tapWaterPointsToAddSet {
+                    pointsToAddArray.addObject(tapWaterPoint)
+                }
+                
+                for tapWaterPoint in tapWaterPointsToRemoveSet {
+                    pointsToRemoveArray.addObject(tapWaterPoint)
+                }
+                
+            break
+            default:
+            break
+        }
+        
+        return(pointsToAddArray, pointsToRemoveArray)
     }
     
+    func getMarkerFromTapWaterPoint(tapWaterPoint: TapWaterPoint) -> MGLAnnotation {
+        let marker = MGLPointAnnotation()
+        marker.title = "Tap Water"
+        marker.subtitle = "\(tapWaterPoint.name)"
+        marker.coordinate = CLLocationCoordinate2DMake(tapWaterPoint.coordinate.latitude, tapWaterPoint.coordinate.longitude)
+
+        return marker
+    }
     
     func getMarkerFromStation(bikesType: String, station: Station) -> MGLAnnotation {
         
@@ -827,26 +942,33 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 availabilityNumber = "\(station.availableBikesNumber)"
         }
         
-        var marker = MGLPointAnnotation()
+        let marker = MGLPointAnnotation()
         marker.title = "\(station.stationName)"
         
         marker.subtitle = "\(subtitle) \(availabilityNumber)"
         
-        marker.coordinate = CLLocationCoordinate2DMake(((station as? Station)?.stationCoord.latitude)!, ((station as? Station)?.stationCoord.longitude)!)
+        marker.coordinate = CLLocationCoordinate2DMake(station.stationCoord.latitude, station.stationCoord.longitude)
         return marker
     }
     
     
-    func getMarkersArrayToRemoveFromAnnotationsArray(stationsToRemoveArray: NSMutableArray, markersArray: NSMutableArray) -> NSMutableArray{
+    func getMarkersArrayToRemoveFromAnnotationsArray(pointsToRemoveArray: NSMutableArray, markersArray: NSMutableArray, markerType: String) -> NSMutableArray{
         
-        for station in stationsToRemoveArray {
+        for point in pointsToRemoveArray {
             
             var indexToRemove = Int()
             
             for (index, annotation) in annotationsArray.enumerate() {
-                if annotation.title! == (station as? Station)?.stationName {
-                    markersArray.addObject(annotation)
-                    indexToRemove = index
+                if markerType == "bikeStations" {
+                    if annotation.title! == (point as? Station)?.stationName {
+                        markersArray.addObject(annotation)
+                        indexToRemove = index
+                    }
+                } else {
+                    if annotation.title! == (point as? TapWaterPoint)?.name {
+                        markersArray.addObject(annotation)
+                        indexToRemove = index
+                    }
                 }
             }
             

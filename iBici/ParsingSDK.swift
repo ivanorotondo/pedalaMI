@@ -110,9 +110,10 @@ class ParsingSDK{
             
             let tapWaterPoint = TapWaterPoint()
             
+            tapWaterPoint.id = getValueFromXML(markerString, value: "ID=") as String
+            tapWaterPoint.name = getValueFromXML(markerString, value: ", Italia") as String
             tapWaterPoint.coordinate.latitude = Double(getValueFromXML(markerString, value: "lat=") as String)!
             tapWaterPoint.coordinate.longitude = Double(getValueFromXML(markerString, value: "lng=") as String)!
-            tapWaterPoint.id = getValueFromXML(markerString, value: "ID=") as String
             
             let idPredicate = NSPredicate(format: "id = %@", "\(tapWaterPoint.id)")
             
