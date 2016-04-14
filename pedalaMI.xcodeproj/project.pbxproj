@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		924AA5971CBF8A6800E1AF68 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AA5961CBF8A6800E1AF68 /* TabBarController.swift */; };
+		924AA59A1CBF8C2300E1AF68 /* MenuAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AA5991CBF8C2300E1AF68 /* MenuAnimation.swift */; };
+		924AA59C1CBF916300E1AF68 /* MarkersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AA59B1CBF916300E1AF68 /* MarkersController.swift */; };
+		924AA59E1CBF91D200E1AF68 /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AA59D1CBF91D100E1AF68 /* LocationController.swift */; };
+		924AA5A01CBF923F00E1AF68 /* RemoteCallsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AA59F1CBF923F00E1AF68 /* RemoteCallsController.swift */; };
 		92876C091C92FD5800BB6BDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C081C92FD5800BB6BDA /* AppDelegate.swift */; };
 		92876C0B1C92FD5800BB6BDA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C0A1C92FD5800BB6BDA /* MapViewController.swift */; };
 		92876C0E1C92FD5800BB6BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92876C0C1C92FD5800BB6BDA /* Main.storyboard */; };
@@ -70,6 +75,11 @@
 		75DB3FC4BA415C8115EAD7CE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7729B498BEF82CE521E5CE90 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8E83B4EEE28A4BDFB4640EE0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		924AA5961CBF8A6800E1AF68 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		924AA5991CBF8C2300E1AF68 /* MenuAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAnimation.swift; sourceTree = "<group>"; };
+		924AA59B1CBF916300E1AF68 /* MarkersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkersController.swift; sourceTree = "<group>"; };
+		924AA59D1CBF91D100E1AF68 /* LocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
+		924AA59F1CBF923F00E1AF68 /* RemoteCallsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteCallsController.swift; sourceTree = "<group>"; };
 		92876C051C92FD5800BB6BDA /* pedalaMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pedalaMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92876C081C92FD5800BB6BDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92876C0A1C92FD5800BB6BDA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +170,56 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		924AA5921CBF89D100E1AF68 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				92876C3F1C93564200BB6BDA /* ParsingSDK.swift */,
+				92876C3A1C9300E300BB6BDA /* ServerCallsSDK.swift */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+		924AA5931CBF8A0800E1AF68 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				924AA59D1CBF91D100E1AF68 /* LocationController.swift */,
+				92876C0A1C92FD5800BB6BDA /* MapViewController.swift */,
+				924AA59B1CBF916300E1AF68 /* MarkersController.swift */,
+				924AA59F1CBF923F00E1AF68 /* RemoteCallsController.swift */,
+				924AA5981CBF8C1100E1AF68 /* Menu */,
+				924AA5961CBF8A6800E1AF68 /* TabBarController.swift */,
+			);
+			name = MapViewController;
+			sourceTree = "<group>";
+		};
+		924AA5941CBF8A2800E1AF68 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				92E72A291CBE3CDD00410E3C /* tapWaterXML.swift */,
+				92AC2FE91C9D912A0031223D /* Utilities.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		924AA5951CBF8A3600E1AF68 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				92876C0F1C92FD5800BB6BDA /* Assets.xcassets */,
+				92876C111C92FD5800BB6BDA /* LaunchScreen.storyboard */,
+				92876C141C92FD5800BB6BDA /* Info.plist */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		924AA5981CBF8C1100E1AF68 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				92E41E681CBBF30C0029AA5F /* MenuController.swift */,
+				924AA5991CBF8C2300E1AF68 /* MenuAnimation.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
 		92876BFC1C92FD5800BB6BDA = {
 			isa = PBXGroup;
 			children = (
@@ -186,19 +246,14 @@
 		92876C071C92FD5800BB6BDA /* pedalaMI */ = {
 			isa = PBXGroup;
 			children = (
-				92876C3E1C93432400BB6BDA /* Classes */,
-				92876C081C92FD5800BB6BDA /* AppDelegate.swift */,
-				92876C0A1C92FD5800BB6BDA /* MapViewController.swift */,
-				92E41E681CBBF30C0029AA5F /* MenuController.swift */,
-				92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */,
-				92876C3F1C93564200BB6BDA /* ParsingSDK.swift */,
-				92876C3A1C9300E300BB6BDA /* ServerCallsSDK.swift */,
-				92E72A291CBE3CDD00410E3C /* tapWaterXML.swift */,
-				92AC2FE91C9D912A0031223D /* Utilities.swift */,
 				92876C0C1C92FD5800BB6BDA /* Main.storyboard */,
-				92876C0F1C92FD5800BB6BDA /* Assets.xcassets */,
-				92876C111C92FD5800BB6BDA /* LaunchScreen.storyboard */,
-				92876C141C92FD5800BB6BDA /* Info.plist */,
+				92876C081C92FD5800BB6BDA /* AppDelegate.swift */,
+				92876C3E1C93432400BB6BDA /* Classes */,
+				924AA5931CBF8A0800E1AF68 /* MapViewController */,
+				924AA5921CBF89D100E1AF68 /* SDK */,
+				924AA5941CBF8A2800E1AF68 /* Utilities */,
+				924AA5951CBF8A3600E1AF68 /* System */,
+				92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */,
 			);
 			name = pedalaMI;
 			path = iBici;
@@ -473,10 +528,15 @@
 			files = (
 				92E41E691CBBF30C0029AA5F /* MenuController.swift in Sources */,
 				92876C0B1C92FD5800BB6BDA /* MapViewController.swift in Sources */,
+				924AA5971CBF8A6800E1AF68 /* TabBarController.swift in Sources */,
 				92E72A2A1CBE3CDD00410E3C /* tapWaterXML.swift in Sources */,
 				92DBB46C1C9589CD003BCD1A /* MenuViewController.swift in Sources */,
 				92AC2FEA1C9D912A0031223D /* Utilities.swift in Sources */,
+				924AA59E1CBF91D200E1AF68 /* LocationController.swift in Sources */,
+				924AA59C1CBF916300E1AF68 /* MarkersController.swift in Sources */,
 				92876C091C92FD5800BB6BDA /* AppDelegate.swift in Sources */,
+				924AA5A01CBF923F00E1AF68 /* RemoteCallsController.swift in Sources */,
+				924AA59A1CBF8C2300E1AF68 /* MenuAnimation.swift in Sources */,
 				92E72A2C1CBE47DF00410E3C /* TapWaterPoint.swift in Sources */,
 				92876C401C93564200BB6BDA /* ParsingSDK.swift in Sources */,
 				92876C3D1C93431B00BB6BDA /* Station.swift in Sources */,
