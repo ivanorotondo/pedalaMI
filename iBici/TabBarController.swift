@@ -44,7 +44,7 @@ extension MapViewController {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     
                     self.mapView.removeAnnotations(self.annotationsArray)
-                    
+                    self.annotationsArray = []
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         
                         self.currentView = "bikes"
@@ -71,7 +71,7 @@ extension MapViewController {
                     
                     self.mapView.removeAnnotations(self.annotationsArray)
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                        
+                        self.annotationsArray = []
                         self.currentView = "electricBikes"
                         self.addMarkersToTheMap("bikeStations")
                     })
@@ -93,6 +93,7 @@ extension MapViewController {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     
                     self.mapView.removeAnnotations(self.annotationsArray)
+                    self.annotationsArray = []
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         
                         self.currentView = "slots"
