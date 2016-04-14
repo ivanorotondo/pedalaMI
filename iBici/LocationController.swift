@@ -21,16 +21,31 @@ extension MapViewController {
             
             //            mapView.myLocationEnabled = true
             //            mapView.settings.myLocationButton = true
+        } else {
+            mapView.setCenterCoordinate(CLLocationCoordinate2D(latitude: 9.1919265,longitude: 45.4640976), zoomLevel: 15, animated: false)
         }
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if manager.location?.horizontalAccuracy < 200 && locationUserReached == false {
             
-            mapView.setCenterCoordinate((manager.location?.coordinate)!, zoomLevel: 15, animated: false)
+            var currentLocation = (manager.location?.coordinate)
+            
+            mapView.setCenterCoordinate(currentLocation!, zoomLevel: 15, animated: false)
             locationUserReached = true
         }
     }
+    
+    
+    func mapView(mapView: MGLMapView, regionDidChangeAnimated animated: Bool) {
+        
+        if regionDidChangeEnabled == true {
+            if pointsAreShowedDictionary["bikeStations"] == true || pointsAreShowedDictionary["tapWaterPoints"] == true {
+                addMarkersToTheMap(currentPoints)
+            }
+        }
+    }
+    
     
     //stop updating location
     
@@ -56,12 +71,7 @@ extension MapViewController {
     //    }
     
     
-    func mapView(mapView: MGLMapView, regionDidChangeAnimated animated: Bool) {
-        
-        if regionDidChangeEnabled == true {
-            addMarkersToTheMap(currentPoints)
-        }
-    }
+
 
     
 }

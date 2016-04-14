@@ -47,7 +47,7 @@ extension MapViewController {
             
             (pointsToAddArray, pointsToRemoveArray) = self.getPointsToAddAndToRemoveArrays(self.subsetPointsAroundArray, pointsAroundArrayOLD: self.subsetPointsAroundArrayOLD, markerType: markerType)
             
-            markersToRemoveArray = self.getMarkersArrayToRemoveFromAnnotationsArray(pointsToRemoveArray,allPointsArray: markersToRemoveArray, markerType: markerType)
+            markersToRemoveArray = self.getMarkersArrayToRemoveFromAnnotationsArray(pointsToRemoveArray, markersToRemoveArray: markersToRemoveArray, markerType: markerType)
             
             updateSubsetPointsAroundArrayOLD()
             
@@ -134,6 +134,41 @@ extension MapViewController {
     }
     
     
+    
+    func getMarkersArrayToRemoveFromAnnotationsArray(pointsToRemoveArray: NSMutableArray,markersToRemoveArray: NSMutableArray, markerType: String) -> NSMutableArray{
+        
+        for point in pointsToRemoveArray {
+            
+            var indexToRemove = Int()
+            
+            for (index, annotation) in annotationsArray.enumerate() {
+                if markerType == "bikeStations" {
+                    if annotation.title! == (point as? Station)?.stationName {
+                        print("index to remove: \(indexToRemove)")
+                        print("annotationsArray count: \(annotationsArray.count)")
+                        print("annotation title: \(annotation.title)")
+                        markersToRemoveArray.addObject(annotation)
+                        indexToRemove = index
+                        annotationsArray.removeAtIndex(indexToRemove as! Int)
+
+                    }
+                } else {
+                    if annotation.coordinate.longitude == (point as? TapWaterPoint)?.coordinate.longitude && annotation.coordinate.latitude == (point as? TapWaterPoint)?.coordinate.latitude {
+                        markersToRemoveArray.addObject(annotation)
+                        indexToRemove = index
+                        annotationsArray.removeAtIndex(indexToRemove as! Int)
+                    }
+                }
+            }
+            
+            
+            
+            // allPointsArray.addObject(getMarkerFromStation(currentView, station: station as! Station))
+        }
+        
+        return markersToRemoveArray
+    }
+
     
     
     func getStationsAroundThisDistanceInMeters(distance: Double, allPointsArray: NSMutableArray,pointsAroundArray: NSMutableArray, markerType: String) -> NSMutableArray {
@@ -267,35 +302,6 @@ extension MapViewController {
     }
     
     
-    func getMarkersArrayToRemoveFromAnnotationsArray(pointsToRemoveArray: NSMutableArray,allPointsArray: NSMutableArray, markerType: String) -> NSMutableArray{
-        
-        for point in pointsToRemoveArray {
-            
-            var indexToRemove = Int()
-            
-            for (index, annotation) in annotationsArray.enumerate() {
-                if markerType == "bikeStations" {
-                    if annotation.title! == (point as? Station)?.stationName {
-                       allPointsArray.addObject(annotation)
-                        indexToRemove = index
-                        annotationsArray.removeAtIndex(indexToRemove as! Int)
-                    }
-                } else {
-                    if annotation.coordinate.longitude == (point as? TapWaterPoint)?.coordinate.longitude && annotation.coordinate.latitude == (point as? TapWaterPoint)?.coordinate.latitude {
-                       allPointsArray.addObject(annotation)
-                        indexToRemove = index
-                        annotationsArray.removeAtIndex(indexToRemove as! Int)
-                    }
-                }
-            }
-            
-            
-            
-            // allPointsArray.addObject(getMarkerFromStation(currentView, station: station as! Station))
-        }
-        
-        return allPointsArray
-    }
     
     
     
