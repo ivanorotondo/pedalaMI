@@ -87,7 +87,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         currentView = startingView
         currentPoints = startingPoints
-       showBikeStations()
+        showBikeStations()
         
         addTapRecognizersToTabBar()
         addTapRecognizersToMenu()

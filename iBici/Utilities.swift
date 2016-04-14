@@ -110,5 +110,12 @@ class Utilities {
         var title = ""
         var message = ""
     }
+    
+    static func removeLoading() {
+        //
+        Utilities.transparentFrame.removeFromSuperview()
+        Utilities.loadingAnimationImageView.removeFromSuperview()
+        Utilities.messageFrame.removeFromSuperview()
+    }
 
 }
