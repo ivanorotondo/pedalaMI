@@ -390,7 +390,7 @@
 				TargetAttributes = {
 					92876C041C92FD5800BB6BDA = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = VSP3728FY3;
+						DevelopmentTeam = 859SCUZ2L4;
 					};
 					92876C181C92FD5800BB6BDA = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -685,7 +685,7 @@
 				INFOPLIST_FILE = iBici/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = IvanoRotondo.pedalaMI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IvanoRotondo.pedalaMI;
 				PRODUCT_NAME = pedalaMI;
 			};
 			name = Debug;
@@ -699,7 +699,7 @@
 				INFOPLIST_FILE = iBici/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = IvanoRotondo.pedalaMI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.IvanoRotondo.pedalaMI;
 				PRODUCT_NAME = pedalaMI;
 			};
 			name = Release;
