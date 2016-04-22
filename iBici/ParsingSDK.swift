@@ -38,7 +38,7 @@ class ParsingSDK{
         var (inputSubString, discardedString) = setTheNewStartingPoint(startingPointString, inputString: input)
         
         func parsing(cycleNumber : Int) {
-            var thisStation = Station(id: cycleNumber)
+            let thisStation = Station(id: cycleNumber)
             
         //y coord value
             (inputSubString, discardedString) = setTheNewStartingPoint(startingPointComma, inputString: inputSubString)

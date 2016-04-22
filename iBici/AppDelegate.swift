@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SlideMenuControllerSwift
+import Rollbar
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,20 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-
-//SliderMenuControllerSwift
-        
-        SlideMenuOptions.leftViewWidth = UIScreen.mainScreen().bounds.width * 0.85
-        SlideMenuOptions.leftBezelWidth = 0.0 //no dragging allowed
-        SlideMenuOptions.rightBezelWidth = 0.0 //no dragging allowed
-
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mapViewController = storyboard.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController
         let menuViewController = storyboard.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
-        let slideMenuController = SlideMenuController(mainViewController: mapViewController, leftMenuViewController: menuViewController)
-        self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
-//
+
+//Rollbar
+        Rollbar.initWithAccessToken("e4909d6fc8f944a9a17609e59e1b7af1")
         
         return true
     }

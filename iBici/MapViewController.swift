@@ -12,7 +12,6 @@ import Foundation
 import UIKit
 import MapKit
 import Mapbox
-import Gifu
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
 

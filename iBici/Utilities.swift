@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Gifu
 
 class Utilities {
     
@@ -17,8 +16,6 @@ class Utilities {
     static var strLabel = UILabel()
     static var transparentFrame = UIView()
     
-    static var loadingAnimationImageView = AnimatableImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 80))
-
     static func loadingBarDisplayer(msg:String, indicator:Bool, view: UIView ) {
         print(msg)
         strLabel = UILabel(frame: CGRect(x: 50, y: 0, width: 200, height: 50))
@@ -114,7 +111,7 @@ class Utilities {
     static func removeLoading() {
         //
         Utilities.transparentFrame.removeFromSuperview()
-        Utilities.loadingAnimationImageView.removeFromSuperview()
+        Utilities.activityIndicator.removeFromSuperview()
         Utilities.messageFrame.removeFromSuperview()
     }
 

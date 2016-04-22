@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import MapKit
 import Mapbox
+import Rollbar
 
 extension MapViewController {
     
@@ -67,13 +68,19 @@ extension MapViewController {
             if markersRemovedBecauseOfZooming == false {
                 
                 subsetPointsAroundArrayOLD = []
+                Rollbar.infoWithMessage("electricBikes subsetPointsAroundArrayOLD = []")
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     
                     self.mapView.removeAnnotations(self.annotationsArray)
+                    Rollbar.infoWithMessage("electricBikes removeAnnotations")
+
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         self.annotationsArray = []
+                        Rollbar.infoWithMessage("electricBikes self.annotationsArray = []")
                         self.currentView = "electricBikes"
+                        Rollbar.infoWithMessage("electricBikes                         self.currentView = electricBikes")
                         self.addMarkersToTheMap("bikeStations")
+                        Rollbar.infoWithMessage("electricBikes                                                 self.addMarkersToTheMap(bikeStations)")
                     })
                 })
             }

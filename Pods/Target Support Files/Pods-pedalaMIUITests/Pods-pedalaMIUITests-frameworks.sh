@@ -84,12 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-pedalaMIUITests/Gifu.framework"
   install_framework "${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework"
+  install_framework "Pods-pedalaMIUITests/Rollbar.framework"
   install_framework "Pods-pedalaMIUITests/SlideMenuControllerSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-pedalaMIUITests/Gifu.framework"
   install_framework "${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework"
+  install_framework "Pods-pedalaMIUITests/Rollbar.framework"
   install_framework "Pods-pedalaMIUITests/SlideMenuControllerSwift.framework"
 fi

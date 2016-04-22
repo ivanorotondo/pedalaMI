@@ -30,10 +30,10 @@
 		92E72A0D1CBD0B8B00410E3C /* eBikeSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E729FB1CBD0B8B00410E3C /* eBikeSelected.png */; };
 		92E72A0E1CBD0B8B00410E3C /* eBikeUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E729FC1CBD0B8B00410E3C /* eBikeUnselected.png */; };
 		92E72A0F1CBD0B8B00410E3C /* menuBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E729FD1CBD0B8B00410E3C /* menuBike.png */; };
-		92E72A101CBD0B8B00410E3C /* menuEbike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E729FE1CBD0B8B00410E3C /* menuEbike.png */; };
+		92E72A101CBD0B8B00410E3C /* menuEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E729FE1CBD0B8B00410E3C /* menuEBike.png */; };
 		92E72A111CBD0B8B00410E3C /* menuSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E729FF1CBD0B8B00410E3C /* menuSlot.png */; };
 		92E72A121CBD0B8B00410E3C /* pinBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A001CBD0B8B00410E3C /* pinBike.png */; };
-		92E72A131CBD0B8B00410E3C /* pinEbike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A011CBD0B8B00410E3C /* pinEbike.png */; };
+		92E72A131CBD0B8B00410E3C /* pinEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A011CBD0B8B00410E3C /* pinEBike.png */; };
 		92E72A141CBD0B8B00410E3C /* pinSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A021CBD0B8B00410E3C /* pinSlot.png */; };
 		92E72A151CBD0B8B00410E3C /* rectangleBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A031CBD0B8B00410E3C /* rectangleBike.png */; };
 		92E72A161CBD0B8B00410E3C /* rectangleEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A041CBD0B8B00410E3C /* rectangleEBike.png */; };
@@ -104,10 +104,10 @@
 		92E729FB1CBD0B8B00410E3C /* eBikeSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eBikeSelected.png; path = graphics/eBikeSelected.png; sourceTree = "<group>"; };
 		92E729FC1CBD0B8B00410E3C /* eBikeUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eBikeUnselected.png; path = graphics/eBikeUnselected.png; sourceTree = "<group>"; };
 		92E729FD1CBD0B8B00410E3C /* menuBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuBike.png; path = graphics/menuBike.png; sourceTree = "<group>"; };
-		92E729FE1CBD0B8B00410E3C /* menuEbike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuEbike.png; path = graphics/menuEbike.png; sourceTree = "<group>"; };
+		92E729FE1CBD0B8B00410E3C /* menuEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuEBike.png; path = graphics/menuEBike.png; sourceTree = "<group>"; };
 		92E729FF1CBD0B8B00410E3C /* menuSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuSlot.png; path = graphics/menuSlot.png; sourceTree = "<group>"; };
 		92E72A001CBD0B8B00410E3C /* pinBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinBike.png; path = graphics/pinBike.png; sourceTree = "<group>"; };
-		92E72A011CBD0B8B00410E3C /* pinEbike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinEbike.png; path = graphics/pinEbike.png; sourceTree = "<group>"; };
+		92E72A011CBD0B8B00410E3C /* pinEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinEBike.png; path = graphics/pinEBike.png; sourceTree = "<group>"; };
 		92E72A021CBD0B8B00410E3C /* pinSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinSlot.png; path = graphics/pinSlot.png; sourceTree = "<group>"; };
 		92E72A031CBD0B8B00410E3C /* rectangleBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rectangleBike.png; path = graphics/rectangleBike.png; sourceTree = "<group>"; };
 		92E72A041CBD0B8B00410E3C /* rectangleEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rectangleEBike.png; path = graphics/rectangleEBike.png; sourceTree = "<group>"; };
@@ -298,11 +298,11 @@
 				92E729FC1CBD0B8B00410E3C /* eBikeUnselected.png */,
 				92E72A251CBD3D6800410E3C /* launchScreen.png */,
 				92E729FD1CBD0B8B00410E3C /* menuBike.png */,
-				92E729FE1CBD0B8B00410E3C /* menuEbike.png */,
+				92E729FE1CBD0B8B00410E3C /* menuEBike.png */,
 				92E729FF1CBD0B8B00410E3C /* menuSlot.png */,
 				92E72A1F1CBD2D5000410E3C /* paveBike.png */,
 				92E72A001CBD0B8B00410E3C /* pinBike.png */,
-				92E72A011CBD0B8B00410E3C /* pinEbike.png */,
+				92E72A011CBD0B8B00410E3C /* pinEBike.png */,
 				92E72A021CBD0B8B00410E3C /* pinSlot.png */,
 				92E72A2D1CBE735400410E3C /* pinTapWater.png */,
 				92E72A031CBD0B8B00410E3C /* rectangleBike.png */,
@@ -332,6 +332,7 @@
 				92876C031C92FD5800BB6BDA /* Resources */,
 				9388303D67105ED604D1A9F0 /* Embed Pods Frameworks */,
 				B198D4D63E4FE3B7631F0581 /* Copy Pods Resources */,
+				92CA5B9F1CC537B6003DCD40 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -434,7 +435,7 @@
 				92E72A1B1CBD0B8B00410E3C /* slotSelected.png in Resources */,
 				92E72A1A1CBD0B8B00410E3C /* refreshSlot.png in Resources */,
 				92E72A161CBD0B8B00410E3C /* rectangleEBike.png in Resources */,
-				92E72A101CBD0B8B00410E3C /* menuEbike.png in Resources */,
+				92E72A101CBD0B8B00410E3C /* menuEBike.png in Resources */,
 				92E72A0D1CBD0B8B00410E3C /* eBikeSelected.png in Resources */,
 				92E72A261CBD3D6800410E3C /* launchScreen.png in Resources */,
 				92876C101C92FD5800BB6BDA /* Assets.xcassets in Resources */,
@@ -452,7 +453,7 @@
 				92E72A191CBD0B8B00410E3C /* refreshEBike.png in Resources */,
 				92E72A181CBD0B8B00410E3C /* refreshBike.png in Resources */,
 				92E72A201CBD2D5000410E3C /* paveBike.png in Resources */,
-				92E72A131CBD0B8B00410E3C /* pinEbike.png in Resources */,
+				92E72A131CBD0B8B00410E3C /* pinEBike.png in Resources */,
 				92E72A121CBD0B8B00410E3C /* pinBike.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +475,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		92CA5B9F1CC537B6003DCD40 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/bin/python;
+			shellScript = "import os\nimport subprocess\nimport zipfile\n\nif os.environ['DEBUG_INFORMATION_FORMAT'] != 'dwarf-with-dsym' or os.environ['EFFECTIVE_PLATFORM_NAME'] == '-iphonesimulator':\n    exit(0)\n\nACCESS_TOKEN = '6c0e47e8f6ae423a8506dccb366204d5'\n\ndsym_file_path = os.path.join(os.environ['DWARF_DSYM_FOLDER_PATH'], os.environ['DWARF_DSYM_FILE_NAME'])\nzip_location = '%s.zip' % (dsym_file_path)\n\nos.chdir(os.environ['DWARF_DSYM_FOLDER_PATH'])\nwith zipfile.ZipFile(zip_location, 'w', zipfile.ZIP_DEFLATED) as zipf:\n    for root, dirs, files in os.walk(os.environ['DWARF_DSYM_FILE_NAME']):\n        zipf.write(root)\n\n        for f in files:\n            zipf.write(os.path.join(root, f))\n\n# You may need to change the following path to match your application settings and Xcode version\ninfo_file_path = os.path.join(os.environ['INSTALL_DIR'], os.environ['INFOPLIST_PATH'])\n\np = subprocess.Popen('/usr/libexec/PlistBuddy -c \"Print :CFBundleVersion\" -c \"Print :CFBundleIdentifier\" \"%s\"' % info_file_path,\n                     stdout=subprocess.PIPE, shell=True)\n\nstdout, stderr = p.communicate()\nversion, identifier = stdout.split()\n\np = subprocess.Popen('curl -X POST \"https://api.rollbar.com/api/1/dsym\" -F access_token=%s -F version=%s -F bundle_identifier=\"%s\" -F dsym=@\"%s\"' \n                     % (ACCESS_TOKEN, version, identifier, zip_location), shell=True)\np.communicate()";
+		};
 		9388303D67105ED604D1A9F0 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,6 +629,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -659,6 +674,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -682,6 +698,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = iBici/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -696,6 +714,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = iBici/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -708,6 +727,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iBiciTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IvanoRotondo.iBiciTests;
@@ -720,6 +740,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iBiciTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IvanoRotondo.iBiciTests;
@@ -731,6 +752,7 @@
 		92876C341C92FD5800BB6BDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iBiciUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IvanoRotondo.iBiciUITests;
@@ -743,6 +765,7 @@
 		92876C351C92FD5800BB6BDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iBiciUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IvanoRotondo.iBiciUITests;

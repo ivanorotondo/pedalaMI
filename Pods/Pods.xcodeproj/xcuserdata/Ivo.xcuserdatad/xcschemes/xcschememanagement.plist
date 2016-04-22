@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Gifu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-pedalaMI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Rollbar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SlideMenuControllerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0C3A1AB16F7A8A49E91810BAFC222FF0</key>
+		<key>3866C1D781FE5B8F5D3D01845DB72C46</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>58A5FCFC52D5DDF8003013A109D83D83</key>
+		<key>42E341A463D2A7EE71C1690F5EB0BB45</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>60B6CED71BB29E5F0D04E617A519FAFF</key>
+		<key>6A0249A434D3A0C52222B4BC64358161</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AEA56EBE1B518C71721209FB26701898</key>
+		<key>893083C2A7105C8A3109B6D4EECA37AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B5560AEB066E9943F38EA977CE38A385</key>
+		<key>8A153CBCB87D6E2482F36830372007EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DF8CD92BE73CAC657049DC4C445912AA</key>
+		<key>E50746DAEEBF2A203CEAA6E9CA920AF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
