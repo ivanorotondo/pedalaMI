@@ -47,6 +47,8 @@ extension MapViewController {
             
             (pointsToAddArray, pointsToRemoveArray) = self.getPointsToAddAndToRemoveArrays(self.subsetPointsAroundArray, pointsAroundArrayOLD: self.subsetPointsAroundArrayOLD, markerType: markerType)
             
+            print("\n\n npoints to add array count\(pointsToAddArray.count) \n points to remove array count \(pointsToRemoveArray.count) \n\n")
+            
             markersToRemoveArray = self.getMarkersArrayToRemoveFromAnnotationsArray(pointsToRemoveArray, markersToRemoveArray: markersToRemoveArray, markerType: markerType)
             
             updateSubsetPointsAroundArrayOLD()
@@ -72,7 +74,7 @@ extension MapViewController {
             } //end for
         }
         
-        
+        addingMarkers = true
         dispatch_async(dispatch_queue_create("serial-worker", DISPATCH_QUEUE_SERIAL)) {
             
             getSetsAndRemoveOldAnnotations()
@@ -80,6 +82,7 @@ extension MapViewController {
             dispatch_async(dispatch_get_main_queue(), {
                 
                 addAnnotations()
+                self.addingMarkers = false
                 
                 Utilities.removeLoading()
             })

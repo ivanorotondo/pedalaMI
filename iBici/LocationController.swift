@@ -22,26 +22,44 @@ extension MapViewController {
             //            mapView.myLocationEnabled = true
             //            mapView.settings.myLocationButton = true
         } else {
-            mapView.setCenterCoordinate(CLLocationCoordinate2D(latitude: 9.1919265,longitude: 45.4640976), zoomLevel: 15, animated: false)
+            mapView.setCenterCoordinate(CLLocationCoordinate2D(latitude: 45.4640976,longitude: 9.1919265), zoomLevel: 15, animated: false)
         }
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if manager.location?.horizontalAccuracy < 200 && locationUserReached == false {
+        var currentLocation2D = (manager.location?.coordinate)
+
+        let milanoLocation = CLLocation(latitude: 45.4640976,longitude: 9.1919265)
+        let currentLocation = CLLocation(latitude: (currentLocation2D?.latitude)!, longitude:  (currentLocation2D?.longitude)!)
+
+        if milanoLocation.distanceFromLocation(currentLocation) < 5000 {
+            if manager.location?.horizontalAccuracy < 200 {
+                
+                mapView.setCenterCoordinate(currentLocation2D!, zoomLevel: 15, animated: false)
+                manager.stopUpdatingLocation()
+
+            }
             
-            var currentLocation = (manager.location?.coordinate)
-            
-            mapView.setCenterCoordinate(currentLocation!, zoomLevel: 15, animated: false)
-            locationUserReached = true
+        } else {
+            mapView.setCenterCoordinate(CLLocationCoordinate2D(latitude: 45.4640976,longitude: 9.1919265), zoomLevel: 15, animated: false)
+            manager.stopUpdatingLocation()
+
         }
+        
     }
     
-    
+    func centerMyLocation(sender: UITapGestureRecognizer){
+        locationManager.startUpdatingLocation()
+    }
+        
     func mapView(mapView: MGLMapView, regionDidChangeAnimated animated: Bool) {
         
         if regionDidChangeEnabled == true {
             if pointsAreShowedDictionary["bikeStations"] == true || pointsAreShowedDictionary["tapWaterPoints"] == true {
-                addMarkersToTheMap(currentPoints)
+                
+                if addingMarkers == false {
+                    self.addMarkersToTheMap(self.currentPoints)
+                }
             }
         }
     }

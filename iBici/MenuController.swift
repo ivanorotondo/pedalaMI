@@ -14,7 +14,7 @@ import Mapbox
 extension MapViewController {
     
     func addTapRecognizersToMenu() {
-        let tapSettings = UITapGestureRecognizer(target: self, action: #selector(MapViewController.animateMenuController(_:)))
+        let tapSettings = UITapGestureRecognizer(target: self, action: #selector(MapViewController.animateMenuControllerTap(_:)))
         
         settingsButton.userInteractionEnabled = true
         settingsButton.addGestureRecognizer(tapSettings)
@@ -39,6 +39,9 @@ extension MapViewController {
         tapWaterButton.userInteractionEnabled = false
         tapWaterButton.addGestureRecognizer(tapTapWaterPoints)
         
+        let tapMyPosition = UITapGestureRecognizer(target: self, action: #selector(MapViewController.centerMyLocation(_:)))
+        myPositionButton.userInteractionEnabled = true
+        myPositionButton.addGestureRecognizer(tapMyPosition)
     }
     
     

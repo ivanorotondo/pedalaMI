@@ -33,6 +33,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     var currentPoints = ""
     var startingPoints = "bikeStations"
     var regionDidChangeEnabled = false
+    var addingMarkers = false
     
 //MARK: outlet init
     @IBOutlet var mapView: MGLMapView!
@@ -49,6 +50,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var bikePathsButton: UIImageView!
     @IBOutlet var bikeStationsButton: UIImageView!
     @IBOutlet var tapWaterButton: UIImageView!
+    @IBOutlet var myPositionButton: UIImageView!
     
     var pathsAreShowedDictionary : [String:Bool] = ["bikePaths" : false,
                                                     "pave" : false]
@@ -93,6 +95,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
         
         bikePathsButton.alpha = 0
         paveButton.alpha = 0
@@ -104,8 +107,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidAppear(animated: Bool) {
         regionDidChangeEnabled = true
     }
-    
+
+//    func notificationCenterRegistration(){
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector:"appTerminates", name:UIApplicationWillTerminateNotification, object:nil)
+//
+//    }
+//    
+//    func appTerminates(){
+//        
+//    }
     
 }
+
 
 

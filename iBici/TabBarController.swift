@@ -68,19 +68,13 @@ extension MapViewController {
             if markersRemovedBecauseOfZooming == false {
                 
                 subsetPointsAroundArrayOLD = []
-                Rollbar.infoWithMessage("electricBikes subsetPointsAroundArrayOLD = []")
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     
                     self.mapView.removeAnnotations(self.annotationsArray)
-                    Rollbar.infoWithMessage("electricBikes removeAnnotations")
-
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         self.annotationsArray = []
-                        Rollbar.infoWithMessage("electricBikes self.annotationsArray = []")
                         self.currentView = "electricBikes"
-                        Rollbar.infoWithMessage("electricBikes                         self.currentView = electricBikes")
                         self.addMarkersToTheMap("bikeStations")
-                        Rollbar.infoWithMessage("electricBikes                                                 self.addMarkersToTheMap(bikeStations)")
                     })
                 })
             }
@@ -154,9 +148,6 @@ extension MapViewController {
             bikesButton.image = UIImage(named: "bikeSelected.png")
             eBikesButton.image = UIImage(named: "eBikeUnselected.png")
             slotsButton.image = UIImage(named: "slotUnselected.png")
-            //set the other buttons
-            refreshButton.image = UIImage(named: "refreshBike.png")
-            settingsButton.image = UIImage(named: "menuBike.png")
             
         case "electricBikes":
             //set the background
@@ -167,9 +158,6 @@ extension MapViewController {
             bikesButton.image = UIImage(named: "bikeUnselected.png")
             eBikesButton.image = UIImage(named: "eBikeSelected.png")
             slotsButton.image = UIImage(named: "slotUnselected.png")
-            //set the other buttons
-            refreshButton.image = UIImage(named: "refreshEBike.png")
-            settingsButton.image = UIImage(named: "menuEBike.png")
             
         case "slots":
             //set the background
@@ -180,9 +168,6 @@ extension MapViewController {
             bikesButton.image = UIImage(named: "bikeUnselected.png")
             eBikesButton.image = UIImage(named: "eBikeUnselected.png")
             slotsButton.image = UIImage(named: "slotSelected.png")
-            //set the other buttons
-            refreshButton.image = UIImage(named: "refreshSlot.png")
-            settingsButton.image = UIImage(named: "menuSlot.png")
             
         default:
             //set the backgrounds
@@ -193,9 +178,7 @@ extension MapViewController {
             bikesButton.image = UIImage(named: "bikeSelected.png")
             eBikesButton.image = UIImage(named: "eBikeUnselected.png")
             slotsButton.image = UIImage(named: "slotUnselected.png")
-            //set the other buttons
-            refreshButton.image = UIImage(named: "refreshBike.png")
-            settingsButton.image = UIImage(named: "menuBike.png")
+
         }
         
     }

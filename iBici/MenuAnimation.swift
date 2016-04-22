@@ -11,11 +11,15 @@ import UIKit
 
 extension MapViewController {
     
-    func animateMenuController(sender: UITapGestureRecognizer) {
+    func animateMenuControllerTap(sender: UITapGestureRecognizer) {
+        animateMenuController()
+    }
+    
+    func animateMenuController() {
         
         //self.slideMenuController()?.openLeft()
         let refreshButtonInitialOriginY = CGFloat(settingsButton.frame.origin.y + 48.0)
-        let refreshButtonFinalOriginY = CGFloat(tapWaterButton.frame.origin.y + 44.0)
+        let refreshButtonFinalOriginY = CGFloat(tapWaterButton.frame.origin.y + 56.0)
         
         if menuIsShowed == false {
             showMenu(refreshButtonInitialOriginY, refreshButtonFinalOriginY: refreshButtonFinalOriginY)
@@ -31,6 +35,8 @@ extension MapViewController {
     func showMenu(refreshButtonInitialOriginY: CGFloat, refreshButtonFinalOriginY: CGFloat) {
         
         UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            self.settingsButton.image = UIImage(named: "menuOpen")
+
             self.bikePathsButton.alpha = 1
             
             self.bikePathsButton.userInteractionEnabled = true
@@ -48,6 +54,7 @@ extension MapViewController {
             self.tapWaterButton.userInteractionEnabled = true
             
             self.refreshButton.frame.origin.y += refreshButtonFinalOriginY - refreshButtonInitialOriginY
+            self.refreshButton.image = UIImage(named: "refreshOpen")
             self.view.layoutIfNeeded()
             }, completion: nil)
     }
@@ -55,6 +62,7 @@ extension MapViewController {
     
     func hideMenu(refreshButtonInitialOriginY: CGFloat, refreshButtonFinalOriginY: CGFloat) {
         UIView.animateWithDuration(0.2, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            self.settingsButton.image = UIImage(named: "menuClosed")
             self.paveButton.alpha = 0
             self.bikeStationsButton.alpha = 0
             self.tapWaterButton.alpha = 0
@@ -71,6 +79,8 @@ extension MapViewController {
             self.bikePathsButton.userInteractionEnabled = false
             
             self.refreshButton.frame.origin.y -= refreshButtonFinalOriginY - refreshButtonInitialOriginY
+            self.refreshButton.image = UIImage(named: "refreshClosed")
+
             self.view.layoutIfNeeded()
             }, completion: nil)
     }
