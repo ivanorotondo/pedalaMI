@@ -6,93 +6,53 @@
 	<dict>
 		<key>Pods-pedalaMI.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-pedalaMITests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-pedalaMIUITests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Rollbar.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
-		<key>SlideMenuControllerSwift.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3866C1D781FE5B8F5D3D01845DB72C46</key>
+		<key>2C7DA701A82BE4AD484F197E81F378B7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3866C1D781FE5B8F5D3D01845DB72C46</key>
+		<key>4DE13CDE85BD8BBA2C50694A2FDF76B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>42E341A463D2A7EE71C1690F5EB0BB45</key>
+		<key>5BADEF6515B33580259652737D455A11</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>58A5FCFC52D5DDF8003013A109D83D83</key>
+		<key>B3A454C05997F3BCA1B6CDED88FAAB1B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6A0249A434D3A0C52222B4BC64358161</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6A0249A434D3A0C52222B4BC64358161</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>893083C2A7105C8A3109B6D4EECA37AE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8A153CBCB87D6E2482F36830372007EA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AEA56EBE1B518C71721209FB26701898</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8A153CBCB87D6E2482F36830372007EA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E50746DAEEBF2A203CEAA6E9CA920AF8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E50746DAEEBF2A203CEAA6E9CA920AF8</key>
+		<key>D06CD12A37C57CC85A087F5E1F504C26</key>
 		<dict>
 			<key>primary</key>
 			<true/>
