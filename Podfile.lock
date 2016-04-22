@@ -1,16 +1,16 @@
 PODS:
-  - Gifu (1.0.1)
   - Mapbox-iOS-SDK (3.1.2)
+  - Rollbar (0.1.6)
   - SlideMenuControllerSwift (2.0.5)
 
 DEPENDENCIES:
-  - Gifu
   - Mapbox-iOS-SDK (~> 3.1.2)
+  - Rollbar (~> 0.1.6)
   - SlideMenuControllerSwift
 
 SPEC CHECKSUMS:
-  Gifu: bf7a99fe9f20a1dc18c3cb4289aebc922a2ad419
   Mapbox-iOS-SDK: 0a910c2cce1aa8cff5b9ec2a990e7a32332a776a
+  Rollbar: 5500ff0227e60d4ebb3615341c18ca44df988bcb
   SlideMenuControllerSwift: 9dcae36265e14c4f42e729f212463beb60d2cf96
 
 COCOAPODS: 0.39.0
