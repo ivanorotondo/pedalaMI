@@ -24,12 +24,7 @@ extension MapViewController {
         
         let tapSlots = UITapGestureRecognizer(target: self, action: Selector("addSlotsMarkers:"))
         slotsItemView.addGestureRecognizer(tapSlots)
-        
-        let tapRefresh = UITapGestureRecognizer(target: self, action: Selector("refreshMarkers:"))
-        
-        refreshButton.userInteractionEnabled = true
-        refreshButton.addGestureRecognizer(tapRefresh)
-        
+                
     }
     
     
@@ -107,32 +102,32 @@ extension MapViewController {
     }
     
     
-    func refreshMarkers(sender: UITapGestureRecognizer) {
-        
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
-            
-            if self.stationsArray == [] {
-                
-                Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    
-                    self.addTapRecognizersToTabBar()
-                    self.updateTabBarItems()
-                    self.downloadAndShowStations()
-                })
-                
-            } else {
-                
-                Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    self.subsetPointsAroundArrayOLD = []
-                    self.mapView.removeAnnotations(self.annotationsArray)
-                    self.addMarkersToTheMap("bikeStations")
-                })
-            }
-        })
-        
-    }
+//    func refreshMarkers(sender: UITapGestureRecognizer) {
+//        
+//        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+//            
+//            if self.stationsArray == [] {
+//                
+//                Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+//                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+//                    
+//                    self.addTapRecognizersToTabBar()
+//                    self.updateTabBarItems()
+//                    self.downloadAndShowStations()
+//                })
+//                
+//            } else {
+//                
+//                Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+//                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+//                    self.subsetPointsAroundArrayOLD = []
+//                    self.mapView.removeAnnotations(self.annotationsArray)
+//                    self.addMarkersToTheMap("bikeStations")
+//                })
+//            }
+//        })
+//        
+//    }
 
     
     func updateTabBarItems(){

@@ -282,16 +282,16 @@ extension MapViewController {
         
         switch bikesType {
         case "bikes":
-            subtitle = "Biciclette disponibili:"
+            subtitle = "Available bikes:"
             availabilityNumber = "\(station.availableBikesNumber)"
         case "electricBikes":
-            subtitle = "Biciclette elettriche disponibili:"
+            subtitle = "Available electric bikes:"
             availabilityNumber = "\(station.availableElectricBikesNumber)"
         case "slots":
-            subtitle = "Parcheggi disponibili:"
+            subtitle = "Available slots:"
             availabilityNumber = "\(station.availableSlotsNumber)"
         default:
-            subtitle = "Biciclette disponibili:"
+            subtitle = "Available bikes:"
             availabilityNumber = "\(station.availableBikesNumber)"
         }
         

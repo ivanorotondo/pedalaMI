@@ -42,6 +42,10 @@ extension MapViewController {
         let tapMyPosition = UITapGestureRecognizer(target: self, action: #selector(MapViewController.centerMyLocation(_:)))
         myPositionButton.userInteractionEnabled = true
         myPositionButton.addGestureRecognizer(tapMyPosition)
+        
+        let tapRefreshButton = UITapGestureRecognizer(target: self, action: #selector(MapViewController.refreshMarkers(_:)))
+        refreshButton.userInteractionEnabled = true
+        refreshButton.addGestureRecognizer(tapRefreshButton)
     }
     
     
@@ -164,6 +168,36 @@ extension MapViewController {
         
     }
     
+    
+    func refreshMarkers(sender: UITapGestureRecognizer){
+        
+        if currentPoints == "bikeStations" && pointsAreShowedDictionary["bikeStations"] == true{
+
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                
+                if self.stationsArray == [] {
+                    
+                    Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        
+                        self.addTapRecognizersToTabBar()
+                        self.updateTabBarItems()
+                        self.downloadAndShowStations()
+                    })
+                    
+                } else {
+                    
+                    Utilities.loadingBarDisplayer("",indicator:true, view: self.view)
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        self.subsetPointsAroundArrayOLD = []
+                        self.mapView.removeAnnotations(self.annotationsArray)
+                        self.addMarkersToTheMap("bikeStations")
+                    })
+                }
+            })
+        }
+        
+    }
     
     
     func showTapWaterPoints(){

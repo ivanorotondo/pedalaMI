@@ -1,2900 +1,1067 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>01F2D61A257E328F71D140D66A692C21</key>
-		<dict>
-			<key>fileRef</key>
-			<string>445BD1E1C617B86FB574A6FDB5BFAA99</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>0359EC2C6D4E222B6CDA6B29FF52D178</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>461D45DB85C3ABC3E19E16000CB928EE</string>
-				<string>942E25ED46C7035827E6EFEC37A91C75</string>
-				<string>E550572610FB8695D7439CA10025FC3E</string>
-				<string>AEC51B2350173242C9A54622091994AF</string>
-				<string>4D0927A1960BD217DAD465A01E3A31E1</string>
-				<string>6D83FA2D38DC3333B578B389EF78CDEC</string>
-				<string>25C981A613B894E484F83D5DFB02AFDC</string>
-				<string>BF1D6C6D5D1A628AF1244C01DC062600</string>
-				<string>F47BFD329D719885B91CFA61523A96AB</string>
-				<string>703F93D0EDCA102B6CA80E4B854CB146</string>
-				<string>466F2DDBE419C49D8A41C7FB77EF9534</string>
-				<string>2521E013112C572DD320CC4464020345</string>
-				<string>38D5240BBBCC25CDA2FE8482E313C87A</string>
-				<string>41A37A4C05F32406D64C293E2ABDD6C6</string>
-				<string>D57C3733DDD3953CD0711EEA3A9D4D06</string>
-				<string>C85DDF36AC9C759CB470A6B0F757D06F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Rollbar</string>
-			<key>path</key>
-			<string>Rollbar</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>06C696535B26AC08078E5547A9CCE7D2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2521E013112C572DD320CC4464020345</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>088D9C278FA9C10549FBA7F3AD2F2FEE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDE15FA9B4F303E8FE58A30B7BD154C1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>089EAD88A373E8FE3D57366643DD4700</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2FACA9CC9B826DA85CD1E3AD17763766</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>09C468C9C6C6FC912243243243904A7B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D84A9693D259E7E29CA102B54ACD65D3</string>
-				<string>0BC52757E619992C24F2E8C05D7592FD</string>
-				<string>D0EEAAC5DED3BF43921F0288E0893049</string>
-				<string>B724923A1D4FBCB1A566595A0DB070DC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0ACB04762003FB5BE2C880A3D92A0775</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-pedalaMITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0BC52757E619992C24F2E8C05D7592FD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>262560C19E9AA453DB6B572B86A5EEA3</string>
-				<string>6AACB1AF5FD37D0A6C0EC6ABC0B30D4E</string>
-				<string>4FC19C8375046574C0FF64370A8CD2FD</string>
-				<string>492A0DFB7F3476A0E1CA964B3EA513E9</string>
-				<string>3F6B698347C9D6EE40FE3D09632788F9</string>
-				<string>901F1E76EF524A5DECD0E972E70AAAC3</string>
-				<string>4F9E16106C2BCE037BB3C4C50847CE46</string>
-				<string>F1762F77A8DA41F6D2F4AC051F648C71</string>
-				<string>2EA74CA41EC3A61C3E7FB64EB076EAEA</string>
-				<string>E25A27A80D26426B8962BF7F66438DCC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-pedalaMI</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-pedalaMI</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0C7DAF287D94ED390F2999973C281857</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E25A27A80D26426B8962BF7F66438DCC</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-pedalaMI/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-pedalaMI/Pods-pedalaMI.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_pedalaMI</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>108E2395D64E2E2D1E9B023724D1D175</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5C3059F234706338F892F54EB433132C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>114F8D4A0D3D9A41A5E1577108DCE0C1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>122DA2E5084A4393C29BE363C764795C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FF2AEA74965EED5FE2760906784C788C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1380C0FBE52955078B13BF28891DAFE6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-pedalaMIUITests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>17A8E0A7B02716D05B21CD5184C389CA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>114F8D4A0D3D9A41A5E1577108DCE0C1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>1CB0430C2784E780AD88F79DF01C708D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>72324E28E1D1BFF0DC485089A825E742</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>1D6083A008E2FA9371EA76C884910CD4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6F2E32600806C772C6FEAA6C45A1FE11</string>
-				<string>27BC61D9DFC7E0EAF96DE2853FDCB0EC</string>
-				<string>FD35269070B02322061304749EA97A5B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1E40676CAD672FD1BE5B2E51F08D519D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Rollbar-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1F3CDE98F4F2C2CDB0E46A35760ED4AF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8A4AD0526EE996D5E01A80ACF7B2F886</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>2285234B3B6294316F2A9189981581C9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6D83FA2D38DC3333B578B389EF78CDEC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>25091F21336A4845D0E62012597D9F7F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2521E013112C572DD320CC4464020345</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>RollbarReachability.m</string>
-			<key>path</key>
-			<string>Rollbar/RollbarReachability.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>25C981A613B894E484F83D5DFB02AFDC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>RollbarLogger.h</string>
-			<key>path</key>
-			<string>Rollbar/RollbarLogger.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>262560C19E9AA453DB6B572B86A5EEA3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>27BC61D9DFC7E0EAF96DE2853FDCB0EC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BAE1B33188740B25D40CEDC08A929AF6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>27F0AC0B659B9D92279F9466B3811218</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>27F8EDE352588E95D963D340C6E9E98D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF1D6C6D5D1A628AF1244C01DC062600</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>28910A5F6A10E79FE9D685C39E38B276</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>27F0AC0B659B9D92279F9466B3811218</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods/Pods.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>2C7DA701A82BE4AD484F197E81F378B7</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>7D98CFADE4E16AEB1039DE7866EECE38</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A6480379153E9518250962607DAAF7C9</string>
-				<string>57E8648F60D1895CFB45FC08E635B428</string>
-				<string>C97EC6B6F6BB4DCF28F085511788DDAC</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>52957A20028457AFC3176A60EFC6FF6A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-pedalaMIUITests</string>
-			<key>productName</key>
-			<string>Pods-pedalaMIUITests</string>
-			<key>productReference</key>
-			<string>A6C1C578C5B627686F08E8645D04BE03</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A70CDAD61F90AC503C7D04CC22DA2923</string>
-				<string>FB45FFD90572718D82AB9092B750F0CA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>2EA74CA41EC3A61C3E7FB64EB076EAEA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-pedalaMI.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2F0B858636F457C5F500AD4306AB89A5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CrashReporter.framework</string>
-			<key>path</key>
-			<string>Vendor/CrashReporter.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2FACA9CC9B826DA85CD1E3AD17763766</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>36C7DCB8C0E3A14F60355861D278E3ED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-pedalaMIUITests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>37ED4FC103A669AD83F0252EDC10AE5F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>38D5240BBBCC25CDA2FE8482E313C87A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>RollbarThread.h</string>
-			<key>path</key>
-			<string>Rollbar/RollbarThread.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>39DB2CDAA3CFC7AF169CA22334EA3DE2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Rollbar</string>
-			<key>target</key>
-			<string>D06CD12A37C57CC85A087F5E1F504C26</string>
-			<key>targetProxy</key>
-			<string>83EBFEBC842156AD26189F8969094255</string>
-		</dict>
-		<key>3F5477CC628BC90869FB2DB62A4C7A25</key>
-		<dict>
-			<key>fileRef</key>
-			<string>38D5240BBBCC25CDA2FE8482E313C87A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>3F6B698347C9D6EE40FE3D09632788F9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-pedalaMI-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>41A37A4C05F32406D64C293E2ABDD6C6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>RollbarThread.m</string>
-			<key>path</key>
-			<string>Rollbar/RollbarThread.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>42770AE3F057D44D966BCD528FFD81F3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-pedalaMIUITests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>42D245339BBEBA1A5C3D62C8A60F4B4F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C3CA5E60FDB321E0F1F160DBFE8BAFF5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>43866CF8DEC52BD1C9770DA265E27D32</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>445BD1E1C617B86FB574A6FDB5BFAA99</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Rollbar-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>461D45DB85C3ABC3E19E16000CB928EE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Rollbar.h</string>
-			<key>path</key>
-			<string>Rollbar/Rollbar.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>466F2DDBE419C49D8A41C7FB77EF9534</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>RollbarReachability.h</string>
-			<key>path</key>
-			<string>Rollbar/RollbarReachability.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>47E8F4555D65FD3E897DB4144CAA0588</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4D0927A1960BD217DAD465A01E3A31E1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4847E973487F9CFBD8ACCF8D7617EDCB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F47BFD329D719885B91CFA61523A96AB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>492A0DFB7F3476A0E1CA964B3EA513E9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-pedalaMI-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4D0927A1960BD217DAD465A01E3A31E1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>RollbarFileReader.h</string>
-			<key>path</key>
-			<string>Rollbar/RollbarFileReader.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4DE13CDE85BD8BBA2C50694A2FDF76B4</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C6A645769061EB52D2EB4AFE1D6DC72B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A5F451DDA0938CAB13A5541C9111F19B</string>
-				<string>EBEB5D6F88C0E34C51BD1CEC3C343E40</string>
-				<string>720EBA673BA1B43262C5DDD2496DDC33</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>73099F59F05E033A063DCBE026663537</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-pedalaMITests</string>
-			<key>productName</key>
-			<string>Pods-pedalaMITests</string>
-			<key>productReference</key>
-			<string>EBC63CCE591D3761305E40AB02CBA693</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>4F186B320FA91D1B9D7CE0153B061914</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Rollbar</string>
-			<key>target</key>
-			<string>D06CD12A37C57CC85A087F5E1F504C26</string>
-			<key>targetProxy</key>
-			<string>623AFCC60B2D9EC842BB283311B29DD5</string>
-		</dict>
-		<key>4F9E16106C2BCE037BB3C4C50847CE46</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-pedalaMI-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4FC19C8375046574C0FF64370A8CD2FD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-pedalaMI-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>50F60053E8B8551ACEF2623677B1BEA7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods.framework</string>
-			<key>path</key>
-			<string>Pods.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>5148EC913C1A34F944338FEE6A50A2BB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>896BF2338CAC5603C42C7AFFEF771D2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>52957A20028457AFC3176A60EFC6FF6A</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Rollbar</string>
-			<key>target</key>
-			<string>D06CD12A37C57CC85A087F5E1F504C26</string>
-			<key>targetProxy</key>
-			<string>744ABA75B7517A7E5C2E706FCD2EEC74</string>
-		</dict>
-		<key>52A449F607288CC14D596794036EE483</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-pedalaMIUITests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>563CB2CA5988915F52172D7172CF7680</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-pedalaMIUITests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>568203859772EC8A9B95AA0C7CA8893E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-pedalaMITests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>57062E6A3BADB228A07712456C5FA8F1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>41A37A4C05F32406D64C293E2ABDD6C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>570AFDCBAAD11B6ED52A3844A63ABB85</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2FACA9CC9B826DA85CD1E3AD17763766</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>57B769FABFB5B6F4B9625E74CE780099</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>57E8648F60D1895CFB45FC08E635B428</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>089EAD88A373E8FE3D57366643DD4700</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>594B2978279BF0B92DD88D11CA4E7E5D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_pedalaMI.framework</string>
-			<key>path</key>
-			<string>Pods_pedalaMI.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>59CB1126D97AFADE886101AB0E7371D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>703F93D0EDCA102B6CA80E4B854CB146</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>5BADEF6515B33580259652737D455A11</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>8CFB83939E5BFDCF4D845AACA3C7F2F3</string>
-			<key>buildPhases</key>
-			<array>
-				<string>911DE0CF7A55F0C293CEAEF87023BAF0</string>
-				<string>108E2395D64E2E2D1E9B023724D1D175</string>
-				<string>B654531535EE82D97426253615693309</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>39DB2CDAA3CFC7AF169CA22334EA3DE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>50F60053E8B8551ACEF2623677B1BEA7</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>5C3059F234706338F892F54EB433132C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2FACA9CC9B826DA85CD1E3AD17763766</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5E5E3430D7162B8F0E72F7DFF093F13D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-pedalaMITests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5E9CBF3A14C56FA05E4C46431149D158</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5EDF71899D01B9974D76E349450E2F9C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5E5E3430D7162B8F0E72F7DFF093F13D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5F32C18B0A75282E19842A559AE88A66</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BCCC9E29D7286F44C211ECAC5AEB86A1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>623AFCC60B2D9EC842BB283311B29DD5</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D06CD12A37C57CC85A087F5E1F504C26</string>
-			<key>remoteInfo</key>
-			<string>Rollbar</string>
-		</dict>
-		<key>6617562037A987A64C003A7373C92521</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Rollbar.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6AACB1AF5FD37D0A6C0EC6ABC0B30D4E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-pedalaMI.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6D83FA2D38DC3333B578B389EF78CDEC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>RollbarFileReader.m</string>
-			<key>path</key>
-			<string>Rollbar/RollbarFileReader.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6DB1163AAE06D2CB29BA12DBA0B89226</key>
-		<dict>
-			<key>fileRef</key>
-			<string>25C981A613B894E484F83D5DFB02AFDC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>6EB494E6037DBAFA6F8AE8817C4C407C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Rollbar-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6F085539B7E20FD6260A3B0F09E9BF8C</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D06CD12A37C57CC85A087F5E1F504C26</string>
-			<key>remoteInfo</key>
-			<string>Rollbar</string>
-		</dict>
-		<key>6F2E32600806C772C6FEAA6C45A1FE11</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2FACA9CC9B826DA85CD1E3AD17763766</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6F98807A3708C978A7B3F6FA7EF06918</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-pedalaMITests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>703F93D0EDCA102B6CA80E4B854CB146</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>RollbarNotifier.m</string>
-			<key>path</key>
-			<string>Rollbar/RollbarNotifier.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>720EBA673BA1B43262C5DDD2496DDC33</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1CB0430C2784E780AD88F79DF01C708D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>72324E28E1D1BFF0DC485089A825E742</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-pedalaMITests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>73099F59F05E033A063DCBE026663537</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Rollbar</string>
-			<key>target</key>
-			<string>D06CD12A37C57CC85A087F5E1F504C26</string>
-			<key>targetProxy</key>
-			<string>6F085539B7E20FD6260A3B0F09E9BF8C</string>
-		</dict>
-		<key>7341F64D9AC67368D05E8FDDFB6024A4</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2EA74CA41EC3A61C3E7FB64EB076EAEA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-pedalaMI/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-pedalaMI/Pods-pedalaMI.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_pedalaMI</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>744ABA75B7517A7E5C2E706FCD2EEC74</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D06CD12A37C57CC85A087F5E1F504C26</string>
-			<key>remoteInfo</key>
-			<string>Rollbar</string>
-		</dict>
-		<key>787B5EB5B57ABD54823DB1AF299DCFE7</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6617562037A987A64C003A7373C92521</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Rollbar/Rollbar-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Rollbar/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Rollbar/Rollbar.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>Rollbar</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>7D2BA5C678484D6A729A3770B66230FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2FACA9CC9B826DA85CD1E3AD17763766</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7D98CFADE4E16AEB1039DE7866EECE38</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A86C3A223EB029C64E996D51ED22AEFA</string>
-				<string>C234D1CC99F4662C4C8D49A40168DB81</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>122DA2E5084A4393C29BE363C764795C</string>
-				<string>8EF00D6C73FC25447D4477D9AE3FA660</string>
-				<string>BBF3BC51DD2DB7F126F172636703AD42</string>
-				<string>09C468C9C6C6FC912243243243904A7B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DB9F6540F7F0119FD1448D23A16E6DF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>7341F64D9AC67368D05E8FDDFB6024A4</string>
-				<string>0C7DAF287D94ED390F2999973C281857</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>7DCE2B51F09123614A806D0B01C2C372</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>570AFDCBAAD11B6ED52A3844A63ABB85</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>83EBFEBC842156AD26189F8969094255</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>D06CD12A37C57CC85A087F5E1F504C26</string>
-			<key>remoteInfo</key>
-			<string>Rollbar</string>
-		</dict>
-		<key>85F5B3C708C53E79718364F72081EDC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>86972CD28C42771B2622C7A8E8FDA623</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>86972CD28C42771B2622C7A8E8FDA623</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Mapbox.framework</string>
-			<key>path</key>
-			<string>dynamic/Mapbox.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>86FBE5D63DAE6CDB6983650F60C33D47</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5E9CBF3A14C56FA05E4C46431149D158</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods/Pods.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>896BF2338CAC5603C42C7AFFEF771D2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F6B698347C9D6EE40FE3D09632788F9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8A4AD0526EE996D5E01A80ACF7B2F886</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-pedalaMIUITests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8CFB83939E5BFDCF4D845AACA3C7F2F3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>28910A5F6A10E79FE9D685C39E38B276</string>
-				<string>86FBE5D63DAE6CDB6983650F60C33D47</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>8ED917F2DB7D0E6425E848DF41F0C1E2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-pedalaMITests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8EF00D6C73FC25447D4477D9AE3FA660</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9C551220EF2003057DB018944410AAE8</string>
-				<string>0359EC2C6D4E222B6CDA6B29FF52D178</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>901F1E76EF524A5DECD0E972E70AAAC3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-pedalaMI-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>911DE0CF7A55F0C293CEAEF87023BAF0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5F32C18B0A75282E19842A559AE88A66</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9405BBB03764C89906604C612EFD5AF3</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>F67CE27D81D9F982A370D38EEFAF7BEB</string>
-				<string>787B5EB5B57ABD54823DB1AF299DCFE7</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>942E25ED46C7035827E6EFEC37A91C75</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Rollbar.m</string>
-			<key>path</key>
-			<string>Rollbar/Rollbar.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A2F48F60A47DDACF8D6EF5CAECA5F4D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9C551220EF2003057DB018944410AAE8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>85F5B3C708C53E79718364F72081EDC9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Mapbox-iOS-SDK</string>
-			<key>path</key>
-			<string>Mapbox-iOS-SDK</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A141454876E1A9A65F2537C140D537F9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D484AA15A6D991AD0CC865099F52A667</string>
-				<string>EA11587A9E0F23E49586F139FEDE65D8</string>
-				<string>D0FD52F1DD9B713357EB2E6B65977326</string>
-				<string>2285234B3B6294316F2A9189981581C9</string>
-				<string>27F8EDE352588E95D963D340C6E9E98D</string>
-				<string>59CB1126D97AFADE886101AB0E7371D6</string>
-				<string>06C696535B26AC08078E5547A9CCE7D2</string>
-				<string>57062E6A3BADB228A07712456C5FA8F1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A14F5B7F1A3CACFA2734EA1620E6B4A6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A418A30C64AAA3DB30A4982CBB60352D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A5F451DDA0938CAB13A5541C9111F19B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5EDF71899D01B9974D76E349450E2F9C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A6480379153E9518250962607DAAF7C9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>088D9C278FA9C10549FBA7F3AD2F2FEE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A6C1C578C5B627686F08E8645D04BE03</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_pedalaMIUITests.framework</string>
-			<key>path</key>
-			<string>Pods_pedalaMIUITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A70CDAD61F90AC503C7D04CC22DA2923</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A7E06BF5C10BA9771F9ED30E5F9F86DD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Rollbar.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A86C3A223EB029C64E996D51ED22AEFA</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>1380C0FBE52955078B13BF28891DAFE6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-pedalaMIUITests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-pedalaMIUITests/Pods-pedalaMIUITests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_pedalaMIUITests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>AA30FD32068B9534EB3F277FDB82D892</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-pedalaMIUITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AEC51B2350173242C9A54622091994AF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>RollbarConfiguration.m</string>
-			<key>path</key>
-			<string>Rollbar/RollbarConfiguration.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B040B4765DF572A4D4F764E4D10E00B0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>461D45DB85C3ABC3E19E16000CB928EE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>B3A454C05997F3BCA1B6CDED88FAAB1B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>7DB9F6540F7F0119FD1448D23A16E6DF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>5148EC913C1A34F944338FEE6A50A2BB</string>
-				<string>7DCE2B51F09123614A806D0B01C2C372</string>
-				<string>42D245339BBEBA1A5C3D62C8A60F4B4F</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>4F186B320FA91D1B9D7CE0153B061914</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-pedalaMI</string>
-			<key>productName</key>
-			<string>Pods-pedalaMI</string>
-			<key>productReference</key>
-			<string>594B2978279BF0B92DD88D11CA4E7E5D</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>B654531535EE82D97426253615693309</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>17A8E0A7B02716D05B21CD5184C389CA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B724923A1D4FBCB1A566595A0DB070DC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FD8A5BACEB928E9CD85F2C76E6F17AAC</string>
-				<string>563CB2CA5988915F52172D7172CF7680</string>
-				<string>52A449F607288CC14D596794036EE483</string>
-				<string>B7ACB282D8CE45F2730CF344D78136A4</string>
-				<string>CDE15FA9B4F303E8FE58A30B7BD154C1</string>
-				<string>36C7DCB8C0E3A14F60355861D278E3ED</string>
-				<string>42770AE3F057D44D966BCD528FFD81F3</string>
-				<string>8A4AD0526EE996D5E01A80ACF7B2F886</string>
-				<string>1380C0FBE52955078B13BF28891DAFE6</string>
-				<string>AA30FD32068B9534EB3F277FDB82D892</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-pedalaMIUITests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-pedalaMIUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B7ACB282D8CE45F2730CF344D78136A4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-pedalaMIUITests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>BAE1B33188740B25D40CEDC08A929AF6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SystemConfiguration.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>BBF3BC51DD2DB7F126F172636703AD42</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>50F60053E8B8551ACEF2623677B1BEA7</string>
-				<string>594B2978279BF0B92DD88D11CA4E7E5D</string>
-				<string>EBC63CCE591D3761305E40AB02CBA693</string>
-				<string>A6C1C578C5B627686F08E8645D04BE03</string>
-				<string>D67BA11D7492AC2340917E27E7AF5B0A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BCCC9E29D7286F44C211ECAC5AEB86A1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF1D6C6D5D1A628AF1244C01DC062600</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>RollbarLogger.m</string>
-			<key>path</key>
-			<string>Rollbar/RollbarLogger.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C234D1CC99F4662C4C8D49A40168DB81</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>AA30FD32068B9534EB3F277FDB82D892</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-pedalaMIUITests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-pedalaMIUITests/Pods-pedalaMIUITests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_pedalaMIUITests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C3CA5E60FDB321E0F1F160DBFE8BAFF5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F1762F77A8DA41F6D2F4AC051F648C71</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C4966ED9FF445EBE66AAAA7F46CE1271</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C6A645769061EB52D2EB4AFE1D6DC72B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>DD317123DB7897EB5A541A41E0AEC63B</string>
-				<string>FB5AFCFB54553CFF227AB0B2B5FAF388</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C85DDF36AC9C759CB470A6B0F757D06F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>57B769FABFB5B6F4B9625E74CE780099</string>
-				<string>A7E06BF5C10BA9771F9ED30E5F9F86DD</string>
-				<string>6617562037A987A64C003A7373C92521</string>
-				<string>1E40676CAD672FD1BE5B2E51F08D519D</string>
-				<string>6EB494E6037DBAFA6F8AE8817C4C407C</string>
-				<string>445BD1E1C617B86FB574A6FDB5BFAA99</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Rollbar</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C97EC6B6F6BB4DCF28F085511788DDAC</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1F3CDE98F4F2C2CDB0E46A35760ED4AF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CC27E9B57042F2AC70C13132E226F643</key>
-		<dict>
-			<key>fileRef</key>
-			<string>466F2DDBE419C49D8A41C7FB77EF9534</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>CDE15FA9B4F303E8FE58A30B7BD154C1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-pedalaMIUITests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CE07C51563A8537190C45BF7B84469E6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D06CD12A37C57CC85A087F5E1F504C26</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9405BBB03764C89906604C612EFD5AF3</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A141454876E1A9A65F2537C140D537F9</string>
-				<string>1D6083A008E2FA9371EA76C884910CD4</string>
-				<string>FA68288B076E792CB791BC555232AEF4</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Rollbar</string>
-			<key>productName</key>
-			<string>Rollbar</string>
-			<key>productReference</key>
-			<string>D67BA11D7492AC2340917E27E7AF5B0A</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>D0EEAAC5DED3BF43921F0288E0893049</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>43866CF8DEC52BD1C9770DA265E27D32</string>
-				<string>6F98807A3708C978A7B3F6FA7EF06918</string>
-				<string>EA1562FB4ACFD370C1710D181356AEA6</string>
-				<string>8ED917F2DB7D0E6425E848DF41F0C1E2</string>
-				<string>5E5E3430D7162B8F0E72F7DFF093F13D</string>
-				<string>568203859772EC8A9B95AA0C7CA8893E</string>
-				<string>DDFDBE33866ECCD459BBB57BEFD816CE</string>
-				<string>72324E28E1D1BFF0DC485089A825E742</string>
-				<string>D2C4D7C07A0152B11A2D6F9800F9A9FF</string>
-				<string>0ACB04762003FB5BE2C880A3D92A0775</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-pedalaMITests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-pedalaMITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D0FD52F1DD9B713357EB2E6B65977326</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AEC51B2350173242C9A54622091994AF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>D2C4D7C07A0152B11A2D6F9800F9A9FF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-pedalaMITests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0700</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>BBF3BC51DD2DB7F126F172636703AD42</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>5BADEF6515B33580259652737D455A11</string>
-				<string>B3A454C05997F3BCA1B6CDED88FAAB1B</string>
-				<string>4DE13CDE85BD8BBA2C50694A2FDF76B4</string>
-				<string>2C7DA701A82BE4AD484F197E81F378B7</string>
-				<string>D06CD12A37C57CC85A087F5E1F504C26</string>
-			</array>
-		</dict>
-		<key>D484AA15A6D991AD0CC865099F52A667</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1E40676CAD672FD1BE5B2E51F08D519D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D57C3733DDD3953CD0711EEA3A9D4D06</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2F0B858636F457C5F500AD4306AB89A5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D67BA11D7492AC2340917E27E7AF5B0A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Rollbar.framework</string>
-			<key>path</key>
-			<string>Rollbar.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D84A9693D259E7E29CA102B54ACD65D3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A418A30C64AAA3DB30A4982CBB60352D</string>
-				<string>25091F21336A4845D0E62012597D9F7F</string>
-				<string>37ED4FC103A669AD83F0252EDC10AE5F</string>
-				<string>C4966ED9FF445EBE66AAAA7F46CE1271</string>
-				<string>BCCC9E29D7286F44C211ECAC5AEB86A1</string>
-				<string>9A2F48F60A47DDACF8D6EF5CAECA5F4D</string>
-				<string>A14F5B7F1A3CACFA2734EA1620E6B4A6</string>
-				<string>114F8D4A0D3D9A41A5E1577108DCE0C1</string>
-				<string>27F0AC0B659B9D92279F9466B3811218</string>
-				<string>5E9CBF3A14C56FA05E4C46431149D158</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>path</key>
-			<string>Target Support Files/Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DD317123DB7897EB5A541A41E0AEC63B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D2C4D7C07A0152B11A2D6F9800F9A9FF</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-pedalaMITests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_pedalaMITests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>DDFDBE33866ECCD459BBB57BEFD816CE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-pedalaMITests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E25A27A80D26426B8962BF7F66438DCC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-pedalaMI.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E550572610FB8695D7439CA10025FC3E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>RollbarConfiguration.h</string>
-			<key>path</key>
-			<string>Rollbar/RollbarConfiguration.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EA11587A9E0F23E49586F139FEDE65D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>942E25ED46C7035827E6EFEC37A91C75</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>EA1562FB4ACFD370C1710D181356AEA6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-pedalaMITests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EBC63CCE591D3761305E40AB02CBA693</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_pedalaMITests.framework</string>
-			<key>path</key>
-			<string>Pods_pedalaMITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>EBEB5D6F88C0E34C51BD1CEC3C343E40</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>7D2BA5C678484D6A729A3770B66230FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>F141C009E31B113C9E7E1EC40400E2CD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E550572610FB8695D7439CA10025FC3E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>F1762F77A8DA41F6D2F4AC051F648C71</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-pedalaMI-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F47BFD329D719885B91CFA61523A96AB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>RollbarNotifier.h</string>
-			<key>path</key>
-			<string>Rollbar/RollbarNotifier.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F67CE27D81D9F982A370D38EEFAF7BEB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6617562037A987A64C003A7373C92521</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Rollbar/Rollbar-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Rollbar/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Rollbar/Rollbar.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>Rollbar</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FA68288B076E792CB791BC555232AEF4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>01F2D61A257E328F71D140D66A692C21</string>
-				<string>B040B4765DF572A4D4F764E4D10E00B0</string>
-				<string>F141C009E31B113C9E7E1EC40400E2CD</string>
-				<string>47E8F4555D65FD3E897DB4144CAA0588</string>
-				<string>6DB1163AAE06D2CB29BA12DBA0B89226</string>
-				<string>4847E973487F9CFBD8ACCF8D7617EDCB</string>
-				<string>CC27E9B57042F2AC70C13132E226F643</string>
-				<string>3F5477CC628BC90869FB2DB62A4C7A25</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FB45FFD90572718D82AB9092B750F0CA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FB5AFCFB54553CFF227AB0B2B5FAF388</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0ACB04762003FB5BE2C880A3D92A0775</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-pedalaMITests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_pedalaMITests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FD35269070B02322061304749EA97A5B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CE07C51563A8537190C45BF7B84469E6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FD8A5BACEB928E9CD85F2C76E6F17AAC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FF2AEA74965EED5FE2760906784C788C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2FACA9CC9B826DA85CD1E3AD17763766</string>
-				<string>BAE1B33188740B25D40CEDC08A929AF6</string>
-				<string>CE07C51563A8537190C45BF7B84469E6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01F2D61A257E328F71D140D66A692C21 /* Rollbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 445BD1E1C617B86FB574A6FDB5BFAA99 /* Rollbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06C696535B26AC08078E5547A9CCE7D2 /* RollbarReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2521E013112C572DD320CC4464020345 /* RollbarReachability.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		088D9C278FA9C10549FBA7F3AD2F2FEE /* Pods-pedalaMIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE15FA9B4F303E8FE58A30B7BD154C1 /* Pods-pedalaMIUITests-dummy.m */; };
+		089EAD88A373E8FE3D57366643DD4700 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
+		17A8E0A7B02716D05B21CD5184C389CA /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 114F8D4A0D3D9A41A5E1577108DCE0C1 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CB0430C2784E780AD88F79DF01C708D /* Pods-pedalaMITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72324E28E1D1BFF0DC485089A825E742 /* Pods-pedalaMITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F3CDE98F4F2C2CDB0E46A35760ED4AF /* Pods-pedalaMIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4AD0526EE996D5E01A80ACF7B2F886 /* Pods-pedalaMIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2285234B3B6294316F2A9189981581C9 /* RollbarFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D83FA2D38DC3333B578B389EF78CDEC /* RollbarFileReader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		27BC61D9DFC7E0EAF96DE2853FDCB0EC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1B33188740B25D40CEDC08A929AF6 /* SystemConfiguration.framework */; };
+		27F8EDE352588E95D963D340C6E9E98D /* RollbarLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D6C6D5D1A628AF1244C01DC062600 /* RollbarLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3F5477CC628BC90869FB2DB62A4C7A25 /* RollbarThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 38D5240BBBCC25CDA2FE8482E313C87A /* RollbarThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47E8F4555D65FD3E897DB4144CAA0588 /* RollbarFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0927A1960BD217DAD465A01E3A31E1 /* RollbarFileReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4847E973487F9CFBD8ACCF8D7617EDCB /* RollbarNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BFD329D719885B91CFA61523A96AB /* RollbarNotifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57062E6A3BADB228A07712456C5FA8F1 /* RollbarThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A37A4C05F32406D64C293E2ABDD6C6 /* RollbarThread.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		570AFDCBAAD11B6ED52A3844A63ABB85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
+		59CB1126D97AFADE886101AB0E7371D6 /* RollbarNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 703F93D0EDCA102B6CA80E4B854CB146 /* RollbarNotifier.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5C3059F234706338F892F54EB433132C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
+		5EDF71899D01B9974D76E349450E2F9C /* Pods-pedalaMITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E5E3430D7162B8F0E72F7DFF093F13D /* Pods-pedalaMITests-dummy.m */; };
+		5F32C18B0A75282E19842A559AE88A66 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCC9E29D7286F44C211ECAC5AEB86A1 /* Pods-dummy.m */; };
+		6DB1163AAE06D2CB29BA12DBA0B89226 /* RollbarLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 25C981A613B894E484F83D5DFB02AFDC /* RollbarLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F2E32600806C772C6FEAA6C45A1FE11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
+		7D2BA5C678484D6A729A3770B66230FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
+		896BF2338CAC5603C42C7AFFEF771D2B /* Pods-pedalaMI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6B698347C9D6EE40FE3D09632788F9 /* Pods-pedalaMI-dummy.m */; };
+		B040B4765DF572A4D4F764E4D10E00B0 /* Rollbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 461D45DB85C3ABC3E19E16000CB928EE /* Rollbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3CA5E60FDB321E0F1F160DBFE8BAFF5 /* Pods-pedalaMI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1762F77A8DA41F6D2F4AC051F648C71 /* Pods-pedalaMI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC27E9B57042F2AC70C13132E226F643 /* RollbarReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 466F2DDBE419C49D8A41C7FB77EF9534 /* RollbarReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0FD52F1DD9B713357EB2E6B65977326 /* RollbarConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC51B2350173242C9A54622091994AF /* RollbarConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D484AA15A6D991AD0CC865099F52A667 /* Rollbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E40676CAD672FD1BE5B2E51F08D519D /* Rollbar-dummy.m */; };
+		EA11587A9E0F23E49586F139FEDE65D8 /* Rollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E25ED46C7035827E6EFEC37A91C75 /* Rollbar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F141C009E31B113C9E7E1EC40400E2CD /* RollbarConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E550572610FB8695D7439CA10025FC3E /* RollbarConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD35269070B02322061304749EA97A5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE07C51563A8537190C45BF7B84469E6 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		623AFCC60B2D9EC842BB283311B29DD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D06CD12A37C57CC85A087F5E1F504C26;
+			remoteInfo = Rollbar;
+		};
+		6F085539B7E20FD6260A3B0F09E9BF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D06CD12A37C57CC85A087F5E1F504C26;
+			remoteInfo = Rollbar;
+		};
+		744ABA75B7517A7E5C2E706FCD2EEC74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D06CD12A37C57CC85A087F5E1F504C26;
+			remoteInfo = Rollbar;
+		};
+		83EBFEBC842156AD26189F8969094255 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D06CD12A37C57CC85A087F5E1F504C26;
+			remoteInfo = Rollbar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0ACB04762003FB5BE2C880A3D92A0775 /* Pods-pedalaMITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMITests.release.xcconfig"; sourceTree = "<group>"; };
+		114F8D4A0D3D9A41A5E1577108DCE0C1 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		1380C0FBE52955078B13BF28891DAFE6 /* Pods-pedalaMIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E40676CAD672FD1BE5B2E51F08D519D /* Rollbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rollbar-dummy.m"; sourceTree = "<group>"; };
+		25091F21336A4845D0E62012597D9F7F /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		2521E013112C572DD320CC4464020345 /* RollbarReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarReachability.m; path = Rollbar/RollbarReachability.m; sourceTree = "<group>"; };
+		25C981A613B894E484F83D5DFB02AFDC /* RollbarLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarLogger.h; path = Rollbar/RollbarLogger.h; sourceTree = "<group>"; };
+		262560C19E9AA453DB6B572B86A5EEA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F0AC0B659B9D92279F9466B3811218 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		2EA74CA41EC3A61C3E7FB64EB076EAEA /* Pods-pedalaMI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMI.debug.xcconfig"; sourceTree = "<group>"; };
+		2F0B858636F457C5F500AD4306AB89A5 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = Vendor/CrashReporter.framework; sourceTree = "<group>"; };
+		2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36C7DCB8C0E3A14F60355861D278E3ED /* Pods-pedalaMIUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMIUITests-frameworks.sh"; sourceTree = "<group>"; };
+		37ED4FC103A669AD83F0252EDC10AE5F /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		38D5240BBBCC25CDA2FE8482E313C87A /* RollbarThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarThread.h; path = Rollbar/RollbarThread.h; sourceTree = "<group>"; };
+		3F6B698347C9D6EE40FE3D09632788F9 /* Pods-pedalaMI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pedalaMI-dummy.m"; sourceTree = "<group>"; };
+		41A37A4C05F32406D64C293E2ABDD6C6 /* RollbarThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarThread.m; path = Rollbar/RollbarThread.m; sourceTree = "<group>"; };
+		42770AE3F057D44D966BCD528FFD81F3 /* Pods-pedalaMIUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMIUITests-resources.sh"; sourceTree = "<group>"; };
+		43866CF8DEC52BD1C9770DA265E27D32 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		445BD1E1C617B86FB574A6FDB5BFAA99 /* Rollbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rollbar-umbrella.h"; sourceTree = "<group>"; };
+		461D45DB85C3ABC3E19E16000CB928EE /* Rollbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Rollbar.h; path = Rollbar/Rollbar.h; sourceTree = "<group>"; };
+		466F2DDBE419C49D8A41C7FB77EF9534 /* RollbarReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarReachability.h; path = Rollbar/RollbarReachability.h; sourceTree = "<group>"; };
+		492A0DFB7F3476A0E1CA964B3EA513E9 /* Pods-pedalaMI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pedalaMI-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D0927A1960BD217DAD465A01E3A31E1 /* RollbarFileReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarFileReader.h; path = Rollbar/RollbarFileReader.h; sourceTree = "<group>"; };
+		4F9E16106C2BCE037BB3C4C50847CE46 /* Pods-pedalaMI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMI-resources.sh"; sourceTree = "<group>"; };
+		4FC19C8375046574C0FF64370A8CD2FD /* Pods-pedalaMI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pedalaMI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50F60053E8B8551ACEF2623677B1BEA7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A449F607288CC14D596794036EE483 /* Pods-pedalaMIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pedalaMIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		563CB2CA5988915F52172D7172CF7680 /* Pods-pedalaMIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-pedalaMIUITests.modulemap"; sourceTree = "<group>"; };
+		568203859772EC8A9B95AA0C7CA8893E /* Pods-pedalaMITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMITests-frameworks.sh"; sourceTree = "<group>"; };
+		57B769FABFB5B6F4B9625E74CE780099 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		594B2978279BF0B92DD88D11CA4E7E5D /* Pods_pedalaMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E5E3430D7162B8F0E72F7DFF093F13D /* Pods-pedalaMITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pedalaMITests-dummy.m"; sourceTree = "<group>"; };
+		5E9CBF3A14C56FA05E4C46431149D158 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		6617562037A987A64C003A7373C92521 /* Rollbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rollbar.xcconfig; sourceTree = "<group>"; };
+		6AACB1AF5FD37D0A6C0EC6ABC0B30D4E /* Pods-pedalaMI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-pedalaMI.modulemap"; sourceTree = "<group>"; };
+		6D83FA2D38DC3333B578B389EF78CDEC /* RollbarFileReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarFileReader.m; path = Rollbar/RollbarFileReader.m; sourceTree = "<group>"; };
+		6EB494E6037DBAFA6F8AE8817C4C407C /* Rollbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rollbar-prefix.pch"; sourceTree = "<group>"; };
+		6F98807A3708C978A7B3F6FA7EF06918 /* Pods-pedalaMITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-pedalaMITests.modulemap"; sourceTree = "<group>"; };
+		703F93D0EDCA102B6CA80E4B854CB146 /* RollbarNotifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarNotifier.m; path = Rollbar/RollbarNotifier.m; sourceTree = "<group>"; };
+		72324E28E1D1BFF0DC485089A825E742 /* Pods-pedalaMITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pedalaMITests-umbrella.h"; sourceTree = "<group>"; };
+		86972CD28C42771B2622C7A8E8FDA623 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
+		8A4AD0526EE996D5E01A80ACF7B2F886 /* Pods-pedalaMIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pedalaMIUITests-umbrella.h"; sourceTree = "<group>"; };
+		8ED917F2DB7D0E6425E848DF41F0C1E2 /* Pods-pedalaMITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pedalaMITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		901F1E76EF524A5DECD0E972E70AAAC3 /* Pods-pedalaMI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMI-frameworks.sh"; sourceTree = "<group>"; };
+		942E25ED46C7035827E6EFEC37A91C75 /* Rollbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Rollbar.m; path = Rollbar/Rollbar.m; sourceTree = "<group>"; };
+		9A2F48F60A47DDACF8D6EF5CAECA5F4D /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		A14F5B7F1A3CACFA2734EA1620E6B4A6 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		A418A30C64AAA3DB30A4982CBB60352D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C1C578C5B627686F08E8645D04BE03 /* Pods_pedalaMIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E06BF5C10BA9771F9ED30E5F9F86DD /* Rollbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Rollbar.modulemap; sourceTree = "<group>"; };
+		AA30FD32068B9534EB3F277FDB82D892 /* Pods-pedalaMIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AEC51B2350173242C9A54622091994AF /* RollbarConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarConfiguration.m; path = Rollbar/RollbarConfiguration.m; sourceTree = "<group>"; };
+		B7ACB282D8CE45F2730CF344D78136A4 /* Pods-pedalaMIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pedalaMIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BAE1B33188740B25D40CEDC08A929AF6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		BCCC9E29D7286F44C211ECAC5AEB86A1 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		BF1D6C6D5D1A628AF1244C01DC062600 /* RollbarLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarLogger.m; path = Rollbar/RollbarLogger.m; sourceTree = "<group>"; };
+		C4966ED9FF445EBE66AAAA7F46CE1271 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		CDE15FA9B4F303E8FE58A30B7BD154C1 /* Pods-pedalaMIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pedalaMIUITests-dummy.m"; sourceTree = "<group>"; };
+		CE07C51563A8537190C45BF7B84469E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D2C4D7C07A0152B11A2D6F9800F9A9FF /* Pods-pedalaMITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D67BA11D7492AC2340917E27E7AF5B0A /* Rollbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rollbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFDBE33866ECCD459BBB57BEFD816CE /* Pods-pedalaMITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMITests-resources.sh"; sourceTree = "<group>"; };
+		E25A27A80D26426B8962BF7F66438DCC /* Pods-pedalaMI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMI.release.xcconfig"; sourceTree = "<group>"; };
+		E550572610FB8695D7439CA10025FC3E /* RollbarConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarConfiguration.h; path = Rollbar/RollbarConfiguration.h; sourceTree = "<group>"; };
+		EA1562FB4ACFD370C1710D181356AEA6 /* Pods-pedalaMITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pedalaMITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EBC63CCE591D3761305E40AB02CBA693 /* Pods_pedalaMITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1762F77A8DA41F6D2F4AC051F648C71 /* Pods-pedalaMI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pedalaMI-umbrella.h"; sourceTree = "<group>"; };
+		F47BFD329D719885B91CFA61523A96AB /* RollbarNotifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarNotifier.h; path = Rollbar/RollbarNotifier.h; sourceTree = "<group>"; };
+		FD8A5BACEB928E9CD85F2C76E6F17AAC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		108E2395D64E2E2D1E9B023724D1D175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C3059F234706338F892F54EB433132C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D6083A008E2FA9371EA76C884910CD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F2E32600806C772C6FEAA6C45A1FE11 /* Foundation.framework in Frameworks */,
+				27BC61D9DFC7E0EAF96DE2853FDCB0EC /* SystemConfiguration.framework in Frameworks */,
+				FD35269070B02322061304749EA97A5B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E8648F60D1895CFB45FC08E635B428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089EAD88A373E8FE3D57366643DD4700 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DCE2B51F09123614A806D0B01C2C372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570AFDCBAAD11B6ED52A3844A63ABB85 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBEB5D6F88C0E34C51BD1CEC3C343E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2BA5C678484D6A729A3770B66230FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0359EC2C6D4E222B6CDA6B29FF52D178 /* Rollbar */ = {
+			isa = PBXGroup;
+			children = (
+				461D45DB85C3ABC3E19E16000CB928EE /* Rollbar.h */,
+				942E25ED46C7035827E6EFEC37A91C75 /* Rollbar.m */,
+				E550572610FB8695D7439CA10025FC3E /* RollbarConfiguration.h */,
+				AEC51B2350173242C9A54622091994AF /* RollbarConfiguration.m */,
+				4D0927A1960BD217DAD465A01E3A31E1 /* RollbarFileReader.h */,
+				6D83FA2D38DC3333B578B389EF78CDEC /* RollbarFileReader.m */,
+				25C981A613B894E484F83D5DFB02AFDC /* RollbarLogger.h */,
+				BF1D6C6D5D1A628AF1244C01DC062600 /* RollbarLogger.m */,
+				F47BFD329D719885B91CFA61523A96AB /* RollbarNotifier.h */,
+				703F93D0EDCA102B6CA80E4B854CB146 /* RollbarNotifier.m */,
+				466F2DDBE419C49D8A41C7FB77EF9534 /* RollbarReachability.h */,
+				2521E013112C572DD320CC4464020345 /* RollbarReachability.m */,
+				38D5240BBBCC25CDA2FE8482E313C87A /* RollbarThread.h */,
+				41A37A4C05F32406D64C293E2ABDD6C6 /* RollbarThread.m */,
+				D57C3733DDD3953CD0711EEA3A9D4D06 /* Frameworks */,
+				C85DDF36AC9C759CB470A6B0F757D06F /* Support Files */,
+			);
+			path = Rollbar;
+			sourceTree = "<group>";
+		};
+		09C468C9C6C6FC912243243243904A7B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D84A9693D259E7E29CA102B54ACD65D3 /* Pods */,
+				0BC52757E619992C24F2E8C05D7592FD /* Pods-pedalaMI */,
+				D0EEAAC5DED3BF43921F0288E0893049 /* Pods-pedalaMITests */,
+				B724923A1D4FBCB1A566595A0DB070DC /* Pods-pedalaMIUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0BC52757E619992C24F2E8C05D7592FD /* Pods-pedalaMI */ = {
+			isa = PBXGroup;
+			children = (
+				262560C19E9AA453DB6B572B86A5EEA3 /* Info.plist */,
+				6AACB1AF5FD37D0A6C0EC6ABC0B30D4E /* Pods-pedalaMI.modulemap */,
+				4FC19C8375046574C0FF64370A8CD2FD /* Pods-pedalaMI-acknowledgements.markdown */,
+				492A0DFB7F3476A0E1CA964B3EA513E9 /* Pods-pedalaMI-acknowledgements.plist */,
+				3F6B698347C9D6EE40FE3D09632788F9 /* Pods-pedalaMI-dummy.m */,
+				901F1E76EF524A5DECD0E972E70AAAC3 /* Pods-pedalaMI-frameworks.sh */,
+				4F9E16106C2BCE037BB3C4C50847CE46 /* Pods-pedalaMI-resources.sh */,
+				F1762F77A8DA41F6D2F4AC051F648C71 /* Pods-pedalaMI-umbrella.h */,
+				2EA74CA41EC3A61C3E7FB64EB076EAEA /* Pods-pedalaMI.debug.xcconfig */,
+				E25A27A80D26426B8962BF7F66438DCC /* Pods-pedalaMI.release.xcconfig */,
+			);
+			name = "Pods-pedalaMI";
+			path = "Target Support Files/Pods-pedalaMI";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF2AEA74965EED5FE2760906784C788C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				8EF00D6C73FC25447D4477D9AE3FA660 /* Pods */,
+				BBF3BC51DD2DB7F126F172636703AD42 /* Products */,
+				09C468C9C6C6FC912243243243904A7B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85F5B3C708C53E79718364F72081EDC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86972CD28C42771B2622C7A8E8FDA623 /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EF00D6C73FC25447D4477D9AE3FA660 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C551220EF2003057DB018944410AAE8 /* Mapbox-iOS-SDK */,
+				0359EC2C6D4E222B6CDA6B29FF52D178 /* Rollbar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C551220EF2003057DB018944410AAE8 /* Mapbox-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				85F5B3C708C53E79718364F72081EDC9 /* Frameworks */,
+			);
+			path = "Mapbox-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		B724923A1D4FBCB1A566595A0DB070DC /* Pods-pedalaMIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD8A5BACEB928E9CD85F2C76E6F17AAC /* Info.plist */,
+				563CB2CA5988915F52172D7172CF7680 /* Pods-pedalaMIUITests.modulemap */,
+				52A449F607288CC14D596794036EE483 /* Pods-pedalaMIUITests-acknowledgements.markdown */,
+				B7ACB282D8CE45F2730CF344D78136A4 /* Pods-pedalaMIUITests-acknowledgements.plist */,
+				CDE15FA9B4F303E8FE58A30B7BD154C1 /* Pods-pedalaMIUITests-dummy.m */,
+				36C7DCB8C0E3A14F60355861D278E3ED /* Pods-pedalaMIUITests-frameworks.sh */,
+				42770AE3F057D44D966BCD528FFD81F3 /* Pods-pedalaMIUITests-resources.sh */,
+				8A4AD0526EE996D5E01A80ACF7B2F886 /* Pods-pedalaMIUITests-umbrella.h */,
+				1380C0FBE52955078B13BF28891DAFE6 /* Pods-pedalaMIUITests.debug.xcconfig */,
+				AA30FD32068B9534EB3F277FDB82D892 /* Pods-pedalaMIUITests.release.xcconfig */,
+			);
+			name = "Pods-pedalaMIUITests";
+			path = "Target Support Files/Pods-pedalaMIUITests";
+			sourceTree = "<group>";
+		};
+		BBF3BC51DD2DB7F126F172636703AD42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50F60053E8B8551ACEF2623677B1BEA7 /* Pods.framework */,
+				594B2978279BF0B92DD88D11CA4E7E5D /* Pods_pedalaMI.framework */,
+				EBC63CCE591D3761305E40AB02CBA693 /* Pods_pedalaMITests.framework */,
+				A6C1C578C5B627686F08E8645D04BE03 /* Pods_pedalaMIUITests.framework */,
+				D67BA11D7492AC2340917E27E7AF5B0A /* Rollbar.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C85DDF36AC9C759CB470A6B0F757D06F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57B769FABFB5B6F4B9625E74CE780099 /* Info.plist */,
+				A7E06BF5C10BA9771F9ED30E5F9F86DD /* Rollbar.modulemap */,
+				6617562037A987A64C003A7373C92521 /* Rollbar.xcconfig */,
+				1E40676CAD672FD1BE5B2E51F08D519D /* Rollbar-dummy.m */,
+				6EB494E6037DBAFA6F8AE8817C4C407C /* Rollbar-prefix.pch */,
+				445BD1E1C617B86FB574A6FDB5BFAA99 /* Rollbar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Rollbar";
+			sourceTree = "<group>";
+		};
+		D0EEAAC5DED3BF43921F0288E0893049 /* Pods-pedalaMITests */ = {
+			isa = PBXGroup;
+			children = (
+				43866CF8DEC52BD1C9770DA265E27D32 /* Info.plist */,
+				6F98807A3708C978A7B3F6FA7EF06918 /* Pods-pedalaMITests.modulemap */,
+				EA1562FB4ACFD370C1710D181356AEA6 /* Pods-pedalaMITests-acknowledgements.markdown */,
+				8ED917F2DB7D0E6425E848DF41F0C1E2 /* Pods-pedalaMITests-acknowledgements.plist */,
+				5E5E3430D7162B8F0E72F7DFF093F13D /* Pods-pedalaMITests-dummy.m */,
+				568203859772EC8A9B95AA0C7CA8893E /* Pods-pedalaMITests-frameworks.sh */,
+				DDFDBE33866ECCD459BBB57BEFD816CE /* Pods-pedalaMITests-resources.sh */,
+				72324E28E1D1BFF0DC485089A825E742 /* Pods-pedalaMITests-umbrella.h */,
+				D2C4D7C07A0152B11A2D6F9800F9A9FF /* Pods-pedalaMITests.debug.xcconfig */,
+				0ACB04762003FB5BE2C880A3D92A0775 /* Pods-pedalaMITests.release.xcconfig */,
+			);
+			name = "Pods-pedalaMITests";
+			path = "Target Support Files/Pods-pedalaMITests";
+			sourceTree = "<group>";
+		};
+		D57C3733DDD3953CD0711EEA3A9D4D06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F0B858636F457C5F500AD4306AB89A5 /* CrashReporter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D84A9693D259E7E29CA102B54ACD65D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A418A30C64AAA3DB30A4982CBB60352D /* Info.plist */,
+				25091F21336A4845D0E62012597D9F7F /* Pods.modulemap */,
+				37ED4FC103A669AD83F0252EDC10AE5F /* Pods-acknowledgements.markdown */,
+				C4966ED9FF445EBE66AAAA7F46CE1271 /* Pods-acknowledgements.plist */,
+				BCCC9E29D7286F44C211ECAC5AEB86A1 /* Pods-dummy.m */,
+				9A2F48F60A47DDACF8D6EF5CAECA5F4D /* Pods-frameworks.sh */,
+				A14F5B7F1A3CACFA2734EA1620E6B4A6 /* Pods-resources.sh */,
+				114F8D4A0D3D9A41A5E1577108DCE0C1 /* Pods-umbrella.h */,
+				27F0AC0B659B9D92279F9466B3811218 /* Pods.debug.xcconfig */,
+				5E9CBF3A14C56FA05E4C46431149D158 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		FF2AEA74965EED5FE2760906784C788C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */,
+				BAE1B33188740B25D40CEDC08A929AF6 /* SystemConfiguration.framework */,
+				CE07C51563A8537190C45BF7B84469E6 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		42D245339BBEBA1A5C3D62C8A60F4B4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CA5E60FDB321E0F1F160DBFE8BAFF5 /* Pods-pedalaMI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720EBA673BA1B43262C5DDD2496DDC33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CB0430C2784E780AD88F79DF01C708D /* Pods-pedalaMITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B654531535EE82D97426253615693309 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A8E0A7B02716D05B21CD5184C389CA /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C97EC6B6F6BB4DCF28F085511788DDAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F3CDE98F4F2C2CDB0E46A35760ED4AF /* Pods-pedalaMIUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA68288B076E792CB791BC555232AEF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F2D61A257E328F71D140D66A692C21 /* Rollbar-umbrella.h in Headers */,
+				B040B4765DF572A4D4F764E4D10E00B0 /* Rollbar.h in Headers */,
+				F141C009E31B113C9E7E1EC40400E2CD /* RollbarConfiguration.h in Headers */,
+				47E8F4555D65FD3E897DB4144CAA0588 /* RollbarFileReader.h in Headers */,
+				6DB1163AAE06D2CB29BA12DBA0B89226 /* RollbarLogger.h in Headers */,
+				4847E973487F9CFBD8ACCF8D7617EDCB /* RollbarNotifier.h in Headers */,
+				CC27E9B57042F2AC70C13132E226F643 /* RollbarReachability.h in Headers */,
+				3F5477CC628BC90869FB2DB62A4C7A25 /* RollbarThread.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C7DA701A82BE4AD484F197E81F378B7 /* Pods-pedalaMIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D98CFADE4E16AEB1039DE7866EECE38 /* Build configuration list for PBXNativeTarget "Pods-pedalaMIUITests" */;
+			buildPhases = (
+				A6480379153E9518250962607DAAF7C9 /* Sources */,
+				57E8648F60D1895CFB45FC08E635B428 /* Frameworks */,
+				C97EC6B6F6BB4DCF28F085511788DDAC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52957A20028457AFC3176A60EFC6FF6A /* PBXTargetDependency */,
+			);
+			name = "Pods-pedalaMIUITests";
+			productName = "Pods-pedalaMIUITests";
+			productReference = A6C1C578C5B627686F08E8645D04BE03 /* Pods_pedalaMIUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4DE13CDE85BD8BBA2C50694A2FDF76B4 /* Pods-pedalaMITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6A645769061EB52D2EB4AFE1D6DC72B /* Build configuration list for PBXNativeTarget "Pods-pedalaMITests" */;
+			buildPhases = (
+				A5F451DDA0938CAB13A5541C9111F19B /* Sources */,
+				EBEB5D6F88C0E34C51BD1CEC3C343E40 /* Frameworks */,
+				720EBA673BA1B43262C5DDD2496DDC33 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73099F59F05E033A063DCBE026663537 /* PBXTargetDependency */,
+			);
+			name = "Pods-pedalaMITests";
+			productName = "Pods-pedalaMITests";
+			productReference = EBC63CCE591D3761305E40AB02CBA693 /* Pods_pedalaMITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5BADEF6515B33580259652737D455A11 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CFB83939E5BFDCF4D845AACA3C7F2F3 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				911DE0CF7A55F0C293CEAEF87023BAF0 /* Sources */,
+				108E2395D64E2E2D1E9B023724D1D175 /* Frameworks */,
+				B654531535EE82D97426253615693309 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39DB2CDAA3CFC7AF169CA22334EA3DE2 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 50F60053E8B8551ACEF2623677B1BEA7 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B3A454C05997F3BCA1B6CDED88FAAB1B /* Pods-pedalaMI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB9F6540F7F0119FD1448D23A16E6DF /* Build configuration list for PBXNativeTarget "Pods-pedalaMI" */;
+			buildPhases = (
+				5148EC913C1A34F944338FEE6A50A2BB /* Sources */,
+				7DCE2B51F09123614A806D0B01C2C372 /* Frameworks */,
+				42D245339BBEBA1A5C3D62C8A60F4B4F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F186B320FA91D1B9D7CE0153B061914 /* PBXTargetDependency */,
+			);
+			name = "Pods-pedalaMI";
+			productName = "Pods-pedalaMI";
+			productReference = 594B2978279BF0B92DD88D11CA4E7E5D /* Pods_pedalaMI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D06CD12A37C57CC85A087F5E1F504C26 /* Rollbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9405BBB03764C89906604C612EFD5AF3 /* Build configuration list for PBXNativeTarget "Rollbar" */;
+			buildPhases = (
+				A141454876E1A9A65F2537C140D537F9 /* Sources */,
+				1D6083A008E2FA9371EA76C884910CD4 /* Frameworks */,
+				FA68288B076E792CB791BC555232AEF4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rollbar;
+			productName = Rollbar;
+			productReference = D67BA11D7492AC2340917E27E7AF5B0A /* Rollbar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BBF3BC51DD2DB7F126F172636703AD42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BADEF6515B33580259652737D455A11 /* Pods */,
+				B3A454C05997F3BCA1B6CDED88FAAB1B /* Pods-pedalaMI */,
+				4DE13CDE85BD8BBA2C50694A2FDF76B4 /* Pods-pedalaMITests */,
+				2C7DA701A82BE4AD484F197E81F378B7 /* Pods-pedalaMIUITests */,
+				D06CD12A37C57CC85A087F5E1F504C26 /* Rollbar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5148EC913C1A34F944338FEE6A50A2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				896BF2338CAC5603C42C7AFFEF771D2B /* Pods-pedalaMI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		911DE0CF7A55F0C293CEAEF87023BAF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F32C18B0A75282E19842A559AE88A66 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A141454876E1A9A65F2537C140D537F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D484AA15A6D991AD0CC865099F52A667 /* Rollbar-dummy.m in Sources */,
+				EA11587A9E0F23E49586F139FEDE65D8 /* Rollbar.m in Sources */,
+				D0FD52F1DD9B713357EB2E6B65977326 /* RollbarConfiguration.m in Sources */,
+				2285234B3B6294316F2A9189981581C9 /* RollbarFileReader.m in Sources */,
+				27F8EDE352588E95D963D340C6E9E98D /* RollbarLogger.m in Sources */,
+				59CB1126D97AFADE886101AB0E7371D6 /* RollbarNotifier.m in Sources */,
+				06C696535B26AC08078E5547A9CCE7D2 /* RollbarReachability.m in Sources */,
+				57062E6A3BADB228A07712456C5FA8F1 /* RollbarThread.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F451DDA0938CAB13A5541C9111F19B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDF71899D01B9974D76E349450E2F9C /* Pods-pedalaMITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6480379153E9518250962607DAAF7C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				088D9C278FA9C10549FBA7F3AD2F2FEE /* Pods-pedalaMIUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39DB2CDAA3CFC7AF169CA22334EA3DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Rollbar;
+			target = D06CD12A37C57CC85A087F5E1F504C26 /* Rollbar */;
+			targetProxy = 83EBFEBC842156AD26189F8969094255 /* PBXContainerItemProxy */;
+		};
+		4F186B320FA91D1B9D7CE0153B061914 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Rollbar;
+			target = D06CD12A37C57CC85A087F5E1F504C26 /* Rollbar */;
+			targetProxy = 623AFCC60B2D9EC842BB283311B29DD5 /* PBXContainerItemProxy */;
+		};
+		52957A20028457AFC3176A60EFC6FF6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Rollbar;
+			target = D06CD12A37C57CC85A087F5E1F504C26 /* Rollbar */;
+			targetProxy = 744ABA75B7517A7E5C2E706FCD2EEC74 /* PBXContainerItemProxy */;
+		};
+		73099F59F05E033A063DCBE026663537 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Rollbar;
+			target = D06CD12A37C57CC85A087F5E1F504C26 /* Rollbar */;
+			targetProxy = 6F085539B7E20FD6260A3B0F09E9BF8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C7DAF287D94ED390F2999973C281857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E25A27A80D26426B8962BF7F66438DCC /* Pods-pedalaMI.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMI/Pods-pedalaMI.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_pedalaMI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		28910A5F6A10E79FE9D685C39E38B276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F0AC0B659B9D92279F9466B3811218 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7341F64D9AC67368D05E8FDDFB6024A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA74CA41EC3A61C3E7FB64EB076EAEA /* Pods-pedalaMI.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMI/Pods-pedalaMI.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_pedalaMI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		787B5EB5B57ABD54823DB1AF299DCFE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6617562037A987A64C003A7373C92521 /* Rollbar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Rollbar/Rollbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rollbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Rollbar/Rollbar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Rollbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		86FBE5D63DAE6CDB6983650F60C33D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E9CBF3A14C56FA05E4C46431149D158 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A86C3A223EB029C64E996D51ED22AEFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1380C0FBE52955078B13BF28891DAFE6 /* Pods-pedalaMIUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMIUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMIUITests/Pods-pedalaMIUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_pedalaMIUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C234D1CC99F4662C4C8D49A40168DB81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA30FD32068B9534EB3F277FDB82D892 /* Pods-pedalaMIUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMIUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMIUITests/Pods-pedalaMIUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_pedalaMIUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD317123DB7897EB5A541A41E0AEC63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C4D7C07A0152B11A2D6F9800F9A9FF /* Pods-pedalaMITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_pedalaMITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F67CE27D81D9F982A370D38EEFAF7BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6617562037A987A64C003A7373C92521 /* Rollbar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Rollbar/Rollbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rollbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Rollbar/Rollbar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Rollbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB5AFCFB54553CFF227AB0B2B5FAF388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ACB04762003FB5BE2C880A3D92A0775 /* Pods-pedalaMITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_pedalaMITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D98CFADE4E16AEB1039DE7866EECE38 /* Build configuration list for PBXNativeTarget "Pods-pedalaMIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A86C3A223EB029C64E996D51ED22AEFA /* Debug */,
+				C234D1CC99F4662C4C8D49A40168DB81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB9F6540F7F0119FD1448D23A16E6DF /* Build configuration list for PBXNativeTarget "Pods-pedalaMI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7341F64D9AC67368D05E8FDDFB6024A4 /* Debug */,
+				0C7DAF287D94ED390F2999973C281857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CFB83939E5BFDCF4D845AACA3C7F2F3 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28910A5F6A10E79FE9D685C39E38B276 /* Debug */,
+				86FBE5D63DAE6CDB6983650F60C33D47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9405BBB03764C89906604C612EFD5AF3 /* Build configuration list for PBXNativeTarget "Rollbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F67CE27D81D9F982A370D38EEFAF7BEB /* Debug */,
+				787B5EB5B57ABD54823DB1AF299DCFE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6A645769061EB52D2EB4AFE1D6DC72B /* Build configuration list for PBXNativeTarget "Pods-pedalaMITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD317123DB7897EB5A541A41E0AEC63B /* Debug */,
+				FB5AFCFB54553CFF227AB0B2B5FAF388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
