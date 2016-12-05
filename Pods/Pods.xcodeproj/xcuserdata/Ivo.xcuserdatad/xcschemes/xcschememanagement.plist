@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Rollbar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2C7DA701A82BE4AD484F197E81F378B7</key>
+		<key>01A0312F999499AC33161196D71AF922</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4DE13CDE85BD8BBA2C50694A2FDF76B4</key>
+		<key>852020B7CE8B6C991087F1FD5A0ECC95</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5BADEF6515B33580259652737D455A11</key>
+		<key>A41B42476CA7FB8E9BD3537DADEF52A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B3A454C05997F3BCA1B6CDED88FAAB1B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D06CD12A37C57CC85A087F5E1F504C26</key>
+		<key>FC861D01E58211DF1007105F74543F14</key>
 		<dict>
 			<key>primary</key>
 			<true/>

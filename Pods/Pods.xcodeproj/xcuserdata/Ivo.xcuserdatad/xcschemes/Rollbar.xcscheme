@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '51D54928F5BC5AD4A4CFC3DC'
+               BlueprintIdentifier = '01A0312F999499AC33161196D71AF922'
                BlueprintName = 'Rollbar'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Rollbar.framework'>

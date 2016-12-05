@@ -3,7 +3,7 @@
 # Uncomment this line if you're using Swift
  use_frameworks!
 
-pod 'Mapbox-iOS-SDK', '~> 3.1.2'
+pod 'Mapbox-iOS-SDK', '~> 3.3.5'
 pod 'Rollbar', '~> 0.1.6'
 
 target ‘pedalaMI’ do

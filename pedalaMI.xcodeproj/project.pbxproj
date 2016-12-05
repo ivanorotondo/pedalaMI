@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47A75D9E3C6B918FCAE8F726 /* Pods_pedalaMITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA657FEA71FCD5CF1B0984A /* Pods_pedalaMITests.framework */; };
+		80B7915E4EE7CEF2BC638FEB /* Pods_pedalaMIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B4EE5C98F578AAFE15765D /* Pods_pedalaMIUITests.framework */; };
 		924AA5971CBF8A6800E1AF68 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AA5961CBF8A6800E1AF68 /* TabBarController.swift */; };
 		924AA59A1CBF8C2300E1AF68 /* MenuAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AA5991CBF8C2300E1AF68 /* MenuAnimation.swift */; };
 		924AA59C1CBF916300E1AF68 /* MarkersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AA59B1CBF916300E1AF68 /* MarkersController.swift */; };
@@ -51,7 +53,7 @@
 		92E72A2A1CBE3CDD00410E3C /* tapWaterXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E72A291CBE3CDD00410E3C /* tapWaterXML.swift */; };
 		92E72A2C1CBE47DF00410E3C /* TapWaterPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E72A2B1CBE47DF00410E3C /* TapWaterPoint.swift */; };
 		92E72A2E1CBE735400410E3C /* pinTapWater.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A2D1CBE735400410E3C /* pinTapWater.png */; };
-		E3B3FDFFD0C466C215028BEF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E83B4EEE28A4BDFB4640EE0 /* Pods.framework */; };
+		FFF36533355691DC62B48529 /* Pods_pedalaMI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F26B0DE07BE80A0002A755 /* Pods_pedalaMI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +74,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		75DB3FC4BA415C8115EAD7CE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		7729B498BEF82CE521E5CE90 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		50EF363278E59294DA9A25A8 /* Pods-pedalaMI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pedalaMI.release.xcconfig"; path = "Pods/Target Support Files/Pods-pedalaMI/Pods-pedalaMI.release.xcconfig"; sourceTree = "<group>"; };
+		552D1787035DDF9BD9529118 /* Pods-pedalaMIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pedalaMIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pedalaMIUITests/Pods-pedalaMIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E83B4EEE28A4BDFB4640EE0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		924AA5961CBF8A6800E1AF68 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		924AA5991CBF8C2300E1AF68 /* MenuAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAnimation.swift; sourceTree = "<group>"; };
@@ -125,6 +127,13 @@
 		92E72A291CBE3CDD00410E3C /* tapWaterXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tapWaterXML.swift; path = ../tapWaterXML.swift; sourceTree = "<group>"; };
 		92E72A2B1CBE47DF00410E3C /* TapWaterPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapWaterPoint.swift; sourceTree = "<group>"; };
 		92E72A2D1CBE735400410E3C /* pinTapWater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinTapWater.png; path = graphics/pinTapWater.png; sourceTree = "<group>"; };
+		9FA657FEA71FCD5CF1B0984A /* Pods_pedalaMITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A751D30C2AB614D416A95C99 /* Pods-pedalaMI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pedalaMI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pedalaMI/Pods-pedalaMI.debug.xcconfig"; sourceTree = "<group>"; };
+		B4B4EE5C98F578AAFE15765D /* Pods_pedalaMIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0C14CBF493A9FA0CF69FBC /* Pods-pedalaMIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pedalaMIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pedalaMIUITests/Pods-pedalaMIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7F26B0DE07BE80A0002A755 /* Pods_pedalaMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7A0CF12CA2FAB6BC15CFBD6 /* Pods-pedalaMITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pedalaMITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF0FAE6741D87908DE1A70B9 /* Pods-pedalaMITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pedalaMITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3B3FDFFD0C466C215028BEF /* Pods.framework in Frameworks */,
+				FFF36533355691DC62B48529 /* Pods_pedalaMI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A75D9E3C6B918FCAE8F726 /* Pods_pedalaMITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,27 +157,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B7915E4EE7CEF2BC638FEB /* Pods_pedalaMIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BC4F88CECFE1B3D63CC5427 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A751D30C2AB614D416A95C99 /* Pods-pedalaMI.debug.xcconfig */,
+				50EF363278E59294DA9A25A8 /* Pods-pedalaMI.release.xcconfig */,
+				F7A0CF12CA2FAB6BC15CFBD6 /* Pods-pedalaMITests.debug.xcconfig */,
+				FF0FAE6741D87908DE1A70B9 /* Pods-pedalaMITests.release.xcconfig */,
+				BF0C14CBF493A9FA0CF69FBC /* Pods-pedalaMIUITests.debug.xcconfig */,
+				552D1787035DDF9BD9529118 /* Pods-pedalaMIUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		535345085F8DA77C3A9F854D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				8E83B4EEE28A4BDFB4640EE0 /* Pods.framework */,
+				E7F26B0DE07BE80A0002A755 /* Pods_pedalaMI.framework */,
+				9FA657FEA71FCD5CF1B0984A /* Pods_pedalaMITests.framework */,
+				B4B4EE5C98F578AAFE15765D /* Pods_pedalaMIUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		720B9687B75B850129B5DCB8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				75DB3FC4BA415C8115EAD7CE /* Pods.debug.xcconfig */,
-				7729B498BEF82CE521E5CE90 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		924AA5921CBF89D100E1AF68 /* SDK */ = {
@@ -228,8 +246,8 @@
 				92876C271C92FD5800BB6BDA /* pedalaMIUITests */,
 				92876C471C935F3500BB6BDA /* graphics */,
 				92876C061C92FD5800BB6BDA /* Products */,
-				720B9687B75B850129B5DCB8 /* Pods */,
 				535345085F8DA77C3A9F854D /* Frameworks */,
+				0BC4F88CECFE1B3D63CC5427 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -342,13 +360,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92876C2D1C92FD5800BB6BDA /* Build configuration list for PBXNativeTarget "pedalaMI" */;
 			buildPhases = (
-				9D01B007F3AE7C58685FFDD7 /* Check Pods Manifest.lock */,
+				7E6E7E629E5EBE1C432DD5C1 /* [CP] Check Pods Manifest.lock */,
 				92876C011C92FD5800BB6BDA /* Sources */,
 				92876C021C92FD5800BB6BDA /* Frameworks */,
 				92876C031C92FD5800BB6BDA /* Resources */,
-				9388303D67105ED604D1A9F0 /* Embed Pods Frameworks */,
-				B198D4D63E4FE3B7631F0581 /* Copy Pods Resources */,
 				92CA5B9F1CC537B6003DCD40 /* ShellScript */,
+				E794CE253821FF2805957153 /* [CP] Embed Pods Frameworks */,
+				32E2837092C54D7CBA22A368 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -363,9 +381,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92876C301C92FD5800BB6BDA /* Build configuration list for PBXNativeTarget "pedalaMITests" */;
 			buildPhases = (
+				C8097D49D3B8A2F4C72686B6 /* [CP] Check Pods Manifest.lock */,
 				92876C151C92FD5800BB6BDA /* Sources */,
 				92876C161C92FD5800BB6BDA /* Frameworks */,
 				92876C171C92FD5800BB6BDA /* Resources */,
+				8AAC6A7990956E03848C7E13 /* [CP] Embed Pods Frameworks */,
+				9396533C66FCBFD1CEF9654D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -381,9 +402,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92876C331C92FD5800BB6BDA /* Build configuration list for PBXNativeTarget "pedalaMIUITests" */;
 			buildPhases = (
+				6247B118D84538B5D16BC53D /* [CP] Check Pods Manifest.lock */,
 				92876C201C92FD5800BB6BDA /* Sources */,
 				92876C211C92FD5800BB6BDA /* Frameworks */,
 				92876C221C92FD5800BB6BDA /* Resources */,
+				B102F9A0A08E4AF55A281311 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -491,6 +514,66 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		32E2837092C54D7CBA22A368 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pedalaMI/Pods-pedalaMI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6247B118D84538B5D16BC53D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E6E7E629E5EBE1C432DD5C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8AAC6A7990956E03848C7E13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		92CA5B9F1CC537B6003DCD40 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,29 +587,44 @@
 			shellPath = /usr/bin/python;
 			shellScript = "import os\nimport subprocess\nimport zipfile\n\nif os.environ['DEBUG_INFORMATION_FORMAT'] != 'dwarf-with-dsym' or os.environ['EFFECTIVE_PLATFORM_NAME'] == '-iphonesimulator':\n    exit(0)\n\nACCESS_TOKEN = '6c0e47e8f6ae423a8506dccb366204d5'\n\ndsym_file_path = os.path.join(os.environ['DWARF_DSYM_FOLDER_PATH'], os.environ['DWARF_DSYM_FILE_NAME'])\nzip_location = '%s.zip' % (dsym_file_path)\n\nos.chdir(os.environ['DWARF_DSYM_FOLDER_PATH'])\nwith zipfile.ZipFile(zip_location, 'w', zipfile.ZIP_DEFLATED) as zipf:\n    for root, dirs, files in os.walk(os.environ['DWARF_DSYM_FILE_NAME']):\n        zipf.write(root)\n\n        for f in files:\n            zipf.write(os.path.join(root, f))\n\n# You may need to change the following path to match your application settings and Xcode version\ninfo_file_path = os.path.join(os.environ['INSTALL_DIR'], os.environ['INFOPLIST_PATH'])\n\np = subprocess.Popen('/usr/libexec/PlistBuddy -c \"Print :CFBundleVersion\" -c \"Print :CFBundleIdentifier\" \"%s\"' % info_file_path,\n                     stdout=subprocess.PIPE, shell=True)\n\nstdout, stderr = p.communicate()\nversion, identifier = stdout.split()\n\np = subprocess.Popen('curl -X POST \"https://api.rollbar.com/api/1/dsym\" -F access_token=%s -F version=%s -F bundle_identifier=\"%s\" -F dsym=@\"%s\"' \n                     % (ACCESS_TOKEN, version, identifier, zip_location), shell=True)\np.communicate()";
 		};
-		9388303D67105ED604D1A9F0 /* Embed Pods Frameworks */ = {
+		9396533C66FCBFD1CEF9654D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9D01B007F3AE7C58685FFDD7 /* Check Pods Manifest.lock */ = {
+		B102F9A0A08E4AF55A281311 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pedalaMIUITests/Pods-pedalaMIUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8097D49D3B8A2F4C72686B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,19 +632,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B198D4D63E4FE3B7631F0581 /* Copy Pods Resources */ = {
+		E794CE253821FF2805957153 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pedalaMI/Pods-pedalaMI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -710,7 +808,7 @@
 		};
 		92876C2E1C92FD5800BB6BDA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75DB3FC4BA415C8115EAD7CE /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A751D30C2AB614D416A95C99 /* Pods-pedalaMI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -726,7 +824,7 @@
 		};
 		92876C2F1C92FD5800BB6BDA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7729B498BEF82CE521E5CE90 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 50EF363278E59294DA9A25A8 /* Pods-pedalaMI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -741,6 +839,7 @@
 		};
 		92876C311C92FD5800BB6BDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7A0CF12CA2FAB6BC15CFBD6 /* Pods-pedalaMITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				ENABLE_BITCODE = YES;
@@ -754,6 +853,7 @@
 		};
 		92876C321C92FD5800BB6BDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF0FAE6741D87908DE1A70B9 /* Pods-pedalaMITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				ENABLE_BITCODE = YES;
@@ -767,6 +867,7 @@
 		};
 		92876C341C92FD5800BB6BDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0C14CBF493A9FA0CF69FBC /* Pods-pedalaMIUITests.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iBiciUITests/Info.plist;
@@ -780,6 +881,7 @@
 		};
 		92876C351C92FD5800BB6BDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 552D1787035DDF9BD9529118 /* Pods-pedalaMIUITests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iBiciUITests/Info.plist;

@@ -1,13 +1,15 @@
 PODS:
-  - Mapbox-iOS-SDK (3.1.2)
+  - Mapbox-iOS-SDK (3.3.5)
   - Rollbar (0.1.6)
 
 DEPENDENCIES:
-  - Mapbox-iOS-SDK (~> 3.1.2)
+  - Mapbox-iOS-SDK (~> 3.3.5)
   - Rollbar (~> 0.1.6)
 
 SPEC CHECKSUMS:
-  Mapbox-iOS-SDK: 0a910c2cce1aa8cff5b9ec2a990e7a32332a776a
+  Mapbox-iOS-SDK: a3ceda9e2a38b11a18a3d09645d34826e0ea1757
   Rollbar: 5500ff0227e60d4ebb3615341c18ca44df988bcb
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: bebf7abbfe8e8ba207d82c88fd08390282b9e96c
+
+COCOAPODS: 1.0.1
