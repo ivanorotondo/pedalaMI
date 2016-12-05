@@ -242,8 +242,8 @@ extension MapViewController {
         }
         
         addingMarkers = true
-        dispatch_async(dispatch_queue_create("serial-worker", DISPATCH_QUEUE_SERIAL)) {
-            
+//        dispatch_async(dispatch_queue_create("serial-worker", DISPATCH_QUEUE_SERIAL)) {
+        
             getSetsAndRemoveOldAnnotations()
             
             dispatch_async(dispatch_get_main_queue(), {
@@ -255,7 +255,7 @@ extension MapViewController {
             })
             
 
-        }
+//        }
         
     }
     
@@ -281,7 +281,7 @@ extension MapViewController {
         if annotationView == nil {
             annotationView = CustomAnnotationView(reuseIdentifier: reuseIdentifier)
             annotationView?.tag = Int(extractPinNumbersFromAnnotationSubtitle(annotation) as String)!
-            annotationView!.frame = CGRectMake(0, 0, 30, 30)
+            annotationView?.frame = CGRectMake(0, 0, 30, 30)
             
             if annotation.title! != "Tap Water" {
                 switch currentView {
@@ -295,103 +295,102 @@ extension MapViewController {
                     annotationView!.backgroundColor = UIColor(hue: 0.4, saturation: 0.5, brightness: 1, alpha: 1)
                 }
             }
+        } else {
+            print("REUSED IDENTIFIER: \(reuseIdentifier)")
         }
-        
-        var imageView = UIImageView()
-        
         
         return annotationView
     }
     
 
-    func mapView(mapView: MGLMapView, imageForAnnotation annotation: MGLAnnotation) -> MGLAnnotationImage? {
-        
-        var text = NSString(string: " ")
-        
-        var annotationImage : MGLAnnotationImage?
-        
-        func extractPinNumbersFromAnnotationSubtitle(annotation: MGLAnnotation, var text: NSString) -> NSString {
-            var subtitle = (annotation.subtitle! as! String?)
-            let numberIndex = (subtitle?.startIndex.distanceTo((subtitle?.characters.indexOf(":"))!))! + 2
-            let subtitleNSString = NSString(string: "\(subtitle!)")
-            text = subtitleNSString.substringWithRange(NSRange(location: numberIndex, length: (subtitle?.characters.count)! - numberIndex))
-            return text
-        }
-        
-        func getTheImageCorrespondingToTheCurrentView() -> UIImage{
-            
-            var image = UIImage(named: "pinBike")!
-            
-            switch currentView {
-            case "bikes":
-                image = UIImage(named: "pinBike")!
-            case "electricBikes":
-                image = UIImage(named: "pinEBike")!
-            case "slots":
-                image = UIImage(named: "pinSlot")!
-            default:
-                image = UIImage(named: "pinBike")!
-            }
-            
-            return image
-        }
-        
-        func setUpThePinImage(image: UIImage, text: NSString)-> UIImage{
-            
-            //set up the pin image
-            let size = CGSize(width: 25, height: 25)
-            UIGraphicsBeginImageContext(size)
-            image.drawInRect(CGRectMake(0, 0, size.width, size.height))
-            
-            var rect: CGRect = CGRectMake(8.5, 4, size.width, size.width)
-            
-            if text.length == 1 {
-                rect = CGRectMake(8.5, 4, size.width, size.width)
-            }
-            if text.length == 2 {
-                rect = CGRectMake(4.5, 4, size.width, size.width)
-            }
-            
-            text.drawInRect(rect, withAttributes: pinTextFontAttributes as? [String : AnyObject])
-            let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext()
-            return resizedImage
-        }
-
-        if annotation.subtitle != nil && annotation.title! != "Tap Water" {
-            
-            text = extractPinNumbersFromAnnotationSubtitle(annotation, text: text)
-            annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier("\(currentView) \(text)")
-            
-            if annotationImage == nil {
-                
-                let image = getTheImageCorrespondingToTheCurrentView()
-                
-                let resizedImage = setUpThePinImage(image, text: text)
-                
-                annotationImage = MGLAnnotationImage(image: resizedImage, reuseIdentifier: "\(currentView) \(text)")
-            }
-        }
-        
-        if annotation.title! == "Tap Water" {
-            annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier("tapWater")
-            
-            if annotationImage == nil {
-                
-                var image = UIImage(named: "pinTapWater")
-                
-                let size = CGSize(width: 17, height: 25)
-                UIGraphicsBeginImageContext(size)
-                image!.drawInRect(CGRectMake(0, 0, size.width, size.height))
-                image = UIGraphicsGetImageFromCurrentImageContext()
-                UIGraphicsEndImageContext()
-                
-                annotationImage = MGLAnnotationImage(image: image!, reuseIdentifier: "tapWater")
-            }
-        }
-        
-        return annotationImage
-    }
+//    func mapView(mapView: MGLMapView, imageForAnnotation annotation: MGLAnnotation) -> MGLAnnotationImage? {
+    
+//        var text = NSString(string: " ")
+//        
+//        var annotationImage : MGLAnnotationImage?
+//        
+//        func extractPinNumbersFromAnnotationSubtitle(annotation: MGLAnnotation, var text: NSString) -> NSString {
+//            var subtitle = (annotation.subtitle! as! String?)
+//            let numberIndex = (subtitle?.startIndex.distanceTo((subtitle?.characters.indexOf(":"))!))! + 2
+//            let subtitleNSString = NSString(string: "\(subtitle!)")
+//            text = subtitleNSString.substringWithRange(NSRange(location: numberIndex, length: (subtitle?.characters.count)! - numberIndex))
+//            return text
+//        }
+//        
+//        func getTheImageCorrespondingToTheCurrentView() -> UIImage{
+//            
+//            var image = UIImage(named: "pinBike")!
+//            
+//            switch currentView {
+//            case "bikes":
+//                image = UIImage(named: "pinBike")!
+//            case "electricBikes":
+//                image = UIImage(named: "pinEBike")!
+//            case "slots":
+//                image = UIImage(named: "pinSlot")!
+//            default:
+//                image = UIImage(named: "pinBike")!
+//            }
+//            
+//            return image
+//        }
+//        
+//        func setUpThePinImage(image: UIImage, text: NSString)-> UIImage{
+//            
+//            //set up the pin image
+//            let size = CGSize(width: 25, height: 25)
+//            UIGraphicsBeginImageContext(size)
+//            image.drawInRect(CGRectMake(0, 0, size.width, size.height))
+//            
+//            var rect: CGRect = CGRectMake(8.5, 4, size.width, size.width)
+//            
+//            if text.length == 1 {
+//                rect = CGRectMake(8.5, 4, size.width, size.width)
+//            }
+//            if text.length == 2 {
+//                rect = CGRectMake(4.5, 4, size.width, size.width)
+//            }
+//            
+//            text.drawInRect(rect, withAttributes: pinTextFontAttributes as? [String : AnyObject])
+//            let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+//            UIGraphicsEndImageContext()
+//            return resizedImage
+//        }
+//
+//        if annotation.subtitle != nil && annotation.title! != "Tap Water" {
+//            
+//            text = extractPinNumbersFromAnnotationSubtitle(annotation, text: text)
+//            annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier("\(currentView) \(text)")
+//            
+//            if annotationImage == nil {
+//                
+//                let image = getTheImageCorrespondingToTheCurrentView()
+//                
+//                let resizedImage = setUpThePinImage(image, text: text)
+//                
+//                annotationImage = MGLAnnotationImage(image: resizedImage, reuseIdentifier: "\(currentView) \(text)")
+//            }
+//        }
+//        
+//        if annotation.title! == "Tap Water" {
+//            annotationImage = mapView.dequeueReusableAnnotationImageWithIdentifier("tapWater")
+//            
+//            if annotationImage == nil {
+//                
+//                var image = UIImage(named: "pinTapWater")
+//                
+//                let size = CGSize(width: 17, height: 25)
+//                UIGraphicsBeginImageContext(size)
+//                image!.drawInRect(CGRectMake(0, 0, size.width, size.height))
+//                image = UIGraphicsGetImageFromCurrentImageContext()
+//                UIGraphicsEndImageContext()
+//                
+//                annotationImage = MGLAnnotationImage(image: image!, reuseIdentifier: "tapWater")
+//            }
+//        }
+//        
+//        return annotationImage
+//    }
     
     
     
@@ -436,8 +435,6 @@ extension MapViewController {
 
 
 class CustomAnnotationView: MGLAnnotationView {
-    
-    public var text = ""
     
     override func layoutSubviews() {
         super.layoutSubviews()
