@@ -117,12 +117,7 @@ extension MapViewController {
             
         default:
             break
-            
         }
-        
-        
-        
-        
     }
 
     
@@ -191,12 +186,12 @@ extension MapViewController {
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         self.subsetPointsAroundArrayOLD = []
                         self.mapView.removeAnnotations(self.annotationsArray)
+                        self.annotationsArray = []
                         self.addMarkersToTheMap("bikeStations")
                     })
                 }
             })
         }
-        
     }
     
     
