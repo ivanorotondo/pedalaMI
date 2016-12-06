@@ -33,6 +33,12 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
             cell.iconImage.image = UIImage(named: "pinBike.png")
             cell.label.text = "Bike paths"
+            
+            if mapVC?.pathsAreShowedDictionary["bikePaths"] == true {
+                cell.label.font = fontBold16
+            } else {
+                cell.label.font = fontRegular16
+            }
             return cell
         }
         
@@ -40,6 +46,12 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
             cell.iconImage.image = UIImage(named: "pinBike.png")
             cell.label.text = "Pavé"
+            
+            if mapVC?.pathsAreShowedDictionary["pave"] == true {
+                cell.label.font = fontBold16
+            } else {
+                cell.label.font = fontRegular16
+            }
             return cell
         }
         
@@ -65,20 +77,33 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
+        var cell = tableView.cellForRowAtIndexPath(indexPath) as! IconCell
         
         if indexPath.row == 0 {
             mapVC?.pathSwitch("bikePaths")
-            self.slideMenuController()?.closeRight()
+            
+            if mapVC?.pathsAreShowedDictionary["bikePaths"] == true {
+                cell.label.font = fontBold16
+            } else {
+                cell.label.font = fontRegular16
+            }
+//            self.slideMenuController()?.closeRight()
         }
         
         if indexPath.row == 1 {
             mapVC?.pathSwitch("pave")
-            self.slideMenuController()?.closeRight()
+            
+            if mapVC?.pathsAreShowedDictionary["pave"] == true {
+                cell.label.font = fontBold16
+            } else {
+                cell.label.font = fontRegular16
+            }
+//            self.slideMenuController()?.closeRight()
         }
         
         if indexPath.row == 2 {
             mapVC?.pinsSwitch("bikeStationPoints")
-            self.slideMenuController()?.closeRight()
+//            self.slideMenuController()?.closeRight()
         }
         
         if indexPath.row == 3 {

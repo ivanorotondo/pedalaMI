@@ -11,3 +11,4 @@ import UIKit
 
 var fontRegular14 = UIFont(name: "SFUIDisplay-Regular", size: 14)
 var fontRegular16 = UIFont(name: "SFUIDisplay-Regular", size: 16)
+var fontBold16 = UIFont(name: "SFUIDisplay-Bold", size: 16)

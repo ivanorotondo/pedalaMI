@@ -14,32 +14,11 @@ import Mapbox
 extension MapViewController {
     
     func addTapRecognizersToMenu() {
-//                let tapSettings = UITapGestureRecognizer(target: self, action: #selector(MapViewController.animateMenuControllerTap(_:)))
         let tapSettings = UITapGestureRecognizer(target: self, action: #selector(self.slideMenuController()?.openRight))
 
         settingsButton.userInteractionEnabled = true
         settingsButton.addGestureRecognizer(tapSettings)
-        
-//        let tapBikePaths = UITapGestureRecognizer(target: self, action: #selector(MapViewController.menuPathsSwitchController(_:)))
-//        bikePathsButton.tag = 1
-//        bikePathsButton.userInteractionEnabled = false
-//        bikePathsButton.addGestureRecognizer(tapBikePaths)
-//        
-//        let tapPavePaths = UITapGestureRecognizer(target: self, action: #selector(MapViewController.menuPathsSwitchController(_:)))
-//        paveButton.tag = 2
-//        paveButton.userInteractionEnabled = false
-//        paveButton.addGestureRecognizer(tapPavePaths)
-//        
-//        let tapBikeStations = UITapGestureRecognizer(target: self, action: #selector(MapViewController.menuPointsSwitchController(_:)))
-//        bikeStationsButton.tag = 10
-//        bikeStationsButton.userInteractionEnabled = false
-//        bikeStationsButton.addGestureRecognizer(tapBikeStations)
-//        
-//        let tapTapWaterPoints = UITapGestureRecognizer(target: self, action: #selector(MapViewController.menuPointsSwitchController(_:)))
-//        tapWaterButton.tag = 20
-//        tapWaterButton.userInteractionEnabled = false
-//        tapWaterButton.addGestureRecognizer(tapTapWaterPoints)
-        
+
         let tapMyPosition = UITapGestureRecognizer(target: self, action: #selector(MapViewController.centerMyLocation(_:)))
         myPositionButton.userInteractionEnabled = true
         myPositionButton.addGestureRecognizer(tapMyPosition)

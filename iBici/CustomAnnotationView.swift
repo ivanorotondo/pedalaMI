@@ -36,7 +36,7 @@ class CustomAnnotationView: MGLAnnotationView {
             let textLayer = CATextLayer(layer: layer)
             textLayer.fontSize = 16
             textLayer.string = "\(tag)"
-            textLayer.font = fontRegular16
+            textLayer.font = fontBold16
             
             if textLayer.string?.length == 1 {
                 textLayer.frame = CGRectMake(0, 5, 30, 30)
