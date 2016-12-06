@@ -7,184 +7,206 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1318D440AEFF3DC0648CE39B55A010D5 /* RollbarLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 25C981A613B894E484F83D5DFB02AFDC /* RollbarLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F848D78C8CB446A0A26251E671195C4 /* RollbarReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 466F2DDBE419C49D8A41C7FB77EF9534 /* RollbarReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F8752A48D340C3E08B4E23B36D2B499 /* Pods-pedalaMIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FB73DD42976B744FD7490F39BB0810 /* Pods-pedalaMIUITests-dummy.m */; };
-		4119307AB9F88C95352667A4FBE525FF /* RollbarNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 703F93D0EDCA102B6CA80E4B854CB146 /* RollbarNotifier.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4EF6A4CD96A5668A22BB837CFBCC8B04 /* Pods-pedalaMITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 935D9809A9789CAD38F45F308CCE8E3C /* Pods-pedalaMITests-dummy.m */; };
-		544CBFAB34F026BC1B5284813043EF65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F597D73DE6225A6DEF1FC248D787EE74 /* Foundation.framework */; };
-		677F741385CD1594051B3789608D34B5 /* RollbarFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D83FA2D38DC3333B578B389EF78CDEC /* RollbarFileReader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6BA8946232ED8CA13D2B298285652716 /* Pods-pedalaMITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 389020BE082BBA383ED21EA974CC8EF0 /* Pods-pedalaMITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E84371105896183F71E7D88255F7F97 /* RollbarConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC51B2350173242C9A54622091994AF /* RollbarConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		75B1F5798173998282402927337AA579 /* RollbarConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E550572610FB8695D7439CA10025FC3E /* RollbarConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78E368EC8E99B775B742CE034CC6134E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F597D73DE6225A6DEF1FC248D787EE74 /* Foundation.framework */; };
-		7AF1ECC815414223E003627B1DC23B92 /* Rollbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 445BD1E1C617B86FB574A6FDB5BFAA99 /* Rollbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85B0E72F0C35C4E488CDF712A1E92AE3 /* RollbarFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0927A1960BD217DAD465A01E3A31E1 /* RollbarFileReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87B5D79F593A3CB8869A99F4E8A39F0B /* Pods-pedalaMI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E4F5AC9B4AE224004B6231F1D92BC3 /* Pods-pedalaMI-dummy.m */; };
-		8D347BA5B0AF50405E6A9BA7D9DD261A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D228F2F2E83B00B409DB523C811A216 /* UIKit.framework */; };
-		9F44014366806FC0EFC0FFF1B3D74AE7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95924A893926B0F85F07D91A4EEB5B98 /* SystemConfiguration.framework */; };
-		A15B2447F279A604616DCB474C986872 /* RollbarReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2521E013112C572DD320CC4464020345 /* RollbarReachability.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B1CB938A50A25FB0F72290D978C0FEBC /* Rollbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E40676CAD672FD1BE5B2E51F08D519D /* Rollbar-dummy.m */; };
-		BD3FD0FC48FD1CE42F41B8ABBF502631 /* RollbarThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A37A4C05F32406D64C293E2ABDD6C6 /* RollbarThread.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C045F3766CC4877C9FA9A4949AB5ED72 /* Rollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E25ED46C7035827E6EFEC37A91C75 /* Rollbar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C29C24E080661F9223AA2155BC6CA705 /* Rollbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 461D45DB85C3ABC3E19E16000CB928EE /* Rollbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C84EF2C40EDA8687528FB6AFC2D8AF24 /* Pods-pedalaMIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 591BC27DA756B8B536EFF8E1A8A0212A /* Pods-pedalaMIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEED32A967372E01980B10D67DA2672A /* RollbarLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1D6C6D5D1A628AF1244C01DC062600 /* RollbarLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DFD7F83B9B8005CC2075D1A62079116D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F597D73DE6225A6DEF1FC248D787EE74 /* Foundation.framework */; };
-		F2537E0F669A6278AB3E015E4925E640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F597D73DE6225A6DEF1FC248D787EE74 /* Foundation.framework */; };
-		F7F65A3E3244BBAD0DBDF0003CE0122D /* RollbarThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 38D5240BBBCC25CDA2FE8482E313C87A /* RollbarThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8928AB03ABA90DEE95E5A44788DE856 /* Pods-pedalaMI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDAAD252957B8B73DA3DD69B8DCD0BE4 /* Pods-pedalaMI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDBD47909E71368CA8DD2C2F212DABB1 /* RollbarNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = F47BFD329D719885B91CFA61523A96AB /* RollbarNotifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0173E5B1A88572F2C8C0AC18AC2A063F /* Pods-pedalaMIUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 591BC27DA756B8B536EFF8E1A8A0212A /* Pods-pedalaMIUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08FA53FCA4AA9707981C047A8D73AAF2 /* SlideMenuControllerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 602E2C7E5094162BEDC05D6055AE2F63 /* SlideMenuControllerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09B6D0A3D22E7F0C88203B06EADB6EAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F597D73DE6225A6DEF1FC248D787EE74 /* Foundation.framework */; };
+		1EE9F7E844CBF68FE60688924942360B /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 092E29C54B54E5DB55AB7C61CD364C32 /* Info.plist */; };
+		26CEBD337BC587AB53A5A42373EA18D0 /* RollbarNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6223A3063259D3BB421DB4E827EDB /* RollbarNotifier.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		328FE655B184BE6FD5A615E908A5A2B5 /* RollbarLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE29B4A1A505C2B6B3A0F952D36A4AA /* RollbarLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3AD81AB6A399BC4C756A4FA5955FD1CC /* Pods-pedalaMITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 935D9809A9789CAD38F45F308CCE8E3C /* Pods-pedalaMITests-dummy.m */; };
+		3BA36AA26E5602C68FBA9E33A3BE8B11 /* Rollbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE1DECE034641775B75798B1F6B9B86 /* Rollbar-dummy.m */; };
+		3DA148925800A2FABA63B14AAEFBEA2C /* RollbarThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 581030997BF4FB3808B713ECD3D75A13 /* RollbarThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43589A9E6F520932D8ECADCDA2634D7D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95924A893926B0F85F07D91A4EEB5B98 /* SystemConfiguration.framework */; };
+		51E698BC82423758F9CFFCB0C1FD68C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F597D73DE6225A6DEF1FC248D787EE74 /* Foundation.framework */; };
+		5762A5E37B63B2068989C501AB7BA4A1 /* RollbarFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6B8BCA1C2A37B00015F3B37F9664A4 /* RollbarFileReader.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		62C05BC67EF02249DB3AA98798E52C43 /* Pods-pedalaMI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDAAD252957B8B73DA3DD69B8DCD0BE4 /* Pods-pedalaMI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6432CCB7C9A9147E57048D1A7CF2BB22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F597D73DE6225A6DEF1FC248D787EE74 /* Foundation.framework */; };
+		6757C7431B1701B632B3C3949D398EFB /* Pods-pedalaMIUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FB73DD42976B744FD7490F39BB0810 /* Pods-pedalaMIUITests-dummy.m */; };
+		79FF34052DF958BED9B41007429AB06B /* RollbarNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 26BAC3D6973C4329648824BD4F02E23C /* RollbarNotifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C8401E026BE392ABBBF7841D639B5FB /* RollbarFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = E3085A29C1E978395232DD84559B2F7C /* RollbarFileReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E69FFD7F92FDAB2850CE6802B34F624 /* RollbarConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E46DF03E2015057293F6A2C5F6586B /* RollbarConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8CA5A00062AE146F3FB3933889C2B3D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F597D73DE6225A6DEF1FC248D787EE74 /* Foundation.framework */; };
+		944CC6A658E4D66A4A9094515388780F /* Rollbar.h in Headers */ = {isa = PBXBuildFile; fileRef = C8E80AF51B36D1EA8A3EDE25F120DF90 /* Rollbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		998A845A520C6613A0C6F3D4A8BB8949 /* RollbarThread.m in Sources */ = {isa = PBXBuildFile; fileRef = E5066A39E94AAA324DC7CC351167E10B /* RollbarThread.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9A53C09F9B9BF4A9611C520CD4B09F7E /* Pods-pedalaMI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E4F5AC9B4AE224004B6231F1D92BC3 /* Pods-pedalaMI-dummy.m */; };
+		A328F2B31B5D1ED01656FC4F8BF6083D /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4B208DBF23BE98AB0805C0FF5EE2B /* SlideMenuController.swift */; };
+		B017F04F229CD682116CB14A6777285E /* SlideMenuControllerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFA3881C3C5FC321A1E4068DDE357759 /* SlideMenuControllerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7D6F5ED4EC406D470049C0363D03B0E /* Rollbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25EF2477BE07E971E69DA66417135538 /* Rollbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C905C18ACB91EEFF18A7A32DA334FE72 /* Rollbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7684D90D069465A5AC3F00545E9030F5 /* Rollbar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CEF0B5528D9CC1E613F10FE7B4CA3747 /* Pods-pedalaMITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 389020BE082BBA383ED21EA974CC8EF0 /* Pods-pedalaMITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2FD85E148F456DF349E9449D235B412 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D228F2F2E83B00B409DB523C811A216 /* UIKit.framework */; };
+		E3D96C9860CCEDC860E8F0A628EF2885 /* RollbarConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A3B1FC2194C12A064D7EBF3A53E4B754 /* RollbarConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E67AC44DAEB83E0D3404323CCAAC6FA6 /* RollbarReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D176AF043873532B7E1347B3B7B1D8 /* RollbarReachability.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E9BF290104735A4A4D728A25C6AB5CA0 /* RollbarReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = AD596658BB6AA95082716BE6C3EE4F40 /* RollbarReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F84BDFEE444DE4B83B2BF34FF06B25F9 /* RollbarLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 53E87A65070484C5A04832DA65DC5ACA /* RollbarLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB7298A5643040E27D4C7A2AF0A4F27D /* SlideMenuControllerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC032847EA2D8D57223C36C8B2CC14 /* SlideMenuControllerSwift-dummy.m */; };
+		FF14F86BB77578C839C9E327904607AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F597D73DE6225A6DEF1FC248D787EE74 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		159C7153CBA1AA2289AD5636C12B0505 /* PBXContainerItemProxy */ = {
+		9D9B70F34612376B43039E2B1EBABA6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 01A0312F999499AC33161196D71AF922;
+			remoteGlobalIDString = 15D221C9772FC51C66BA3C23DCE7280D;
 			remoteInfo = Rollbar;
 		};
-		5DF821CFE61E531605F93CF3E47D0FC7 /* PBXContainerItemProxy */ = {
+		9EDB4A388AA42829FAF12056374C7C04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 01A0312F999499AC33161196D71AF922;
+			remoteGlobalIDString = FD6C196E09D6CB220E88644C9D1C457C;
+			remoteInfo = SlideMenuControllerSwift;
+		};
+		BD04FFCB2DB0B1A36D12EBE3BD130016 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6C196E09D6CB220E88644C9D1C457C;
+			remoteInfo = SlideMenuControllerSwift;
+		};
+		DDBF524AC1661ADEAB592C2DFC233231 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15D221C9772FC51C66BA3C23DCE7280D;
 			remoteInfo = Rollbar;
 		};
-		B86332B99D62C0859F43C99FDCF7D703 /* PBXContainerItemProxy */ = {
+		E98DE6ABCDE2AC64FCFFA1669375D5F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 01A0312F999499AC33161196D71AF922;
+			remoteGlobalIDString = FD6C196E09D6CB220E88644C9D1C457C;
+			remoteInfo = SlideMenuControllerSwift;
+		};
+		EA30CCDB8AAC877E4771DA8B9FBC9229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15D221C9772FC51C66BA3C23DCE7280D;
 			remoteInfo = Rollbar;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		053CD3F61AC6E26A668652FBEF128FAA /* Pods-pedalaMITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0EE532E92D5F89B5E958161E79AD08F1 /* Pods_pedalaMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		092E29C54B54E5DB55AB7C61CD364C32 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
 		160B92A59EA0C2DC73E5ED588F55F44D /* Pods-pedalaMITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMITests-frameworks.sh"; sourceTree = "<group>"; };
 		162C90275D766B4359A79D22E467672F /* Pods-pedalaMITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pedalaMITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1B35CBD3D7C02FE54C1659D401958658 /* Pods_pedalaMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B826CB0EE0E787355336049EE0B8D9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D77D5A7BB17DE6BBB0A38A04A940AD9 /* Pods-pedalaMI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMI-resources.sh"; sourceTree = "<group>"; };
-		1E40676CAD672FD1BE5B2E51F08D519D /* Rollbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rollbar-dummy.m"; sourceTree = "<group>"; };
 		1FD7E07B6E86880F403871AD679C7CB0 /* Pods-pedalaMITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-pedalaMITests.modulemap"; sourceTree = "<group>"; };
-		2521E013112C572DD320CC4464020345 /* RollbarReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarReachability.m; path = Rollbar/RollbarReachability.m; sourceTree = "<group>"; };
-		25C981A613B894E484F83D5DFB02AFDC /* RollbarLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarLogger.h; path = Rollbar/RollbarLogger.h; sourceTree = "<group>"; };
+		25EF2477BE07E971E69DA66417135538 /* Rollbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rollbar-umbrella.h"; sourceTree = "<group>"; };
 		260444FDF32C518D4D816EEEE22D3BF3 /* Pods-pedalaMI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pedalaMI-acknowledgements.plist"; sourceTree = "<group>"; };
+		26BAC3D6973C4329648824BD4F02E23C /* RollbarNotifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarNotifier.h; path = Rollbar/RollbarNotifier.h; sourceTree = "<group>"; };
+		2A0F18ED19D2AD44A2FAEC3B905C20DC /* Rollbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rollbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB6223A3063259D3BB421DB4E827EDB /* RollbarNotifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarNotifier.m; path = Rollbar/RollbarNotifier.m; sourceTree = "<group>"; };
 		2EA107690A0980258CDF1AC03F517483 /* Pods-pedalaMI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pedalaMI-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2F0B858636F457C5F500AD4306AB89A5 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = Vendor/CrashReporter.framework; sourceTree = "<group>"; };
+		2EE33973005F9FCB30BDEF0F7D20F522 /* Rollbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rollbar-prefix.pch"; sourceTree = "<group>"; };
 		322C917A7127FCE31970BBD26592A744 /* Pods-pedalaMITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMITests.release.xcconfig"; sourceTree = "<group>"; };
 		389020BE082BBA383ED21EA974CC8EF0 /* Pods-pedalaMITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pedalaMITests-umbrella.h"; sourceTree = "<group>"; };
-		38D5240BBBCC25CDA2FE8482E313C87A /* RollbarThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarThread.h; path = Rollbar/RollbarThread.h; sourceTree = "<group>"; };
-		41A37A4C05F32406D64C293E2ABDD6C6 /* RollbarThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarThread.m; path = Rollbar/RollbarThread.m; sourceTree = "<group>"; };
-		445BD1E1C617B86FB574A6FDB5BFAA99 /* Rollbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rollbar-umbrella.h"; sourceTree = "<group>"; };
-		461D45DB85C3ABC3E19E16000CB928EE /* Rollbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Rollbar.h; path = Rollbar/Rollbar.h; sourceTree = "<group>"; };
-		466F2DDBE419C49D8A41C7FB77EF9534 /* RollbarReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarReachability.h; path = Rollbar/RollbarReachability.h; sourceTree = "<group>"; };
+		3DB208EDFE918BEF9CA0F6C9EB0E865F /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlideMenuControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC00C00C9F7525AB89DFFF5BC3A374D /* Pods-pedalaMI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMI.debug.xcconfig"; sourceTree = "<group>"; };
-		4D0927A1960BD217DAD465A01E3A31E1 /* RollbarFileReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarFileReader.h; path = Rollbar/RollbarFileReader.h; sourceTree = "<group>"; };
 		4D4A725B5408FE0D863C0A10D6DFDF11 /* Pods-pedalaMIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMIUITests.release.xcconfig"; sourceTree = "<group>"; };
-		57B769FABFB5B6F4B9625E74CE780099 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53E87A65070484C5A04832DA65DC5ACA /* RollbarLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarLogger.h; path = Rollbar/RollbarLogger.h; sourceTree = "<group>"; };
+		581030997BF4FB3808B713ECD3D75A13 /* RollbarThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarThread.h; path = Rollbar/RollbarThread.h; sourceTree = "<group>"; };
 		591BC27DA756B8B536EFF8E1A8A0212A /* Pods-pedalaMIUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pedalaMIUITests-umbrella.h"; sourceTree = "<group>"; };
+		5C8903C00E32D0206ABBBEE651B4D2AA /* Pods_pedalaMITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		602E2C7E5094162BEDC05D6055AE2F63 /* SlideMenuControllerSwift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SlideMenuControllerSwift.h; path = Source/SlideMenuControllerSwift.h; sourceTree = "<group>"; };
 		641CE8A33C48F24532FAA0DB61FA7F2C /* Pods-pedalaMITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pedalaMITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6617562037A987A64C003A7373C92521 /* Rollbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rollbar.xcconfig; sourceTree = "<group>"; };
 		6B0A311FCB18D7CD6982EDC70D97BD54 /* Pods-pedalaMI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-pedalaMI.modulemap"; sourceTree = "<group>"; };
-		6D83FA2D38DC3333B578B389EF78CDEC /* RollbarFileReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarFileReader.m; path = Rollbar/RollbarFileReader.m; sourceTree = "<group>"; };
 		6D9D248135A312C767E5121B3449B570 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EB494E6037DBAFA6F8AE8817C4C407C /* Rollbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rollbar-prefix.pch"; sourceTree = "<group>"; };
-		703F93D0EDCA102B6CA80E4B854CB146 /* RollbarNotifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarNotifier.m; path = Rollbar/RollbarNotifier.m; sourceTree = "<group>"; };
+		73BC032847EA2D8D57223C36C8B2CC14 /* SlideMenuControllerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlideMenuControllerSwift-dummy.m"; sourceTree = "<group>"; };
+		7684D90D069465A5AC3F00545E9030F5 /* Rollbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Rollbar.m; path = Rollbar/Rollbar.m; sourceTree = "<group>"; };
 		83E4F5AC9B4AE224004B6231F1D92BC3 /* Pods-pedalaMI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pedalaMI-dummy.m"; sourceTree = "<group>"; };
-		848954207E567E6044252662767998E1 /* Pods_pedalaMIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86972CD28C42771B2622C7A8E8FDA623 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
 		884A07711AA5E523B696944F73E0A4F9 /* Pods-pedalaMIUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-pedalaMIUITests.modulemap"; sourceTree = "<group>"; };
+		8F11B1D9DBF2E425FB9957ABB52C2B7A /* SlideMenuControllerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-prefix.pch"; sourceTree = "<group>"; };
 		935D9809A9789CAD38F45F308CCE8E3C /* Pods-pedalaMITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pedalaMITests-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		942E25ED46C7035827E6EFEC37A91C75 /* Rollbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Rollbar.m; path = Rollbar/Rollbar.m; sourceTree = "<group>"; };
+		9455F3A1F12839DDB1CCB5CFED81E942 /* Pods_pedalaMIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95924A893926B0F85F07D91A4EEB5B98 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		99EFC5065FDCEC4E87039F30C1E4E253 /* Pods_pedalaMITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pedalaMITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA65D36161C184890EC0992D71856FA /* Pods-pedalaMI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMI-frameworks.sh"; sourceTree = "<group>"; };
 		9D228F2F2E83B00B409DB523C811A216 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		A7E06BF5C10BA9771F9ED30E5F9F86DD /* Rollbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Rollbar.modulemap; sourceTree = "<group>"; };
+		9EE1DECE034641775B75798B1F6B9B86 /* Rollbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rollbar-dummy.m"; sourceTree = "<group>"; };
+		A3B1FC2194C12A064D7EBF3A53E4B754 /* RollbarConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarConfiguration.h; path = Rollbar/RollbarConfiguration.h; sourceTree = "<group>"; };
+		A4E14D13DBA8550C0A2134416742AFFA /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
+		AD596658BB6AA95082716BE6C3EE4F40 /* RollbarReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarReachability.h; path = Rollbar/RollbarReachability.h; sourceTree = "<group>"; };
 		ADF2ABF25A5BA81B3C457014F3D23142 /* Pods-pedalaMITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMITests-resources.sh"; sourceTree = "<group>"; };
-		AEC51B2350173242C9A54622091994AF /* RollbarConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarConfiguration.m; path = Rollbar/RollbarConfiguration.m; sourceTree = "<group>"; };
-		BA5EE3C4C346CE066027916B73F6A947 /* Rollbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rollbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D3DE1E985A19165357DEC451D87AF2 /* SlideMenuControllerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlideMenuControllerSwift.xcconfig; sourceTree = "<group>"; };
 		BAA09170B669A3F28B647F579EFAC460 /* Pods-pedalaMIUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMIUITests-resources.sh"; sourceTree = "<group>"; };
 		BCCD66892EFCB7F2339FF62D2F2AD854 /* Pods-pedalaMIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMIUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BF1D6C6D5D1A628AF1244C01DC062600 /* RollbarLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarLogger.m; path = Rollbar/RollbarLogger.m; sourceTree = "<group>"; };
 		C28C58EF82775E71D73FA31DE5AE5D53 /* Pods-pedalaMI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pedalaMI.release.xcconfig"; sourceTree = "<group>"; };
 		C35FC11A537F7B647E16505CD2FC94FC /* Pods-pedalaMIUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pedalaMIUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C4FB73DD42976B744FD7490F39BB0810 /* Pods-pedalaMIUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pedalaMIUITests-dummy.m"; sourceTree = "<group>"; };
 		C5A452BC4BB79F5E7D88335B59DC2FBD /* Pods-pedalaMIUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pedalaMIUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C5C4B208DBF23BE98AB0805C0FF5EE2B /* SlideMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = Source/SlideMenuController.swift; sourceTree = "<group>"; };
+		C8E80AF51B36D1EA8A3EDE25F120DF90 /* Rollbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Rollbar.h; path = Rollbar/Rollbar.h; sourceTree = "<group>"; };
+		CD722464C175452CE219596ED27BE2D7 /* Rollbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Rollbar.modulemap; sourceTree = "<group>"; };
+		CFA3881C3C5FC321A1E4068DDE357759 /* SlideMenuControllerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-umbrella.h"; sourceTree = "<group>"; };
+		D2E46DF03E2015057293F6A2C5F6586B /* RollbarConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarConfiguration.m; path = Rollbar/RollbarConfiguration.m; sourceTree = "<group>"; };
+		D7D176AF043873532B7E1347B3B7B1D8 /* RollbarReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarReachability.m; path = Rollbar/RollbarReachability.m; sourceTree = "<group>"; };
 		DE274D040F7217F983A89FBA77E0569F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E550572610FB8695D7439CA10025FC3E /* RollbarConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarConfiguration.h; path = Rollbar/RollbarConfiguration.h; sourceTree = "<group>"; };
+		DF6B8BCA1C2A37B00015F3B37F9664A4 /* RollbarFileReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarFileReader.m; path = Rollbar/RollbarFileReader.m; sourceTree = "<group>"; };
+		E3085A29C1E978395232DD84559B2F7C /* RollbarFileReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarFileReader.h; path = Rollbar/RollbarFileReader.h; sourceTree = "<group>"; };
+		E5066A39E94AAA324DC7CC351167E10B /* RollbarThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarThread.m; path = Rollbar/RollbarThread.m; sourceTree = "<group>"; };
+		EB4840E586B679FE7037B4F8830E4310 /* SlideMenuControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SlideMenuControllerSwift.modulemap; sourceTree = "<group>"; };
 		EDAAD252957B8B73DA3DD69B8DCD0BE4 /* Pods-pedalaMI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pedalaMI-umbrella.h"; sourceTree = "<group>"; };
+		EFE29B4A1A505C2B6B3A0F952D36A4AA /* RollbarLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RollbarLogger.m; path = Rollbar/RollbarLogger.m; sourceTree = "<group>"; };
 		F176E7CC8E4AD315C98008868417E421 /* Pods-pedalaMIUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pedalaMIUITests-frameworks.sh"; sourceTree = "<group>"; };
-		F47BFD329D719885B91CFA61523A96AB /* RollbarNotifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RollbarNotifier.h; path = Rollbar/RollbarNotifier.h; sourceTree = "<group>"; };
+		F21C579F0D69F6990979482D326D6810 /* Rollbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rollbar.xcconfig; sourceTree = "<group>"; };
 		F597D73DE6225A6DEF1FC248D787EE74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F926FA8EDC68644D5DCA6A735EB1BFBB /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = Vendor/CrashReporter.framework; sourceTree = "<group>"; };
+		F9597BA2FA502CCE223387F9FB653CF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FB0EE264E6DB6710280E50D4FB07C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0BB1663391FBFFEAD5AE971EC278C4E4 /* Frameworks */ = {
+		2BC1101CCADC2C2A8232DB13E8DAD7B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2537E0F669A6278AB3E015E4925E640 /* Foundation.framework in Frameworks */,
+				09B6D0A3D22E7F0C88203B06EADB6EAE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		100DC2B7EB8FD3B88CD33F1523EC6924 /* Frameworks */ = {
+		35C8AC3CD68DB422CD0A7D51A2D11C68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				544CBFAB34F026BC1B5284813043EF65 /* Foundation.framework in Frameworks */,
-				9F44014366806FC0EFC0FFF1B3D74AE7 /* SystemConfiguration.framework in Frameworks */,
-				8D347BA5B0AF50405E6A9BA7D9DD261A /* UIKit.framework in Frameworks */,
+				8CA5A00062AE146F3FB3933889C2B3D9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C2051E548086F666D77176109399D69 /* Frameworks */ = {
+		5DDF102E8FE44E81B1CB976A80C93E7D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFD7F83B9B8005CC2075D1A62079116D /* Foundation.framework in Frameworks */,
+				6432CCB7C9A9147E57048D1A7CF2BB22 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D13A356ED6CD8DCAC740DF40B59674F8 /* Frameworks */ = {
+		AD20578111FED74640BAC93F8DEAF845 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78E368EC8E99B775B742CE034CC6134E /* Foundation.framework in Frameworks */,
+				FF14F86BB77578C839C9E327904607AD /* Foundation.framework in Frameworks */,
+				43589A9E6F520932D8ECADCDA2634D7D /* SystemConfiguration.framework in Frameworks */,
+				E2FD85E148F456DF349E9449D235B412 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3CBBF60640F6C257D9CEB345FDC4F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E698BC82423758F9CFFCB0C1FD68C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0359EC2C6D4E222B6CDA6B29FF52D178 /* Rollbar */ = {
-			isa = PBXGroup;
-			children = (
-				461D45DB85C3ABC3E19E16000CB928EE /* Rollbar.h */,
-				942E25ED46C7035827E6EFEC37A91C75 /* Rollbar.m */,
-				E550572610FB8695D7439CA10025FC3E /* RollbarConfiguration.h */,
-				AEC51B2350173242C9A54622091994AF /* RollbarConfiguration.m */,
-				4D0927A1960BD217DAD465A01E3A31E1 /* RollbarFileReader.h */,
-				6D83FA2D38DC3333B578B389EF78CDEC /* RollbarFileReader.m */,
-				25C981A613B894E484F83D5DFB02AFDC /* RollbarLogger.h */,
-				BF1D6C6D5D1A628AF1244C01DC062600 /* RollbarLogger.m */,
-				F47BFD329D719885B91CFA61523A96AB /* RollbarNotifier.h */,
-				703F93D0EDCA102B6CA80E4B854CB146 /* RollbarNotifier.m */,
-				466F2DDBE419C49D8A41C7FB77EF9534 /* RollbarReachability.h */,
-				2521E013112C572DD320CC4464020345 /* RollbarReachability.m */,
-				38D5240BBBCC25CDA2FE8482E313C87A /* RollbarThread.h */,
-				41A37A4C05F32406D64C293E2ABDD6C6 /* RollbarThread.m */,
-				D57C3733DDD3953CD0711EEA3A9D4D06 /* Frameworks */,
-				C85DDF36AC9C759CB470A6B0F757D06F /* Support Files */,
-			);
-			path = Rollbar;
-			sourceTree = "<group>";
-		};
 		0459F0B22C3E1888752D99ADA41F91C6 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +243,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3F7E93ABFBCEB0879BC29CF6E7AE2937 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9FB0EE264E6DB6710280E50D4FB07C4 /* Info.plist */,
+				EB4840E586B679FE7037B4F8830E4310 /* SlideMenuControllerSwift.modulemap */,
+				B4D3DE1E985A19165357DEC451D87AF2 /* SlideMenuControllerSwift.xcconfig */,
+				73BC032847EA2D8D57223C36C8B2CC14 /* SlideMenuControllerSwift-dummy.m */,
+				8F11B1D9DBF2E425FB9957ABB52C2B7A /* SlideMenuControllerSwift-prefix.pch */,
+				CFA3881C3C5FC321A1E4068DDE357759 /* SlideMenuControllerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SlideMenuControllerSwift";
+			sourceTree = "<group>";
+		};
+		576B116892BE346F04E11CAD0A11FDD2 /* Rollbar */ = {
+			isa = PBXGroup;
+			children = (
+				C8E80AF51B36D1EA8A3EDE25F120DF90 /* Rollbar.h */,
+				7684D90D069465A5AC3F00545E9030F5 /* Rollbar.m */,
+				A3B1FC2194C12A064D7EBF3A53E4B754 /* RollbarConfiguration.h */,
+				D2E46DF03E2015057293F6A2C5F6586B /* RollbarConfiguration.m */,
+				E3085A29C1E978395232DD84559B2F7C /* RollbarFileReader.h */,
+				DF6B8BCA1C2A37B00015F3B37F9664A4 /* RollbarFileReader.m */,
+				53E87A65070484C5A04832DA65DC5ACA /* RollbarLogger.h */,
+				EFE29B4A1A505C2B6B3A0F952D36A4AA /* RollbarLogger.m */,
+				26BAC3D6973C4329648824BD4F02E23C /* RollbarNotifier.h */,
+				2BB6223A3063259D3BB421DB4E827EDB /* RollbarNotifier.m */,
+				AD596658BB6AA95082716BE6C3EE4F40 /* RollbarReachability.h */,
+				D7D176AF043873532B7E1347B3B7B1D8 /* RollbarReachability.m */,
+				581030997BF4FB3808B713ECD3D75A13 /* RollbarThread.h */,
+				E5066A39E94AAA324DC7CC351167E10B /* RollbarThread.m */,
+				A9E3629FA0798893614F67076B3A31AA /* Frameworks */,
+				CBD205021498353DEF9F7C5525CE1FE7 /* Support Files */,
+			);
+			path = Rollbar;
+			sourceTree = "<group>";
+		};
 		649AA47965F78522779A7D65D76061F2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,13 +290,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		670B1B86969395932C1951A97C54F735 /* Products */ = {
+		69EB5130143F92518A01ED6F3EEEA757 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0EE532E92D5F89B5E958161E79AD08F1 /* Pods_pedalaMI.framework */,
-				99EFC5065FDCEC4E87039F30C1E4E253 /* Pods_pedalaMITests.framework */,
-				848954207E567E6044252662767998E1 /* Pods_pedalaMIUITests.framework */,
-				BA5EE3C4C346CE066027916B73F6A947 /* Rollbar.framework */,
+				1B35CBD3D7C02FE54C1659D401958658 /* Pods_pedalaMI.framework */,
+				5C8903C00E32D0206ABBBEE651B4D2AA /* Pods_pedalaMITests.framework */,
+				9455F3A1F12839DDB1CCB5CFED81E942 /* Pods_pedalaMIUITests.framework */,
+				2A0F18ED19D2AD44A2FAEC3B905C20DC /* Rollbar.framework */,
+				3DB208EDFE918BEF9CA0F6C9EB0E865F /* SlideMenuControllerSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -247,35 +307,37 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				8EF00D6C73FC25447D4477D9AE3FA660 /* Pods */,
-				670B1B86969395932C1951A97C54F735 /* Products */,
+				EABCB8CFD4796987D0740535137C85C1 /* Pods */,
+				69EB5130143F92518A01ED6F3EEEA757 /* Products */,
 				649AA47965F78522779A7D65D76061F2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		85F5B3C708C53E79718364F72081EDC9 /* Frameworks */ = {
+		9361C6C922E0ACAADF325E4EA7716009 /* SlideMenuControllerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				86972CD28C42771B2622C7A8E8FDA623 /* Mapbox.framework */,
+				092E29C54B54E5DB55AB7C61CD364C32 /* Info.plist */,
+				C5C4B208DBF23BE98AB0805C0FF5EE2B /* SlideMenuController.swift */,
+				602E2C7E5094162BEDC05D6055AE2F63 /* SlideMenuControllerSwift.h */,
+				3F7E93ABFBCEB0879BC29CF6E7AE2937 /* Support Files */,
+			);
+			path = SlideMenuControllerSwift;
+			sourceTree = "<group>";
+		};
+		A9E3629FA0798893614F67076B3A31AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F926FA8EDC68644D5DCA6A735EB1BFBB /* CrashReporter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8EF00D6C73FC25447D4477D9AE3FA660 /* Pods */ = {
+		B7A6EADB5B78D900B81CB58EDFBC8157 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9C551220EF2003057DB018944410AAE8 /* Mapbox-iOS-SDK */,
-				0359EC2C6D4E222B6CDA6B29FF52D178 /* Rollbar */,
+				A4E14D13DBA8550C0A2134416742AFFA /* Mapbox.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9C551220EF2003057DB018944410AAE8 /* Mapbox-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				85F5B3C708C53E79718364F72081EDC9 /* Frameworks */,
-			);
-			path = "Mapbox-iOS-SDK";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C5A931F0A0758F891B5F55218F72DD37 /* Pods-pedalaMITests */ = {
@@ -296,15 +358,15 @@
 			path = "Target Support Files/Pods-pedalaMITests";
 			sourceTree = "<group>";
 		};
-		C85DDF36AC9C759CB470A6B0F757D06F /* Support Files */ = {
+		CBD205021498353DEF9F7C5525CE1FE7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				57B769FABFB5B6F4B9625E74CE780099 /* Info.plist */,
-				A7E06BF5C10BA9771F9ED30E5F9F86DD /* Rollbar.modulemap */,
-				6617562037A987A64C003A7373C92521 /* Rollbar.xcconfig */,
-				1E40676CAD672FD1BE5B2E51F08D519D /* Rollbar-dummy.m */,
-				6EB494E6037DBAFA6F8AE8817C4C407C /* Rollbar-prefix.pch */,
-				445BD1E1C617B86FB574A6FDB5BFAA99 /* Rollbar-umbrella.h */,
+				F9597BA2FA502CCE223387F9FB653CF6 /* Info.plist */,
+				CD722464C175452CE219596ED27BE2D7 /* Rollbar.modulemap */,
+				F21C579F0D69F6990979482D326D6810 /* Rollbar.xcconfig */,
+				9EE1DECE034641775B75798B1F6B9B86 /* Rollbar-dummy.m */,
+				2EE33973005F9FCB30BDEF0F7D20F522 /* Rollbar-prefix.pch */,
+				25EF2477BE07E971E69DA66417135538 /* Rollbar-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Rollbar";
@@ -328,66 +390,85 @@
 			path = "Target Support Files/Pods-pedalaMI";
 			sourceTree = "<group>";
 		};
-		D57C3733DDD3953CD0711EEA3A9D4D06 /* Frameworks */ = {
+		EABCB8CFD4796987D0740535137C85C1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2F0B858636F457C5F500AD4306AB89A5 /* CrashReporter.framework */,
+				F7A18DB3E0E973900BB0FC8AD966FE38 /* Mapbox-iOS-SDK */,
+				576B116892BE346F04E11CAD0A11FDD2 /* Rollbar */,
+				9361C6C922E0ACAADF325E4EA7716009 /* SlideMenuControllerSwift */,
 			);
-			name = Frameworks;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F7A18DB3E0E973900BB0FC8AD966FE38 /* Mapbox-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				B7A6EADB5B78D900B81CB58EDFBC8157 /* Frameworks */,
+			);
+			path = "Mapbox-iOS-SDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3E0460F858C3DC55EBAEDF58C49D8F11 /* Headers */ = {
+		1C52146B4D457F2A6230878010150E50 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AF1ECC815414223E003627B1DC23B92 /* Rollbar-umbrella.h in Headers */,
-				C29C24E080661F9223AA2155BC6CA705 /* Rollbar.h in Headers */,
-				75B1F5798173998282402927337AA579 /* RollbarConfiguration.h in Headers */,
-				85B0E72F0C35C4E488CDF712A1E92AE3 /* RollbarFileReader.h in Headers */,
-				1318D440AEFF3DC0648CE39B55A010D5 /* RollbarLogger.h in Headers */,
-				FDBD47909E71368CA8DD2C2F212DABB1 /* RollbarNotifier.h in Headers */,
-				1F848D78C8CB446A0A26251E671195C4 /* RollbarReachability.h in Headers */,
-				F7F65A3E3244BBAD0DBDF0003CE0122D /* RollbarThread.h in Headers */,
+				B017F04F229CD682116CB14A6777285E /* SlideMenuControllerSwift-umbrella.h in Headers */,
+				08FA53FCA4AA9707981C047A8D73AAF2 /* SlideMenuControllerSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4ED20519DE3C18E01E1D3D45D66AAD9A /* Headers */ = {
+		5C5E9E030206B940664DD5D2545E3309 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C84EF2C40EDA8687528FB6AFC2D8AF24 /* Pods-pedalaMIUITests-umbrella.h in Headers */,
+				CEF0B5528D9CC1E613F10FE7B4CA3747 /* Pods-pedalaMITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82BD365F29EE55AD5EE1F97030EA99AD /* Headers */ = {
+		8EF7AB1F879D917491D97C8CBF18F8F8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BA8946232ED8CA13D2B298285652716 /* Pods-pedalaMITests-umbrella.h in Headers */,
+				0173E5B1A88572F2C8C0AC18AC2A063F /* Pods-pedalaMIUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA2D014C4271A9735C085120FF8B1710 /* Headers */ = {
+		96BE3356EEA71FEA3F098B6D0766A93D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8928AB03ABA90DEE95E5A44788DE856 /* Pods-pedalaMI-umbrella.h in Headers */,
+				62C05BC67EF02249DB3AA98798E52C43 /* Pods-pedalaMI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B48D7D3554EDCB42E6F989C9375FF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D6F5ED4EC406D470049C0363D03B0E /* Rollbar-umbrella.h in Headers */,
+				944CC6A658E4D66A4A9094515388780F /* Rollbar.h in Headers */,
+				E3D96C9860CCEDC860E8F0A628EF2885 /* RollbarConfiguration.h in Headers */,
+				7C8401E026BE392ABBBF7841D639B5FB /* RollbarFileReader.h in Headers */,
+				F84BDFEE444DE4B83B2BF34FF06B25F9 /* RollbarLogger.h in Headers */,
+				79FF34052DF958BED9B41007429AB06B /* RollbarNotifier.h in Headers */,
+				E9BF290104735A4A4D728A25C6AB5CA0 /* RollbarReachability.h in Headers */,
+				3DA148925800A2FABA63B14AAEFBEA2C /* RollbarThread.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		01A0312F999499AC33161196D71AF922 /* Rollbar */ = {
+		15D221C9772FC51C66BA3C23DCE7280D /* Rollbar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 190C6E1E654EBDD4138B961D410E7198 /* Build configuration list for PBXNativeTarget "Rollbar" */;
+			buildConfigurationList = CBFC92736B708F5E4ADC8ABCB2C94534 /* Build configuration list for PBXNativeTarget "Rollbar" */;
 			buildPhases = (
-				8AB5DA2F6829D43BE1BC3F00BC10876E /* Sources */,
-				100DC2B7EB8FD3B88CD33F1523EC6924 /* Frameworks */,
-				3E0460F858C3DC55EBAEDF58C49D8F11 /* Headers */,
+				22EB7E152A73ADC97A272B5C886E296A /* Sources */,
+				AD20578111FED74640BAC93F8DEAF845 /* Frameworks */,
+				97B48D7D3554EDCB42E6F989C9375FF9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -395,61 +476,81 @@
 			);
 			name = Rollbar;
 			productName = Rollbar;
-			productReference = BA5EE3C4C346CE066027916B73F6A947 /* Rollbar.framework */;
+			productReference = 2A0F18ED19D2AD44A2FAEC3B905C20DC /* Rollbar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		852020B7CE8B6C991087F1FD5A0ECC95 /* Pods-pedalaMITests */ = {
+		721ECD293E1A22F5DAD4DBCDD908389B /* Pods-pedalaMITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FAE99D6A43E3B2A394F92726BAC3E53 /* Build configuration list for PBXNativeTarget "Pods-pedalaMITests" */;
+			buildConfigurationList = BAC87ADB47A5C40ADA54A6548B78FAEB /* Build configuration list for PBXNativeTarget "Pods-pedalaMITests" */;
 			buildPhases = (
-				53E8AE0A6D58E0F7ECD0FAA7C1E49DA9 /* Sources */,
-				D13A356ED6CD8DCAC740DF40B59674F8 /* Frameworks */,
-				82BD365F29EE55AD5EE1F97030EA99AD /* Headers */,
+				8B07D50D208AA120242E45916DD087B1 /* Sources */,
+				35C8AC3CD68DB422CD0A7D51A2D11C68 /* Frameworks */,
+				5C5E9E030206B940664DD5D2545E3309 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C579036FEDE50DC2FB8051AB5CE0532F /* PBXTargetDependency */,
+				EA484F260E3E3D841DC4B9E3A50BD6DE /* PBXTargetDependency */,
+				8D4C350B5F1DBAB07F85854A751CFF3B /* PBXTargetDependency */,
 			);
 			name = "Pods-pedalaMITests";
 			productName = "Pods-pedalaMITests";
-			productReference = 99EFC5065FDCEC4E87039F30C1E4E253 /* Pods_pedalaMITests.framework */;
+			productReference = 5C8903C00E32D0206ABBBEE651B4D2AA /* Pods_pedalaMITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A41B42476CA7FB8E9BD3537DADEF52A6 /* Pods-pedalaMIUITests */ = {
+		C5023481A83C9B589CA29D695496B4CA /* Pods-pedalaMI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 78E9316E5E2A6973814FD8C17B1541EB /* Build configuration list for PBXNativeTarget "Pods-pedalaMIUITests" */;
+			buildConfigurationList = 962445FB3CEA1D5032B194EA03C48E18 /* Build configuration list for PBXNativeTarget "Pods-pedalaMI" */;
 			buildPhases = (
-				6D2318BE48B5CFB4E797AAED210F08EF /* Sources */,
-				5C2051E548086F666D77176109399D69 /* Frameworks */,
-				4ED20519DE3C18E01E1D3D45D66AAD9A /* Headers */,
+				A7E89E824D0FCE03B77A676E7E195432 /* Sources */,
+				5DDF102E8FE44E81B1CB976A80C93E7D /* Frameworks */,
+				96BE3356EEA71FEA3F098B6D0766A93D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0FB9409EDDC806C7A53C75F01C758773 /* PBXTargetDependency */,
-			);
-			name = "Pods-pedalaMIUITests";
-			productName = "Pods-pedalaMIUITests";
-			productReference = 848954207E567E6044252662767998E1 /* Pods_pedalaMIUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FC861D01E58211DF1007105F74543F14 /* Pods-pedalaMI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 385A1A3E93D5963842FFE1D9D78DD216 /* Build configuration list for PBXNativeTarget "Pods-pedalaMI" */;
-			buildPhases = (
-				F9E10C15680CD6543D3096A33D1B616A /* Sources */,
-				0BB1663391FBFFEAD5AE971EC278C4E4 /* Frameworks */,
-				FA2D014C4271A9735C085120FF8B1710 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6ED920B650702531173B2486E721AF19 /* PBXTargetDependency */,
+				8F09A21854B369CE4EFDFBD16E76A407 /* PBXTargetDependency */,
+				81BB2D6833584AD1A0D06B9F0338B912 /* PBXTargetDependency */,
 			);
 			name = "Pods-pedalaMI";
 			productName = "Pods-pedalaMI";
-			productReference = 0EE532E92D5F89B5E958161E79AD08F1 /* Pods_pedalaMI.framework */;
+			productReference = 1B35CBD3D7C02FE54C1659D401958658 /* Pods_pedalaMI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6C6534F6A54B9D98E543D08205B01D3 /* Pods-pedalaMIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60BB86E45510CAFF14F430C08D9006D1 /* Build configuration list for PBXNativeTarget "Pods-pedalaMIUITests" */;
+			buildPhases = (
+				F46A50EF7829E75EE3DA76B0AE5EBD85 /* Sources */,
+				2BC1101CCADC2C2A8232DB13E8DAD7B5 /* Frameworks */,
+				8EF7AB1F879D917491D97C8CBF18F8F8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C98AE3A7B153A8092B9A2CD20A8D10CD /* PBXTargetDependency */,
+				54878295B01CBB6FE7201740EDC4F66A /* PBXTargetDependency */,
+			);
+			name = "Pods-pedalaMIUITests";
+			productName = "Pods-pedalaMIUITests";
+			productReference = 9455F3A1F12839DDB1CCB5CFED81E942 /* Pods_pedalaMIUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD6C196E09D6CB220E88644C9D1C457C /* SlideMenuControllerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DBFB6268C2E7F5733F05DF259D78A9D /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */;
+			buildPhases = (
+				C86173E05FB545A30C181FD743BA99EB /* Sources */,
+				EC3CBBF60640F6C257D9CEB345FDC4F6 /* Frameworks */,
+				1C52146B4D457F2A6230878010150E50 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideMenuControllerSwift;
+			productName = SlideMenuControllerSwift;
+			productReference = 3DB208EDFE918BEF9CA0F6C9EB0E865F /* SlideMenuControllerSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -469,85 +570,114 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 670B1B86969395932C1951A97C54F735 /* Products */;
+			productRefGroup = 69EB5130143F92518A01ED6F3EEEA757 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC861D01E58211DF1007105F74543F14 /* Pods-pedalaMI */,
-				852020B7CE8B6C991087F1FD5A0ECC95 /* Pods-pedalaMITests */,
-				A41B42476CA7FB8E9BD3537DADEF52A6 /* Pods-pedalaMIUITests */,
-				01A0312F999499AC33161196D71AF922 /* Rollbar */,
+				C5023481A83C9B589CA29D695496B4CA /* Pods-pedalaMI */,
+				721ECD293E1A22F5DAD4DBCDD908389B /* Pods-pedalaMITests */,
+				E6C6534F6A54B9D98E543D08205B01D3 /* Pods-pedalaMIUITests */,
+				15D221C9772FC51C66BA3C23DCE7280D /* Rollbar */,
+				FD6C196E09D6CB220E88644C9D1C457C /* SlideMenuControllerSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		53E8AE0A6D58E0F7ECD0FAA7C1E49DA9 /* Sources */ = {
+		22EB7E152A73ADC97A272B5C886E296A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EF6A4CD96A5668A22BB837CFBCC8B04 /* Pods-pedalaMITests-dummy.m in Sources */,
+				3BA36AA26E5602C68FBA9E33A3BE8B11 /* Rollbar-dummy.m in Sources */,
+				C905C18ACB91EEFF18A7A32DA334FE72 /* Rollbar.m in Sources */,
+				7E69FFD7F92FDAB2850CE6802B34F624 /* RollbarConfiguration.m in Sources */,
+				5762A5E37B63B2068989C501AB7BA4A1 /* RollbarFileReader.m in Sources */,
+				328FE655B184BE6FD5A615E908A5A2B5 /* RollbarLogger.m in Sources */,
+				26CEBD337BC587AB53A5A42373EA18D0 /* RollbarNotifier.m in Sources */,
+				E67AC44DAEB83E0D3404323CCAAC6FA6 /* RollbarReachability.m in Sources */,
+				998A845A520C6613A0C6F3D4A8BB8949 /* RollbarThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D2318BE48B5CFB4E797AAED210F08EF /* Sources */ = {
+		8B07D50D208AA120242E45916DD087B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F8752A48D340C3E08B4E23B36D2B499 /* Pods-pedalaMIUITests-dummy.m in Sources */,
+				3AD81AB6A399BC4C756A4FA5955FD1CC /* Pods-pedalaMITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8AB5DA2F6829D43BE1BC3F00BC10876E /* Sources */ = {
+		A7E89E824D0FCE03B77A676E7E195432 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1CB938A50A25FB0F72290D978C0FEBC /* Rollbar-dummy.m in Sources */,
-				C045F3766CC4877C9FA9A4949AB5ED72 /* Rollbar.m in Sources */,
-				6E84371105896183F71E7D88255F7F97 /* RollbarConfiguration.m in Sources */,
-				677F741385CD1594051B3789608D34B5 /* RollbarFileReader.m in Sources */,
-				DEED32A967372E01980B10D67DA2672A /* RollbarLogger.m in Sources */,
-				4119307AB9F88C95352667A4FBE525FF /* RollbarNotifier.m in Sources */,
-				A15B2447F279A604616DCB474C986872 /* RollbarReachability.m in Sources */,
-				BD3FD0FC48FD1CE42F41B8ABBF502631 /* RollbarThread.m in Sources */,
+				9A53C09F9B9BF4A9611C520CD4B09F7E /* Pods-pedalaMI-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9E10C15680CD6543D3096A33D1B616A /* Sources */ = {
+		C86173E05FB545A30C181FD743BA99EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B5D79F593A3CB8869A99F4E8A39F0B /* Pods-pedalaMI-dummy.m in Sources */,
+				1EE9F7E844CBF68FE60688924942360B /* Info.plist in Sources */,
+				A328F2B31B5D1ED01656FC4F8BF6083D /* SlideMenuController.swift in Sources */,
+				FB7298A5643040E27D4C7A2AF0A4F27D /* SlideMenuControllerSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F46A50EF7829E75EE3DA76B0AE5EBD85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6757C7431B1701B632B3C3949D398EFB /* Pods-pedalaMIUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0FB9409EDDC806C7A53C75F01C758773 /* PBXTargetDependency */ = {
+		54878295B01CBB6FE7201740EDC4F66A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Rollbar;
-			target = 01A0312F999499AC33161196D71AF922 /* Rollbar */;
-			targetProxy = B86332B99D62C0859F43C99FDCF7D703 /* PBXContainerItemProxy */;
+			name = SlideMenuControllerSwift;
+			target = FD6C196E09D6CB220E88644C9D1C457C /* SlideMenuControllerSwift */;
+			targetProxy = 9EDB4A388AA42829FAF12056374C7C04 /* PBXContainerItemProxy */;
 		};
-		6ED920B650702531173B2486E721AF19 /* PBXTargetDependency */ = {
+		81BB2D6833584AD1A0D06B9F0338B912 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Rollbar;
-			target = 01A0312F999499AC33161196D71AF922 /* Rollbar */;
-			targetProxy = 159C7153CBA1AA2289AD5636C12B0505 /* PBXContainerItemProxy */;
+			name = SlideMenuControllerSwift;
+			target = FD6C196E09D6CB220E88644C9D1C457C /* SlideMenuControllerSwift */;
+			targetProxy = E98DE6ABCDE2AC64FCFFA1669375D5F6 /* PBXContainerItemProxy */;
 		};
-		C579036FEDE50DC2FB8051AB5CE0532F /* PBXTargetDependency */ = {
+		8D4C350B5F1DBAB07F85854A751CFF3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlideMenuControllerSwift;
+			target = FD6C196E09D6CB220E88644C9D1C457C /* SlideMenuControllerSwift */;
+			targetProxy = BD04FFCB2DB0B1A36D12EBE3BD130016 /* PBXContainerItemProxy */;
+		};
+		8F09A21854B369CE4EFDFBD16E76A407 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Rollbar;
-			target = 01A0312F999499AC33161196D71AF922 /* Rollbar */;
-			targetProxy = 5DF821CFE61E531605F93CF3E47D0FC7 /* PBXContainerItemProxy */;
+			target = 15D221C9772FC51C66BA3C23DCE7280D /* Rollbar */;
+			targetProxy = DDBF524AC1661ADEAB592C2DFC233231 /* PBXContainerItemProxy */;
+		};
+		C98AE3A7B153A8092B9A2CD20A8D10CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Rollbar;
+			target = 15D221C9772FC51C66BA3C23DCE7280D /* Rollbar */;
+			targetProxy = 9D9B70F34612376B43039E2B1EBABA6C /* PBXContainerItemProxy */;
+		};
+		EA484F260E3E3D841DC4B9E3A50BD6DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Rollbar;
+			target = 15D221C9772FC51C66BA3C23DCE7280D /* Rollbar */;
+			targetProxy = EA30CCDB8AAC877E4771DA8B9FBC9229 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0924DF44614E15D009E9653451A6C833 /* Release */ = {
+		126011045F84F7D24DE923C79D0812BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6617562037A987A64C003A7373C92521 /* Rollbar.xcconfig */;
+			baseConfigurationReference = 4D4A725B5408FE0D863C0A10D6DFDF11 /* Pods-pedalaMIUITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -558,14 +688,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Rollbar/Rollbar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Rollbar/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMIUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Rollbar/Rollbar.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMIUITests/Pods-pedalaMIUITests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Rollbar;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_pedalaMIUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -573,6 +707,40 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		439E90B44D31F8E114607EE9B306ECAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC00C00C9F7525AB89DFFF5BC3A374D /* Pods-pedalaMI.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMI/Pods-pedalaMI.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_pedalaMI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -616,7 +784,7 @@
 			};
 			name = Debug;
 		};
-		5C105005BB228707D2F7D69CAC53DDA6 /* Release */ = {
+		6E7BE2D40D107AAA3C2E80CBB7662F11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C28C58EF82775E71D73FA31DE5AE5D53 /* Pods-pedalaMI.release.xcconfig */;
 			buildSettings = {
@@ -649,9 +817,9 @@
 			};
 			name = Release;
 		};
-		5F889632229A4228B6F10FCA1662B578 /* Debug */ = {
+		94322968B8CDBED0F92397ADB83F5105 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CC00C00C9F7525AB89DFFF5BC3A374D /* Pods-pedalaMI.debug.xcconfig */;
+			baseConfigurationReference = B4D3DE1E985A19165357DEC451D87AF2 /* SlideMenuControllerSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -662,33 +830,30 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMI/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMI/Pods-pedalaMI.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_pedalaMI;
+				PRODUCT_NAME = SlideMenuControllerSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7629C19582EAD74B57199607992452D8 /* Debug */ = {
+		98D0FE2C52AB2C39E09077D93548FDD3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6617562037A987A64C003A7373C92521 /* Rollbar.xcconfig */;
+			baseConfigurationReference = F21C579F0D69F6990979482D326D6810 /* Rollbar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -701,7 +866,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Rollbar/Rollbar.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = Rollbar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -709,9 +874,9 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		7BDE73F5A40AAEB96EC5FFFCC0970EE5 /* Debug */ = {
+		9CE4074F21588F773EBE4F60E234FDA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCCD66892EFCB7F2339FF62D2F2AD854 /* Pods-pedalaMIUITests.debug.xcconfig */;
 			buildSettings = {
@@ -738,15 +903,16 @@
 				PRODUCT_NAME = Pods_pedalaMIUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A9D95AC0E3759EA250D06864207481FD /* Release */ = {
+		A74807EBA5A693E1565EC16E577A0CF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D4A725B5408FE0D863C0A10D6DFDF11 /* Pods-pedalaMIUITests.release.xcconfig */;
+			baseConfigurationReference = 322C917A7127FCE31970BBD26592A744 /* Pods-pedalaMITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -757,18 +923,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMIUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMIUITests/Pods-pedalaMIUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_pedalaMIUITests;
+				PRODUCT_NAME = Pods_pedalaMITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -815,40 +981,7 @@
 			};
 			name = Release;
 		};
-		C9CC8B674EEE33F81CB6C12721C59245 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 322C917A7127FCE31970BBD26592A744 /* Pods-pedalaMITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-pedalaMITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_pedalaMITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E66143E562DD900EDCD747FDBCCADAB0 /* Debug */ = {
+		DC48100CA4E60084EDF6E6571623C5EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 053CD3F61AC6E26A668652FBEF128FAA /* Pods-pedalaMITests.debug.xcconfig */;
 			buildSettings = {
@@ -875,24 +1008,74 @@
 				PRODUCT_NAME = Pods_pedalaMITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+		F4BFF3E5CB0E97A5D1B6490CCB0FB2B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F21C579F0D69F6990979482D326D6810 /* Rollbar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Rollbar/Rollbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rollbar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Rollbar/Rollbar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Rollbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA4B53181FF38D34E4FBB69492DD1D52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D3DE1E985A19165357DEC451D87AF2 /* SlideMenuControllerSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SlideMenuControllerSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		190C6E1E654EBDD4138B961D410E7198 /* Build configuration list for PBXNativeTarget "Rollbar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7629C19582EAD74B57199607992452D8 /* Debug */,
-				0924DF44614E15D009E9653451A6C833 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -902,29 +1085,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		385A1A3E93D5963842FFE1D9D78DD216 /* Build configuration list for PBXNativeTarget "Pods-pedalaMI" */ = {
+		2DBFB6268C2E7F5733F05DF259D78A9D /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F889632229A4228B6F10FCA1662B578 /* Debug */,
-				5C105005BB228707D2F7D69CAC53DDA6 /* Release */,
+				94322968B8CDBED0F92397ADB83F5105 /* Debug */,
+				FA4B53181FF38D34E4FBB69492DD1D52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		78E9316E5E2A6973814FD8C17B1541EB /* Build configuration list for PBXNativeTarget "Pods-pedalaMIUITests" */ = {
+		60BB86E45510CAFF14F430C08D9006D1 /* Build configuration list for PBXNativeTarget "Pods-pedalaMIUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7BDE73F5A40AAEB96EC5FFFCC0970EE5 /* Debug */,
-				A9D95AC0E3759EA250D06864207481FD /* Release */,
+				9CE4074F21588F773EBE4F60E234FDA8 /* Debug */,
+				126011045F84F7D24DE923C79D0812BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FAE99D6A43E3B2A394F92726BAC3E53 /* Build configuration list for PBXNativeTarget "Pods-pedalaMITests" */ = {
+		962445FB3CEA1D5032B194EA03C48E18 /* Build configuration list for PBXNativeTarget "Pods-pedalaMI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E66143E562DD900EDCD747FDBCCADAB0 /* Debug */,
-				C9CC8B674EEE33F81CB6C12721C59245 /* Release */,
+				439E90B44D31F8E114607EE9B306ECAD /* Debug */,
+				6E7BE2D40D107AAA3C2E80CBB7662F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC87ADB47A5C40ADA54A6548B78FAEB /* Build configuration list for PBXNativeTarget "Pods-pedalaMITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC48100CA4E60084EDF6E6571623C5EB /* Debug */,
+				A74807EBA5A693E1565EC16E577A0CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBFC92736B708F5E4ADC8ABCB2C94534 /* Build configuration list for PBXNativeTarget "Rollbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BFF3E5CB0E97A5D1B6490CCB0FB2B4 /* Debug */,
+				98D0FE2C52AB2C39E09077D93548FDD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

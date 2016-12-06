@@ -8,6 +8,7 @@
 
 import UIKit
 import Rollbar
+import SlideMenuControllerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,12 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        mapViewController = self.window?.rootViewController as! MapViewController
-        //storyboard.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController
-        let menuViewController = storyboard.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
-        self.window?.makeKeyAndVisible()
-
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        mapViewController = self.window?.rootViewController as! MapViewController
+//        //storyboard.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController
+//        let menuViewController = storyboard.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
+//        self.window?.makeKeyAndVisible()
+//
+//        
+//        let slideMenuController = SlideMenuController(mainViewController: mapViewController, rightMenuViewController: mapViewController)
+//        self.window?.rootViewController = slideMenuController
+//        self.window?.makeKeyAndVisible()
+        
 //Rollbar
         Rollbar.initWithAccessToken("e4909d6fc8f944a9a17609e59e1b7af1")
         
@@ -31,11 +37,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillResignActive(application: UIApplication) {
+        //        if mapViewController.menuIsShowed == true {
+        //            mapViewController.animateMenuController()
+        //        }
+        
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-        if mapViewController.menuIsShowed == true {
-            mapViewController.animateMenuController()
-        }
+
     }
 
     func applicationDidEnterBackground(application: UIApplication) {

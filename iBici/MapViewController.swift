@@ -46,10 +46,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var refreshButton: UIImageView!
     
     @IBOutlet var settingsButton: UIImageView!
-    @IBOutlet var paveButton: UIImageView!
-    @IBOutlet var bikePathsButton: UIImageView!
-    @IBOutlet var bikeStationsButton: UIImageView!
-    @IBOutlet var tapWaterButton: UIImageView!
     @IBOutlet var myPositionButton: UIImageView!
     
     var pathsAreShowedDictionary : [String:Bool] = ["bikePaths" : false,
@@ -96,12 +92,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-        
-        bikePathsButton.alpha = 0
-        paveButton.alpha = 0
-        bikeStationsButton.alpha = 0
-        tapWaterButton.alpha = 0
-        
     }
     
     override func viewDidAppear(animated: Bool) {

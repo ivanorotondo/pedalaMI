@@ -11,6 +11,7 @@
 		80B7915E4EE7CEF2BC638FEB /* Pods_pedalaMIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B4EE5C98F578AAFE15765D /* Pods_pedalaMIUITests.framework */; };
 		9247DCF81DF6E0F600E393B0 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9247DCF71DF6E0F600E393B0 /* CustomAnnotationView.swift */; };
 		9247DCFA1DF6F61C00E393B0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9247DCF91DF6F61C00E393B0 /* Colors.swift */; };
+		9247DCFC1DF7103B00E393B0 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9247DCFB1DF7103B00E393B0 /* ContainerViewController.swift */; };
 		924AA5971CBF8A6800E1AF68 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AA5961CBF8A6800E1AF68 /* TabBarController.swift */; };
 		924AA59A1CBF8C2300E1AF68 /* MenuAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AA5991CBF8C2300E1AF68 /* MenuAnimation.swift */; };
 		924AA59C1CBF916300E1AF68 /* MarkersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AA59B1CBF916300E1AF68 /* MarkersController.swift */; };
@@ -81,6 +82,7 @@
 		8E83B4EEE28A4BDFB4640EE0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9247DCF71DF6E0F600E393B0 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		9247DCF91DF6F61C00E393B0 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		9247DCFB1DF7103B00E393B0 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		924AA5961CBF8A6800E1AF68 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		924AA5991CBF8C2300E1AF68 /* MenuAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAnimation.swift; sourceTree = "<group>"; };
 		924AA59B1CBF916300E1AF68 /* MarkersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkersController.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				924AA5941CBF8A2800E1AF68 /* Utilities */,
 				924AA5951CBF8A3600E1AF68 /* System */,
 				92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */,
+				9247DCFB1DF7103B00E393B0 /* ContainerViewController.swift */,
 			);
 			name = pedalaMI;
 			path = iBici;
@@ -676,6 +679,7 @@
 				92E72A2C1CBE47DF00410E3C /* TapWaterPoint.swift in Sources */,
 				92876C401C93564200BB6BDA /* ParsingSDK.swift in Sources */,
 				92876C3D1C93431B00BB6BDA /* Station.swift in Sources */,
+				9247DCFC1DF7103B00E393B0 /* ContainerViewController.swift in Sources */,
 				92876C3B1C9300E300BB6BDA /* ServerCallsSDK.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet var menuTableView: UITableView!
     
+    var mapVC : MapViewController?
+    
     override func viewDidLoad() {
         menuTableView.rowHeight = UITableViewAutomaticDimension
         menuTableView.estimatedRowHeight = 200.0
@@ -21,15 +23,48 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
+        if indexPath.row == 0 {
+            var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("bikePathCell")!
+            return cell
+        }
         
-        var cell : locationTrackingMenuOptionCell = (tableView.dequeueReusableCellWithIdentifier("locationTrackingMenuOptionCell") as? locationTrackingMenuOptionCell)!
+        if indexPath.row == 1 {
+            var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("paveCell")!
+            return cell
+        }
+        
+        if indexPath.row == 2 {
+            var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("bikeStationsCell")!
+            return cell
+        }
+        
+        if indexPath.row == 3 {
+            var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("tapWaterCell")!
+            return cell
+        }
+        
+        let cell = UITableViewCell()
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if indexPath.row == 2 {
+            mapVC?.pinsSwitch("bikeStationPoints")
+            self.slideMenuController()?.closeRight()
+        }
+        
+        if indexPath.row == 3 {
+            mapVC?.pinsSwitch("tapWaterPoints")
+        }
     }
 }
 

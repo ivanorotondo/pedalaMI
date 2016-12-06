@@ -1,15 +1,18 @@
 PODS:
   - Mapbox-iOS-SDK (3.3.5)
   - Rollbar (0.1.6)
+  - SlideMenuControllerSwift (2.3.0)
 
 DEPENDENCIES:
   - Mapbox-iOS-SDK (~> 3.3.5)
   - Rollbar (~> 0.1.6)
+  - SlideMenuControllerSwift (~> 2.3.0)
 
 SPEC CHECKSUMS:
   Mapbox-iOS-SDK: a3ceda9e2a38b11a18a3d09645d34826e0ea1757
   Rollbar: 5500ff0227e60d4ebb3615341c18ca44df988bcb
+  SlideMenuControllerSwift: 09ef91aa30464e7e517bce2f2ecc6e323e3fe866
 
-PODFILE CHECKSUM: bebf7abbfe8e8ba207d82c88fd08390282b9e96c
+PODFILE CHECKSUM: e47246469e401e962fac2d5f7f9e814bd680b148
 
 COCOAPODS: 1.0.1

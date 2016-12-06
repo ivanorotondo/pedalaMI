@@ -24,25 +24,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SlideMenuControllerSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>01A0312F999499AC33161196D71AF922</key>
+		<key>15D221C9772FC51C66BA3C23DCE7280D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>852020B7CE8B6C991087F1FD5A0ECC95</key>
+		<key>721ECD293E1A22F5DAD4DBCDD908389B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A41B42476CA7FB8E9BD3537DADEF52A6</key>
+		<key>C5023481A83C9B589CA29D695496B4CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC861D01E58211DF1007105F74543F14</key>
+		<key>E6C6534F6A54B9D98E543D08205B01D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD6C196E09D6CB220E88644C9D1C457C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

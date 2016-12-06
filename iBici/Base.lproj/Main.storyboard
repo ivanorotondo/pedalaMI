@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kgI-1Q-8k7">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Container View Controller-->
+        <scene sceneID="FH8-Dt-HHq">
+            <objects>
+                <viewController storyboardIdentifier="ContainerViewController" id="kgI-1Q-8k7" customClass="ContainerViewController" customModule="pedalaMI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M3c-dU-amD"/>
+                        <viewControllerLayoutGuide type="bottom" id="XZH-eo-9nI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B5l-wU-ecH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SWQ-90-9X9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="-492"/>
+        </scene>
         <!--MapViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -21,47 +39,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOn-z3-iKX" customClass="MGLMapView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuClosed.png" translatesAutoresizingMaskIntoConstraints="NO" id="WhU-mr-zNO">
-                                        <rect key="frame" x="14" y="24" width="40" height="33"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="Paq-7Y-gd6"/>
-                                            <constraint firstAttribute="height" constant="33" id="cz7-8V-OoS"/>
-                                        </constraints>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bikePath.png" translatesAutoresizingMaskIntoConstraints="NO" id="z5F-zJ-sgB">
-                                        <rect key="frame" x="14" y="71" width="55" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="7Qy-hw-gUW"/>
-                                            <constraint firstAttribute="width" constant="55" id="Ht4-10-lT2"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pave.png" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-jc-zfL">
-                                        <rect key="frame" x="14" y="115" width="55" height="29"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="29" id="qQH-eH-2lw"/>
-                                            <constraint firstAttribute="width" constant="55" id="wAV-nY-OH9"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bikeSharing.png" translatesAutoresizingMaskIntoConstraints="NO" id="m4o-bT-q4X">
-                                        <rect key="frame" x="14" y="155" width="100" height="47"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="47" id="JDt-oG-BR2"/>
-                                            <constraint firstAttribute="width" constant="100" id="jSe-ni-J3U"/>
-                                        </constraints>
-                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refreshClosed.png" translatesAutoresizingMaskIntoConstraints="NO" id="b6k-db-ebp">
-                                        <rect key="frame" x="14" y="71" width="38" height="36"/>
+                                        <rect key="frame" x="529" y="85" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="38" id="8WA-Ms-OQu"/>
                                             <constraint firstAttribute="height" constant="36" id="gKZ-ze-9ku"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tapWater.png" translatesAutoresizingMaskIntoConstraints="NO" id="PV5-kU-Wow">
-                                        <rect key="frame" x="14" y="212" width="81" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="81" id="BL2-ji-dYS"/>
-                                            <constraint firstAttribute="height" constant="40" id="lhu-wh-ZAy"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myPosition.png" translatesAutoresizingMaskIntoConstraints="NO" id="dO6-3j-gR7">
@@ -71,24 +53,25 @@
                                             <constraint firstAttribute="width" constant="66" id="jhE-kO-GL6"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuClosed.png" translatesAutoresizingMaskIntoConstraints="NO" id="WhU-mr-zNO">
+                                        <rect key="frame" x="528" y="38" width="40" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Paq-7Y-gd6"/>
+                                            <constraint firstAttribute="height" constant="33" id="cz7-8V-OoS"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="b6k-db-ebp" secondAttribute="trailing" constant="14" id="3eP-5e-aXT"/>
-                                    <constraint firstItem="b8e-jc-zfL" firstAttribute="top" secondItem="z5F-zJ-sgB" secondAttribute="bottom" constant="4" id="K0l-6N-92a"/>
-                                    <constraint firstItem="m4o-bT-q4X" firstAttribute="top" secondItem="b8e-jc-zfL" secondAttribute="bottom" constant="11" id="PyR-j7-VO9"/>
-                                    <constraint firstItem="b6k-db-ebp" firstAttribute="leading" secondItem="WhU-mr-zNO" secondAttribute="trailing" constant="-40" id="VE0-AU-61k"/>
-                                    <constraint firstItem="PV5-kU-Wow" firstAttribute="leading" secondItem="m4o-bT-q4X" secondAttribute="trailing" constant="-100" id="aXT-qd-YKR"/>
-                                    <constraint firstItem="WhU-mr-zNO" firstAttribute="leading" secondItem="WOn-z3-iKX" secondAttribute="leading" constant="14" id="ct3-zt-wSe"/>
+                                    <constraint firstItem="b6k-db-ebp" firstAttribute="leading" secondItem="WhU-mr-zNO" secondAttribute="trailing" constant="-38" id="VE0-AU-61k"/>
+                                    <constraint firstAttribute="trailing" secondItem="WhU-mr-zNO" secondAttribute="trailing" constant="32" id="Ve6-Po-3RU"/>
                                     <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="24" id="da3-6K-xy6"/>
-                                    <constraint firstItem="m4o-bT-q4X" firstAttribute="leading" secondItem="b8e-jc-zfL" secondAttribute="trailing" constant="-55" id="gJK-Lm-dWd"/>
-                                    <constraint firstItem="b8e-jc-zfL" firstAttribute="leading" secondItem="z5F-zJ-sgB" secondAttribute="trailing" constant="-55" id="kuL-2Z-Zwp"/>
                                     <constraint firstAttribute="trailing" secondItem="dO6-3j-gR7" secondAttribute="trailing" constant="8" id="lcg-dv-iv2"/>
-                                    <constraint firstItem="z5F-zJ-sgB" firstAttribute="top" secondItem="WhU-mr-zNO" secondAttribute="bottom" constant="14" id="o7e-ds-9xM"/>
                                     <constraint firstItem="b6k-db-ebp" firstAttribute="top" secondItem="WhU-mr-zNO" secondAttribute="bottom" constant="14" id="sLi-dg-2dG"/>
-                                    <constraint firstItem="PV5-kU-Wow" firstAttribute="top" secondItem="m4o-bT-q4X" secondAttribute="bottom" constant="10" id="wRX-Xf-4YP"/>
-                                    <constraint firstItem="z5F-zJ-sgB" firstAttribute="leading" secondItem="WhU-mr-zNO" secondAttribute="trailing" constant="-40" id="x6v-2z-NeX"/>
-                                    <constraint firstItem="WhU-mr-zNO" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="24" id="xOK-CN-hoN"/>
+                                    <constraint firstItem="b6k-db-ebp" firstAttribute="centerX" secondItem="WhU-mr-zNO" secondAttribute="centerX" id="sVh-ZA-Xw7"/>
+                                    <constraint firstItem="WhU-mr-zNO" firstAttribute="top" secondItem="WOn-z3-iKX" secondAttribute="top" constant="38" id="xOK-CN-hoN"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showsUserLocation" value="YES"/>
@@ -109,6 +92,7 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="3eP-5e-aXT"/>
+                                        <exclude reference="VE0-AU-61k"/>
                                         <exclude reference="da3-6K-xy6"/>
                                     </mask>
                                 </variation>
@@ -271,8 +255,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bikePathsButton" destination="z5F-zJ-sgB" id="M1h-sO-xGF"/>
-                        <outlet property="bikeStationsButton" destination="m4o-bT-q4X" id="TN3-87-JHP"/>
                         <outlet property="bikesButton" destination="cnL-aF-8mF" id="aNa-Tf-Zbq"/>
                         <outlet property="bikesItemBackground" destination="fSP-8o-Cvh" id="d24-pK-s9H"/>
                         <outlet property="bikesItemView" destination="8Nf-Rc-QtS" id="UXu-JL-215"/>
@@ -281,14 +263,12 @@
                         <outlet property="eBikesItemView" destination="5GG-HJ-l3Y" id="S42-Zd-Wcx"/>
                         <outlet property="mapView" destination="WOn-z3-iKX" id="cQc-3I-WwN"/>
                         <outlet property="myPositionButton" destination="dO6-3j-gR7" id="aSf-8p-D89"/>
-                        <outlet property="paveButton" destination="b8e-jc-zfL" id="3VD-1w-XiD"/>
                         <outlet property="refreshButton" destination="b6k-db-ebp" id="wGM-zE-WPc"/>
                         <outlet property="settingsButton" destination="WhU-mr-zNO" id="Exp-vv-gCg"/>
                         <outlet property="slotsButton" destination="eHl-Ke-JrF" id="zeM-7o-HlP"/>
                         <outlet property="slotsItemBackground" destination="xYl-Tf-hRn" id="2Uk-92-auO"/>
                         <outlet property="slotsItemView" destination="GRe-jo-TVR" id="3T6-bO-5Mu"/>
                         <outlet property="tabBarView" destination="CZW-yd-Bw9" id="EOB-kZ-WMF"/>
-                        <outlet property="tapWaterButton" destination="PV5-kU-Wow" id="fNN-wu-mSZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -307,21 +287,105 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="djM-s5-sST">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="djM-s5-sST">
+                                <rect key="frame" x="0.0" y="136" width="600" height="464"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="locationTrackingMenuOptionCell" rowHeight="57" id="dla-UY-8Ou" customClass="locationTrackingMenuOptionCell" customModule="pedalaMI" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bikePathCell" rowHeight="57" id="mHJ-pr-cBf" customClass="locationTrackingMenuOptionCell" customModule="pedalaMI" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="57"/>
                                         <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mHJ-pr-cBf" id="xTf-lP-Aad">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Bike Path" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uh2-aG-BZK">
+                                                    <rect key="frame" x="40" y="18.5" width="536" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Uh2-aG-BZK" secondAttribute="trailing" constant="16" id="1Xm-Fd-lpi"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="Uh2-aG-BZK" secondAttribute="leading" constant="-32" id="PWj-0P-cXK"/>
+                                                <constraint firstItem="Uh2-aG-BZK" firstAttribute="centerY" secondItem="xTf-lP-Aad" secondAttribute="centerY" id="zao-wx-rBi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="paveCell" rowHeight="57" id="C4v-iR-oNL" customClass="locationTrackingMenuOptionCell" customModule="pedalaMI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="85" width="600" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C4v-iR-oNL" id="YZq-yW-2OR">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Pavé" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSQ-F3-hX3">
+                                                    <rect key="frame" x="40" y="18.5" width="536" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GSQ-F3-hX3" firstAttribute="centerY" secondItem="YZq-yW-2OR" secondAttribute="centerY" id="6Wx-D1-4Ym"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="GSQ-F3-hX3" secondAttribute="trailing" constant="16" id="i1d-8M-6MC"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="GSQ-F3-hX3" secondAttribute="leading" constant="-32" id="oZF-ez-Bpw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bikeStationsCell" rowHeight="57" id="Vbc-aK-02M" customClass="locationTrackingMenuOptionCell" customModule="pedalaMI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="142" width="600" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vbc-aK-02M" id="t5t-vB-dgx">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Bike Stations" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HO-Mv-avc">
+                                                    <rect key="frame" x="40" y="18.5" width="536" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="leadingMargin" secondItem="1HO-Mv-avc" secondAttribute="leading" constant="-32" id="1gG-Fb-1D4"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="1HO-Mv-avc" secondAttribute="trailing" constant="16" id="Fub-cN-gI1"/>
+                                                <constraint firstItem="1HO-Mv-avc" firstAttribute="centerY" secondItem="t5t-vB-dgx" secondAttribute="centerY" id="gRk-wv-kwp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tapWaterCell" rowHeight="57" id="oan-XW-YIY" customClass="locationTrackingMenuOptionCell" customModule="pedalaMI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="199" width="600" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oan-XW-YIY" id="AKX-t4-TgK">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Tap Water" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="He2-5m-Li9">
+                                                    <rect key="frame" x="40" y="18.5" width="536" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="He2-5m-Li9" secondAttribute="trailing" constant="16" id="TvE-kO-Y4r"/>
+                                                <constraint firstItem="He2-5m-Li9" firstAttribute="centerY" secondItem="AKX-t4-TgK" secondAttribute="centerY" id="W9p-8e-2A1"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="He2-5m-Li9" secondAttribute="leading" constant="-32" id="wve-ok-BOK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="locationTrackingMenuOptionCell" rowHeight="57" id="dla-UY-8Ou" customClass="locationTrackingMenuOptionCell" customModule="pedalaMI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="256" width="600" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dla-UY-8Ou" id="8nC-D7-rkd">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="56.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Consumes much more your battery life" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQs-Dl-V2X">
                                                     <rect key="frame" x="13" y="31.5" width="522" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3CI-vZ-QSx">
@@ -330,7 +394,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Continuously track my position" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj3-oI-VTo">
                                                     <rect key="frame" x="8" y="8" width="527" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -355,13 +419,22 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="MSL-cq-1CP">
+                                <rect key="frame" x="187" y="48" width="226" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="GJk-Wy-cT5"/>
+                                    <constraint firstAttribute="width" constant="226" id="lKA-d3-lcF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="djM-s5-sST" firstAttribute="leading" secondItem="8yh-EY-ewb" secondAttribute="leading" id="3Ba-fg-av8"/>
-                            <constraint firstItem="djM-s5-sST" firstAttribute="top" secondItem="8yh-EY-ewb" secondAttribute="top" id="HDd-8a-GSg"/>
+                            <constraint firstItem="MSL-cq-1CP" firstAttribute="top" secondItem="jNK-Ax-zsB" secondAttribute="bottom" constant="28" id="6j9-1M-Eww"/>
                             <constraint firstItem="HPg-fW-by3" firstAttribute="top" secondItem="djM-s5-sST" secondAttribute="bottom" id="Is3-LD-edm"/>
                             <constraint firstAttribute="trailing" secondItem="djM-s5-sST" secondAttribute="trailing" id="KmZ-rn-uCn"/>
+                            <constraint firstItem="djM-s5-sST" firstAttribute="top" secondItem="MSL-cq-1CP" secondAttribute="bottom" constant="24" id="L8Y-h9-Rhd"/>
+                            <constraint firstItem="MSL-cq-1CP" firstAttribute="centerX" secondItem="8yh-EY-ewb" secondAttribute="centerX" id="bK6-KA-IRV"/>
                         </constraints>
                     </view>
                     <connections>
@@ -374,18 +447,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bikePath.png" width="1005" height="734"/>
         <image name="bikeSelected.png" width="262" height="173"/>
-        <image name="bikeSharing.png" width="2844" height="1137"/>
         <image name="eBikeSelected.png" width="262" height="184"/>
+        <image name="launchScreen.png" width="768" height="316"/>
         <image name="menuClosed.png" width="741" height="580"/>
         <image name="myPosition.png" width="1248" height="1250"/>
-        <image name="pave.png" width="1547" height="704"/>
         <image name="rectangleBike.png" width="2040" height="708"/>
         <image name="rectangleEBike.png" width="2040" height="708"/>
         <image name="rectangleSlot.png" width="2040" height="708"/>
         <image name="refreshClosed.png" width="793" height="713"/>
         <image name="slotSelected.png" width="262" height="192"/>
-        <image name="tapWater.png" width="2247" height="1134"/>
     </resources>
 </document>

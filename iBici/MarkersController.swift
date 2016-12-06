@@ -277,10 +277,12 @@ extension MapViewController {
         let reuseIdentifier = "\(annotation.coordinate.latitude)\(annotation.coordinate.longitude)"
         
         var  annotationView = CustomAnnotationView(reuseIdentifier: reuseIdentifier)
-        annotationView.tag = Int(extractPinNumbersFromAnnotationSubtitle(annotation) as String)!
         annotationView.frame = CGRectMake(0, 0, 30, 30)
         
         if annotation.title! != "Tap Water" {
+            
+            annotationView.tag = Int(extractPinNumbersFromAnnotationSubtitle(annotation) as String)!
+
             switch currentView {
             case "bikes":
                 annotationView.backgroundColor = orangeColor
@@ -291,6 +293,8 @@ extension MapViewController {
             default:
                 annotationView.backgroundColor = orangeColor
             }
+        } else {
+            annotationView.tag = -1
         }
 
         return annotationView
