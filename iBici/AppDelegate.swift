@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window : UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
+        
+        print("fine")
 //        let storyboard = UIStoryboard(name: "Main", bundle: nil)
 //        mapViewController = self.window?.rootViewController as! MapViewController
 //        //storyboard.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController

@@ -15,7 +15,7 @@ class ContainerViewController: SlideMenuController {
 
     override func awakeFromNib() {
         
-        SlideMenuOptions.rightViewWidth = 300
+        SlideMenuOptions.rightViewWidth = 250
 
         if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("MapViewController") {
             self.mainViewController = controller

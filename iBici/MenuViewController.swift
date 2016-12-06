@@ -30,22 +30,30 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
-            var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("bikePathCell")!
+            let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
+            cell.iconImage.image = UIImage(named: "pinBike.png")
+            cell.label.text = "Bike paths"
             return cell
         }
         
         if indexPath.row == 1 {
-            var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("paveCell")!
+            let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
+            cell.iconImage.image = UIImage(named: "pinBike.png")
+            cell.label.text = "Pavé"
             return cell
         }
         
         if indexPath.row == 2 {
-            var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("bikeStationsCell")!
+            let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
+            cell.iconImage.image = UIImage(named: "pinBike.png")
+            cell.label.text = "Bike stations"
             return cell
         }
         
         if indexPath.row == 3 {
-            var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("tapWaterCell")!
+            let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
+            cell.iconImage.image = UIImage(named: "pinBike.png")
+            cell.label.text = "Tap water"
             return cell
         }
         
@@ -56,6 +64,17 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        
+        if indexPath.row == 0 {
+            mapVC?.pathSwitch("bikePaths")
+            self.slideMenuController()?.closeRight()
+        }
+        
+        if indexPath.row == 1 {
+            mapVC?.pathSwitch("pave")
+            self.slideMenuController()?.closeRight()
+        }
         
         if indexPath.row == 2 {
             mapVC?.pinsSwitch("bikeStationPoints")
@@ -70,4 +89,10 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 class locationTrackingMenuOptionCell : UITableViewCell {
     
+}
+
+class IconCell : UITableViewCell {
+
+    @IBOutlet var iconImage: UIImageView!
+    @IBOutlet var label: UILabel!
 }
