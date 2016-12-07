@@ -15,6 +15,8 @@ class ContainerViewController: SlideMenuController {
 
     override func awakeFromNib() {
         
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
         SlideMenuOptions.rightViewWidth = 250
 
         if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("MapViewController") {

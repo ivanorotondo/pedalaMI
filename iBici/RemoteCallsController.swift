@@ -12,15 +12,17 @@ import Foundation
 extension MapViewController {
     
     
-    func downloadAndShowStations(){
+    func downloadAndShowStations(success: ()->(), fail: ()->()){
         getStationsDataFromRemoteServer({
+            
+            success()
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 
                 self.addMarkersToTheMap("bikeStations")
             })
             }, unsuccess:{
-                
+                fail()
         })
     }
     
@@ -38,7 +40,7 @@ extension MapViewController {
             "iOS" : "PlatformType"
         ]
         
-        ServerCallsSDK.askTheTRKServerWithData(dataPost, destination: destination, method: "POST", headersDict: headersDict, successHandler:{
+        ServerCallsSDK.askTheServerWithData(dataPost, destination: destination, method: "POST", headersDict: headersDict, successHandler:{
             (response) in
             let responseString = NSString(data: response, encoding: NSUTF8StringEncoding)
             print("\(responseString)")
@@ -101,22 +103,22 @@ extension MapViewController {
             }, errorHandler: {
                 (error) in
                 
-                if error == -1009 {
-                    var alertNoInternetConnection = Utilities.AlertTextualDetails()
-                    alertNoInternetConnection.title = "The device results offline"
-                    alertNoInternetConnection.message = "No internet connection available"
-                    Utilities.displayAlert(self, alertTextualDetails: alertNoInternetConnection)
-                } else if error == -1001{
-                    var alertRequestTimeout = Utilities.AlertTextualDetails()
-                    alertRequestTimeout.title = "Slow Connection"
-                    alertRequestTimeout.message = "It took too long to download data"
-                    Utilities.displayAlert(self, alertTextualDetails: alertRequestTimeout)
-                } else {
-                    var alertUnknownError = Utilities.AlertTextualDetails()
-                    alertUnknownError.title = "Error"
-                    alertUnknownError.message = "Unknown error"
-                    Utilities.displayAlert(self, alertTextualDetails: alertUnknownError)
-                }
+//                if error == -1009 {
+//                    var alertNoInternetConnection = Utilities.AlertTextualDetails()
+//                    alertNoInternetConnection.title = "The device results offline"
+//                    alertNoInternetConnection.message = "No internet connection available"
+//                    Utilities.displayAlert(self, alertTextualDetails: alertNoInternetConnection)
+//                } else if error == -1001{
+//                    var alertRequestTimeout = Utilities.AlertTextualDetails()
+//                    alertRequestTimeout.title = "Slow Connection"
+//                    alertRequestTimeout.message = "It took too long to download data"
+//                    Utilities.displayAlert(self, alertTextualDetails: alertRequestTimeout)
+//                } else {
+//                    var alertUnknownError = Utilities.AlertTextualDetails()
+//                    alertUnknownError.title = "Error"
+//                    alertUnknownError.message = "Unknown error"
+//                    Utilities.displayAlert(self, alertTextualDetails: alertUnknownError)
+//                }
                 unsuccess()
             }
             

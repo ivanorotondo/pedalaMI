@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		47A75D9E3C6B918FCAE8F726 /* Pods_pedalaMITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA657FEA71FCD5CF1B0984A /* Pods_pedalaMITests.framework */; };
 		80B7915E4EE7CEF2BC638FEB /* Pods_pedalaMIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B4EE5C98F578AAFE15765D /* Pods_pedalaMIUITests.framework */; };
+		920809261DF801AE00C35F52 /* refreshClosed.png in Resources */ = {isa = PBXBuildFile; fileRef = 920809251DF801AE00C35F52 /* refreshClosed.png */; };
+		920809291DF8021A00C35F52 /* bikePathsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 920809271DF8021A00C35F52 /* bikePathsIcon.png */; };
+		9208092A1DF8021A00C35F52 /* paveIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 920809281DF8021A00C35F52 /* paveIcon.png */; };
+		9208092C1DF8034C00C35F52 /* bikeStationsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9208092B1DF8034C00C35F52 /* bikeStationsIcon.png */; };
+		9208092F1DF8269200C35F52 /* BlankPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9208092E1DF8269200C35F52 /* BlankPageVC.swift */; };
 		9247DCF81DF6E0F600E393B0 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9247DCF71DF6E0F600E393B0 /* CustomAnnotationView.swift */; };
 		9247DCFA1DF6F61C00E393B0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9247DCF91DF6F61C00E393B0 /* Colors.swift */; };
 		9247DCFC1DF7103B00E393B0 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9247DCFB1DF7103B00E393B0 /* ContainerViewController.swift */; };
@@ -38,26 +43,15 @@
 		92876C3D1C93431B00BB6BDA /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3C1C93431B00BB6BDA /* Station.swift */; };
 		92876C401C93564200BB6BDA /* ParsingSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3F1C93564200BB6BDA /* ParsingSDK.swift */; };
 		92AC2FEA1C9D912A0031223D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC2FE91C9D912A0031223D /* Utilities.swift */; };
-		92CA5BBE1CCA5F14003DCD40 /* bikePath.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BB31CCA5F14003DCD40 /* bikePath.png */; };
-		92CA5BBF1CCA5F14003DCD40 /* bikeSharing.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BB41CCA5F14003DCD40 /* bikeSharing.png */; };
 		92CA5BC01CCA5F14003DCD40 /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BB51CCA5F14003DCD40 /* launchScreen.png */; };
-		92CA5BC11CCA5F14003DCD40 /* pinBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BB61CCA5F14003DCD40 /* pinBike.png */; };
-		92CA5BC21CCA5F14003DCD40 /* refreshOpen.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BB71CCA5F14003DCD40 /* refreshOpen.png */; };
 		92CA5BC31CCA5F14003DCD40 /* menuClosed.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BB81CCA5F14003DCD40 /* menuClosed.png */; };
 		92CA5BC41CCA5F14003DCD40 /* myPosition.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BB91CCA5F14003DCD40 /* myPosition.png */; };
-		92CA5BC51CCA5F14003DCD40 /* refreshClosed.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BBA1CCA5F14003DCD40 /* refreshClosed.png */; };
-		92CA5BC61CCA5F14003DCD40 /* menuOpen.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BBB1CCA5F14003DCD40 /* menuOpen.png */; };
-		92CA5BC71CCA5F14003DCD40 /* pave.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BBC1CCA5F14003DCD40 /* pave.png */; };
-		92CA5BC81CCA5F14003DCD40 /* tapWater.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BBD1CCA5F14003DCD40 /* tapWater.png */; };
 		92DBB46C1C9589CD003BCD1A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */; };
 		92E41E691CBBF30C0029AA5F /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E41E681CBBF30C0029AA5F /* MenuController.swift */; };
 		92E72A0B1CBD0B8B00410E3C /* bikeSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E729F91CBD0B8B00410E3C /* bikeSelected.png */; };
 		92E72A0C1CBD0B8B00410E3C /* bikeUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E729FA1CBD0B8B00410E3C /* bikeUnselected.png */; };
 		92E72A0D1CBD0B8B00410E3C /* eBikeSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E729FB1CBD0B8B00410E3C /* eBikeSelected.png */; };
 		92E72A0E1CBD0B8B00410E3C /* eBikeUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E729FC1CBD0B8B00410E3C /* eBikeUnselected.png */; };
-		92E72A121CBD0B8B00410E3C /* pinBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A001CBD0B8B00410E3C /* pinBike.png */; };
-		92E72A131CBD0B8B00410E3C /* pinEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A011CBD0B8B00410E3C /* pinEBike.png */; };
-		92E72A141CBD0B8B00410E3C /* pinSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A021CBD0B8B00410E3C /* pinSlot.png */; };
 		92E72A151CBD0B8B00410E3C /* rectangleBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A031CBD0B8B00410E3C /* rectangleBike.png */; };
 		92E72A161CBD0B8B00410E3C /* rectangleEBike.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A041CBD0B8B00410E3C /* rectangleEBike.png */; };
 		92E72A171CBD0B8B00410E3C /* rectangleSlot.png in Resources */ = {isa = PBXBuildFile; fileRef = 92E72A051CBD0B8B00410E3C /* rectangleSlot.png */; };
@@ -90,6 +84,11 @@
 		50EF363278E59294DA9A25A8 /* Pods-pedalaMI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pedalaMI.release.xcconfig"; path = "Pods/Target Support Files/Pods-pedalaMI/Pods-pedalaMI.release.xcconfig"; sourceTree = "<group>"; };
 		552D1787035DDF9BD9529118 /* Pods-pedalaMIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pedalaMIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pedalaMIUITests/Pods-pedalaMIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E83B4EEE28A4BDFB4640EE0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		920809251DF801AE00C35F52 /* refreshClosed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refreshClosed.png; path = graphics/refreshClosed.png; sourceTree = "<group>"; };
+		920809271DF8021A00C35F52 /* bikePathsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bikePathsIcon.png; path = graphics/bikePathsIcon.png; sourceTree = "<group>"; };
+		920809281DF8021A00C35F52 /* paveIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paveIcon.png; path = graphics/paveIcon.png; sourceTree = "<group>"; };
+		9208092B1DF8034C00C35F52 /* bikeStationsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bikeStationsIcon.png; path = graphics/bikeStationsIcon.png; sourceTree = "<group>"; };
+		9208092E1DF8269200C35F52 /* BlankPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankPageVC.swift; sourceTree = "<group>"; };
 		9247DCF71DF6E0F600E393B0 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		9247DCF91DF6F61C00E393B0 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9247DCFB1DF7103B00E393B0 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -125,26 +124,15 @@
 		92876C3C1C93431B00BB6BDA /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		92876C3F1C93564200BB6BDA /* ParsingSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsingSDK.swift; sourceTree = "<group>"; };
 		92AC2FE91C9D912A0031223D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		92CA5BB31CCA5F14003DCD40 /* bikePath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bikePath.png; path = graphics/bikePath.png; sourceTree = "<group>"; };
-		92CA5BB41CCA5F14003DCD40 /* bikeSharing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bikeSharing.png; path = graphics/bikeSharing.png; sourceTree = "<group>"; };
 		92CA5BB51CCA5F14003DCD40 /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchScreen.png; path = graphics/launchScreen.png; sourceTree = "<group>"; };
-		92CA5BB61CCA5F14003DCD40 /* pinBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinBike.png; path = graphics/pinBike.png; sourceTree = "<group>"; };
-		92CA5BB71CCA5F14003DCD40 /* refreshOpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refreshOpen.png; path = graphics/refreshOpen.png; sourceTree = "<group>"; };
 		92CA5BB81CCA5F14003DCD40 /* menuClosed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuClosed.png; path = graphics/menuClosed.png; sourceTree = "<group>"; };
 		92CA5BB91CCA5F14003DCD40 /* myPosition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = myPosition.png; path = graphics/myPosition.png; sourceTree = "<group>"; };
-		92CA5BBA1CCA5F14003DCD40 /* refreshClosed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refreshClosed.png; path = graphics/refreshClosed.png; sourceTree = "<group>"; };
-		92CA5BBB1CCA5F14003DCD40 /* menuOpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuOpen.png; path = graphics/menuOpen.png; sourceTree = "<group>"; };
-		92CA5BBC1CCA5F14003DCD40 /* pave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pave.png; path = graphics/pave.png; sourceTree = "<group>"; };
-		92CA5BBD1CCA5F14003DCD40 /* tapWater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tapWater.png; path = graphics/tapWater.png; sourceTree = "<group>"; };
 		92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		92E41E681CBBF30C0029AA5F /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		92E729F91CBD0B8B00410E3C /* bikeSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bikeSelected.png; path = graphics/bikeSelected.png; sourceTree = "<group>"; };
 		92E729FA1CBD0B8B00410E3C /* bikeUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bikeUnselected.png; path = graphics/bikeUnselected.png; sourceTree = "<group>"; };
 		92E729FB1CBD0B8B00410E3C /* eBikeSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eBikeSelected.png; path = graphics/eBikeSelected.png; sourceTree = "<group>"; };
 		92E729FC1CBD0B8B00410E3C /* eBikeUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eBikeUnselected.png; path = graphics/eBikeUnselected.png; sourceTree = "<group>"; };
-		92E72A001CBD0B8B00410E3C /* pinBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinBike.png; path = graphics/pinBike.png; sourceTree = "<group>"; };
-		92E72A011CBD0B8B00410E3C /* pinEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinEBike.png; path = graphics/pinEBike.png; sourceTree = "<group>"; };
-		92E72A021CBD0B8B00410E3C /* pinSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinSlot.png; path = graphics/pinSlot.png; sourceTree = "<group>"; };
 		92E72A031CBD0B8B00410E3C /* rectangleBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rectangleBike.png; path = graphics/rectangleBike.png; sourceTree = "<group>"; };
 		92E72A041CBD0B8B00410E3C /* rectangleEBike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rectangleEBike.png; path = graphics/rectangleEBike.png; sourceTree = "<group>"; };
 		92E72A051CBD0B8B00410E3C /* rectangleSlot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rectangleSlot.png; path = graphics/rectangleSlot.png; sourceTree = "<group>"; };
@@ -212,6 +200,16 @@
 				B4B4EE5C98F578AAFE15765D /* Pods_pedalaMIUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9208092D1DF8035200C35F52 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				920809271DF8021A00C35F52 /* bikePathsIcon.png */,
+				9208092B1DF8034C00C35F52 /* bikeStationsIcon.png */,
+				920809281DF8021A00C35F52 /* paveIcon.png */,
+			);
+			name = icons;
 			sourceTree = "<group>";
 		};
 		9247DD061DF76C4200E393B0 /* Fonts */ = {
@@ -311,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				92876C0C1C92FD5800BB6BDA /* Main.storyboard */,
+				9208092E1DF8269200C35F52 /* BlankPageVC.swift */,
 				92876C081C92FD5800BB6BDA /* AppDelegate.swift */,
 				92876C3E1C93432400BB6BDA /* Classes */,
 				924AA5931CBF8A0800E1AF68 /* MapViewController */,
@@ -356,17 +355,11 @@
 		92876C471C935F3500BB6BDA /* graphics */ = {
 			isa = PBXGroup;
 			children = (
-				92CA5BB31CCA5F14003DCD40 /* bikePath.png */,
-				92CA5BB41CCA5F14003DCD40 /* bikeSharing.png */,
 				92CA5BB51CCA5F14003DCD40 /* launchScreen.png */,
-				92CA5BB61CCA5F14003DCD40 /* pinBike.png */,
-				92CA5BB71CCA5F14003DCD40 /* refreshOpen.png */,
+				920809251DF801AE00C35F52 /* refreshClosed.png */,
 				92CA5BB81CCA5F14003DCD40 /* menuClosed.png */,
 				92CA5BB91CCA5F14003DCD40 /* myPosition.png */,
-				92CA5BBA1CCA5F14003DCD40 /* refreshClosed.png */,
-				92CA5BBB1CCA5F14003DCD40 /* menuOpen.png */,
-				92CA5BBC1CCA5F14003DCD40 /* pave.png */,
-				92CA5BBD1CCA5F14003DCD40 /* tapWater.png */,
+				9208092D1DF8035200C35F52 /* icons */,
 				92CA5BA21CCA31FC003DCD40 /* pin */,
 				92CA5BA11CCA31C8003DCD40 /* tabBar */,
 			);
@@ -392,9 +385,6 @@
 		92CA5BA21CCA31FC003DCD40 /* pin */ = {
 			isa = PBXGroup;
 			children = (
-				92E72A001CBD0B8B00410E3C /* pinBike.png */,
-				92E72A011CBD0B8B00410E3C /* pinEBike.png */,
-				92E72A021CBD0B8B00410E3C /* pinSlot.png */,
 				92E72A2D1CBE735400410E3C /* pinTapWater.png */,
 			);
 			name = pin;
@@ -411,9 +401,9 @@
 				92876C011C92FD5800BB6BDA /* Sources */,
 				92876C021C92FD5800BB6BDA /* Frameworks */,
 				92876C031C92FD5800BB6BDA /* Resources */,
-				92CA5B9F1CC537B6003DCD40 /* ShellScript */,
 				E794CE253821FF2805957153 /* [CP] Embed Pods Frameworks */,
 				32E2837092C54D7CBA22A368 /* [CP] Copy Pods Resources */,
+				920809301DF851B200C35F52 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -514,32 +504,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92CA5BC11CCA5F14003DCD40 /* pinBike.png in Resources */,
 				92E72A151CBD0B8B00410E3C /* rectangleBike.png in Resources */,
 				92E72A2E1CBE735400410E3C /* pinTapWater.png in Resources */,
 				92876C131C92FD5800BB6BDA /* LaunchScreen.storyboard in Resources */,
 				92E72A1B1CBD0B8B00410E3C /* slotSelected.png in Resources */,
-				92CA5BC81CCA5F14003DCD40 /* tapWater.png in Resources */,
-				92CA5BC21CCA5F14003DCD40 /* refreshOpen.png in Resources */,
 				92E72A161CBD0B8B00410E3C /* rectangleEBike.png in Resources */,
 				92CA5BC01CCA5F14003DCD40 /* launchScreen.png in Resources */,
+				920809291DF8021A00C35F52 /* bikePathsIcon.png in Resources */,
 				92E72A0D1CBD0B8B00410E3C /* eBikeSelected.png in Resources */,
 				92876C101C92FD5800BB6BDA /* Assets.xcassets in Resources */,
-				92CA5BC61CCA5F14003DCD40 /* menuOpen.png in Resources */,
-				92CA5BC71CCA5F14003DCD40 /* pave.png in Resources */,
-				92E72A141CBD0B8B00410E3C /* pinSlot.png in Resources */,
+				9208092C1DF8034C00C35F52 /* bikeStationsIcon.png in Resources */,
+				920809261DF801AE00C35F52 /* refreshClosed.png in Resources */,
 				92E72A0E1CBD0B8B00410E3C /* eBikeUnselected.png in Resources */,
 				92876C0E1C92FD5800BB6BDA /* Main.storyboard in Resources */,
-				92CA5BBE1CCA5F14003DCD40 /* bikePath.png in Resources */,
+				9208092A1DF8021A00C35F52 /* paveIcon.png in Resources */,
 				92CA5BC31CCA5F14003DCD40 /* menuClosed.png in Resources */,
 				92E72A0C1CBD0B8B00410E3C /* bikeUnselected.png in Resources */,
 				92E72A171CBD0B8B00410E3C /* rectangleSlot.png in Resources */,
 				92E72A0B1CBD0B8B00410E3C /* bikeSelected.png in Resources */,
 				92E72A1C1CBD0B8B00410E3C /* slotUnselected.png in Resources */,
-				92CA5BBF1CCA5F14003DCD40 /* bikeSharing.png in Resources */,
-				92E72A131CBD0B8B00410E3C /* pinEBike.png in Resources */,
-				92CA5BC51CCA5F14003DCD40 /* refreshClosed.png in Resources */,
-				92E72A121CBD0B8B00410E3C /* pinBike.png in Resources */,
 				92CA5BC41CCA5F14003DCD40 /* myPosition.png in Resources */,
 				9247DD071DF76C8900E393B0 /* SF-UI-Display-Black.otf in Resources */,
 				9247DD081DF76C8900E393B0 /* SF-UI-Display-Bold.otf in Resources */,
@@ -630,7 +613,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pedalaMITests/Pods-pedalaMITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		92CA5B9F1CC537B6003DCD40 /* ShellScript */ = {
+		920809301DF851B200C35F52 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -640,8 +623,8 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /usr/bin/python;
-			shellScript = "import os\nimport subprocess\nimport zipfile\n\nif os.environ['DEBUG_INFORMATION_FORMAT'] != 'dwarf-with-dsym' or os.environ['EFFECTIVE_PLATFORM_NAME'] == '-iphonesimulator':\n    exit(0)\n\nACCESS_TOKEN = '6c0e47e8f6ae423a8506dccb366204d5'\n\ndsym_file_path = os.path.join(os.environ['DWARF_DSYM_FOLDER_PATH'], os.environ['DWARF_DSYM_FILE_NAME'])\nzip_location = '%s.zip' % (dsym_file_path)\n\nos.chdir(os.environ['DWARF_DSYM_FOLDER_PATH'])\nwith zipfile.ZipFile(zip_location, 'w', zipfile.ZIP_DEFLATED) as zipf:\n    for root, dirs, files in os.walk(os.environ['DWARF_DSYM_FILE_NAME']):\n        zipf.write(root)\n\n        for f in files:\n            zipf.write(os.path.join(root, f))\n\n# You may need to change the following path to match your application settings and Xcode version\ninfo_file_path = os.path.join(os.environ['INSTALL_DIR'], os.environ['INFOPLIST_PATH'])\n\np = subprocess.Popen('/usr/libexec/PlistBuddy -c \"Print :CFBundleVersion\" -c \"Print :CFBundleIdentifier\" \"%s\"' % info_file_path,\n                     stdout=subprocess.PIPE, shell=True)\n\nstdout, stderr = p.communicate()\nversion, identifier = stdout.split()\n\np = subprocess.Popen('curl -X POST \"https://api.rollbar.com/api/1/dsym\" -F access_token=%s -F version=%s -F bundle_identifier=\"%s\" -F dsym=@\"%s\"' \n                     % (ACCESS_TOKEN, version, identifier, zip_location), shell=True)\np.communicate()";
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 442da21527addc7548b4076e3d0df374428842e0 5ca9b12a1301635a70b33797cffcbfa503b42c8efa9610945bdb80e6151f5bfe";
 		};
 		9396533C66FCBFD1CEF9654D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -716,6 +699,7 @@
 				9247DCFA1DF6F61C00E393B0 /* Colors.swift in Sources */,
 				92E72A2A1CBE3CDD00410E3C /* tapWaterXML.swift in Sources */,
 				92DBB46C1C9589CD003BCD1A /* MenuViewController.swift in Sources */,
+				9208092F1DF8269200C35F52 /* BlankPageVC.swift in Sources */,
 				92AC2FEA1C9D912A0031223D /* Utilities.swift in Sources */,
 				9247DCF81DF6E0F600E393B0 /* CustomAnnotationView.swift in Sources */,
 				924AA59E1CBF91D200E1AF68 /* LocationController.swift in Sources */,

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import MapKit
 import Mapbox
-import Rollbar
+//import Rollbar
 
 extension MapViewController {
     

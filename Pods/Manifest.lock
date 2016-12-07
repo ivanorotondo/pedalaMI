@@ -1,18 +1,22 @@
 PODS:
+  - Crashlytics (3.8.3):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
   - Mapbox-iOS-SDK (3.3.5)
-  - Rollbar (0.1.6)
   - SlideMenuControllerSwift (2.3.0)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - Mapbox-iOS-SDK (~> 3.3.5)
-  - Rollbar (~> 0.1.6)
   - SlideMenuControllerSwift (~> 2.3.0)
 
 SPEC CHECKSUMS:
+  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   Mapbox-iOS-SDK: a3ceda9e2a38b11a18a3d09645d34826e0ea1757
-  Rollbar: 5500ff0227e60d4ebb3615341c18ca44df988bcb
   SlideMenuControllerSwift: 09ef91aa30464e7e517bce2f2ecc6e323e3fe866
 
-PODFILE CHECKSUM: e47246469e401e962fac2d5f7f9e814bd680b148
+PODFILE CHECKSUM: 7ecdfe90be6230b34b709099fdf05b5bae509bf0
 
 COCOAPODS: 1.0.1

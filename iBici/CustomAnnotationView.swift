@@ -33,7 +33,7 @@ class CustomAnnotationView: MGLAnnotationView {
             layer.borderColor = UIColor.whiteColor().CGColor
             
             let label = CATextLayer()
-            let textLayer = CATextLayer(layer: layer)
+            let textLayer = CATextLayer()
             textLayer.fontSize = 16
             textLayer.string = "\(tag)"
             textLayer.font = fontBold16

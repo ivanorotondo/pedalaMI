@@ -76,6 +76,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 //MARK: - views init
     override func viewDidLoad() {
         
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        mapView.opaque = false
+        
         tapWaterPointsArray = ParsingSDK.parseTapWaterXML(tapWaterXML)
         
         pinTextFontAttributes = [NSFontAttributeName: textFont,
@@ -97,16 +101,18 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidAppear(animated: Bool) {
         regionDidChangeEnabled = true
     }
-
-//    func notificationCenterRegistration(){
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector:"appTerminates", name:UIApplicationWillTerminateNotification, object:nil)
-//
-//    }
-//    
-//    func appTerminates(){
-//        
-//    }
     
+    func showBlankPage() {
+        var blankPageVC = self.storyboard?.instantiateViewControllerWithIdentifier("BlankPageVC") as? BlankPageVC
+        
+        blankPageVC?.mapVC = self
+        
+        blankPageVC?.labelText = "Ops!\nError connection here"
+        
+        let newNavigationController = UINavigationController.init(rootViewController: blankPageVC!)
+        newNavigationController.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+        self.showViewController(newNavigationController, sender: nil)
+    }
 }
 
 

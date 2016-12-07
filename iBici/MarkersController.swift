@@ -336,5 +336,10 @@ extension MapViewController {
             view.layer.addAnimation(bounceAnimation, forKey: "bounce")
         }
     }
+    
+    
+    func mapViewDidFinishLoadingMap(mapView: MGLMapView) {
+        print("finished")
+    }
 }
 

@@ -4,8 +4,10 @@
  use_frameworks!
 
 pod 'Mapbox-iOS-SDK', '~> 3.3.5'
-pod 'Rollbar', '~> 0.1.6'
+#pod 'Rollbar', '~> 0.1.6'
 pod 'SlideMenuControllerSwift', '~> 2.3.0'
+pod 'Fabric'
+pod 'Crashlytics'
 
 target ‘pedalaMI’ do
 

@@ -43,7 +43,6 @@ extension MapViewController {
         } else {
             mapView.setCenterCoordinate(CLLocationCoordinate2D(latitude: 45.4640976,longitude: 9.1919265), zoomLevel: 15, animated: false)
             manager.stopUpdatingLocation()
-
         }
         
     }
@@ -63,6 +62,8 @@ extension MapViewController {
             }
         }
     }
+    
+    
     
     
     //stop updating location

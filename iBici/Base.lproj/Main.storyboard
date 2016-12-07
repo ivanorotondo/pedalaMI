@@ -8,6 +8,8 @@
     <customFonts key="customFonts">
         <mutableArray key="SF-UI-Display-Regular.otf">
             <string>SFUIDisplay-Regular</string>
+            <string>SFUIDisplay-Regular</string>
+            <string>SFUIDisplay-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -27,7 +29,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWQ-90-9X9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="-492"/>
+            <point key="canvasLocation" x="637" y="-502"/>
         </scene>
         <!--MapViewController-->
         <scene sceneID="tne-QT-ifu">
@@ -125,10 +127,10 @@
                                                 </variation>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eBikeSelected.png" translatesAutoresizingMaskIntoConstraints="NO" id="k3P-Oj-feM">
-                                                <rect key="frame" x="75" y="4" width="50" height="32"/>
+                                                <rect key="frame" x="78" y="7" width="44" height="26"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="Dt9-D1-kxT"/>
-                                                    <constraint firstAttribute="height" constant="32" id="T1F-4X-DEs"/>
+                                                    <constraint firstAttribute="width" constant="44" id="Dt9-D1-kxT"/>
+                                                    <constraint firstAttribute="height" constant="26" id="T1F-4X-DEs"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -165,10 +167,10 @@
                                                 </variation>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bikeSelected.png" translatesAutoresizingMaskIntoConstraints="NO" id="cnL-aF-8mF">
-                                                <rect key="frame" x="75" y="4" width="50" height="32"/>
+                                                <rect key="frame" x="78" y="7" width="44" height="26"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="32" id="gft-Yk-I16"/>
-                                                    <constraint firstAttribute="width" constant="50" id="pn5-sM-q0y"/>
+                                                    <constraint firstAttribute="height" constant="26" id="gft-Yk-I16"/>
+                                                    <constraint firstAttribute="width" constant="44" id="pn5-sM-q0y"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -211,16 +213,16 @@
                                                 </variation>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slotSelected.png" translatesAutoresizingMaskIntoConstraints="NO" id="eHl-Ke-JrF">
-                                                <rect key="frame" x="75" y="5" width="51" height="33"/>
+                                                <rect key="frame" x="78" y="7" width="44" height="26"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="51" id="9nX-Lw-ncM"/>
-                                                    <constraint firstAttribute="height" constant="33" id="XOZ-OQ-YN8"/>
+                                                    <constraint firstAttribute="width" constant="44" id="9nX-Lw-ncM"/>
+                                                    <constraint firstAttribute="height" constant="26" id="XOZ-OQ-YN8"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="eHl-Ke-JrF" firstAttribute="centerY" secondItem="GRe-jo-TVR" secondAttribute="centerY" constant="1.5" id="7zl-0z-hKl"/>
+                                            <constraint firstItem="eHl-Ke-JrF" firstAttribute="centerY" secondItem="GRe-jo-TVR" secondAttribute="centerY" id="7zl-0z-hKl"/>
                                             <constraint firstItem="eHl-Ke-JrF" firstAttribute="centerX" secondItem="GRe-jo-TVR" secondAttribute="centerX" id="OXD-qG-40V"/>
                                             <constraint firstItem="xYl-Tf-hRn" firstAttribute="leading" secondItem="GRe-jo-TVR" secondAttribute="leading" id="XAl-XK-EBK"/>
                                             <constraint firstItem="xYl-Tf-hRn" firstAttribute="top" secondItem="GRe-jo-TVR" secondAttribute="top" id="eIN-Km-EnK"/>
@@ -280,6 +282,74 @@
             </objects>
             <point key="canvasLocation" x="305" y="216"/>
         </scene>
+        <!--Blank PageVC-->
+        <scene sceneID="snp-Rh-z7g">
+            <objects>
+                <viewController storyboardIdentifier="BlankPageVC" id="HRs-QJ-OsD" customClass="BlankPageVC" customModule="pedalaMI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fjo-ic-mtD"/>
+                        <viewControllerLayoutGuide type="bottom" id="3IT-UD-KfF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="opi-5n-aLV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jw6-cY-Sol">
+                                <rect key="frame" x="26" y="-31" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="BlankPage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keE-0j-C7m">
+                                <rect key="frame" x="49" y="269.5" width="502" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="18"/>
+                                <color key="textColor" red="0.34901960780000002" green="0.34901960780000002" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21Y-5G-6l6">
+                                <rect key="frame" x="265" y="331.5" width="71" height="34"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="18"/>
+                                <state key="normal" title="Try again">
+                                    <color key="titleColor" red="0.89224273989898994" green="0.52423648588741012" blue="0.032072811354565522" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tryAgainButtonPressed:" destination="HRs-QJ-OsD" eventType="touchUpInside" id="j7C-iA-uZi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="7aK-LJ-A6D">
+                                <rect key="frame" x="187" y="153" width="226" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="CJu-gw-VXQ"/>
+                                    <constraint firstAttribute="width" constant="226" id="lTA-SW-ius"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="keE-0j-C7m" firstAttribute="centerX" secondItem="opi-5n-aLV" secondAttribute="centerX" id="5ug-pI-NYa"/>
+                            <constraint firstItem="21Y-5G-6l6" firstAttribute="centerX" secondItem="keE-0j-C7m" secondAttribute="centerX" id="6G9-fj-GY7"/>
+                            <constraint firstItem="keE-0j-C7m" firstAttribute="centerY" secondItem="opi-5n-aLV" secondAttribute="centerY" constant="-19.75" id="YEt-3K-BqA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="keE-0j-C7m" secondAttribute="trailing" constant="21" id="ZQ4-Zh-cBn"/>
+                            <constraint firstItem="21Y-5G-6l6" firstAttribute="top" secondItem="keE-0j-C7m" secondAttribute="bottom" constant="40.5" id="ikm-1t-gyE"/>
+                            <constraint firstItem="keE-0j-C7m" firstAttribute="leading" secondItem="opi-5n-aLV" secondAttribute="leadingMargin" constant="29" id="lQj-VZ-OBL"/>
+                            <constraint firstItem="7aK-LJ-A6D" firstAttribute="centerX" secondItem="opi-5n-aLV" secondAttribute="centerX" id="s1k-XS-RkI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="keE-0j-C7m" secondAttribute="trailing" constant="29" id="tcW-HX-QfB"/>
+                            <constraint firstItem="keE-0j-C7m" firstAttribute="top" secondItem="7aK-LJ-A6D" secondAttribute="bottom" constant="52.5" id="vkH-xr-Fpr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZQ4-Zh-cBn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="keE-0j-C7m" id="0Aw-Ob-Hph"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWB-al-0nN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="923"/>
+        </scene>
         <!--Menu View Controller-->
         <scene sceneID="q1r-xB-da3">
             <objects>
@@ -309,7 +379,7 @@
                                                     <color key="textColor" red="0.34901960784313724" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="swn-b7-cyH">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="swn-b7-cyH">
                                                     <rect key="frame" x="14" y="14" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="BXb-Pg-f2B"/>
@@ -398,12 +468,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zD2-uU-QBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="113"/>
+            <point key="canvasLocation" x="960" y="216"/>
         </scene>
     </scenes>
     <resources>
-        <image name="bikeSelected.png" width="262" height="173"/>
-        <image name="eBikeSelected.png" width="262" height="184"/>
+        <image name="bikeSelected.png" width="87" height="58"/>
+        <image name="eBikeSelected.png" width="87" height="58"/>
         <image name="launchScreen.png" width="768" height="316"/>
         <image name="menuClosed.png" width="741" height="580"/>
         <image name="myPosition.png" width="1248" height="1250"/>
@@ -411,6 +481,6 @@
         <image name="rectangleEBike.png" width="2040" height="708"/>
         <image name="rectangleSlot.png" width="2040" height="708"/>
         <image name="refreshClosed.png" width="793" height="713"/>
-        <image name="slotSelected.png" width="262" height="192"/>
+        <image name="slotSelected.png" width="87" height="58"/>
     </resources>
 </document>

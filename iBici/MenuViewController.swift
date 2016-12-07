@@ -16,6 +16,9 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     var mapVC : MapViewController?
     
     override func viewDidLoad() {
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
         menuTableView.rowHeight = UITableViewAutomaticDimension
         menuTableView.estimatedRowHeight = 200.0
         menuTableView.delegate = self
@@ -31,41 +34,63 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if indexPath.row == 0 {
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
-            cell.iconImage.image = UIImage(named: "pinBike.png")
+            cell.iconImage.image = UIImage(named: "bikePathsIcon.png")
+            dispatch_async(dispatch_get_main_queue(), {
+                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 4
+                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 8
+            })
             cell.label.text = "Bike paths"
             
             if mapVC?.pathsAreShowedDictionary["bikePaths"] == true {
-                cell.label.font = fontBold16
+                cell.label.font = fontBold18
             } else {
-                cell.label.font = fontRegular16
+                cell.label.font = fontRegular18
             }
             return cell
         }
         
         if indexPath.row == 1 {
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
-            cell.iconImage.image = UIImage(named: "pinBike.png")
+            cell.iconImage.image = UIImage(named: "paveIcon.png")
+            dispatch_async(dispatch_get_main_queue(), {
+                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 3
+                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 6
+            })
             cell.label.text = "Pavé"
             
             if mapVC?.pathsAreShowedDictionary["pave"] == true {
-                cell.label.font = fontBold16
+                cell.label.font = fontBold18
             } else {
-                cell.label.font = fontRegular16
+                cell.label.font = fontRegular18
             }
             return cell
         }
         
         if indexPath.row == 2 {
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
-            cell.iconImage.image = UIImage(named: "pinBike.png")
+            cell.iconImage.image = UIImage(named: "bikeStationsIcon.png")
             cell.label.text = "Bike stations"
+            if mapVC?.pointsAreShowedDictionary["bikeStations"] == false {
+                cell.label.font = fontBold18
+            } else {
+                cell.label.font = fontRegular18
+            }
             return cell
         }
         
         if indexPath.row == 3 {
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
-            cell.iconImage.image = UIImage(named: "pinBike.png")
+            cell.iconImage.image = UIImage(named: "pinTapWater.png")
+            dispatch_async(dispatch_get_main_queue(), {
+                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 3
+                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 6
+            })
             cell.label.text = "Tap water"
+            if mapVC?.pointsAreShowedDictionary["tapWaterPoints"] == true {
+                cell.label.font = fontBold18
+            } else {
+                cell.label.font = fontRegular18
+            }
             return cell
         }
         
@@ -83,9 +108,9 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             mapVC?.pathSwitch("bikePaths")
             
             if mapVC?.pathsAreShowedDictionary["bikePaths"] == true {
-                cell.label.font = fontBold16
+                cell.label.font = fontBold18
             } else {
-                cell.label.font = fontRegular16
+                cell.label.font = fontRegular18
             }
 //            self.slideMenuController()?.closeRight()
         }
@@ -94,19 +119,42 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             mapVC?.pathSwitch("pave")
             
             if mapVC?.pathsAreShowedDictionary["pave"] == true {
-                cell.label.font = fontBold16
+                cell.label.font = fontBold18
             } else {
-                cell.label.font = fontRegular16
+                cell.label.font = fontRegular18
             }
 //            self.slideMenuController()?.closeRight()
         }
         
         if indexPath.row == 2 {
+            let tapWaterCell = tableView.cellForRowAtIndexPath(NSIndexPath.init(forRow: 3, inSection: 0)) as! IconCell
+            if mapVC?.pointsAreShowedDictionary["bikeStations"] == false {
+                cell.label.font = fontBold18
+                if mapVC?.pointsAreShowedDictionary["tapWaterPoints"] == true {
+                    tapWaterCell.label.font = fontRegular18
+                }
+            } else {
+                cell.label.font = fontRegular18
+            }
+            
+            
             mapVC?.pinsSwitch("bikeStationPoints")
+
 //            self.slideMenuController()?.closeRight()
         }
         
         if indexPath.row == 3 {
+            let bikeStationsCell = tableView.cellForRowAtIndexPath(NSIndexPath.init(forRow: 2, inSection: 0)) as! IconCell
+
+            if mapVC?.pointsAreShowedDictionary["tapWaterPoints"] == false {
+                cell.label.font = fontBold18
+                if mapVC?.pointsAreShowedDictionary["bikeStations"] == true {
+                    bikeStationsCell.label.font = fontRegular18
+                }
+            } else {
+                cell.label.font = fontRegular18
+            }
+            
             mapVC?.pinsSwitch("tapWaterPoints")
         }
     }

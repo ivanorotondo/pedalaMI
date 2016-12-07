@@ -7,8 +7,10 @@
 //
 
 import UIKit
-import Rollbar
+//import Rollbar
 import SlideMenuControllerSwift
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,21 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window : UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        print("fine")
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        mapViewController = self.window?.rootViewController as! MapViewController
-//        //storyboard.instantiateViewControllerWithIdentifier("MapViewController") as! MapViewController
-//        let menuViewController = storyboard.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
-//        self.window?.makeKeyAndVisible()
-//
-//        
-//        let slideMenuController = SlideMenuController(mainViewController: mapViewController, rightMenuViewController: mapViewController)
-//        self.window?.rootViewController = slideMenuController
-//        self.window?.makeKeyAndVisible()
-        
+                
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+              Fabric.with([Crashlytics.self])
 //Rollbar
-        Rollbar.initWithAccessToken("e4909d6fc8f944a9a17609e59e1b7af1")
+//        Rollbar.initWithAccessToken("e4909d6fc8f944a9a17609e59e1b7af1")
         
         return true
     }

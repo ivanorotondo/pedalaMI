@@ -11,7 +11,7 @@ import UIKit
 
 class ServerCallsSDK {
     
-    static func askTheTRKServer(var destination : String, method: String, successHandler: (response: NSData) -> Void, errorHandler:(error: Int) -> Void){
+    static func askTheServer(var destination : String, method: String, successHandler: (response: NSData) -> Void, errorHandler:(error: Int) -> Void){
         
         let destinationString = (destination as String).stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         
@@ -36,7 +36,7 @@ class ServerCallsSDK {
     
 
     
-    static func askTheTRKServerWithData(var dataPost : String, var destination : String, method: String, var headersDict: NSDictionary, successHandler: (response: NSData) -> Void, errorHandler:(error: Int) -> Void){
+    static func askTheServerWithData(var dataPost : String, var destination : String, method: String, var headersDict: NSDictionary, successHandler: (response: NSData) -> Void, errorHandler:(error: Int) -> Void){
         
         let request = NSMutableURLRequest(URL: NSURL(string: destination as String)!)
         request.HTTPMethod = method

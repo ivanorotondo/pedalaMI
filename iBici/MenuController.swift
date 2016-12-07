@@ -157,7 +157,9 @@ extension MapViewController {
                         
                         self.addTapRecognizersToTabBar()
                         self.updateTabBarItems()
-                        self.downloadAndShowStations()
+                        self.downloadAndShowStations({}, fail: {
+                            self.showBlankPage()
+                        })
                     })
                     
                 } else {
@@ -167,7 +169,11 @@ extension MapViewController {
                         self.subsetPointsAroundArrayOLD = []
                         self.mapView.removeAnnotations(self.annotationsArray)
                         self.annotationsArray = []
-                        self.addMarkersToTheMap("bikeStations")
+//                        self.addMarkersToTheMap("bikeStations")
+                        self.downloadAndShowStations({}, fail: {
+                            self.showBlankPage()
+                        })
+
                     })
                 }
             })
@@ -202,7 +208,9 @@ extension MapViewController {
                 
                 self.currentView = self.startingView
                 self.updateTabBarItems()
-                self.downloadAndShowStations()
+                self.downloadAndShowStations({}, fail: {
+                    self.showBlankPage()
+                })
                 self.pointsAreShowedDictionary["bikeStations"] = true
                 self.tabBarView.hidden = false
                 self.tabBarView.userInteractionEnabled = true
