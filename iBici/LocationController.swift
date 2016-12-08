@@ -38,7 +38,7 @@ extension MapViewController {
                 mapView.setCenterCoordinate(currentLocation2D!, zoomLevel: 15, animated: false)
                 manager.stopUpdatingLocation()
 
-            }
+            } 
             
         } else {
             mapView.setCenterCoordinate(CLLocationCoordinate2D(latitude: 45.4640976,longitude: 9.1919265), zoomLevel: 15, animated: false)
