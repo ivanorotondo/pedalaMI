@@ -14,6 +14,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var menuTableView: UITableView!
     
     var mapVC : MapViewController?
+    var containerVC : ContainerViewController?
     
     override func viewDidLoad() {
         
@@ -26,7 +27,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
         
     }
     
@@ -36,8 +37,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
             cell.iconImage.image = UIImage(named: "bikePathsIcon.png")
             dispatch_async(dispatch_get_main_queue(), {
-                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 4
-                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 8
+                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 5
+                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 10
             })
             cell.label.text = "Bike paths"
             
@@ -91,6 +92,17 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             } else {
                 cell.label.font = fontRegular18
             }
+            return cell
+        }
+        
+        if indexPath.row == 4 {
+            let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
+            cell.iconImage.image = UIImage(named: "aboutMeIcon.png")
+            dispatch_async(dispatch_get_main_queue(), {
+                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 4
+                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 8
+            })
+            cell.label.text = "About me"
             return cell
         }
         
@@ -157,15 +169,27 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             mapVC?.pinsSwitch("tapWaterPoints")
         }
+        
+        if indexPath.row == 4 {
+            self.slideMenuController()?.closeRight()
+            showAboutMe()
+        }
+    }
+    
+    func showAboutMe() {
+        var aboutMeVC = self.storyboard?.instantiateViewControllerWithIdentifier("AboutMeVC") as? AboutMeVC
+        
+        let newNavigationController = UINavigationController.init(rootViewController: aboutMeVC!)
+        newNavigationController.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+        containerVC?.showViewController(newNavigationController, sender: nil)
     }
 }
 
-class locationTrackingMenuOptionCell : UITableViewCell {
-    
-}
+class locationTrackingMenuOptionCell : UITableViewCell {}
 
 class IconCell : UITableViewCell {
 
     @IBOutlet var iconImage: UIImageView!
     @IBOutlet var label: UILabel!
 }
+

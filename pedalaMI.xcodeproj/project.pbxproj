@@ -42,6 +42,8 @@
 		92876C3B1C9300E300BB6BDA /* ServerCallsSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3A1C9300E300BB6BDA /* ServerCallsSDK.swift */; };
 		92876C3D1C93431B00BB6BDA /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3C1C93431B00BB6BDA /* Station.swift */; };
 		92876C401C93564200BB6BDA /* ParsingSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92876C3F1C93564200BB6BDA /* ParsingSDK.swift */; };
+		92A6D2301DF8A33000130F0D /* AboutMeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A6D22F1DF8A33000130F0D /* AboutMeVC.swift */; };
+		92A6D2321DF8B44300130F0D /* aboutMeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A6D2311DF8B44300130F0D /* aboutMeIcon.png */; };
 		92AC2FEA1C9D912A0031223D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC2FE91C9D912A0031223D /* Utilities.swift */; };
 		92CA5BC01CCA5F14003DCD40 /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BB51CCA5F14003DCD40 /* launchScreen.png */; };
 		92CA5BC31CCA5F14003DCD40 /* menuClosed.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CA5BB81CCA5F14003DCD40 /* menuClosed.png */; };
@@ -123,6 +125,8 @@
 		92876C3A1C9300E300BB6BDA /* ServerCallsSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerCallsSDK.swift; sourceTree = "<group>"; };
 		92876C3C1C93431B00BB6BDA /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		92876C3F1C93564200BB6BDA /* ParsingSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsingSDK.swift; sourceTree = "<group>"; };
+		92A6D22F1DF8A33000130F0D /* AboutMeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeVC.swift; sourceTree = "<group>"; };
+		92A6D2311DF8B44300130F0D /* aboutMeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aboutMeIcon.png; path = graphics/aboutMeIcon.png; sourceTree = "<group>"; };
 		92AC2FE91C9D912A0031223D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		92CA5BB51CCA5F14003DCD40 /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchScreen.png; path = graphics/launchScreen.png; sourceTree = "<group>"; };
 		92CA5BB81CCA5F14003DCD40 /* menuClosed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuClosed.png; path = graphics/menuClosed.png; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 				920809271DF8021A00C35F52 /* bikePathsIcon.png */,
 				9208092B1DF8034C00C35F52 /* bikeStationsIcon.png */,
 				920809281DF8021A00C35F52 /* paveIcon.png */,
+				92A6D2311DF8B44300130F0D /* aboutMeIcon.png */,
 			);
 			name = icons;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				92E41E681CBBF30C0029AA5F /* MenuController.swift */,
+				92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */,
 				924AA5991CBF8C2300E1AF68 /* MenuAnimation.swift */,
 			);
 			name = Menu;
@@ -309,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				92876C0C1C92FD5800BB6BDA /* Main.storyboard */,
+				92A6D22F1DF8A33000130F0D /* AboutMeVC.swift */,
 				9208092E1DF8269200C35F52 /* BlankPageVC.swift */,
 				92876C081C92FD5800BB6BDA /* AppDelegate.swift */,
 				92876C3E1C93432400BB6BDA /* Classes */,
@@ -316,7 +323,6 @@
 				924AA5921CBF89D100E1AF68 /* SDK */,
 				924AA5941CBF8A2800E1AF68 /* Utilities */,
 				924AA5951CBF8A3600E1AF68 /* System */,
-				92DBB46B1C9589CD003BCD1A /* MenuViewController.swift */,
 				9247DCFB1DF7103B00E393B0 /* ContainerViewController.swift */,
 			);
 			name = pedalaMI;
@@ -526,6 +532,7 @@
 				92CA5BC41CCA5F14003DCD40 /* myPosition.png in Resources */,
 				9247DD071DF76C8900E393B0 /* SF-UI-Display-Black.otf in Resources */,
 				9247DD081DF76C8900E393B0 /* SF-UI-Display-Bold.otf in Resources */,
+				92A6D2321DF8B44300130F0D /* aboutMeIcon.png in Resources */,
 				9247DD091DF76C8900E393B0 /* SF-UI-Display-Heavy.otf in Resources */,
 				9247DD0A1DF76C8900E393B0 /* SF-UI-Display-Light.otf in Resources */,
 				9247DD0B1DF76C8900E393B0 /* SF-UI-Display-Medium.otf in Resources */,
@@ -707,6 +714,7 @@
 				92876C091C92FD5800BB6BDA /* AppDelegate.swift in Sources */,
 				924AA5A01CBF923F00E1AF68 /* RemoteCallsController.swift in Sources */,
 				924AA59A1CBF8C2300E1AF68 /* MenuAnimation.swift in Sources */,
+				92A6D2301DF8A33000130F0D /* AboutMeVC.swift in Sources */,
 				92E72A2C1CBE47DF00410E3C /* TapWaterPoint.swift in Sources */,
 				92876C401C93564200BB6BDA /* ParsingSDK.swift in Sources */,
 				92876C3D1C93431B00BB6BDA /* Station.swift in Sources */,
@@ -857,7 +865,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iBici/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -872,7 +880,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = iBici/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

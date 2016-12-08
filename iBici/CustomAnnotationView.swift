@@ -31,9 +31,11 @@ class CustomAnnotationView: MGLAnnotationView {
             layer.cornerRadius = frame.width / 2
             layer.borderWidth = 2
             layer.borderColor = UIColor.whiteColor().CGColor
+            layer.contentsScale = UIScreen.mainScreen().scale
             
             let label = CATextLayer()
             let textLayer = CATextLayer()
+            textLayer.contentsScale = UIScreen.mainScreen().scale
             textLayer.fontSize = 16
             textLayer.string = "\(tag)"
             textLayer.font = fontBold16
@@ -60,7 +62,7 @@ class CustomAnnotationView: MGLAnnotationView {
         if tag != -1 {
             let animation = CABasicAnimation(keyPath: "borderWidth")
             animation.duration = 0.1
-            layer.borderWidth = selected ? frame.width / 4 : 2
+            layer.borderWidth = selected ? frame.width / 8 : 2
             layer.addAnimation(animation, forKey: "borderWidth")
         }
     }
