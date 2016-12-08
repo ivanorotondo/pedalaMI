@@ -79,6 +79,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
         mapView.opaque = false
+        mapView.compassView.hidden = true
         
         tapWaterPointsArray = ParsingSDK.parseTapWaterXML(tapWaterXML)
         
