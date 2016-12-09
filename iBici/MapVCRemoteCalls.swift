@@ -9,8 +9,7 @@
 import Foundation
 
 
-extension MapViewController {
-    
+extension MapVC {
     
     func downloadAndShowStations(success: ()->(), fail: ()->()){
         getStationsDataFromRemoteServer({

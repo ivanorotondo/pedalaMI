@@ -13,7 +13,7 @@ import UIKit
 import MapKit
 import Mapbox
 
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+class MapVC: UIViewController, CLLocationManagerDelegate {
 
 //MARK: - vars init
     let locationManager = CLLocationManager()
@@ -21,7 +21,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     let stationsURL = "http://www.bikemi.com/it/mappa-stazioni.aspx"
     var stationsHTML : NSString = ""
     var stationsArray : NSMutableArray = []
-    var annotationsArray = [MGLAnnotation]()                //displayed annotations' array
+    var annotationsArray = [MGLAnnotation]()              //displayed annotations' array
     var subsetPointsAroundArray : NSMutableArray = []     //displayed stations' array
     var subsetPointsAroundArrayOLD : NSMutableArray = []  //displayed stations' array before update
     var currentView = ""

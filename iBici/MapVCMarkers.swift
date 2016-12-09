@@ -11,7 +11,7 @@ import UIKit
 import Mapbox
 import MapKit
 
-extension MapViewController {
+extension MapVC {
     
     func addMarkersToTheMap(markerType: String){
         

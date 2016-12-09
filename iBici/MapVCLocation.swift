@@ -11,7 +11,7 @@ import UIKit
 import MapKit
 import Mapbox
 
-extension MapViewController {
+extension MapVC {
     
     //MARK: - locationManager
     

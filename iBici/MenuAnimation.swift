@@ -9,7 +9,7 @@
 //import Foundation
 //import UIKit
 //
-//extension MapViewController {
+//extension MapVC {
 //    
 //    func animateMenuControllerTap(sender: UITapGestureRecognizer) {
 //        animateMenuController()

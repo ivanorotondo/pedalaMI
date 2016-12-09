@@ -13,8 +13,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet var menuTableView: UITableView!
     
-    var mapVC : MapViewController?
-    var containerVC : ContainerViewController?
+    var mapVC : MapVC?
+    var containerVC : ContainerVC?
     
     override func viewDidLoad() {
         

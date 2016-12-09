@@ -16,7 +16,7 @@ import Crashlytics
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let googleMapsAPIKey = "AIzaSyCImCd4trH3PScxsp0P-hYMO-AjiKc0yOg"
-    var mapViewController = MapViewController()
+    var mapVC = MapVC()
     var window : UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

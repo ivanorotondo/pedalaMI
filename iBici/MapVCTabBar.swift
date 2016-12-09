@@ -12,7 +12,7 @@ import MapKit
 import Mapbox
 //import Rollbar
 
-extension MapViewController {
+extension MapVC {
     
     func addTapRecognizersToTabBar(){
         

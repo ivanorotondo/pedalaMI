@@ -10,7 +10,7 @@ import Foundation
 import SlideMenuControllerSwift
 
 
-class ContainerViewController: SlideMenuController {
+class ContainerVC: SlideMenuController {
     
 
     override func awakeFromNib() {
@@ -21,11 +21,12 @@ class ContainerViewController: SlideMenuController {
         SlideMenuOptions.panFromBezel = false
         SlideMenuOptions.rightPanFromBezel = false
         
-        if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("MapViewController") {
+        if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("MapVC") {
             self.mainViewController = controller
         }
+        
         if let controller = self.storyboard?.instantiateViewControllerWithIdentifier("MenuViewController") {
-            (controller as! MenuViewController).mapVC = self.mainViewController as! MapViewController
+            (controller as! MenuViewController).mapVC = self.mainViewController as! MapVC
             (controller as! MenuViewController).containerVC = self
             self.rightViewController = controller
         }

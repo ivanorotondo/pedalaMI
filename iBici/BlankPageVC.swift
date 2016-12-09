@@ -12,7 +12,7 @@ import UIKit
 
 class BlankPageVC : UIViewController {
     
-    var mapVC : MapViewController?
+    var mapVC : MapVC?
     
     @IBOutlet var label: UILabel!
     

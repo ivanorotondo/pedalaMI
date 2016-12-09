@@ -11,7 +11,7 @@ import UIKit
 import MapKit
 import Mapbox
 
-extension MapViewController {
+extension MapVC {
     
     func addTapRecognizersToMenu() {
         let tapSettings = UITapGestureRecognizer(target: self, action: #selector(self.slideMenuController()?.openRight))
@@ -19,11 +19,11 @@ extension MapViewController {
         settingsButton.userInteractionEnabled = true
         settingsButton.addGestureRecognizer(tapSettings)
 
-        let tapMyPosition = UITapGestureRecognizer(target: self, action: #selector(MapViewController.centerMyLocation(_:)))
+        let tapMyPosition = UITapGestureRecognizer(target: self, action: #selector(MapVC.centerMyLocation(_:)))
         myPositionButton.userInteractionEnabled = true
         myPositionButton.addGestureRecognizer(tapMyPosition)
         
-        let tapRefreshButton = UITapGestureRecognizer(target: self, action: #selector(MapViewController.refreshMarkers(_:)))
+        let tapRefreshButton = UITapGestureRecognizer(target: self, action: #selector(MapVC.refreshMarkers(_:)))
         refreshButton.userInteractionEnabled = true
         refreshButton.addGestureRecognizer(tapRefreshButton)
     }
