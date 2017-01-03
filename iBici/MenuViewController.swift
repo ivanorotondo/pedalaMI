@@ -102,7 +102,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
                 cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 4
                 cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 8
             })
-            cell.label.text = "About me"
+            cell.label.text = "Credits"
             return cell
         }
         

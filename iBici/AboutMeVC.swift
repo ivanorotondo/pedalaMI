@@ -13,8 +13,8 @@ import MessageUI
 
 class AboutMeVC : UIViewController, MFMailComposeViewControllerDelegate {
     
-    var aboutMeLabelText = "Ivano Rotondo\na Sicilian iOS developer.\n"
-    var acknowledgementsLabelText = "Chiara Cacciola: graphic design\nAlessia Rotondo: scriptwriter\nMassimo Sbaraccani: logos"
+    var aboutMeLabelText = "Coded with ♡ by\n\nIvano Rotondo\na Sicilian iOS developer."
+    var acknowledgementsLabelText = "pedalaMI was possible thanks to \n\nChiara Cacciola   ||   graphic design\nAlessia Rotondo   ||   copy\nMassimo Sbaraccani   ||   logo"
     
     @IBOutlet var aboutMeLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
@@ -33,7 +33,7 @@ class AboutMeVC : UIViewController, MFMailComposeViewControllerDelegate {
         closeButton.layer.borderWidth = 1
         closeButton.layer.borderColor = darkGrayColor.CGColor
         
-        addTapMailGesture()
+//        addTapMailGesture()
     }
     
     
