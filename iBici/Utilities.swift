@@ -117,5 +117,33 @@ class Utilities {
         Utilities.activityIndicator.removeFromSuperview()
         Utilities.messageFrame.removeFromSuperview()
     }
+    
+    
+    static func getAttributedText(attributedString: NSMutableAttributedString, lineSpacing: CGFloat, alignment: NSTextAlignment) -> NSMutableAttributedString {
+        var outputAttributedString = attributedString
+        
+        var paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = lineSpacing
+        paragraphStyle.alignment = alignment
+        
+        outputAttributedString.addAttributes([
+            NSParagraphStyleAttributeName: paragraphStyle,
+            ], range: NSRange.init(location: 0, length: attributedString.length))
+        
+        return outputAttributedString
+    }
 
+    static func makeThisSubstringBold(string: String, substringsArray: [String]) -> NSMutableAttributedString {
+        
+        var outputMutableAttributedString = NSMutableAttributedString()
+        
+        outputMutableAttributedString = NSMutableAttributedString(string: string)
+        
+        for substring in substringsArray {
+            let rangeOfSubstring = NSString(string: string).rangeOfString(substring)
+            
+            outputMutableAttributedString.addAttribute(NSFontAttributeName, value: fontRegular16!, range: rangeOfSubstring)
+        }
+        return outputMutableAttributedString
+    }
 }

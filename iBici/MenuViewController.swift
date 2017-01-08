@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import MessageUI
 
-class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate {
     
     @IBOutlet var menuTableView: UITableView!
     
@@ -27,8 +28,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
         
+        return 6
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -106,6 +107,17 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             return cell
         }
         
+        if indexPath.row == 5 {
+            let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
+            cell.iconImage.image = UIImage(named: "feedbackIcon.png")
+            dispatch_async(dispatch_get_main_queue(), {
+                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 4
+                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 8
+            })
+            cell.label.text = "Feedback"
+            return cell
+        }
+        
         let cell = UITableViewCell()
         
         return cell
@@ -174,6 +186,11 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.slideMenuController()?.closeRight()
             showAboutMe()
         }
+        
+        if indexPath.row == 5 {
+            self.slideMenuController()?.closeRight()
+            openMail()
+        }
     }
     
     func showAboutMe() {
@@ -182,6 +199,38 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         let newNavigationController = UINavigationController.init(rootViewController: aboutMeVC!)
         newNavigationController.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
         containerVC?.showViewController(newNavigationController, sender: nil)
+    }
+    
+    func openMail() {
+        
+        let mailComposeViewController = configuredMailComposeViewController()
+        if MFMailComposeViewController.canSendMail() {
+            presentViewController(mailComposeViewController, animated: true, completion: nil)
+        } else {
+            self.showSendMailErrorAlert()
+        }
+    }
+    
+    
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        mailComposerVC.setToRecipients(["ivano.rotondo@gmail.com"])
+        mailComposerVC.setSubject("Hey! pedalaMI cyclist here:)")
+        mailComposerVC.setMessageBody("Hello Ivano!\n\nI'm writing you because ...", isHTML: false)
+        
+        return mailComposerVC
+    }
+    
+    
+    func showSendMailErrorAlert() {
+        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
+        sendMailErrorAlert.show()
+    }
+    
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 

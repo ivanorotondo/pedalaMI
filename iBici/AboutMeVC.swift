@@ -17,7 +17,6 @@ class AboutMeVC : UIViewController, MFMailComposeViewControllerDelegate {
     var acknowledgementsLabelText = "pedalaMI was possible thanks to \n\nChiara Cacciola   ||   graphic design\nAlessia Rotondo   ||   copy\nMassimo Sbaraccani   ||   logo"
     
     @IBOutlet var aboutMeLabel: UILabel!
-    @IBOutlet var emailLabel: UILabel!
     @IBOutlet var acknowledgementsLabel: UILabel!
     @IBOutlet var closeButton: UIButton!
 
@@ -25,8 +24,10 @@ class AboutMeVC : UIViewController, MFMailComposeViewControllerDelegate {
         
         self.navigationController?.navigationBarHidden = true
         
-        aboutMeLabel.text = aboutMeLabelText
-        acknowledgementsLabel.text = acknowledgementsLabelText
+        let aboutMeLabelMutableAttributedString = Utilities.makeThisSubstringBold(aboutMeLabelText, substringsArray: ["Ivano Rotondo"])
+        aboutMeLabel.attributedText = Utilities.getAttributedText(aboutMeLabelMutableAttributedString, lineSpacing: 4.0, alignment: .Center)
+        var acknowledgementsLabelMutableAttributedString = Utilities.makeThisSubstringBold(acknowledgementsLabelText, substringsArray: ["Chiara Cacciola", "Alessia Rotondo", "Massimo Sbaraccani"])
+        acknowledgementsLabel.attributedText = Utilities.getAttributedText(acknowledgementsLabelMutableAttributedString, lineSpacing: 4.0, alignment: .Center)
         
         closeButton.backgroundColor = UIColor.clearColor()
         closeButton.layer.cornerRadius = 5
@@ -41,46 +42,4 @@ class AboutMeVC : UIViewController, MFMailComposeViewControllerDelegate {
         
         dismissViewControllerAnimated(true, completion: {})
     }
-    
-    
-    func addTapMailGesture() {
-        
-        let tapMail = UITapGestureRecognizer(target: self, action: #selector(openMail))
-        emailLabel.userInteractionEnabled = true
-        emailLabel.addGestureRecognizer(tapMail)
-    }
-    
-    
-    func openMail() {
-        
-        let mailComposeViewController = configuredMailComposeViewController()
-        if MFMailComposeViewController.canSendMail() {
-            presentViewController(mailComposeViewController, animated: true, completion: nil)
-        } else {
-            self.showSendMailErrorAlert()
-        }
-    }
-    
-    
-    func configuredMailComposeViewController() -> MFMailComposeViewController {
-        let mailComposerVC = MFMailComposeViewController()
-        mailComposerVC.mailComposeDelegate = self
-        mailComposerVC.setToRecipients(["ivano.rotondo@gmail.com"])
-        mailComposerVC.setSubject("Hey! pedalaMI cyclist here:)")
-        mailComposerVC.setMessageBody("Hello Ivano!\n\nI'm writing you because ...", isHTML: false)
-        
-        return mailComposerVC
-    }
-    
-    
-    func showSendMailErrorAlert() {
-        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
-        sendMailErrorAlert.show()
-    }
-    
-    
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: NSError) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
 }
