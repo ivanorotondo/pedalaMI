@@ -140,9 +140,9 @@ extension MapVC {
             eBikesItemBackground.hidden = true
             slotsItemBackground.hidden = true
             //set the buttons
-            bikesButton.image = UIImage(named: "bikeSelected.png")
-            eBikesButton.image = UIImage(named: "eBikeUnselected.png")
-            slotsButton.image = UIImage(named: "slotUnselected.png")
+            bikesButton.image = UIImage(named: "bikeSelected")
+            eBikesButton.image = UIImage(named: "eBikeUnselected")
+            slotsButton.image = UIImage(named: "slotUnselected")
             
         case "electricBikes":
             //set the background
@@ -150,9 +150,9 @@ extension MapVC {
             eBikesItemBackground.hidden = false
             slotsItemBackground.hidden = true
             //set the buttons
-            bikesButton.image = UIImage(named: "bikeUnselected.png")
-            eBikesButton.image = UIImage(named: "eBikeSelected.png")
-            slotsButton.image = UIImage(named: "slotUnselected.png")
+            bikesButton.image = UIImage(named: "bikeUnselected")
+            eBikesButton.image = UIImage(named: "eBikeSelected")
+            slotsButton.image = UIImage(named: "slotUnselected")
             
         case "slots":
             //set the background
@@ -160,9 +160,9 @@ extension MapVC {
             eBikesItemBackground.hidden = true
             slotsItemBackground.hidden = false
             //set the buttons
-            bikesButton.image = UIImage(named: "bikeUnselected.png")
-            eBikesButton.image = UIImage(named: "eBikeUnselected.png")
-            slotsButton.image = UIImage(named: "slotSelected.png")
+            bikesButton.image = UIImage(named: "bikeUnselected")
+            eBikesButton.image = UIImage(named: "eBikeUnselected")
+            slotsButton.image = UIImage(named: "slotSelected")
             
         default:
             //set the backgrounds
@@ -170,9 +170,9 @@ extension MapVC {
             eBikesItemBackground.hidden = true
             slotsItemBackground.hidden = true
             //set the buttons
-            bikesButton.image = UIImage(named: "bikeSelected.png")
-            eBikesButton.image = UIImage(named: "eBikeUnselected.png")
-            slotsButton.image = UIImage(named: "slotUnselected.png")
+            bikesButton.image = UIImage(named: "bikeSelected")
+            eBikesButton.image = UIImage(named: "eBikeUnselected")
+            slotsButton.image = UIImage(named: "slotUnselected")
 
         }
         

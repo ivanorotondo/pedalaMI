@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="0no-4C-WVJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pedalamiLogo" translatesAutoresizingMaskIntoConstraints="NO" id="0no-4C-WVJ">
                                 <rect key="frame" x="159" y="236" width="282" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="HZr-ve-fpU"/>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchScreen.png" width="768" height="316"/>
+        <image name="pedalamiLogo" width="528" height="218"/>
     </resources>
 </document>

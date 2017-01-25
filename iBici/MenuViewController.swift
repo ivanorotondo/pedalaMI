@@ -36,7 +36,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if indexPath.row == 0 {
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
-            cell.iconImage.image = UIImage(named: "bikePathsIcon.png")
+            cell.iconImage.image = UIImage(named: "bikePathsIcon")
             dispatch_async(dispatch_get_main_queue(), {
                 cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 5
                 cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 10
@@ -53,7 +53,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if indexPath.row == 1 {
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
-            cell.iconImage.image = UIImage(named: "paveIcon.png")
+            cell.iconImage.image = UIImage(named: "paveIcon")
             dispatch_async(dispatch_get_main_queue(), {
                 cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 3
                 cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 6
@@ -70,7 +70,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if indexPath.row == 2 {
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
-            cell.iconImage.image = UIImage(named: "bikeStationsIcon.png")
+            cell.iconImage.image = UIImage(named: "bikeStationsIcon")
             cell.label.text = "Bike stations"
             if mapVC?.pointsAreShowedDictionary["bikeStations"] == false {
                 cell.label.font = fontBold18
@@ -82,7 +82,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if indexPath.row == 3 {
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
-            cell.iconImage.image = UIImage(named: "pinTapWater.png")
+            cell.iconImage.image = UIImage(named: "pinTapWater")
             dispatch_async(dispatch_get_main_queue(), {
                 cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 3
                 cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 6
@@ -98,7 +98,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if indexPath.row == 4 {
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
-            cell.iconImage.image = UIImage(named: "aboutMeIcon.png")
+            cell.iconImage.image = UIImage(named: "aboutMeIcon")
             dispatch_async(dispatch_get_main_queue(), {
                 cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 4
                 cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 8
@@ -109,7 +109,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if indexPath.row == 5 {
             let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
-            cell.iconImage.image = UIImage(named: "feedbackIcon.png")
+            cell.iconImage.image = UIImage(named: "feedbackIcon")
             dispatch_async(dispatch_get_main_queue(), {
                 cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 4
                 cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 8
