@@ -54,7 +54,7 @@ class ParsingSDK{
             (inputSubString, discardedString) = setTheNewStartingPoint(startingPointComma, inputString: inputSubString)
             thisStation.stationName = (discardedString.stringByReplacingOccurrencesOfString("'", withString: "")).stringByTrimmingCharactersInSet(
                 NSCharacterSet.whitespaceAndNewlineCharacterSet())
-            print("\(thisStation.stationName)")
+//            print("\(thisStation.stationName)")
             
             
         //available bikes number
@@ -100,7 +100,7 @@ class ParsingSDK{
         
         var (outputString, markerString) = ParsingSDK.setTheNewStartingPoint("<", inputString: tapWaterXML)
         
-        print("\(markerString)")
+//        print("\(markerString)")
         
         while outputString != "" {
             

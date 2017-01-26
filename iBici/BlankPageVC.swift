@@ -25,8 +25,40 @@ class BlankPageVC : UIViewController {
     }
     
     @IBAction func tryAgainButtonPressed(sender: UIButton) {
-        mapVC?.downloadAndShowStations({
-            self.dismissViewControllerAnimated(true, completion: {})
-            }, fail: {})
+        
+        Utilities.loadingBarDisplayer("Loading",indicator:true, view: self.view)
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            
+            self.mapVC?.downloadAndShowStations({
+                self.dismissViewControllerAnimated(true, completion: {})
+                }, fail: {
+                    error in
+                    
+                    Utilities.removeLoading()
+                    
+                    if error == -1009 {
+                        var alertNoInternetConnection = Utilities.AlertTextualDetails()
+                        alertNoInternetConnection.title = "The device results offline"
+                        alertNoInternetConnection.message = "No internet connection available"
+                        Utilities.displayAlert(self, alertTextualDetails: alertNoInternetConnection)
+                    } else if error == -1001{
+                        var alertRequestTimeout = Utilities.AlertTextualDetails()
+                        alertRequestTimeout.title = "Slow Connection"
+                        alertRequestTimeout.message = "It took too long to download data"
+                        Utilities.displayAlert(self, alertTextualDetails: alertRequestTimeout)
+                    } else if error == -2102{
+                        var alertRequestTimeout = Utilities.AlertTextualDetails()
+                        alertRequestTimeout.title = "Connection timeout"
+                        alertRequestTimeout.message = "We're experiencing some problems to connect to the server.\nPlease try again later"
+                        Utilities.displayAlert(self, alertTextualDetails: alertRequestTimeout)
+                    } else {
+                        var alertUnknownError = Utilities.AlertTextualDetails()
+                        alertUnknownError.title = "Error"
+                        alertUnknownError.message = "Unknown error"
+                        Utilities.displayAlert(self, alertTextualDetails: alertUnknownError)
+                    }
+            })
+        })
+        
     }
 }

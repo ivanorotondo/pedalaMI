@@ -151,35 +151,42 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         if indexPath.row == 2 {
-            let tapWaterCell = tableView.cellForRowAtIndexPath(NSIndexPath.init(forRow: 3, inSection: 0)) as! IconCell
-            if mapVC?.pointsAreShowedDictionary["bikeStations"] == false {
-                cell.label.font = fontBold18
-                if mapVC?.pointsAreShowedDictionary["tapWaterPoints"] == true {
-                    tapWaterCell.label.font = fontRegular18
+            print("\(mapVC!.addingMarkers)")
+            if mapVC?.addingMarkers == false {
+                
+                let tapWaterCell = tableView.cellForRowAtIndexPath(NSIndexPath.init(forRow: 3, inSection: 0)) as! IconCell
+                if mapVC?.pointsAreShowedDictionary["bikeStations"] == false {
+                    cell.label.font = fontBold18
+                    if mapVC?.pointsAreShowedDictionary["tapWaterPoints"] == true {
+                        tapWaterCell.label.font = fontRegular18
+                    }
+                } else {
+                    cell.label.font = fontRegular18
                 }
-            } else {
-                cell.label.font = fontRegular18
+                
+                mapVC?.pinsSwitch("bikeStationPoints")
             }
-            
-            
-            mapVC?.pinsSwitch("bikeStationPoints")
-
 //            self.slideMenuController()?.closeRight()
         }
         
         if indexPath.row == 3 {
-            let bikeStationsCell = tableView.cellForRowAtIndexPath(NSIndexPath.init(forRow: 2, inSection: 0)) as! IconCell
+            print("\(mapVC!.addingMarkers)")
 
-            if mapVC?.pointsAreShowedDictionary["tapWaterPoints"] == false {
-                cell.label.font = fontBold18
-                if mapVC?.pointsAreShowedDictionary["bikeStations"] == true {
-                    bikeStationsCell.label.font = fontRegular18
+            if mapVC?.addingMarkers == false {
+                
+                let bikeStationsCell = tableView.cellForRowAtIndexPath(NSIndexPath.init(forRow: 2, inSection: 0)) as! IconCell
+                
+                if mapVC?.pointsAreShowedDictionary["tapWaterPoints"] == false {
+                    cell.label.font = fontBold18
+                    if mapVC?.pointsAreShowedDictionary["bikeStations"] == true {
+                        bikeStationsCell.label.font = fontRegular18
+                    }
+                } else {
+                    cell.label.font = fontRegular18
                 }
-            } else {
-                cell.label.font = fontRegular18
+                
+                mapVC?.pinsSwitch("tapWaterPoints")
             }
-            
-            mapVC?.pinsSwitch("tapWaterPoints")
         }
         
         if indexPath.row == 4 {
@@ -215,7 +222,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self
-        mailComposerVC.setToRecipients(["ivano.rotondo@gmail.com"])
+        mailComposerVC.setToRecipients(["hello@ivanorotondo.com"])
         mailComposerVC.setSubject("Hey! pedalaMI cyclist here:)")
         mailComposerVC.setMessageBody("Hello Ivano!\n\nI'm writing you because ...", isHTML: false)
         

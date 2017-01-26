@@ -72,9 +72,9 @@ extension MapVC {
                 for (index, annotation) in annotationsArray.enumerate() {
                     if markerType == "bikeStations" {
                         if annotation.title! == (point as? Station)?.stationName {
-                            print("index to remove: \(indexToRemove)")
-                            print("annotationsArray count: \(annotationsArray.count)")
-                            print("annotation title: \(annotation.title)")
+//                            print("index to remove: \(indexToRemove)")
+//                            print("annotationsArray count: \(annotationsArray.count)")
+//                            print("annotation title: \(annotation.title)")
                             markersToRemoveArray.addObject(annotation)
                             indexToRemove = index
                             annotationsArray.removeAtIndex(indexToRemove as! Int)
@@ -215,7 +215,7 @@ extension MapVC {
             
             (pointsToAddArray, pointsToRemoveArray) = getPointsToAddAndToRemoveArrays(self.subsetPointsAroundArray, pointsAroundArrayOLD: self.subsetPointsAroundArrayOLD, markerType: markerType)
             
-            print("\n\n npoints to add array count\(pointsToAddArray.count) \n points to remove array count \(pointsToRemoveArray.count) \n\n")
+//            print("\n\n npoints to add array count\(pointsToAddArray.count) \n points to remove array count \(pointsToRemoveArray.count) \n\n")
             
             markersToRemoveArray = getMarkersArrayToRemoveFromAnnotationsArray(pointsToRemoveArray, markersToRemoveArray: markersToRemoveArray, markerType: markerType)
             
@@ -242,19 +242,20 @@ extension MapVC {
         }
         
         addingMarkers = true
+        print("\(addingMarkers)")
 //        dispatch_async(dispatch_queue_create("serial-worker", DISPATCH_QUEUE_SERIAL)) {
         
-            getSetsAndRemoveOldAnnotations()
-            
-            dispatch_async(dispatch_get_main_queue(), {
-                
-                addAnnotations()
-                self.addingMarkers = false
-                
-                Utilities.removeLoading()
-            })
-            
 
+        dispatch_async(dispatch_get_main_queue(), {
+            
+            getSetsAndRemoveOldAnnotations()
+            addAnnotations()
+            self.addingMarkers = false
+            print("\(self.addingMarkers)")
+            
+            Utilities.removeLoading()
+        })
+        
 //        }
         
     }

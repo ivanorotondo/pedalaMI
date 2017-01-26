@@ -152,12 +152,13 @@ extension MapVC {
                 
                 if self.stationsArray == [] {
                     
-                    Utilities.loadingBarDisplayer("Loading stations",indicator:true, view: self.view)
+                    Utilities.loadingBarDisplayer("Loading",indicator:true, view: self.view)
                     dispatch_async(dispatch_get_main_queue(), { () -> Void in
                         
                         self.addTapRecognizersToTabBar()
                         self.updateTabBarItems()
-                        self.downloadAndShowStations({}, fail: {
+                        self.downloadAndShowStations({}, fail: {_ in
+                            Utilities.removeLoading()
                             self.showBlankPage()
                         })
                     })
@@ -170,7 +171,8 @@ extension MapVC {
                         self.mapView.removeAnnotations(self.annotationsArray)
                         self.annotationsArray = []
 //                        self.addMarkersToTheMap("bikeStations")
-                        self.downloadAndShowStations({}, fail: {
+                        self.downloadAndShowStations({}, fail: {_ in
+                            Utilities.removeLoading()
                             self.showBlankPage()
                         })
 
@@ -208,7 +210,8 @@ extension MapVC {
                 
                 self.currentView = self.startingView
                 self.updateTabBarItems()
-                self.downloadAndShowStations({}, fail: {
+                self.downloadAndShowStations({}, fail: {_ in
+                    Utilities.removeLoading()
                     self.showBlankPage()
                 })
                 self.pointsAreShowedDictionary["bikeStations"] = true

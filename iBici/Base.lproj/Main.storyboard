@@ -92,7 +92,7 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eBikeSelected.png" translatesAutoresizingMaskIntoConstraints="NO" id="k3P-Oj-feM">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eBikeSelected" translatesAutoresizingMaskIntoConstraints="NO" id="k3P-Oj-feM">
                                                 <rect key="frame" x="78" y="7" width="44" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="44" id="Dt9-D1-kxT"/>
@@ -132,7 +132,7 @@
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bikeSelected.png" translatesAutoresizingMaskIntoConstraints="NO" id="cnL-aF-8mF">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bikeSelected" translatesAutoresizingMaskIntoConstraints="NO" id="cnL-aF-8mF">
                                                 <rect key="frame" x="78" y="7" width="44" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="26" id="gft-Yk-I16"/>
@@ -637,8 +637,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bikeSelected.png" width="87" height="58"/>
-        <image name="eBikeSelected.png" width="87" height="58"/>
+        <image name="bikeSelected" width="173" height="115"/>
+        <image name="eBikeSelected" width="173" height="114"/>
         <image name="menuClosed" width="218" height="171"/>
         <image name="myPosition" width="251" height="251"/>
         <image name="pedalamiLogo" width="528" height="218"/>

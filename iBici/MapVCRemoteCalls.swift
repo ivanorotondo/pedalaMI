@@ -11,7 +11,7 @@ import Foundation
 
 extension MapVC {
     
-    func downloadAndShowStations(success: ()->(), fail: ()->()){
+    func downloadAndShowStations(success: ()->(), fail: (Int)->()){
         getStationsDataFromRemoteServer({
             
             success()
@@ -21,13 +21,14 @@ extension MapVC {
                 self.addMarkersToTheMap("bikeStations")
             })
             }, unsuccess:{
-                fail()
+                (error) in
+                fail(error)
         })
     }
     
     
     //MARK: - getTheHTML call
-    func getStationsDataFromRemoteServer(success:()->(), unsuccess:()->()) {
+    func getStationsDataFromRemoteServer(success:()->(), unsuccess:(Int)->()) {
         let dataPost = "{\"Version\":\"1.0\",\"Action\":\"GetStations\",\"Hash\":\"AF2704FC4DD32B39C058DB3904EC8C88\"}"
         let destination = "http://89.251.178.41:8080/BikeMiService/api"
         
@@ -42,7 +43,7 @@ extension MapVC {
         ServerCallsSDK.askTheServerWithData(dataPost, destination: destination, method: "POST", headersDict: headersDict, successHandler:{
             (response) in
             let responseString = NSString(data: response, encoding: NSUTF8StringEncoding)
-            print("\(responseString)")
+//            print("\(responseString)")
             do{
                 let parsedObject: AnyObject? = try NSJSONSerialization.JSONObjectWithData(response,
                     options: NSJSONReadingOptions.AllowFragments)
@@ -112,13 +113,18 @@ extension MapVC {
 //                    alertRequestTimeout.title = "Slow Connection"
 //                    alertRequestTimeout.message = "It took too long to download data"
 //                    Utilities.displayAlert(self, alertTextualDetails: alertRequestTimeout)
-//                } else {
+                //                } else if error == -2102{
+                //                    var alertRequestTimeout = Utilities.AlertTextualDetails()
+                //                    alertRequestTimeout.title = "Connection timeout"
+                //                    alertRequestTimeout.message = "We're experiencing some problems to connect to the server.\nPlease try again later"
+                //                    Utilities.displayAlert(self, alertTextualDetails: alertRequestTimeout)
+                //                } else {
 //                    var alertUnknownError = Utilities.AlertTextualDetails()
 //                    alertUnknownError.title = "Error"
 //                    alertUnknownError.message = "Unknown error"
 //                    Utilities.displayAlert(self, alertTextualDetails: alertUnknownError)
 //                }
-                unsuccess()
+                unsuccess(error)
             }
             
         )

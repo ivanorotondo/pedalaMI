@@ -17,7 +17,7 @@ class Utilities {
     static var transparentFrame = UIView()
     
     static func loadingBarDisplayer(msg:String, indicator:Bool, view: UIView ) {
-        print(msg)
+//        print(msg)
 
         messageFrame = UIView(frame: CGRect(x: view.frame.midX - 80, y: view.frame.midY - 40 , width: 160, height: 80))
         messageFrame.layer.cornerRadius = 15
@@ -113,9 +113,11 @@ class Utilities {
     
     static func removeLoading() {
         //
-        Utilities.transparentFrame.removeFromSuperview()
-        Utilities.activityIndicator.removeFromSuperview()
-        Utilities.messageFrame.removeFromSuperview()
+        dispatch_async(dispatch_get_main_queue(), {
+            Utilities.transparentFrame.removeFromSuperview()
+            Utilities.activityIndicator.removeFromSuperview()
+            Utilities.messageFrame.removeFromSuperview()
+        })
     }
     
     

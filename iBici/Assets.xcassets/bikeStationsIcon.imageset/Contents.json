@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "aboutMeIcon.png",
+      "filename" : "bikeStationsIcon.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "aboutMeIcon@2x.png",
+      "filename" : "bikeStationsIcon@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "aboutMeIcon@3x.png",
+      "filename" : "bikeStationsIcon@3x.png",
       "scale" : "3x"
     }
   ],
