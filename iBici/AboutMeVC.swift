@@ -14,7 +14,7 @@ import MessageUI
 class AboutMeVC : UIViewController, MFMailComposeViewControllerDelegate {
     
     var aboutMeLabelText = "Coded with ♡ by\n\nIvano Rotondo\na Sicilian iOS developer."
-    var acknowledgementsLabelText = "pedalaMI was possible thanks to \n\nChiara Cacciola   ||   graphic design\nAlessia Rotondo   ||   copy\nMassimo Sbaraccani   ||   logo\nGiulio Stramondo   ||   code support"
+    var acknowledgementsLabelText = "pedalaMI was possible thanks to \n\nChiara Cacciola   ||   UI/UX\nAlessia Rotondo   ||   copy\nMassimo Sbaraccani   ||   logo\nGiulio Stramondo   ||   code support"
     
     @IBOutlet var aboutMeLabel: UILabel!
     @IBOutlet var acknowledgementsLabel: UILabel!

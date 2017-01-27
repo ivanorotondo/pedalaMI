@@ -25,22 +25,28 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         menuTableView.estimatedRowHeight = 200.0
         menuTableView.delegate = self
         menuTableView.dataSource = self
+        
+        menuTableView.autoresizesSubviews = false
+        menuTableView.autoresizingMask = UIViewAutoresizing.None
     }
+    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 6
     }
     
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
-            let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
+            let cell : IconCellSmall = tableView.dequeueReusableCellWithIdentifier("IconCellSmall")! as! IconCellSmall
             cell.iconImage.image = UIImage(named: "bikePathsIcon")
-            dispatch_async(dispatch_get_main_queue(), {
-                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 5
-                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 10
-            })
+//            dispatch_async(dispatch_get_main_queue(), {
+//                cell.iconImage.contentMode = UIViewContentMode.ScaleAspectFit
+//                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 5
+//                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 10
+//            })
             cell.label.text = "Bike paths"
             
             if mapVC?.pathsAreShowedDictionary["bikePaths"] == true {
@@ -52,12 +58,12 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         if indexPath.row == 1 {
-            let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
+            let cell : IconCellSmall = tableView.dequeueReusableCellWithIdentifier("IconCellSmall")! as! IconCellSmall
             cell.iconImage.image = UIImage(named: "paveIcon")
-            dispatch_async(dispatch_get_main_queue(), {
-                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 3
-                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 6
-            })
+//            dispatch_async(dispatch_get_main_queue(), {
+//                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 3
+//                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 6
+//            })
             cell.label.text = "Pavé"
             
             if mapVC?.pathsAreShowedDictionary["pave"] == true {
@@ -81,12 +87,12 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         if indexPath.row == 3 {
-            let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
+            let cell : IconCellSmall = tableView.dequeueReusableCellWithIdentifier("IconCellSmall")! as! IconCellSmall
             cell.iconImage.image = UIImage(named: "pinTapWater")
-            dispatch_async(dispatch_get_main_queue(), {
-                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 3
-                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 6
-            })
+//            dispatch_async(dispatch_get_main_queue(), {
+//                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 3
+//                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 6
+//            })
             cell.label.text = "Tap water"
             if mapVC?.pointsAreShowedDictionary["tapWaterPoints"] == true {
                 cell.label.font = fontBold18
@@ -97,23 +103,23 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         if indexPath.row == 4 {
-            let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
+            let cell : IconCellSmall = tableView.dequeueReusableCellWithIdentifier("IconCellSmall")! as! IconCellSmall
             cell.iconImage.image = UIImage(named: "aboutMeIcon")
-            dispatch_async(dispatch_get_main_queue(), {
-                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 4
-                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 8
-            })
+//            dispatch_async(dispatch_get_main_queue(), {
+//                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 4
+//                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 8
+//            })
             cell.label.text = "Credits"
             return cell
         }
         
         if indexPath.row == 5 {
-            let cell : IconCell = tableView.dequeueReusableCellWithIdentifier("IconCell")! as! IconCell
+            let cell : IconCellSmall = tableView.dequeueReusableCellWithIdentifier("IconCellSmall")! as! IconCellSmall
             cell.iconImage.image = UIImage(named: "feedbackIcon")
-            dispatch_async(dispatch_get_main_queue(), {
-                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 4
-                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 8
-            })
+//            dispatch_async(dispatch_get_main_queue(), {
+//                cell.iconImage.layer.frame.origin.y = cell.iconImage.layer.frame.origin.y + 4
+//                cell.iconImage.layer.frame.size.height = cell.iconImage.layer.frame.height - 8
+//            })
             cell.label.text = "Feedback"
             return cell
         }
@@ -123,12 +129,14 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        var cell = tableView.cellForRowAtIndexPath(indexPath) as! IconCell
         
         if indexPath.row == 0 {
+            var cell = tableView.cellForRowAtIndexPath(indexPath) as! IconCellSmall
+
             mapVC?.pathSwitch("bikePaths")
             
             if mapVC?.pathsAreShowedDictionary["bikePaths"] == true {
@@ -140,6 +148,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         if indexPath.row == 1 {
+            var cell = tableView.cellForRowAtIndexPath(indexPath) as! IconCellSmall
+
             mapVC?.pathSwitch("pave")
             
             if mapVC?.pathsAreShowedDictionary["pave"] == true {
@@ -151,10 +161,12 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         if indexPath.row == 2 {
+            var cell = tableView.cellForRowAtIndexPath(indexPath) as! IconCell
+
             print("\(mapVC!.addingMarkers)")
             if mapVC?.addingMarkers == false {
                 
-                let tapWaterCell = tableView.cellForRowAtIndexPath(NSIndexPath.init(forRow: 3, inSection: 0)) as! IconCell
+                let tapWaterCell = tableView.cellForRowAtIndexPath(NSIndexPath.init(forRow: 3, inSection: 0)) as! IconCellSmall
                 if mapVC?.pointsAreShowedDictionary["bikeStations"] == false {
                     cell.label.font = fontBold18
                     if mapVC?.pointsAreShowedDictionary["tapWaterPoints"] == true {
@@ -170,6 +182,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         if indexPath.row == 3 {
+            var cell = tableView.cellForRowAtIndexPath(indexPath) as! IconCellSmall
+
             print("\(mapVC!.addingMarkers)")
 
             if mapVC?.addingMarkers == false {
@@ -249,3 +263,9 @@ class IconCell : UITableViewCell {
     @IBOutlet var label: UILabel!
 }
 
+
+class IconCellSmall : UITableViewCell {
+    
+    @IBOutlet var iconImage: UIImageView!
+    @IBOutlet var label: UILabel!
+}
